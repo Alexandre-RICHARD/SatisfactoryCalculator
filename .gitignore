@@ -1,8 +1,7 @@
 .build/
 .vscode/
 node_modules/
-.env
-.env.dev
+public/.htaccess
 .prettierrc.js
 package-lock.json
 pnpm-lock.yaml
