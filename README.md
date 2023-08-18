@@ -29,4 +29,9 @@ Et voici le [répo du serveur](https://github.com/Alexandre-RICHARD/Portfolio-Ba
 -   Mise à jour des packages npm
 -   Rajout d'un script pnpm pour mettre à jour plus facilement les dépendances
 
+### 1.0.3 `18 août 2023`
+
+-   Mise à jour des packages npm
+-   Rajout de deux lignes de configurations pour webpack et vueJS
+
 </details>
