@@ -2,9 +2,8 @@
 
 Bonjour, bienvenue sur ce repo de je l'espère quand ma hype pour ce jeu reviendra un projet de calculator comme il en existe déjà mais à ma sauce. Pas dans le but de faire mieux, mais c'est une véritable mine d'or en terme de potentiel d'apprentissage.
 
-Voici [le site](TO DO WHEN HOSTED) en question.
-
-Et voici le [répo du serveur](https://github.com/Alexandre-RICHARD/Portfolio-Back) lié.
+Voici [le site](https://satisfactory-calculator.alexandre-richard.fr/) en question.
+Et [son répo](https://github.com/Alexandre-RICHARD/SatisfactoryCalculator)
 
 ## Historique des versions
 
@@ -33,5 +32,10 @@ Et voici le [répo du serveur](https://github.com/Alexandre-RICHARD/Portfolio-Ba
 
 -   Mise à jour des packages npm
 -   Rajout de deux lignes de configurations pour webpack et vueJS
+
+### 1.0.4 `21 août 2023`
+
+-   Maintenant que j'ai récupéré le nom de domaine, actualisation de tous les liens sortant
+-   Mise à jour des packages npm
 
 </details>
