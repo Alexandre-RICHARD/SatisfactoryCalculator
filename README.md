@@ -1,3 +1,9 @@
+# ⚠️⚠️⚠️⚠️⚠️
+
+## Ce projet est à l'arrêt. Ce message est général à tous mes projets concernés et à un stade trop initial pour être intéressant. Actuellement arrêté en plein dans son développement, il est très probablement non-fonctionnel ou du moins, pas à 100%.
+
+# ⚠️⚠️⚠️⚠️⚠️
+
 # Satisfactory Calculator
 
 Bonjour, bienvenue sur ce repo de je l'espère quand ma hype pour ce jeu reviendra un projet de calculator comme il en existe déjà mais à ma sauce. Pas dans le but de faire mieux, mais c'est une véritable mine d'or en terme de potentiel d'apprentissage.
