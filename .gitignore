@@ -1,3 +1,6 @@
+.vscode/
 build/
 node_modules/
-public/.htaccess
+.env.prod
+.env.dev
+BEFORE/
