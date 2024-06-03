@@ -1,3 +1,3 @@
-export const common = {
+export default {
   selectLanguage: "Select your language :",
 };

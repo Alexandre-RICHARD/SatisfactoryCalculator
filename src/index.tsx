@@ -3,10 +3,13 @@ import "@styles/index.scss";
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import { App } from "./component/App";
+import { App } from "./react/App";
+import { TranslationProvider } from "./react/contexts/Translations.context";
 
 ReactDOM.createRoot(document.getElementById("app")!).render(
   <React.StrictMode>
-    <App />
+    <TranslationProvider>
+      <App />
+    </TranslationProvider>
   </React.StrictMode>,
 );

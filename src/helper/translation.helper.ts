@@ -1,29 +1,42 @@
-import { common as enCommon } from "../assets/translation/en/common";
-import { common as frCommon } from "../assets/translation/fr/common";
-import { LanguageEnum } from "../enum/language.enum";
-import { getState } from "../store/combined.store";
+import { supportedLanguages } from "../assets/resources/supportedLanguages";
+import type { LanguageEnum } from "../enum/language.enum";
+import type { TranslationsGroup } from "../enum/translationsGroup.enum";
+import type { TranslationFile, Translations } from "../types/translations";
 
-type Translation = Record<string, string>;
+export const TranslationHelper = {
+  getTranslationsFiles: async (
+    language: LanguageEnum,
+  ): Promise<Translations> => {
+    const translationsFiles = {} as Translations;
 
-const translationFiles: Record<LanguageEnum, Translation> = {
-  [LanguageEnum.EN]: enCommon,
-  [LanguageEnum.FR]: frCommon,
-};
+    const filesContexts = import.meta.glob(`../assets/translation/**/*.ts`);
+    await Promise.all(
+      Object.entries(filesContexts).map(async ([filePath]) => {
+        if (language === (filePath.split("/")[3] as LanguageEnum)) {
+          try {
+            const file = (await filesContexts[filePath]()) as {
+              default: TranslationFile;
+            };
+            const fileName = filePath.match(/\/([^/]+)\.ts$/);
+            if (fileName?.[1]) {
+              translationsFiles[fileName[1] as TranslationsGroup] =
+                file.default;
+            } else {
+              throw new Error(
+                "Unable to access file path to extract file name",
+              );
+            }
+          } catch (error) {
+            console.error(error);
+          }
+        }
+      }),
+    );
+    return translationsFiles;
+  },
 
-export const useTranslation = () => {
-  const { language } = getState();
-
-  const selectedLanguage = Object.values(LanguageEnum).includes(language)
-    ? language
-    : LanguageEnum.FR;
-
-  const getTranslation = (key: string): string => {
-    const translations = translationFiles[selectedLanguage][key];
-    if (translations) {
-      return translations;
-    }
-    return key;
-  };
-
-  return { getT: getTranslation };
+  isSupportedLanguage: (language: LanguageEnum): boolean => {
+    const languageFound = supportedLanguages.find((it) => it.key === language);
+    return languageFound?.isSupported ?? false;
+  },
 };

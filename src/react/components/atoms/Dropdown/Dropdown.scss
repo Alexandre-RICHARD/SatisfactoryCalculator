@@ -1,0 +1,24 @@
+@import "@styles/index";
+
+.dropdown-container {
+  position: relative;
+  width: 0;
+  height: 0;
+
+  .select-items {
+    position: absolute;
+    background-color: $color2;
+    padding: 8px 0;
+
+    .select-item {
+      padding: 2px 5px;
+      &:hover {
+        background-color: blue;
+      }
+
+      &:focus {
+        background-color: red;
+      }
+    }
+  }
+}
