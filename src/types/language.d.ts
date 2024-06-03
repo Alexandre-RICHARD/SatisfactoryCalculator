@@ -1,6 +1,6 @@
-import { LanguageEnum } from "../enum/language.enum";
+import type { LanguageEnum } from "../enums/language.enum";
 
-export interface LanguageType {
+export interface SupportedLanguagesTypes {
   key: LanguageEnum;
   isSupported: boolean;
 }

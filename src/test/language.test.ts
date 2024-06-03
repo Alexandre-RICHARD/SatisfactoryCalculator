@@ -1,9 +1,9 @@
 import { expect, test } from "vitest";
 
 import { supportedLanguages } from "../assets/resources/supportedLanguages";
-import { CookieEnum } from "../enum/cookie.enum";
-import { LanguageEnum } from "../enum/language.enum";
-import { CookieHelper } from "../helper/cookie.helper";
+import { CookieEnum } from "../enums/cookie.enum";
+import { LanguageEnum } from "../enums/language.enum";
+import { CookieHelper } from "../helpers/cookie.helper";
 // import { TranslationHelper as T } from "../helper/translation.helper";
 import { getState, useCombinedStore } from "../store/combined.store";
 

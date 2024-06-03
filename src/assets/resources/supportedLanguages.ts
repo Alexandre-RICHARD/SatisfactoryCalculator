@@ -1,7 +1,7 @@
-import { LanguageEnum } from "../../enum/language.enum";
-import type { LanguageType } from "../../types/language";
+import { LanguageEnum } from "../../enums/language.enum";
+import type { SupportedLanguagesTypes } from "../../types/language";
 
-export const supportedLanguages: LanguageType[] = [
+export const supportedLanguages: SupportedLanguagesTypes[] = [
   {
     key: LanguageEnum.AFRIKAANS,
     isSupported: false,

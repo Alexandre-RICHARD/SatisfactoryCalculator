@@ -1,4 +1,4 @@
-import type { CraftBuildingsEnum, ItemsEnum } from "../enum/items.enum";
+import type { CraftBuildingsEnum, ItemsEnum } from "../enums/items.enum";
 
 interface ItemsInOutType {
   itemName: ItemsEnum;

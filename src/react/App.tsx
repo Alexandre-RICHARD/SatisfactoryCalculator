@@ -2,19 +2,20 @@ import "./App.scss";
 
 import React from "react";
 
-import { TranslationsGroup } from "../enum/translationsGroup.enum";
+import { TranslationsFiles } from "../enums/TranslationsFiles.enum";
 import { Header } from "./components/organisms/Header/Header";
-import { useTranslations } from "./hook/useTranslations";
+import { useTranslations } from "./hooks/useTranslations";
 
-export const App: React.FC = () => {
+export const App = (): React.ReactElement => {
   const t = useTranslations();
 
+  // TODO
   // console.log(recipes.filter((it) => it.itemsOut.length > 1));
 
   return (
     <>
       <Header />
-      <p>{t(TranslationsGroup.COMMON, "selectLanguage")}</p>
+      <p>{t(TranslationsFiles.COMMON, "selectLanguage")}</p>
     </>
   );
 };

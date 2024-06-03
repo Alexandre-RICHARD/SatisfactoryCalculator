@@ -1,4 +1,4 @@
-import { CraftBuildingsEnum, ItemsEnum } from "../../enum/items.enum";
+import { CraftBuildingsEnum, ItemsEnum } from "../../enums/items.enum";
 import type { RecipesTypes } from "../../types/items";
 
 export const recipes: RecipesTypes[] = [

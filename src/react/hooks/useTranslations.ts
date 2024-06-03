@@ -1,11 +1,12 @@
 import { useContext } from "react";
 
-import type { TranslationsGroup } from "../../enum/translationsGroup.enum";
+import type { TranslationsFiles } from "../../enums/TranslationsFiles.enum";
 import { TranslationsContext } from "../contexts/Translations.context";
 
 export const useTranslations = () => {
   const translations = useContext(TranslationsContext);
-  const t = (group: TranslationsGroup, key: string): string => {
+  // TODO Mettre un objet de param
+  const t = (group: TranslationsFiles, key: string): string => {
     if (translations[group]?.[key]) return translations[group][key];
     return "";
   };

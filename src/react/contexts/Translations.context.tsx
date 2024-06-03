@@ -1,15 +1,15 @@
 import React, { createContext, useEffect, useState } from "react";
 
-import { TranslationHelper } from "../../helper/translation.helper";
+import { TranslationHelper } from "../../helpers/translation.helper";
 import { useCombinedStore } from "../../store/combined.store";
-import type { TranslationFile } from "../../types/translations";
+import type { TranslationsObject } from "../../types/translations";
 
 interface PropTypes {
   children: React.ReactElement;
 }
 
 export const TranslationsContext = createContext<
-  Record<string, TranslationFile>
+  Record<string, TranslationsObject>
 >({
   translations: {},
 });
@@ -22,6 +22,7 @@ export const TranslationProvider = ({
   const [translations, setTranslations] = useState({});
 
   useEffect(() => {
+    // TODO, peut-être moyen de revenir à plus simple comme avant
     const fetchData = async () => {
       try {
         const loadedTranslations =

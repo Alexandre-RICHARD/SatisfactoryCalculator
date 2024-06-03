@@ -1,4 +1,5 @@
 export enum ItemsEnum {
+  // TODO, ranger mieux que ça
   Iron_Ore = "Iron_Ore",
   Copper_Ore = "Copper_Ore",
   Caterium_Ore = "Caterium_Ore",

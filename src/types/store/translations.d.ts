@@ -1,4 +1,4 @@
-import type { LanguageEnum } from "../../enum/language.enum";
+import type { LanguageEnum } from "../../enums/language.enum";
 
 export interface TranslationState {
   language: LanguageEnum;

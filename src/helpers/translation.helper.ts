@@ -1,7 +1,6 @@
-import { supportedLanguages } from "../assets/resources/supportedLanguages";
-import type { LanguageEnum } from "../enum/language.enum";
-import type { TranslationsGroup } from "../enum/translationsGroup.enum";
-import type { TranslationFile, Translations } from "../types/translations";
+import type { LanguageEnum } from "../enums/language.enum";
+import type { TranslationsFiles } from "../enums/TranslationsFiles.enum";
+import type { Translations, TranslationsObject } from "../types/translations";
 
 export const TranslationHelper = {
   getTranslationsFiles: async (
@@ -15,11 +14,11 @@ export const TranslationHelper = {
         if (language === (filePath.split("/")[3] as LanguageEnum)) {
           try {
             const file = (await filesContexts[filePath]()) as {
-              default: TranslationFile;
+              default: TranslationsObject;
             };
             const fileName = filePath.match(/\/([^/]+)\.ts$/);
             if (fileName?.[1]) {
-              translationsFiles[fileName[1] as TranslationsGroup] =
+              translationsFiles[fileName[1] as TranslationsFiles] =
                 file.default;
             } else {
               throw new Error(
@@ -33,10 +32,5 @@ export const TranslationHelper = {
       }),
     );
     return translationsFiles;
-  },
-
-  isSupportedLanguage: (language: LanguageEnum): boolean => {
-    const languageFound = supportedLanguages.find((it) => it.key === language);
-    return languageFound?.isSupported ?? false;
   },
 };
