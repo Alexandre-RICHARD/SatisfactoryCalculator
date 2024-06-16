@@ -3,9 +3,11 @@ import { ExistHelper } from "./exist.helper";
 export const CookieHelper = {
   getCookie: (name: string): string | undefined => {
     const decodedCookies = decodeURIComponent(document.cookie);
-    const splitedCookie = decodedCookies.split(";").map((it) => it.trim());
-    const foundCookie = splitedCookie.find((it) => {
-      return it.startsWith(`${name}=`);
+    const splitedCookies = decodedCookies
+      .split(";")
+      .map((cookie) => cookie.trim());
+    const foundCookie = splitedCookies.find((cookie) => {
+      return cookie.startsWith(`${name}=`);
     });
     if (foundCookie) {
       return foundCookie.substring(name.length + 1);

@@ -41,15 +41,15 @@ export const Dropdown = ({
   return (
     <div className="dropdown-container">
       <ul className="select-items">
-        {items.map((it, index) => (
+        {items.map((item, index) => (
           <button
-            key={it.value || index}
+            key={item.value || index}
             type="button"
             className="select-item"
             onClick={(event) => handleChange(event)}
-            value={it.value}
+            value={item.value}
           >
-            {it.label}
+            {item.label}
           </button>
         ))}
       </ul>

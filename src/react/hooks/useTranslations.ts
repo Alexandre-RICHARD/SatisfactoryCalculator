@@ -6,8 +6,8 @@ import { TranslationsContext } from "../contexts/Translations.context";
 export const useTranslations = () => {
   const translations = useContext(TranslationsContext);
   // TODO Mettre un objet de param
-  const t = (group: TranslationsFiles, key: string): string => {
-    if (translations[group]?.[key]) return translations[group][key];
+  const t = (files: TranslationsFiles, key: string): string => {
+    if (translations[files]?.[key]) return translations[files][key];
     return "";
   };
 

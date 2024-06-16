@@ -16,7 +16,9 @@ export const TranslationsStoreHelper = {
   },
 
   isSupportedLanguage: (language: LanguageEnum): boolean => {
-    const languageFound = supportedLanguages.find((it) => it.key === language);
+    const languageFound = supportedLanguages.find(
+      (supportedLanguage) => supportedLanguage.key === language,
+    );
     return languageFound?.isSupported ?? false;
   },
 };

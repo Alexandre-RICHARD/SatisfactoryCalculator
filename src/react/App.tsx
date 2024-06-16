@@ -15,7 +15,7 @@ export const App = (): React.ReactElement => {
   return (
     <>
       <Header />
-      <p>{t(TranslationsFiles.COMMON, "selectLanguage")}</p>
+      <p style={{ color: "white" }}>{t(TranslationsFiles.COMMON, "exemple")}</p>
     </>
   );
 };

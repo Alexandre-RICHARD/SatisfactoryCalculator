@@ -33,11 +33,15 @@ test("Change language", () => {
 });
 
 test("Supported languages and languages enum should be match", () => {
-  const supportedLanguagesKey = supportedLanguages.map((it) => it.key);
+  const supportedLanguagesKey = supportedLanguages.map(
+    (supportedLanguage) => supportedLanguage.key,
+  );
   const languagesEnumKey = Object.values(LanguageEnum);
   const areArrayIdentical =
     supportedLanguagesKey.length === languagesEnumKey.length &&
-    supportedLanguagesKey.every((it, index) => it === languagesEnumKey[index]);
+    supportedLanguagesKey.every(
+      (languageKey, index) => languageKey === languagesEnumKey[index],
+    );
 
   expect(areArrayIdentical).toBeTruthy();
 });

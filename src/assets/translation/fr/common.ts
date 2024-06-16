@@ -1,3 +1,3 @@
 export default {
-  selectLanguage: "Sélectionner votre langue :",
+  exemple: "Mon exemple de texte",
 };

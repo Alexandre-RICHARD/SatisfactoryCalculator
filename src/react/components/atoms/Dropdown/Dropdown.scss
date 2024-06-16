@@ -9,15 +9,18 @@
     position: absolute;
     background-color: $color2;
     padding: 8px 0;
+    max-height: 250px;
+    overflow-y: auto;
 
     .select-item {
-      padding: 2px 5px;
+      width: 100%;
+      padding: 4px 13px;
       &:hover {
-        background-color: blue;
+        background-color: #252525;
       }
 
       &:focus {
-        background-color: red;
+        background-color: #1f1818;
       }
     }
   }
