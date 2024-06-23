@@ -1,3 +1,4 @@
+import { DropdownItemWithIcon, Selector } from "@nexus/src/nexusExporter";
 import type React from "react";
 
 import { nativeLanguageNames } from "../../../../assets/resources/nativeLanguageNames";
@@ -6,8 +7,6 @@ import type { LanguageEnum } from "../../../../enums/language.enum";
 import { TranslationsFiles } from "../../../../enums/TranslationsFiles.enum";
 import { useCombinedStore } from "../../../../store/combined.store";
 import { useTranslations } from "../../../hooks/useTranslations";
-import { DropdownItemWithIcon } from "../../atoms/DropdownItemWithIcon/DropdownItemWithIcon";
-import { Selector } from "../Selector/Selector";
 
 export const LanguagesSelector = (): React.ReactElement => {
   const t = useTranslations();
