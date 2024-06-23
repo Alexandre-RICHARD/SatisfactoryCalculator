@@ -11,9 +11,11 @@ export default defineConfig(({ mode }) => {
         "@styles": path.resolve(__dirname, "src/styles"),
         "@nexus": path.resolve(__dirname, "nexus"),
       },
+      dedupe: ["react", "react-dom"],
     },
     plugins: [react()],
     build: {
+      assetsInlineLimit: 0,
       assetsDir: "./",
       cssCodeSplit: false,
       manifest: true,

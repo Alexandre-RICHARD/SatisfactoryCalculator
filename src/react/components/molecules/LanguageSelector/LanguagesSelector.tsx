@@ -1,4 +1,8 @@
-import { DropdownItemWithIcon, Selector } from "@nexus/src/nexusExporter";
+import {
+  DropdownItemWithIcon,
+  ImageHelper,
+  Selector,
+} from "@nexus/src/nexusExporter";
 import type React from "react";
 
 import { nativeLanguageNames } from "../../../../assets/resources/nativeLanguageNames";
@@ -33,7 +37,9 @@ export const LanguagesSelector = (): React.ReactElement => {
             icon={
               <img
                 alt={`Country flag of ${oneLanguage.countryFlag}`}
-                src={`/src/assets/images/languagesFlags/${oneLanguage.countryFlag}.png`}
+                src={ImageHelper.dynamicImageImporter(
+                  `languagesFlags/${oneLanguage.countryFlag}.png`,
+                )}
               />
             }
             label={
