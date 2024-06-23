@@ -1,7 +1,7 @@
+import { CookieHelper } from "@nexus/src/nexusExporter";
 import type { StateCreator } from "zustand";
 
 import { CookieEnum } from "../enums/cookie.enum";
-import { CookieHelper } from "../helpers/cookie.helper";
 import type { TranslationState } from "../types/store/translations";
 import { TranslationsStoreHelper } from "./helpers/translations.store.helper";
 

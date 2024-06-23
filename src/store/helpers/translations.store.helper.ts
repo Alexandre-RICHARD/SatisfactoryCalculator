@@ -1,7 +1,8 @@
+import { CookieHelper } from "@nexus/src/nexusExporter";
+
 import { supportedLanguages } from "../../assets/resources/supportedLanguages";
 import { CookieEnum } from "../../enums/cookie.enum";
 import { LanguageEnum } from "../../enums/language.enum";
-import { CookieHelper } from "../../helpers/cookie.helper";
 
 export const TranslationsStoreHelper = {
   languageInitiator: (): LanguageEnum => {

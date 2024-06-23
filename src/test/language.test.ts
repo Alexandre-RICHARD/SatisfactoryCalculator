@@ -1,9 +1,9 @@
+import { CookieHelper } from "@nexus/src/nexusExporter";
 import { expect, test } from "vitest";
 
 import { supportedLanguages } from "../assets/resources/supportedLanguages";
 import { CookieEnum } from "../enums/cookie.enum";
 import { LanguageEnum } from "../enums/language.enum";
-import { CookieHelper } from "../helpers/cookie.helper";
 // import { TranslationHelper as T } from "../helper/translation.helper";
 import { getState, useCombinedStore } from "../store/combined.store";
 
