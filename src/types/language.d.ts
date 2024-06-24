@@ -1,7 +1,7 @@
 import type { LanguageEnum } from "../enums/language.enum";
 
-export interface SupportedLanguagesTypes {
+export type SupportedLanguagesTypes = {
   key: LanguageEnum;
   countryFlag: string;
   isSupported: boolean;
-}
+};

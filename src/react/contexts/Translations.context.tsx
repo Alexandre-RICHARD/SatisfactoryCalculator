@@ -4,9 +4,9 @@ import { TranslationHelper } from "../../helpers/translation.helper";
 import { useCombinedStore } from "../../store/combined.store";
 import type { TranslationsObject } from "../../types/translations";
 
-interface PropTypes {
+type PropTypes = {
   children: React.ReactElement;
-}
+};
 
 export const TranslationsContext = createContext<
   Record<string, TranslationsObject>

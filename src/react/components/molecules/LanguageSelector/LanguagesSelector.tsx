@@ -1,6 +1,7 @@
 import {
   DropdownItemWithIcon,
   ImageHelper,
+  type SelectItems,
   Selector,
 } from "@nexus/src/nexusExporter";
 import type React from "react";
@@ -17,7 +18,7 @@ export const LanguagesSelector = (): React.ReactElement => {
 
   const setLanguage = useCombinedStore((state) => state.setLanguage);
 
-  const languagesSelectOption = supportedLanguages
+  const languagesSelectOption: SelectItems[] = supportedLanguages
     .filter((oneLanguage) => oneLanguage.isSupported)
     .sort((a, b) => {
       const stringA = t(TranslationsFiles.LANGUAGES, a.key);

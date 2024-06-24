@@ -1,6 +1,6 @@
 import type { LanguageEnum } from "../../enums/language.enum";
 
-export interface TranslationState {
+export type TranslationState = {
   language: LanguageEnum;
   setLanguage: (newLanguage: LanguageEnum) => void;
-}
+};
