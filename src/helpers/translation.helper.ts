@@ -1,4 +1,5 @@
-import type { LanguageEnum } from "../enums/language.enum";
+import type { LanguageEnum } from "@nexus/src/nexusExporter";
+
 import type { TranslationsFiles } from "../enums/TranslationsFiles.enum";
 import type { Translations, TranslationsObject } from "../types/translations";
 
@@ -8,7 +9,7 @@ export const TranslationHelper = {
   ): Promise<Translations> => {
     const translationsFiles = {} as Translations;
 
-    const filesContexts = import.meta.glob(`../assets/translation/**/*.ts`);
+    const filesContexts = import.meta.glob(`../assets/translations/**/*.ts`);
     await Promise.all(
       Object.entries(filesContexts).map(async ([filePath]) => {
         if (language === (filePath.split("/")[3] as LanguageEnum)) {

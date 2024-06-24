@@ -1,4 +1,4 @@
-import type { CraftBuildingsEnum, ItemsEnum } from "../enums/items.enum";
+import type { CraftBuildingsEnum, ItemsEnum } from "../../enums/items.enum";
 
 type ItemsInOutType = {
   itemName: ItemsEnum;

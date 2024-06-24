@@ -1,4 +1,4 @@
-import type { LanguageEnum } from "../../enums/language.enum";
+import type { LanguageEnum } from "@nexus/src/nexusExporter";
 
 export type TranslationState = {
   language: LanguageEnum;

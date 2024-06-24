@@ -1,14 +1,15 @@
 import {
   DropdownItemWithIcon,
   ImageHelper,
+  type LanguageEnum,
+  languageToCountry,
+  nativeLanguageNames,
   type SelectItems,
   Selector,
 } from "@nexus/src/nexusExporter";
 import type React from "react";
 
-import { nativeLanguageNames } from "../../../../assets/resources/nativeLanguageNames";
-import { supportedLanguages } from "../../../../assets/resources/supportedLanguages";
-import type { LanguageEnum } from "../../../../enums/language.enum";
+import { supportedLanguages } from "../../../../dictionnary/supportedLanguages";
 import { TranslationsFiles } from "../../../../enums/TranslationsFiles.enum";
 import { useCombinedStore } from "../../../../store/combined.store";
 import { useTranslations } from "../../../hooks/useTranslations";
@@ -19,10 +20,9 @@ export const LanguagesSelector = (): React.ReactElement => {
   const setLanguage = useCombinedStore((state) => state.setLanguage);
 
   const languagesSelectOption: SelectItems[] = supportedLanguages
-    .filter((oneLanguage) => oneLanguage.isSupported)
-    .sort((a, b) => {
-      const stringA = t(TranslationsFiles.LANGUAGES, a.key);
-      const stringB = t(TranslationsFiles.LANGUAGES, b.key);
+    .sort((languageA, languageB) => {
+      const stringA = t(TranslationsFiles.LANGUAGES, languageA);
+      const stringB = t(TranslationsFiles.LANGUAGES, languageB);
       if (stringA < stringB) {
         return -1;
       }
@@ -32,31 +32,33 @@ export const LanguagesSelector = (): React.ReactElement => {
       return 0;
     })
     .map((oneLanguage) => {
+      const country = languageToCountry[oneLanguage];
       return {
         label: (
           <DropdownItemWithIcon
             icon={
               <img
-                alt={`Country flag of ${oneLanguage.countryFlag}`}
+                alt={`Country flag of ${country}`}
                 src={ImageHelper.dynamicImageImporter(
-                  `languagesFlags/${oneLanguage.countryFlag}.png`,
+                  `languagesFlags/${country}.png`,
                 )}
               />
             }
             label={
               <>
-                <p>{t(TranslationsFiles.LANGUAGES, oneLanguage.key)}</p>
-                <span>({nativeLanguageNames[oneLanguage.key]})</span>
+                <p>{t(TranslationsFiles.LANGUAGES, oneLanguage)}</p>
+                <span>({nativeLanguageNames[oneLanguage]})</span>
               </>
             }
-            key={oneLanguage.key}
+            key={oneLanguage}
           />
         ),
-        value: oneLanguage.key,
+        value: oneLanguage,
       };
     });
 
   return (
+    // TODO Rajouter un props selectedItems pour le mettre en valeur
     <Selector
       id="language"
       items={languagesSelectOption}

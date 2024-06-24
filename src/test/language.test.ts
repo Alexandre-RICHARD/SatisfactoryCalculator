@@ -1,9 +1,8 @@
-import { CookieHelper } from "@nexus/src/nexusExporter";
+import { CookieHelper, LanguageEnum } from "@nexus/src/nexusExporter";
 import { expect, test } from "vitest";
 
-import { supportedLanguages } from "../assets/resources/supportedLanguages";
+import { supportedLanguages } from "../dictionnary/supportedLanguages";
 import { CookieEnum } from "../enums/cookie.enum";
-import { LanguageEnum } from "../enums/language.enum";
 // import { TranslationHelper as T } from "../helper/translation.helper";
 import { getState, useCombinedStore } from "../store/combined.store";
 
@@ -32,16 +31,11 @@ test("Change language", () => {
   expect(newLanguageFR).toBe(LanguageEnum.FRENCH);
 });
 
-test("Supported languages and languages enum should be match", () => {
-  const supportedLanguagesKey = supportedLanguages.map(
-    (supportedLanguage) => supportedLanguage.key,
-  );
+test("Supported languages should be include in languagesEnum", () => {
   const languagesEnumKey = Object.values(LanguageEnum);
-  const areArrayIdentical =
-    supportedLanguagesKey.length === languagesEnumKey.length &&
-    supportedLanguagesKey.every(
-      (languageKey, index) => languageKey === languagesEnumKey[index],
-    );
+  const areSupportedLanguageExists = supportedLanguages.every((languageKey) =>
+    languagesEnumKey.includes(languageKey),
+  );
 
-  expect(areArrayIdentical).toBeTruthy();
+  expect(areSupportedLanguageExists).toBeTruthy();
 });

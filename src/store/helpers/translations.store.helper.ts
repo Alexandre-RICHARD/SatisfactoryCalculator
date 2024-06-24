@@ -1,8 +1,7 @@
-import { CookieHelper } from "@nexus/src/nexusExporter";
+import { CookieHelper, LanguageEnum } from "@nexus/src/nexusExporter";
 
-import { supportedLanguages } from "../../assets/resources/supportedLanguages";
+import { supportedLanguages } from "../../dictionnary/supportedLanguages";
 import { CookieEnum } from "../../enums/cookie.enum";
-import { LanguageEnum } from "../../enums/language.enum";
 
 export const TranslationsStoreHelper = {
   languageInitiator: (): LanguageEnum => {
@@ -18,8 +17,8 @@ export const TranslationsStoreHelper = {
 
   isSupportedLanguage: (language: LanguageEnum): boolean => {
     const languageFound = supportedLanguages.find(
-      (supportedLanguage) => supportedLanguage.key === language,
+      (supportedLanguage) => supportedLanguage === language,
     );
-    return languageFound?.isSupported ?? false;
+    return !!languageFound ?? false;
   },
 };

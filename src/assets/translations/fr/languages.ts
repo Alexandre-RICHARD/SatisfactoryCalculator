@@ -1,4 +1,4 @@
-import { LanguageEnum } from "../../../enums/language.enum";
+import { LanguageEnum } from "@nexus/src/nexusExporter";
 
 export default {
   [LanguageEnum.ENGLISH]: "Anglais",
