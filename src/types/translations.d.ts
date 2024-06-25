@@ -1,4 +1,4 @@
-import type { TranslationsFiles } from "../enums/TranslationsFiles.enum";
+import type { TranslationsFilesTypes } from "../enums/translationsFiles.enum";
 
 export type TranslationsObject = Record<string, string>;
-export type Translations = Record<TranslationsFiles, TranslationsObject>;
+export type Translations = Record<TranslationsFilesTypes, TranslationsObject>;

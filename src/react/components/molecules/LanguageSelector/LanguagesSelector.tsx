@@ -10,7 +10,7 @@ import {
 import type React from "react";
 
 import { supportedLanguages } from "../../../../dictionnary/supportedLanguages";
-import { TranslationsFiles } from "../../../../enums/TranslationsFiles.enum";
+import { TranslationsFilesEnum } from "../../../../enums/translationsFiles.enum";
 import { useCombinedStore } from "../../../../store/combined.store";
 import { useTranslations } from "../../../hooks/useTranslations";
 
@@ -21,8 +21,8 @@ export const LanguagesSelector = (): React.ReactElement => {
 
   const languagesSelectOption: SelectItems[] = supportedLanguages
     .sort((languageA, languageB) => {
-      const stringA = t(TranslationsFiles.LANGUAGES, languageA);
-      const stringB = t(TranslationsFiles.LANGUAGES, languageB);
+      const stringA = t(TranslationsFilesEnum.LANGUAGES, languageA);
+      const stringB = t(TranslationsFilesEnum.LANGUAGES, languageB);
       if (stringA < stringB) {
         return -1;
       }
@@ -45,8 +45,9 @@ export const LanguagesSelector = (): React.ReactElement => {
               />
             }
             label={
+              // TODO Le style est mal géré. faire une passe sur tous les styles dans le nexus
               <>
-                <p>{t(TranslationsFiles.LANGUAGES, oneLanguage)}</p>
+                <p>{t(TranslationsFilesEnum.LANGUAGES, oneLanguage)}</p>
                 <span>({nativeLanguageNames[oneLanguage]})</span>
               </>
             }

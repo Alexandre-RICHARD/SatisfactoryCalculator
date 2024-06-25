@@ -19,6 +19,6 @@ export const TranslationsStoreHelper = {
     const languageFound = supportedLanguages.find(
       (supportedLanguage) => supportedLanguage === language,
     );
-    return !!languageFound ?? false;
+    return !!languageFound || false;
   },
 };

@@ -2,7 +2,7 @@ import "./App.scss";
 
 import React from "react";
 
-import { TranslationsFiles } from "../enums/TranslationsFiles.enum";
+import { TranslationsFilesEnum } from "../enums/translationsFiles.enum";
 import { Header } from "./components/organisms/Header/Header";
 import { useTranslations } from "./hooks/useTranslations";
 
@@ -15,7 +15,9 @@ export const App = (): React.ReactElement => {
   return (
     <>
       <Header />
-      <p style={{ color: "white" }}>{t(TranslationsFiles.COMMON, "exemple")}</p>
+      <p style={{ color: "white" }}>
+        {t(TranslationsFilesEnum.COMMON, "exemple")}
+      </p>
     </>
   );
 };
