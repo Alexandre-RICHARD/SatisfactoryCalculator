@@ -1,5 +1,5 @@
-import { CraftBuildingsEnum, ItemsEnum } from "../../enums/items.enum";
-import type { RecipesTypes } from "../../types/satisfactory/items";
+import { CraftBuildingsEnum, ItemsEnum } from "../enums/items.enum";
+import type { RecipesTypes } from "../types/satisfactory/items";
 
 export const recipes: RecipesTypes[] = [
   //! Iron_Ingot-Standard

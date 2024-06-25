@@ -1,11 +1,13 @@
 import { CookieHelper } from "@nexus/src/nexusExporter";
 import type { StateCreator } from "zustand";
 
-import { CookieEnum } from "../enums/cookie.enum";
-import type { TranslationState } from "../types/store/translations";
-import { TranslationsStoreHelper } from "./helpers/translations.store.helper";
+import { CookieEnum } from "../../enums/cookie.enum";
+import { TranslationsStoreHelper } from "../../helpers/store/translations.store.helper";
+import type { TranslationSliceTypes } from "../../types/store/storeSlices/translations";
 
-export const useTranslationStore: StateCreator<TranslationState> = (set) => ({
+export const useTranslationStore: StateCreator<TranslationSliceTypes> = (
+  set,
+) => ({
   language: TranslationsStoreHelper.languageInitiator(),
   setLanguage: (newLanguage) => {
     CookieHelper.setCookie(CookieEnum.LANG, newLanguage, 24 * 365 * 100);

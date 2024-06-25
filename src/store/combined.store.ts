@@ -1,9 +1,9 @@
 import { create } from "zustand";
 
-import type { StoreTypes } from "../types/store/store";
-import { useTranslationStore } from "./translation.store";
+import type { CombinedStoreTypes } from "../types/store/combinedStore";
+import { useTranslationStore } from "./storeSlices/translation.store";
 
-export const useCombinedStore = create<StoreTypes>()((...a) => ({
+export const useCombinedStore = create<CombinedStoreTypes>()((...a) => ({
   ...useTranslationStore(...a),
 }));
 

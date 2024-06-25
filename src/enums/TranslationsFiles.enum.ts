@@ -1,4 +1,4 @@
-import { ReservedTranslationsFiles } from "../../nexus/src/nexusExporter";
+import { ReservedTranslationsFiles } from "@nexus/src/nexusExporter";
 
 enum LocalTranslationsFiles {
   COMMON = "common",

@@ -4,22 +4,22 @@ import {
   type LanguageEnum,
   languageToCountry,
   nativeLanguageNames,
-  type SelectItems,
+  type SelectItemsTypes,
   Selector,
 } from "@nexus/src/nexusExporter";
 import type React from "react";
 
-import { supportedLanguages } from "../../../../dictionnary/supportedLanguages";
+import { supportedLanguages } from "../../../../dictionnaries/supportedLanguages";
 import { TranslationsFilesEnum } from "../../../../enums/translationsFiles.enum";
 import { useCombinedStore } from "../../../../store/combined.store";
-import { useTranslations } from "../../../hooks/useTranslations";
+import { useTranslations } from "../../../hooks/useTranslations.hook";
 
 export const LanguagesSelector = (): React.ReactElement => {
   const t = useTranslations();
 
   const setLanguage = useCombinedStore((state) => state.setLanguage);
 
-  const languagesSelectOption: SelectItems[] = supportedLanguages
+  const languagesSelectOption: SelectItemsTypes[] = supportedLanguages
     .sort((languageA, languageB) => {
       const stringA = t(TranslationsFilesEnum.LANGUAGES, languageA);
       const stringB = t(TranslationsFilesEnum.LANGUAGES, languageB);

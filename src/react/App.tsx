@@ -4,7 +4,7 @@ import React from "react";
 
 import { TranslationsFilesEnum } from "../enums/translationsFiles.enum";
 import { Header } from "./components/organisms/Header/Header";
-import { useTranslations } from "./hooks/useTranslations";
+import { useTranslations } from "./hooks/useTranslations.hook";
 
 export const App = (): React.ReactElement => {
   const t = useTranslations();
