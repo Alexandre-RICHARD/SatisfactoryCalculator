@@ -6,13 +6,13 @@ import {
   nativeLanguageNames,
   type SelectItemsTypes,
   Selector,
+  useTranslations,
 } from "@nexus/src/nexusExporter";
 import type React from "react";
 
 import { supportedLanguages } from "../../../../dictionnaries/supportedLanguages";
 import { TranslationsFilesEnum } from "../../../../enums/translationsFiles.enum";
 import { useCombinedStore } from "../../../../store/combined.store";
-import { useTranslations } from "../../../hooks/useTranslations.hook";
 
 export const LanguagesSelector = (): React.ReactElement => {
   const t = useTranslations();
