@@ -16,7 +16,7 @@ import { TranslationsFilesEnum } from "../../../../enums/translationsFiles.enum"
 import { useCombinedStore } from "../../../../store/combined.store";
 
 export const LanguagesSelector = (): React.ReactElement => {
-  const t = useTranslations();
+  const t = useTranslations<TranslationsFilesEnum>();
 
   const setLanguage = useCombinedStore((state) => state.setLanguage);
 

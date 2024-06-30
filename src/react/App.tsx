@@ -3,6 +3,7 @@ import "./App.scss";
 import { TranslationProvider } from "@nexus/src/nexusExporter";
 import React from "react";
 
+import type { TranslationsFilesEnum } from "../enums/translationsFiles.enum";
 import { useCombinedStore } from "../store/combined.store";
 import { Header } from "./components/organisms/Header/Header";
 
@@ -18,7 +19,7 @@ export const App = (): React.ReactElement => {
   // console.log(recipes.filter((it) => it.itemsOut.length > 1));
 
   return (
-    <TranslationProvider
+    <TranslationProvider<TranslationsFilesEnum>
       filesContexts={filesContexts}
       language={language}
     >
