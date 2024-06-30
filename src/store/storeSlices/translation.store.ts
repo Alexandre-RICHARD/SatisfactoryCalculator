@@ -11,7 +11,10 @@ import type { TranslationSliceTypes } from "../../types/store/storeSlices/transl
 export const useTranslationStore: StateCreator<TranslationSliceTypes> = (
   set,
 ) => ({
-  language: TranslationsStoreHelper.languageInitiator(supportedLanguages),
+  language: TranslationsStoreHelper.languageInitiator(
+    supportedLanguages,
+    CookieEnum.LANG,
+  ),
   setLanguage: (newLanguage) => {
     CookieHelper.setCookie(CookieEnum.LANG, newLanguage, 24 * 365 * 100);
     set(() => ({ language: newLanguage }));

@@ -1,15 +1,4 @@
-// TODO Comprendre pourquoi le @ ne fonctionne pas
-import { ReservedTranslationsFiles } from "../../nexus/src/nexusExporter";
-
-enum LocalTranslationsFiles {
+export enum TranslationsFilesEnum {
+  LANGUAGES = "languages",
   COMMON = "common",
 }
-
-export const TranslationsFilesEnum = {
-  ...LocalTranslationsFiles,
-  ...ReservedTranslationsFiles,
-};
-
-export type TranslationsFilesTypes =
-  | LocalTranslationsFiles
-  | ReservedTranslationsFiles;

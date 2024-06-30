@@ -6,6 +6,7 @@ import {
   nativeLanguageNames,
   type SelectItemsTypes,
   Selector,
+  SortHelper,
   useTranslations,
 } from "@nexus/src/nexusExporter";
 import type React from "react";
@@ -23,13 +24,7 @@ export const LanguagesSelector = (): React.ReactElement => {
     .sort((languageA, languageB) => {
       const stringA = t(TranslationsFilesEnum.LANGUAGES, languageA);
       const stringB = t(TranslationsFilesEnum.LANGUAGES, languageB);
-      if (stringA < stringB) {
-        return -1;
-      }
-      if (stringA > stringB) {
-        return 1;
-      }
-      return 0;
+      return SortHelper.getSortStringValue(stringA, stringB);
     })
     .map((oneLanguage) => {
       const country = languageToCountry[oneLanguage];
