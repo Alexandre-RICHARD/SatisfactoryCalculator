@@ -1,6 +1,5 @@
 import {
-  DropdownItemWithIcon,
-  ImageHelper,
+  LabelWithIcon,
   type LanguageEnum,
   languageToCountry,
   nativeLanguageNames,
@@ -10,15 +9,19 @@ import {
   useTranslations,
 } from "@nexus/src/nexusExporter";
 import type React from "react";
+import { useShallow } from "zustand/react/shallow";
 
 import { supportedLanguages } from "../../../../dictionnaries/supportedLanguages";
 import { TranslationsFilesEnum } from "../../../../enums/translationsFiles.enum";
 import { useCombinedStore } from "../../../../store/combined.store";
+import { LanguageSelectorFlag } from "../../atoms/LanguageSelectorFlag/LanguageSelectorFlag";
 
 export const LanguagesSelector = (): React.ReactElement => {
   const t = useTranslations<TranslationsFilesEnum>();
 
-  const setLanguage = useCombinedStore((state) => state.setLanguage);
+  const [language, setLanguage] = useCombinedStore(
+    useShallow((state) => [state.language, state.setLanguage]),
+  );
 
   const languagesSelectOption: SelectItemsTypes[] = supportedLanguages
     .sort((languageA, languageB) => {
@@ -30,15 +33,9 @@ export const LanguagesSelector = (): React.ReactElement => {
       const country = languageToCountry[oneLanguage];
       return {
         label: (
-          <DropdownItemWithIcon
-            icon={
-              <img
-                alt={`Country flag of ${country}`}
-                src={ImageHelper.dynamicImageImporter(
-                  `languagesFlags/${country}.png`,
-                )}
-              />
-            }
+          <LabelWithIcon
+            key={oneLanguage}
+            icon={<LanguageSelectorFlag country={country} />}
             label={
               // TODO Le style est mal géré. faire une passe sur tous les styles dans le nexus
               <>
@@ -46,7 +43,6 @@ export const LanguagesSelector = (): React.ReactElement => {
                 <span>({nativeLanguageNames[oneLanguage]})</span>
               </>
             }
-            key={oneLanguage}
           />
         ),
         value: oneLanguage,
@@ -57,6 +53,12 @@ export const LanguagesSelector = (): React.ReactElement => {
     // TODO Rajouter un props selectedItems pour le mettre en valeur
     <Selector
       id="language"
+      label={
+        <LabelWithIcon
+          icon={<LanguageSelectorFlag country={languageToCountry[language]} />}
+          label={<p>{language.toUpperCase()}</p>}
+        />
+      }
       items={languagesSelectOption}
       onSelect={(item) => setLanguage(item as LanguageEnum)}
     />
