@@ -1,0 +1,11 @@
+.dropdown-language-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  span {
+    font-size: 0.8rem;
+    color: #d5d5d5;
+    font-style: italic;
+  }
+}

@@ -1,3 +1,5 @@
+import "./LanguagesSelector.scss";
+
 import {
   LabelWithIcon,
   type LanguageEnum,
@@ -37,11 +39,12 @@ export const LanguagesSelector = (): React.ReactElement => {
             key={oneLanguage}
             icon={<LanguageSelectorFlag country={country} />}
             label={
-              // TODO Le style est mal géré. faire une passe sur tous les styles dans le nexus
-              <>
+              <div className="dropdown-language-label">
                 <p>{t(TranslationsFilesEnum.LANGUAGES, oneLanguage)}</p>
-                <span>({nativeLanguageNames[oneLanguage]})</span>
-              </>
+                {language !== oneLanguage && (
+                  <span>({nativeLanguageNames[oneLanguage]})</span>
+                )}
+              </div>
             }
           />
         ),
@@ -50,7 +53,6 @@ export const LanguagesSelector = (): React.ReactElement => {
     });
 
   return (
-    // TODO Rajouter un props selectedItems pour le mettre en valeur
     <Selector
       id="language"
       label={
@@ -60,6 +62,8 @@ export const LanguagesSelector = (): React.ReactElement => {
         />
       }
       items={languagesSelectOption}
+      selectedItem={language}
+      position="bottom-right"
       onSelect={(item) => setLanguage(item as LanguageEnum)}
     />
   );
