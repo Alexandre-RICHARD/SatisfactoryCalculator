@@ -63,7 +63,7 @@ export const LanguagesSelector = (): React.ReactElement => {
       }
       items={languagesSelectOption}
       selectedItem={language}
-      position="bottom-right"
+      position="bottom-left"
       onSelect={(item) => setLanguage(item as LanguageEnum)}
     />
   );
