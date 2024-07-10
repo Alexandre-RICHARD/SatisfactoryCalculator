@@ -3,7 +3,7 @@ import "./Header.scss";
 import { useTranslations } from "@nexus/src/nexusExporter";
 import React from "react";
 
-import { TranslationsFilesEnum } from "../../../../enums/translationsFiles.enum";
+import { TranslationsFilesEnum } from "../../../../enums/TranslationsFiles.enum";
 import { useCombinedStore } from "../../../../store/combined.store";
 import { LanguagesSelector } from "../../molecules/LanguageSelector/LanguagesSelector";
 
