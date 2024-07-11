@@ -19,7 +19,7 @@ import { useCombinedStore } from "../../../../store/combined.store";
 import { LanguageSelectorFlag } from "../../atoms/LanguageSelectorFlag/LanguageSelectorFlag";
 
 export const LanguagesSelector = (): React.ReactElement => {
-  const t = useTranslations<TranslationsFilesEnum>();
+  const t = useTranslations();
 
   const [language, setLanguage] = useCombinedStore(
     useShallow((state) => [state.language, state.setLanguage]),

@@ -8,7 +8,7 @@ import { useCombinedStore } from "../../../../store/combined.store";
 import { LanguagesSelector } from "../../molecules/LanguageSelector/LanguagesSelector";
 
 export const Header = (): React.ReactElement => {
-  const t = useTranslations<TranslationsFilesEnum>();
+  const t = useTranslations();
 
   const language = useCombinedStore((state) => state.language);
 
