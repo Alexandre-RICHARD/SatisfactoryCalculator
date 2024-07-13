@@ -1,14 +1,14 @@
 import "./Header.scss";
 
-import { useTranslations } from "@nexus/src/nexusExporter";
 import React from "react";
 
 import { TranslationsFilesEnum } from "../../../../enums/translationsFiles.enum";
 import { useCombinedStore } from "../../../../store/combined.store";
+import { useCustomTranslations } from "../../hooks/useCustomTranslations";
 import { LanguagesSelector } from "../../molecules/LanguageSelector/LanguagesSelector";
 
 export const Header = (): React.ReactElement => {
-  const t = useTranslations();
+  const t = useCustomTranslations();
 
   const language = useCombinedStore((state) => state.language);
 

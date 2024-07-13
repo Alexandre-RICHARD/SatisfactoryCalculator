@@ -8,7 +8,6 @@ import {
   type SelectItemsTypes,
   Selector,
   SortHelper,
-  useTranslations,
 } from "@nexus/src/nexusExporter";
 import type React from "react";
 import { useShallow } from "zustand/react/shallow";
@@ -17,9 +16,10 @@ import { supportedLanguages } from "../../../../dictionnaries/supportedLanguages
 import { TranslationsFilesEnum } from "../../../../enums/translationsFiles.enum";
 import { useCombinedStore } from "../../../../store/combined.store";
 import { LanguageSelectorFlag } from "../../atoms/LanguageSelectorFlag/LanguageSelectorFlag";
+import { useCustomTranslations } from "../../hooks/useCustomTranslations";
 
 export const LanguagesSelector = (): React.ReactElement => {
-  const t = useTranslations();
+  const t = useCustomTranslations();
 
   const [language, setLanguage] = useCombinedStore(
     useShallow((state) => [state.language, state.setLanguage]),
