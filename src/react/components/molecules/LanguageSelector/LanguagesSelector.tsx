@@ -15,7 +15,7 @@ import {
 import type React from "react";
 import { useShallow } from "zustand/react/shallow";
 
-import { supportedLanguages } from "../../../../dictionnaries/supportedLanguages";
+import { supportedLanguages } from "../../../../dictionnaries/supportedLanguages.dictionnary";
 import { TranslationsFilesEnum } from "../../../../enums/translationsFiles.enum";
 import { useCombinedStore } from "../../../../store/combined.store";
 import { LanguageSelectorFlag } from "../../atoms/LanguageSelectorFlag/LanguageSelectorFlag";

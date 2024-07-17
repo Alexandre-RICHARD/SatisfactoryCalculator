@@ -17,9 +17,6 @@ export const App = (): React.ReactElement => {
     ...import.meta.glob("../../nexus/src/assets/translations/**/*.ts"),
   };
 
-  // TODO
-  // console.log(recipes.filter((it) => it.itemsOut.length > 1));
-
   return (
     <TranslationProvider
       TranslationsContext={TranslationsContext}

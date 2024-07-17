@@ -5,7 +5,7 @@ import {
 } from "@nexus/src/nexusExporter";
 import type { StateCreator } from "zustand";
 
-import { supportedLanguages } from "../../dictionnaries/supportedLanguages";
+import { supportedLanguages } from "../../dictionnaries/supportedLanguages.dictionnary";
 import { CookieEnum } from "../../enums/cookie.enum";
 import type { TranslationSliceTypes } from "../../types/store/storeSlices/translations";
 
