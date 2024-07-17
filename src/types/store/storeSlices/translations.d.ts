@@ -1,6 +1,6 @@
-import type { LanguageEnum } from "@nexus/src/nexusExporter";
+import type { LanguageCodeEnum } from "@nexus/src/nexusExporter";
 
 export type TranslationSliceTypes = {
-  language: LanguageEnum;
-  setLanguage: (newLanguage: LanguageEnum) => void;
+  language: LanguageCodeEnum;
+  setLanguage: (newLanguage: LanguageCodeEnum) => void;
 };

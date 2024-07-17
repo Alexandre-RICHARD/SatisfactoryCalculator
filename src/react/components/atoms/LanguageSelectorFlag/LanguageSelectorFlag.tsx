@@ -1,8 +1,8 @@
-import { ImageHelper } from "@nexus/src/nexusExporter";
+import { type CountryEnum, ImageHelper } from "@nexus/src/nexusExporter";
 import type React from "react";
 
 type PropsTypes = {
-  country: string;
+  country: CountryEnum;
 };
 
 export const LanguageSelectorFlag = ({

@@ -1,8 +1,11 @@
 import "./LanguagesSelector.scss";
 
 import {
+  InvertHelper,
   LabelWithIcon,
+  type LanguageCodeEnum,
   type LanguageEnum,
+  languageToCode,
   languageToCountry,
   nativeLanguageNames,
   type SelectItemsTypes,
@@ -25,6 +28,10 @@ export const LanguagesSelector = (): React.ReactElement => {
     useShallow((state) => [state.language, state.setLanguage]),
   );
 
+  const storedLanguageName = InvertHelper.getInvertObject(languageToCode)[
+    language
+  ] as LanguageEnum;
+
   const languagesSelectOption: SelectItemsTypes[] = supportedLanguages
     .sort((languageA, languageB) => {
       const stringA = t(TranslationsFilesEnum.LANGUAGES, languageA);
@@ -33,6 +40,7 @@ export const LanguagesSelector = (): React.ReactElement => {
     })
     .map((oneLanguage) => {
       const country = languageToCountry[oneLanguage];
+      const code = languageToCode[oneLanguage] as LanguageCodeEnum;
       return {
         label: (
           <LabelWithIcon
@@ -41,14 +49,14 @@ export const LanguagesSelector = (): React.ReactElement => {
             label={
               <div className="dropdown-language-label">
                 <p>{t(TranslationsFilesEnum.LANGUAGES, oneLanguage)}</p>
-                {language !== oneLanguage && (
+                {language !== code && (
                   <span>({nativeLanguageNames[oneLanguage]})</span>
                 )}
               </div>
             }
           />
         ),
-        value: oneLanguage,
+        value: code,
       };
     });
 
@@ -57,14 +65,18 @@ export const LanguagesSelector = (): React.ReactElement => {
       id="language"
       label={
         <LabelWithIcon
-          icon={<LanguageSelectorFlag country={languageToCountry[language]} />}
+          icon={
+            <LanguageSelectorFlag
+              country={languageToCountry[storedLanguageName]}
+            />
+          }
           label={<p>{language.toUpperCase()}</p>}
         />
       }
       items={languagesSelectOption}
       selectedItem={language}
       position="bottom-left"
-      onSelect={(item) => setLanguage(item as LanguageEnum)}
+      onSelect={(item) => setLanguage(item as LanguageCodeEnum)}
     />
   );
 };
