@@ -1,3 +1,3 @@
-import type { TranslationSliceTypes } from "./storeSlices/translations";
+import type { TranslationSliceType } from "./storeSlices/translations";
 
-export type CombinedStoreTypes = TranslationSliceTypes;
+export type CombinedStoreType = TranslationSliceType;

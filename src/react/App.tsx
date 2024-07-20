@@ -9,7 +9,7 @@ import React from "react";
 import { useCombinedStore } from "../store/combined.store";
 import { Header } from "./components/organisms/Header/Header";
 
-export const App = (): React.ReactElement => {
+export const App = (): React.JSX.Element => {
   const language = useCombinedStore((state) => state.language);
 
   const filesContexts = {

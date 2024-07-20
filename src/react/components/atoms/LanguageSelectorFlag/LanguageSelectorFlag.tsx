@@ -1,13 +1,13 @@
 import { type CountryEnum, ImageHelper } from "@nexus/src/nexusExporter";
-import type React from "react";
+import React from "react";
 
-type PropsTypes = {
+type PropsType = {
   country: CountryEnum;
 };
 
 export const LanguageSelectorFlag = ({
   country,
-}: PropsTypes): React.ReactElement => {
+}: PropsType): React.JSX.Element => {
   return (
     <img
       alt={`Country flag of ${country}`}

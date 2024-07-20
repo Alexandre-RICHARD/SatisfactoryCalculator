@@ -8,11 +8,11 @@ import {
   languageToCode,
   languageToCountry,
   nativeLanguageNames,
-  type SelectItemsTypes,
+  type SelectItemsType,
   Selector,
   SortHelper,
 } from "@nexus/src/nexusExporter";
-import type React from "react";
+import React from "react";
 import { useShallow } from "zustand/react/shallow";
 
 import { supportedLanguages } from "../../../../dictionnaries/supportedLanguages.dictionnary";
@@ -21,7 +21,7 @@ import { useCombinedStore } from "../../../../store/combined.store";
 import { LanguageSelectorFlag } from "../../atoms/LanguageSelectorFlag/LanguageSelectorFlag";
 import { useCustomTranslations } from "../../hooks/useCustomTranslations";
 
-export const LanguagesSelector = (): React.ReactElement => {
+export const LanguagesSelector = (): React.JSX.Element => {
   const t = useCustomTranslations();
 
   const [language, setLanguage] = useCombinedStore(
@@ -32,7 +32,7 @@ export const LanguagesSelector = (): React.ReactElement => {
     language
   ] as LanguageEnum;
 
-  const languagesSelectOption: SelectItemsTypes[] = supportedLanguages
+  const languagesSelectOption: SelectItemsType[] = supportedLanguages
     .sort((languageA, languageB) => {
       const stringA = t(TranslationsFilesEnum.LANGUAGES, languageA);
       const stringB = t(TranslationsFilesEnum.LANGUAGES, languageB);
