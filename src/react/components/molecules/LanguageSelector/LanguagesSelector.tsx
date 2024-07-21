@@ -41,6 +41,12 @@ export const LanguagesSelector = (): React.JSX.Element => {
     .map((oneLanguage) => {
       const country = languageToCountry[oneLanguage];
       const code = languageToCode[oneLanguage] as LanguageCodeEnum;
+
+      const translatedLanguage = t(
+        TranslationsFilesEnum.LANGUAGES,
+        oneLanguage,
+      );
+      const nativeLanguageName = nativeLanguageNames[oneLanguage];
       return {
         label: (
           <LabelWithIcon
@@ -48,14 +54,13 @@ export const LanguagesSelector = (): React.JSX.Element => {
             icon={<LanguageSelectorFlag country={country} />}
             label={
               <div className="dropdown-language-label">
-                <p>{t(TranslationsFilesEnum.LANGUAGES, oneLanguage)}</p>
-                {language !== code && (
-                  <span>({nativeLanguageNames[oneLanguage]})</span>
-                )}
+                <p>{translatedLanguage}</p>
+                {language !== code && <span>({nativeLanguageName})</span>}
               </div>
             }
           />
         ),
+        search: `${translatedLanguage} (${nativeLanguageName})`,
         value: code,
       };
     });
@@ -77,6 +82,7 @@ export const LanguagesSelector = (): React.JSX.Element => {
       selectedItem={language}
       position="bottom-left"
       onSelect={(item) => setLanguage(item as LanguageCodeEnum)}
+      search={{ isHandlingCustomSearch: false }}
     />
   );
 };
