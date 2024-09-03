@@ -1,0 +1,43 @@
+.satisfactory-calculator-container {
+  color: white;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+
+  .mid-screen {
+    flex-grow: 1;
+    background-color: #272727;
+    
+  }
+  .recipes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+
+    .one-recipe {
+      display: flex;
+      gap: 6px;
+      padding: 6px;
+      background-color: #1b1b1b;
+
+      .resource-group {
+        display: flex;
+        background-color: #545454;
+        gap: 6px;
+
+        .resource-in-out {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+
+          .resource-icon {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+
+    }
+  }
+}

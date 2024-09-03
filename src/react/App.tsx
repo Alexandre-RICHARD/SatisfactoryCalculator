@@ -7,7 +7,8 @@ import {
 import React from "react";
 
 import { useCombinedStore } from "../store/combined.store";
-import { Header } from "./components/organisms/Header/Header";
+import { Header } from "./components/Header/Header";
+import { SatisfactoryCalculator } from "./components/SatisfactoryCalculator/SatisfactoryCalculator";
 
 export const App = (): React.JSX.Element => {
   const language = useCombinedStore((state) => state.language);
@@ -23,7 +24,10 @@ export const App = (): React.JSX.Element => {
       filesContexts={filesContexts}
       language={language}
     >
-      <Header />
+      <>
+        <Header />
+        <SatisfactoryCalculator />
+      </>
     </TranslationProvider>
   );
 };

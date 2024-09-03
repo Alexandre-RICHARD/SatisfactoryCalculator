@@ -2,7 +2,7 @@ import "./Header.scss";
 
 import React from "react";
 
-import { LanguagesSelector } from "../../molecules/LanguageSelector/LanguagesSelector";
+import { LanguagesSelector } from "../LanguageSelector/LanguagesSelector";
 
 export const Header = (): React.JSX.Element => {
   return (

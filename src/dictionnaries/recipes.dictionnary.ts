@@ -1,9 +1,14 @@
-import { CraftBuildingsEnum, ItemsEnum } from "../enums/items.enum";
+import {
+  CraftBuildingsEnum,
+  ItemsEnum,
+  PowerBuildingsEnum,
+} from "../enums/items.enum";
 import type { RecipesType } from "../types/satisfactory/items";
 
 export const recipes: RecipesType[] = [
   //! Iron_Ingot-Standard
   {
+    recipeName: "Iron_Ingot-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Smelter,
     itemsIn: [
@@ -22,6 +27,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Iron_Ingot-Alternate_1
   {
+    recipeName: "Iron_Ingot-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -44,6 +50,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Iron_Ingot-Alternate_2
   {
+    recipeName: "Iron_Ingot-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Foundry,
     itemsIn: [
@@ -66,6 +73,7 @@ export const recipes: RecipesType[] = [
   },
   //! Iron_Plate-Standard
   {
+    recipeName: "Iron_Plate-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -84,6 +92,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Iron_Plate-Alternate_1
   {
+    recipeName: "Iron_Plate-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -106,6 +115,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Iron_Plate-Alternate_2
   {
+    recipeName: "Iron_Plate-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -128,6 +138,7 @@ export const recipes: RecipesType[] = [
   },
   //! Iron_Rod-Standard
   {
+    recipeName: "Iron_Rod-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -146,6 +157,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Iron_Rod-Alternate
   {
+    recipeName: "Iron_Rod-Alternate",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -164,6 +176,7 @@ export const recipes: RecipesType[] = [
   },
   //! Copper_Ingot-Standard
   {
+    recipeName: "Copper_Ingot-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Smelter,
     itemsIn: [
@@ -182,6 +195,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Copper_Ingot-Alternate_1
   {
+    recipeName: "Copper_Ingot-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Foundry,
     itemsIn: [
@@ -204,6 +218,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Copper_Ingot-Alternate_2
   {
+    recipeName: "Copper_Ingot-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -226,6 +241,7 @@ export const recipes: RecipesType[] = [
   },
   //! Wire-Standard
   {
+    recipeName: "Wire-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -244,6 +260,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Wire-Alternate_1
   {
+    recipeName: "Wire-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -266,6 +283,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Wire-Alternate_2
   {
+    recipeName: "Wire-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -284,6 +302,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Wire-Alternate_3
   {
+    recipeName: "Wire-Alternate_3",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -302,6 +321,7 @@ export const recipes: RecipesType[] = [
   },
   //! Cable-Standard
   {
+    recipeName: "Cable-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -320,6 +340,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Cable-Alternate_1
   {
+    recipeName: "Cable-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -342,6 +363,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Cable-Alternate_2
   {
+    recipeName: "Cable-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -364,6 +386,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Cable-Alternate_3
   {
+    recipeName: "Cable-Alternate_3",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -386,6 +409,7 @@ export const recipes: RecipesType[] = [
   },
   //! Concrete-Standard
   {
+    recipeName: "Concrete-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -404,6 +428,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Concrete-Alternate_1
   {
+    recipeName: "Concrete-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -426,6 +451,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Concrete-Alternate_2
   {
+    recipeName: "Concrete-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -448,6 +474,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Concrete-Alternate_3
   {
+    recipeName: "Concrete-Alternate_3",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -470,6 +497,7 @@ export const recipes: RecipesType[] = [
   },
   //! Screw-Standard
   {
+    recipeName: "Screw-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -488,6 +516,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Screw-Alternate_1
   {
+    recipeName: "Screw-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -506,6 +535,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Screw-Alternate_2
   {
+    recipeName: "Screw-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -524,6 +554,7 @@ export const recipes: RecipesType[] = [
   },
   //! Reinforced_Iron_Plate-Standard
   {
+    recipeName: "Reinforced_Iron_Plate-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -546,6 +577,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Reinforced_Iron_Plate-Alternate_1
   {
+    recipeName: "Reinforced_Iron_Plate-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -568,6 +600,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Reinforced_Iron_Plate-Alternate_2
   {
+    recipeName: "Reinforced_Iron_Plate-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -590,6 +623,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Reinforced_Iron_Plate-Alternate_3
   {
+    recipeName: "Reinforced_Iron_Plate-Alternate_3",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -612,6 +646,7 @@ export const recipes: RecipesType[] = [
   },
   //! Biomass-Standard
   {
+    recipeName: "Biomass-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -630,6 +665,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Biomass-Alternate_1
   {
+    recipeName: "Biomass-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -648,6 +684,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Biomass-Alternate_2
   {
+    recipeName: "Biomass-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -666,6 +703,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Biomass-Alternate_3
   {
+    recipeName: "Biomass-Alternate_3",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -684,6 +722,7 @@ export const recipes: RecipesType[] = [
   },
   //! Alien_Protein-Standard
   {
+    recipeName: "Alien_Protein-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -702,6 +741,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Alien_Protein-Alternate_1
   {
+    recipeName: "Alien_Protein-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -720,6 +760,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Alien_Protein-Alternate_2
   {
+    recipeName: "Alien_Protein-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -738,6 +779,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Alien_Protein-Alternate_3
   {
+    recipeName: "Alien_Protein-Alternate_3",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -756,6 +798,7 @@ export const recipes: RecipesType[] = [
   },
   //! Iron_Rebar-Standard
   {
+    recipeName: "Iron_Rebar-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -774,6 +817,7 @@ export const recipes: RecipesType[] = [
   },
   //! Alien_DNA_Capsule-Standard
   {
+    recipeName: "Alien_DNA_Capsule-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -792,6 +836,7 @@ export const recipes: RecipesType[] = [
   },
   //! Caterium_Ingot-Standard
   {
+    recipeName: "Caterium_Ingot-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Smelter,
     itemsIn: [
@@ -810,6 +855,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Caterium_Ingot-Alternate_1
   {
+    recipeName: "Caterium_Ingot-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -832,6 +878,7 @@ export const recipes: RecipesType[] = [
   },
   //! Quickwire-Standard
   {
+    recipeName: "Quickwire-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -850,6 +897,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Quickwire-Alternate_1
   {
+    recipeName: "Quickwire-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -872,6 +920,7 @@ export const recipes: RecipesType[] = [
   },
   //! High_Speed_Connector-Standard
   {
+    recipeName: "High_Speed_Connector-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -898,6 +947,7 @@ export const recipes: RecipesType[] = [
   },
   // ? High_Speed_Connector-Alternate_1
   {
+    recipeName: "High_Speed_Connector-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -924,6 +974,7 @@ export const recipes: RecipesType[] = [
   },
   //! Stun_Rebar-Standard
   {
+    recipeName: "Stun_Rebar-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -946,6 +997,7 @@ export const recipes: RecipesType[] = [
   },
   //! AI_Limiter-Standard
   {
+    recipeName: "AI_Limiter-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -968,6 +1020,7 @@ export const recipes: RecipesType[] = [
   },
   //! Supercomputer-Standard
   {
+    recipeName: "Supercomputer-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -998,6 +1051,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Supercomputer-Alternate_1
   {
+    recipeName: "Supercomputer-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -1020,6 +1074,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Supercomputer-Alternate_2
   {
+    recipeName: "Supercomputer-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -1050,6 +1105,7 @@ export const recipes: RecipesType[] = [
   },
   //! Homing_Rifle_Ammo-Standard
   {
+    recipeName: "Homing_Rifle_Ammo-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -1072,6 +1128,7 @@ export const recipes: RecipesType[] = [
   },
   //! Color_Cartridge-Standard
   {
+    recipeName: "Color_Cartridge-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -1090,6 +1147,7 @@ export const recipes: RecipesType[] = [
   },
   //! Fabric-Standard
   {
+    recipeName: "Fabric-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -1112,6 +1170,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Fabric-Alternate_1
   {
+    recipeName: "Fabric-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -1134,6 +1193,7 @@ export const recipes: RecipesType[] = [
   },
   //! Gas_Nobelisk-Standard
   {
+    recipeName: "Gas_Nobelisk-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -1156,6 +1216,7 @@ export const recipes: RecipesType[] = [
   },
   //! Power_Shard-Standard
   {
+    recipeName: "Power_Shard-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -1174,6 +1235,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Power_Shard-Alternate_1
   {
+    recipeName: "Power_Shard-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -1192,6 +1254,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Power_Shard-Alternate_2
   {
+    recipeName: "Power_Shard-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -1210,6 +1273,7 @@ export const recipes: RecipesType[] = [
   },
   //! Crystal_Oscillator-Standard
   {
+    recipeName: "Crystal_Oscillator-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -1236,6 +1300,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Crystal_Oscillator-Alternate_1
   {
+    recipeName: "Crystal_Oscillator-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -1262,6 +1327,7 @@ export const recipes: RecipesType[] = [
   },
   //! Quartz_Crystal-Standard
   {
+    recipeName: "Quartz_Crystal-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -1280,6 +1346,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Quartz_Crystal-Alternate_1
   {
+    recipeName: "Quartz_Crystal-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -1302,6 +1369,7 @@ export const recipes: RecipesType[] = [
   },
   //! Silica-Standard
   {
+    recipeName: "Silica-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -1320,6 +1388,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Silica-Alternate_1
   {
+    recipeName: "Silica-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -1346,6 +1415,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Silica-Alternate_2
   {
+    recipeName: "Silica-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -1368,6 +1438,7 @@ export const recipes: RecipesType[] = [
   },
   //! Shatter_Rebar-Standard
   {
+    recipeName: "Shatter_Rebar-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -1390,6 +1461,7 @@ export const recipes: RecipesType[] = [
   },
   //! Radio_Control_Unit-Standard
   {
+    recipeName: "Radio_Control_Unit-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -1416,6 +1488,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Radio_Control_Unit-Alternate_1
   {
+    recipeName: "Radio_Control_Unit-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -1446,6 +1519,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Radio_Control_Unit-Alternate_2
   {
+    recipeName: "Radio_Control_Unit-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -1472,6 +1546,7 @@ export const recipes: RecipesType[] = [
   },
   //! Pulse_Nobelisk-Standard
   {
+    recipeName: "Pulse_Nobelisk-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -1494,6 +1569,7 @@ export const recipes: RecipesType[] = [
   },
   //! Black_Powder-Standard
   {
+    recipeName: "Black_Powder-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -1516,6 +1592,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Black_Powder-Alternate_1
   {
+    recipeName: "Black_Powder-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -1538,6 +1615,7 @@ export const recipes: RecipesType[] = [
   },
   //! Smokeless_Powder-Standard
   {
+    recipeName: "Smokeless_Powder-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -1560,6 +1638,7 @@ export const recipes: RecipesType[] = [
   },
   //! Cluster_Nobelisk-Standard
   {
+    recipeName: "Cluster_Nobelisk-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -1582,6 +1661,7 @@ export const recipes: RecipesType[] = [
   },
   //! Nobelisk-Standard
   {
+    recipeName: "Nobelisk-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -1604,6 +1684,7 @@ export const recipes: RecipesType[] = [
   },
   //! Rifle_Ammo-Standard
   {
+    recipeName: "Rifle_Ammo-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -1626,6 +1707,7 @@ export const recipes: RecipesType[] = [
   },
   //! Explosive_Rebar-Standard
   {
+    recipeName: "Explosive_Rebar-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -1652,6 +1734,7 @@ export const recipes: RecipesType[] = [
   },
   //! Nuke_Nobelisk-Standard
   {
+    recipeName: "Nuke_Nobelisk-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -1682,6 +1765,7 @@ export const recipes: RecipesType[] = [
   },
   //! Turbo_Rifle_Ammo-Standard
   {
+    recipeName: "Turbo_Rifle_Ammo-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Blender,
     itemsIn: [
@@ -1708,6 +1792,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Turbo_Rifle_Ammo-Alternate_1
   {
+    recipeName: "Turbo_Rifle_Ammo-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -1734,6 +1819,7 @@ export const recipes: RecipesType[] = [
   },
   //! Compacted_Coal-Standard
   {
+    recipeName: "Compacted_Coal-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -1756,6 +1842,7 @@ export const recipes: RecipesType[] = [
   },
   //! Turbofuel-Standard
   {
+    recipeName: "Turbofuel-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -1778,6 +1865,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Turbofuel-Alternate_1
   {
+    recipeName: "Turbofuel-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Packager,
     itemsIn: [
@@ -1800,6 +1888,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Turbofuel-Alternate_2
   {
+    recipeName: "Turbofuel-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -1822,6 +1911,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Turbofuel-Alternate_3
   {
+    recipeName: "Turbofuel-Alternate_3",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Blender,
     itemsIn: [
@@ -1852,6 +1942,7 @@ export const recipes: RecipesType[] = [
   },
   //! Packaged_Turbofuel-Standard
   {
+    recipeName: "Packaged_Turbofuel-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Packager,
     itemsIn: [
@@ -1874,6 +1965,7 @@ export const recipes: RecipesType[] = [
   },
   //! Empty_Canister-Standard
   {
+    recipeName: "Empty_Canister-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Packager,
     itemsIn: [
@@ -1896,6 +1988,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Empty_Canister-Alternate_1
   {
+    recipeName: "Empty_Canister-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -1914,6 +2007,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Empty_Canister-Alternate_2
   {
+    recipeName: "Empty_Canister-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Packager,
     itemsIn: [
@@ -1936,6 +2030,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Empty_Canister-Alternate_3
   {
+    recipeName: "Empty_Canister-Alternate_3",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Packager,
     itemsIn: [
@@ -1958,6 +2053,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Empty_Canister-Alternate_4
   {
+    recipeName: "Empty_Canister-Alternate_4",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Packager,
     itemsIn: [
@@ -1980,6 +2076,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Empty_Canister-Alternate_5
   {
+    recipeName: "Empty_Canister-Alternate_5",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Packager,
     itemsIn: [
@@ -2002,6 +2099,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Empty_Canister-Alternate_6
   {
+    recipeName: "Empty_Canister-Alternate_6",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Packager,
     itemsIn: [
@@ -2024,6 +2122,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Empty_Canister-Alternate_7
   {
+    recipeName: "Empty_Canister-Alternate_7",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Packager,
     itemsIn: [
@@ -2046,6 +2145,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Empty_Canister-Alternate_8
   {
+    recipeName: "Empty_Canister-Alternate_8",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Packager,
     itemsIn: [
@@ -2068,6 +2168,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Empty_Canister-Alternate_9
   {
+    recipeName: "Empty_Canister-Alternate_9",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -2090,6 +2191,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Empty_Canister-Alternate_10
   {
+    recipeName: "Empty_Canister-Alternate_10",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -2108,6 +2210,7 @@ export const recipes: RecipesType[] = [
   },
   //! Copper_Sheet-Standard
   {
+    recipeName: "Copper_Sheet-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -2126,6 +2229,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Copper_Sheet-Alternate_1
   {
+    recipeName: "Copper_Sheet-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -2148,6 +2252,7 @@ export const recipes: RecipesType[] = [
   },
   //! Rotor-Standard
   {
+    recipeName: "Rotor-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -2170,6 +2275,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Rotor-Alternate_1
   {
+    recipeName: "Rotor-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -2192,6 +2298,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Rotor-Alternate_2
   {
+    recipeName: "Rotor-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -2214,6 +2321,7 @@ export const recipes: RecipesType[] = [
   },
   //! Modular_Frame-Standard
   {
+    recipeName: "Modular_Frame-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -2236,6 +2344,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Modular_Frame-Alternate_1
   {
+    recipeName: "Modular_Frame-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -2258,6 +2367,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Modular_Frame-Alternate_2
   {
+    recipeName: "Modular_Frame-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -2280,6 +2390,7 @@ export const recipes: RecipesType[] = [
   },
   //! Smart_Plating-Standard
   {
+    recipeName: "Smart_Plating-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -2302,6 +2413,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Smart_Plating-Alternate_1
   {
+    recipeName: "Smart_Plating-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -2328,6 +2440,7 @@ export const recipes: RecipesType[] = [
   },
   //! Solid_Biofuel-Standard
   {
+    recipeName: "Solid_Biofuel-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -2346,6 +2459,7 @@ export const recipes: RecipesType[] = [
   },
   //! Steel_Ingot-Standard
   {
+    recipeName: "Steel_Ingot-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Foundry,
     itemsIn: [
@@ -2368,6 +2482,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Steel_Ingot-Alternate_1
   {
+    recipeName: "Steel_Ingot-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Foundry,
     itemsIn: [
@@ -2390,6 +2505,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Steel_Ingot-Alternate_2
   {
+    recipeName: "Steel_Ingot-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Foundry,
     itemsIn: [
@@ -2412,6 +2528,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Steel_Ingot-Alternate_3
   {
+    recipeName: "Steel_Ingot-Alternate_3",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Foundry,
     itemsIn: [
@@ -2434,6 +2551,7 @@ export const recipes: RecipesType[] = [
   },
   //! Steel_Beam-Standard
   {
+    recipeName: "Steel_Beam-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -2452,6 +2570,7 @@ export const recipes: RecipesType[] = [
   },
   //! Steel_Pipe-Standard
   {
+    recipeName: "Steel_Pipe-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -2470,6 +2589,7 @@ export const recipes: RecipesType[] = [
   },
   //! Versatile_Framework-Standard
   {
+    recipeName: "Versatile_Framework-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -2492,6 +2612,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Versatile_Framework-Alternate_1
   {
+    recipeName: "Versatile_Framework-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -2518,6 +2639,7 @@ export const recipes: RecipesType[] = [
   },
   //! Encased_Industrial_Beam-Standard
   {
+    recipeName: "Encased_Industrial_Beam-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -2540,6 +2662,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Encased_Industrial_Beam-Alternate_1
   {
+    recipeName: "Encased_Industrial_Beam-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -2562,6 +2685,7 @@ export const recipes: RecipesType[] = [
   },
   //! Stator-Standard
   {
+    recipeName: "Stator-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -2584,6 +2708,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Stator-Alternate_1
   {
+    recipeName: "Stator-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -2606,6 +2731,7 @@ export const recipes: RecipesType[] = [
   },
   //! Motor-Standard
   {
+    recipeName: "Motor-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -2628,6 +2754,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Motor-Alternate_1
   {
+    recipeName: "Motor-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -2650,6 +2777,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Motor-Alternate_2
   {
+    recipeName: "Motor-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -2676,6 +2804,7 @@ export const recipes: RecipesType[] = [
   },
   //! Automated_Wiring-Standard
   {
+    recipeName: "Automated_Wiring-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -2698,6 +2827,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Automated_Wiring-Alternate_1
   {
+    recipeName: "Automated_Wiring-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -2724,6 +2854,7 @@ export const recipes: RecipesType[] = [
   },
   //! Heavy_Modular_Frame-Standard
   {
+    recipeName: "Heavy_Modular_Frame-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -2754,6 +2885,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Heavy_Modular_Frame-Alternate_1
   {
+    recipeName: "Heavy_Modular_Frame-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -2784,6 +2916,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Heavy_Modular_Frame-Alternate_2
   {
+    recipeName: "Heavy_Modular_Frame-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -2814,6 +2947,7 @@ export const recipes: RecipesType[] = [
   },
   //! Plastic-Standard
   {
+    recipeName: "Plastic-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -2836,6 +2970,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Plastic-Alternate_1
   {
+    recipeName: "Plastic-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -2858,6 +2993,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Plastic-Alternate_2
   {
+    recipeName: "Plastic-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -2880,6 +3016,7 @@ export const recipes: RecipesType[] = [
   },
   //! Heavy_Oil_Residue-Standard
   {
+    recipeName: "Heavy_Oil_Residue-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -2902,6 +3039,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Heavy_Oil_Residue-Alternate_1
   {
+    recipeName: "Heavy_Oil_Residue-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -2924,6 +3062,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Heavy_Oil_Residue-Alternate_2
   {
+    recipeName: "Heavy_Oil_Residue-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Packager,
     itemsIn: [
@@ -2946,6 +3085,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Heavy_Oil_Residue-Alternate_3
   {
+    recipeName: "Heavy_Oil_Residue-Alternate_3",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -2968,6 +3108,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Heavy_Oil_Residue-Alternate_4
   {
+    recipeName: "Heavy_Oil_Residue-Alternate_4",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -2990,6 +3131,7 @@ export const recipes: RecipesType[] = [
   },
   //! Rubber-Standard
   {
+    recipeName: "Rubber-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -3012,6 +3154,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Rubber-Alternate_1
   {
+    recipeName: "Rubber-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -3034,6 +3177,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Rubber-Alternate_2
   {
+    recipeName: "Rubber-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -3056,6 +3200,7 @@ export const recipes: RecipesType[] = [
   },
   //! Fuel-Standard
   {
+    recipeName: "Fuel-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -3078,6 +3223,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Fuel-Alternate_1
   {
+    recipeName: "Fuel-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -3096,6 +3242,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Fuel-Alternate_2
   {
+    recipeName: "Fuel-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Packager,
     itemsIn: [
@@ -3118,6 +3265,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Fuel-Alternate_3
   {
+    recipeName: "Fuel-Alternate_3",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Blender,
     itemsIn: [
@@ -3140,6 +3288,7 @@ export const recipes: RecipesType[] = [
   },
   //! Polymer_Resin-Standard
   {
+    recipeName: "Polymer_Resin-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -3162,6 +3311,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Polymer_Resin-Alternate_1
   {
+    recipeName: "Polymer_Resin-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -3184,6 +3334,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Polymer_Resin-Alternate_2
   {
+    recipeName: "Polymer_Resin-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -3206,6 +3357,7 @@ export const recipes: RecipesType[] = [
   },
   //! Petroleum_Coke-Standard
   {
+    recipeName: "Petroleum_Coke-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -3224,6 +3376,7 @@ export const recipes: RecipesType[] = [
   },
   //! Circuit_Board-Standard
   {
+    recipeName: "Circuit_Board-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -3246,6 +3399,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Circuit_Board-Alternate_1
   {
+    recipeName: "Circuit_Board-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -3268,6 +3422,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Circuit_Board-Alternate_2
   {
+    recipeName: "Circuit_Board-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -3290,6 +3445,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Circuit_Board-Alternate_3
   {
+    recipeName: "Circuit_Board-Alternate_3",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -3312,6 +3468,7 @@ export const recipes: RecipesType[] = [
   },
   //! Computer-Standard
   {
+    recipeName: "Computer-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -3342,6 +3499,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Computer-Alternate_1
   {
+    recipeName: "Computer-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -3368,6 +3526,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Computer-Alternate_2
   {
+    recipeName: "Computer-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -3390,6 +3549,7 @@ export const recipes: RecipesType[] = [
   },
   //! Modular_Engine-Standard
   {
+    recipeName: "Modular_Engine-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -3416,6 +3576,7 @@ export const recipes: RecipesType[] = [
   },
   //! Adaptative_Control_Unit-Standard
   {
+    recipeName: "Adaptative_Control_Unit-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -3446,6 +3607,7 @@ export const recipes: RecipesType[] = [
   },
   //! Packaged_Water-Standard
   {
+    recipeName: "Packaged_Water-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Packager,
     itemsIn: [
@@ -3468,6 +3630,7 @@ export const recipes: RecipesType[] = [
   },
   //! Packaged_Oil-Standard
   {
+    recipeName: "Packaged_Oil-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Packager,
     itemsIn: [
@@ -3490,6 +3653,7 @@ export const recipes: RecipesType[] = [
   },
   //! Packaged_Fuel-Standard
   {
+    recipeName: "Packaged_Fuel-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Packager,
     itemsIn: [
@@ -3512,6 +3676,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Packaged_Fuel-Alternate_1
   {
+    recipeName: "Packaged_Fuel-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -3534,6 +3699,7 @@ export const recipes: RecipesType[] = [
   },
   //! Packaged_Heavy_Oil_Residue-Standard
   {
+    recipeName: "Packaged_Heavy_Oil_Residue-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Packager,
     itemsIn: [
@@ -3556,6 +3722,7 @@ export const recipes: RecipesType[] = [
   },
   //! Packaged_Liquid_Biofuel-Standard
   {
+    recipeName: "Packaged_Liquid_Biofuel-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Packager,
     itemsIn: [
@@ -3578,6 +3745,7 @@ export const recipes: RecipesType[] = [
   },
   //! Liquid_Biofuel-Standard
   {
+    recipeName: "Liquid_Biofuel-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -3600,6 +3768,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Liquid_Biofuel-Alternate_1
   {
+    recipeName: "Liquid_Biofuel-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Packager,
     itemsIn: [
@@ -3622,6 +3791,7 @@ export const recipes: RecipesType[] = [
   },
   //! Gas_Filter-Standard
   {
+    recipeName: "Gas_Filter-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -3648,6 +3818,7 @@ export const recipes: RecipesType[] = [
   },
   //! Alumina_Solution-Standard
   {
+    recipeName: "Alumina_Solution-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -3674,6 +3845,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Alumina_Solution-Alternate_1
   {
+    recipeName: "Alumina_Solution-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Packager,
     itemsIn: [
@@ -3696,6 +3868,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Alumina_Solution-Alternate_2
   {
+    recipeName: "Alumina_Solution-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -3718,6 +3891,7 @@ export const recipes: RecipesType[] = [
   },
   //! Packaged_Alumina_Solution-Standard
   {
+    recipeName: "Packaged_Alumina_Solution-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Packager,
     itemsIn: [
@@ -3740,6 +3914,7 @@ export const recipes: RecipesType[] = [
   },
   //! Aluminum_Scrap-Standard
   {
+    recipeName: "Aluminum_Scrap-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -3766,6 +3941,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Aluminum_Scrap-Alternate_1
   {
+    recipeName: "Aluminum_Scrap-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -3792,6 +3968,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Aluminum_Scrap-Alternate_2
   {
+    recipeName: "Aluminum_Scrap-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Blender,
     itemsIn: [
@@ -3826,6 +4003,7 @@ export const recipes: RecipesType[] = [
   },
   //! Aluminum_Ingot-Standard
   {
+    recipeName: "Aluminum_Ingot-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Foundry,
     itemsIn: [
@@ -3848,6 +4026,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Aluminum_Ingot-Alternate_1
   {
+    recipeName: "Aluminum_Ingot-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Smelter,
     itemsIn: [
@@ -3866,6 +4045,7 @@ export const recipes: RecipesType[] = [
   },
   //! Alclad_Aluminum_Sheet-Standard
   {
+    recipeName: "Alclad_Aluminum_Sheet-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -3888,6 +4068,7 @@ export const recipes: RecipesType[] = [
   },
   //! Aluminum_Casing-Standard
   {
+    recipeName: "Aluminum_Casing-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -3906,6 +4087,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Aluminum_Casing-Alternate_1
   {
+    recipeName: "Aluminum_Casing-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -3928,6 +4110,7 @@ export const recipes: RecipesType[] = [
   },
   //! Iodine_Infused_Filter-Standard
   {
+    recipeName: "Iodine_Infused_Filter-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -3954,6 +4137,7 @@ export const recipes: RecipesType[] = [
   },
   //! Sulfuric_Acid-Standard
   {
+    recipeName: "Sulfuric_Acid-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Refinery,
     itemsIn: [
@@ -3976,6 +4160,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Sulfuric_Acid-Alternate_1
   {
+    recipeName: "Sulfuric_Acid-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Packager,
     itemsIn: [
@@ -3998,6 +4183,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Sulfuric_Acid-Alternate_2
   {
+    recipeName: "Sulfuric_Acid-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Blender,
     itemsIn: [
@@ -4028,6 +4214,7 @@ export const recipes: RecipesType[] = [
   },
   //! Packaged_Sulfuric_Acid-Standard
   {
+    recipeName: "Packaged_Sulfuric_Acid-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Packager,
     itemsIn: [
@@ -4050,6 +4237,7 @@ export const recipes: RecipesType[] = [
   },
   //! Battery-Standard
   {
+    recipeName: "Battery-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Blender,
     itemsIn: [
@@ -4080,6 +4268,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Battery-Alternate_1
   {
+    recipeName: "Battery-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -4110,6 +4299,7 @@ export const recipes: RecipesType[] = [
   },
   //! Assembly_Director_System-Standard
   {
+    recipeName: "Assembly_Director_System-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -4132,6 +4322,7 @@ export const recipes: RecipesType[] = [
   },
   //! Encased_Uranium_Cell-Standard
   {
+    recipeName: "Encased_Uranium_Cell-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Blender,
     itemsIn: [
@@ -4162,6 +4353,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Encased_Uranium_Cell-Alternate_1
   {
+    recipeName: "Encased_Uranium_Cell-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -4192,6 +4384,7 @@ export const recipes: RecipesType[] = [
   },
   //! Electromagnetic_Control_Rod-Standard
   {
+    recipeName: "Electromagnetic_Control_Rod-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -4214,6 +4407,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Electromagnetic_Control_Rod-Alternate_1
   {
+    recipeName: "Electromagnetic_Control_Rod-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -4236,6 +4430,7 @@ export const recipes: RecipesType[] = [
   },
   //! Uranium_Fuel_Rod-Standard
   {
+    recipeName: "Uranium_Fuel_Rod-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -4262,6 +4457,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Uranium_Fuel_Rod-Alternate_1
   {
+    recipeName: "Uranium_Fuel_Rod-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -4292,6 +4488,7 @@ export const recipes: RecipesType[] = [
   },
   //! Magnetic_Field_Generator-Standard
   {
+    recipeName: "Magnetic_Field_Generator-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -4318,6 +4515,7 @@ export const recipes: RecipesType[] = [
   },
   //! Empty_Fluid_Tank-Standard
   {
+    recipeName: "Empty_Fluid_Tank-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -4336,6 +4534,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Empty_Fluid_Tank-Alternate_1
   {
+    recipeName: "Empty_Fluid_Tank-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Packager,
     itemsIn: [
@@ -4358,6 +4557,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Empty_Fluid_Tank-Alternate_2
   {
+    recipeName: "Empty_Fluid_Tank-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Packager,
     itemsIn: [
@@ -4380,6 +4580,7 @@ export const recipes: RecipesType[] = [
   },
   //! Packaged_Nitrogen_Gas-Standard
   {
+    recipeName: "Packaged_Nitrogen_Gas-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Packager,
     itemsIn: [
@@ -4402,6 +4603,7 @@ export const recipes: RecipesType[] = [
   },
   //! Heat_Sink-Standard
   {
+    recipeName: "Heat_Sink-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -4424,6 +4626,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Heat_Sink-Alternate_1
   {
+    recipeName: "Heat_Sink-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -4446,6 +4649,7 @@ export const recipes: RecipesType[] = [
   },
   //! Cooling_System-Standard
   {
+    recipeName: "Cooling_System-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Blender,
     itemsIn: [
@@ -4476,6 +4680,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Cooling_System-Alternate_1
   {
+    recipeName: "Cooling_System-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Blender,
     itemsIn: [
@@ -4502,6 +4707,7 @@ export const recipes: RecipesType[] = [
   },
   //! Fused_Modular_Frame-Standard
   {
+    recipeName: "Fused_Modular_Frame-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Blender,
     itemsIn: [
@@ -4528,6 +4734,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Fused_Modular_Frame-Alternate_1
   {
+    recipeName: "Fused_Modular_Frame-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Blender,
     itemsIn: [
@@ -4558,6 +4765,7 @@ export const recipes: RecipesType[] = [
   },
   //! Turbo_Motor-Standard
   {
+    recipeName: "Turbo_Motor-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -4588,6 +4796,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Turbo_Motor-Alternate_1
   {
+    recipeName: "Turbo_Motor-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -4618,6 +4827,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Turbo_Motor-Alternate_2
   {
+    recipeName: "Turbo_Motor-Alternate_2",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -4648,6 +4858,7 @@ export const recipes: RecipesType[] = [
   },
   //! Thermal_Propulsion_Rocket-Standard
   {
+    recipeName: "Thermal_Propulsion_Rocket-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -4678,6 +4889,7 @@ export const recipes: RecipesType[] = [
   },
   //! Nitric_Acid-Standard
   {
+    recipeName: "Nitric_Acid-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Blender,
     itemsIn: [
@@ -4704,6 +4916,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Nitric_Acid-Alternate_1
   {
+    recipeName: "Nitric_Acid-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Packager,
     itemsIn: [
@@ -4726,6 +4939,7 @@ export const recipes: RecipesType[] = [
   },
   //! Packaged_Nitric_Acid-Standard
   {
+    recipeName: "Packaged_Nitric_Acid-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Packager,
     itemsIn: [
@@ -4748,6 +4962,7 @@ export const recipes: RecipesType[] = [
   },
   //! Non_Fissile_Uranium-Standard
   {
+    recipeName: "Non_Fissile_Uranium-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Blender,
     itemsIn: [
@@ -4782,6 +4997,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Non_Fissile_Uranium-Alternate_1
   {
+    recipeName: "Non_Fissile_Uranium-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Blender,
     itemsIn: [
@@ -4816,6 +5032,7 @@ export const recipes: RecipesType[] = [
   },
   //! Plutonium_Pellet-Standard
   {
+    recipeName: "Plutonium_Pellet-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Particle_Accelerator,
     itemsIn: [
@@ -4838,6 +5055,7 @@ export const recipes: RecipesType[] = [
   },
   //! Encased_Plutonium_Cell-Standard
   {
+    recipeName: "Encased_Plutonium_Cell-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -4860,6 +5078,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Encased_Plutonium_Cell-Alternate_1
   {
+    recipeName: "Encased_Plutonium_Cell-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Particle_Accelerator,
     itemsIn: [
@@ -4882,6 +5101,7 @@ export const recipes: RecipesType[] = [
   },
   //! Plutonium_Fuel_Rod-Standard
   {
+    recipeName: "Plutonium_Fuel_Rod-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Manufacturer,
     itemsIn: [
@@ -4912,6 +5132,7 @@ export const recipes: RecipesType[] = [
   },
   // ? Plutonium_Fuel_Rod-Alternate_1
   {
+    recipeName: "Plutonium_Fuel_Rod-Alternate_1",
     recipeType: "alternate",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -4932,8 +5153,56 @@ export const recipes: RecipesType[] = [
     ],
     initCycleDuration: 120,
   },
+
+  //! Uranium_Waste-Standard
+  {
+    recipeName: "Uranium_Waste-Standard",
+    recipeType: "standard",
+    craftBuildings: PowerBuildingsEnum.Nuclear_Power_Plant,
+    itemsIn: [
+      {
+        itemName: ItemsEnum.Uranium_Fuel_Rod,
+        quantityPerCycle: 1,
+      },
+      {
+        itemName: ItemsEnum.Water,
+        quantityPerCycle: 12,
+      },
+    ],
+    itemsOut: [
+      {
+        itemName: ItemsEnum.Uranium_Waste,
+        quantityPerCycle: 50,
+      },
+    ],
+    initCycleDuration: 300,
+  },
+  //! Plutonium_Waste-Standard
+  {
+    recipeName: "Plutonium_Waste-Standard",
+    recipeType: "standard",
+    craftBuildings: PowerBuildingsEnum.Nuclear_Power_Plant,
+    itemsIn: [
+      {
+        itemName: ItemsEnum.Plutonium_Fuel_Rod,
+        quantityPerCycle: 1,
+      },
+      {
+        itemName: ItemsEnum.Water,
+        quantityPerCycle: 24,
+      },
+    ],
+    itemsOut: [
+      {
+        itemName: ItemsEnum.Plutonium_Waste,
+        quantityPerCycle: 10,
+      },
+    ],
+    initCycleDuration: 600,
+  },
   //! Copper_Powder-Standard
   {
+    recipeName: "Copper_Powder-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Constructor,
     itemsIn: [
@@ -4952,6 +5221,7 @@ export const recipes: RecipesType[] = [
   },
   //! Pressure_Conversion_Cube-Standard
   {
+    recipeName: "Pressure_Conversion_Cube-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Assembler,
     itemsIn: [
@@ -4974,6 +5244,7 @@ export const recipes: RecipesType[] = [
   },
   //! Nuclear_Pasta-Standard
   {
+    recipeName: "Nuclear_Pasta-Standard",
     recipeType: "standard",
     craftBuildings: CraftBuildingsEnum.Particle_Accelerator,
     itemsIn: [

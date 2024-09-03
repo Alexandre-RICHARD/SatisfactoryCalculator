@@ -25,7 +25,8 @@ export enum ItemsEnum {
   Purple_Power_Slug = "Purple_Power_Slug",
 
   Beacon = "Beacon", // Peut être craft même si équipement
-  Uranium_Waste = "Uranium_Waste", // On ne peut rien en faire
+  Uranium_Waste = "Uranium_Waste",
+  Plutonium_Waste = "Plutonium_Waste", // On ne peut rien en faire
 
   Iron_Ingot = "Iron_Ingot",
   Iron_Plate = "Iron_Plate",

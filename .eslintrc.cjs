@@ -6,7 +6,7 @@ module.exports = {
     node: true,
   },
   ignorePatterns: ["nexus"],
-  extends: ["./nexus/.eslintrc.cjs"],
+  extends: ["./nexus/.eslintrc-client.cjs"],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     project: ["./tsconfig.json", "./tsconfig.node.json"],

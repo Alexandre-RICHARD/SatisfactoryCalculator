@@ -1,6 +1,6 @@
 import { useTranslations } from "@nexus/src/nexusExporter";
 
-import type { TranslationsFilesEnum } from "../../../enums/translationsFiles.enum";
+import type { TranslationsFilesEnum } from "../../enums/translationsFiles.enum";
 
 export const useCustomTranslations = () => {
   const Nt = useTranslations();
