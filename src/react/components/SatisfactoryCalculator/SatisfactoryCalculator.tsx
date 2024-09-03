@@ -1,9 +1,8 @@
-import "./SatisfactoryCalculator.scss";
-
 import React, { useState } from "react";
 
 import { ImageHelper, Selector } from "../../../../nexus/src/nexusExporter";
 import { recipes } from "../../../dictionnaries/recipes.dictionnary";
+import styles from "./SatisfactoryCalculator.module.scss";
 
 export const SatisfactoryCalculator = (): React.JSX.Element => {
   const [resourceSelected, setResourceSelected] = useState<string | undefined>(
@@ -11,8 +10,8 @@ export const SatisfactoryCalculator = (): React.JSX.Element => {
   );
 
   return (
-    <div className="satisfactory-calculator-container">
-      <div className="mid-screen graph">
+    <div className={styles.satisfactory_calculator_container}>
+      <div className={`${styles.mid_screen} ${styles.graph}`}>
         <Selector
           id="satisfactory-calculator-resources-selector"
           position="top-right"
@@ -26,22 +25,22 @@ export const SatisfactoryCalculator = (): React.JSX.Element => {
           onSelect={(item) => setResourceSelected(item)}
         />
       </div>
-      <div className="mid-screen recipes">
+      <div className={`${styles.mid_screen} ${styles.recipes}`}>
         {recipes.map((recipe) => {
           return (
             <div
               key={recipe.recipeName}
-              className="one-recipe"
+              className={styles.one_recipe}
             >
-              <div className="resource-group">
+              <div className={styles.resource_group}>
                 {recipe.itemsIn.map((resourceIn) => {
                   return (
                     <div
                       key={resourceIn.itemName}
-                      className="resource-in-out"
+                      className={styles.resource_in_out}
                     >
                       <img
-                        className="resource-icon"
+                        className={styles.resource_icon}
                         alt={`Icon of ${resourceIn.itemName} satisfactory resource`}
                         src={ImageHelper.dynamicImageImporter(
                           `satisfactoryIcons/${resourceIn.itemName}.png`,
@@ -56,15 +55,15 @@ export const SatisfactoryCalculator = (): React.JSX.Element => {
                 <p>{recipe.craftBuildings}</p>
                 <p>{recipe.initCycleDuration}</p>
               </div>
-              <div className="resource-group">
+              <div className={styles.resource_group}>
                 {recipe.itemsOut.map((resourceOut) => {
                   return (
                     <div
                       key={resourceOut.itemName}
-                      className="resource-in-out"
+                      className={styles.resource_in_out}
                     >
                       <img
-                        className="resource-icon"
+                        className={styles.resource_icon}
                         alt={`Icon of ${resourceOut.itemName} satisfactory resource`}
                         src={ImageHelper.dynamicImageImporter(
                           `satisfactoryIcons/${resourceOut.itemName}.png`,

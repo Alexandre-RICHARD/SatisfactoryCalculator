@@ -1,5 +1,3 @@
-import "./LanguagesSelector.scss";
-
 import {
   InvertHelper,
   LabelWithIcon,
@@ -20,6 +18,7 @@ import { TranslationsFilesEnum } from "../../../enums/translationsFiles.enum";
 import { useCombinedStore } from "../../../store/combined.store";
 import { useCustomTranslations } from "../../hooks/useCustomTranslations";
 import { LanguageSelectorFlag } from "../LanguageSelectorFlag/LanguageSelectorFlag";
+import styles from "./LanguagesSelector.module.scss";
 
 export const LanguagesSelector = (): React.JSX.Element => {
   const t = useCustomTranslations();
@@ -53,7 +52,7 @@ export const LanguagesSelector = (): React.JSX.Element => {
             key={oneLanguage}
             icon={<LanguageSelectorFlag country={country} />}
             label={
-              <div className="dropdown-language-label">
+              <div className={styles.dropdown_language_label}>
                 <p>{translatedLanguage}</p>
                 {language !== code && <span>({nativeLanguageName})</span>}
               </div>

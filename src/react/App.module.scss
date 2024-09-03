@@ -1,6 +1,6 @@
-@import "@styles/index";
+@use "@styles/index";
 
-#app {
+.app {
   background-color: black;
   min-height: 100svh;
 }

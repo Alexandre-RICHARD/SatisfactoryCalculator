@@ -1,5 +1,3 @@
-import "./App.scss";
-
 import {
   TranslationProvider,
   TranslationsContext,
@@ -7,6 +5,7 @@ import {
 import React from "react";
 
 import { useCombinedStore } from "../store/combined.store";
+import styles from "./App.module.scss";
 import { Header } from "./components/Header/Header";
 import { SatisfactoryCalculator } from "./components/SatisfactoryCalculator/SatisfactoryCalculator";
 
@@ -24,10 +23,10 @@ export const App = (): React.JSX.Element => {
       filesContexts={filesContexts}
       language={language}
     >
-      <>
+      <div className={styles.app}>
         <Header />
         <SatisfactoryCalculator />
-      </>
+      </div>
     </TranslationProvider>
   );
 };
