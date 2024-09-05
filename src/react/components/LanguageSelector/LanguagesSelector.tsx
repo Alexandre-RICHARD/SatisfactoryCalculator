@@ -57,6 +57,7 @@ export const LanguagesSelector = (): React.JSX.Element => {
                 {language !== code && <span>({nativeLanguageName})</span>}
               </div>
             }
+            position="left"
           />
         ),
         search: `${translatedLanguage} (${nativeLanguageName})`,
@@ -75,6 +76,7 @@ export const LanguagesSelector = (): React.JSX.Element => {
             />
           }
           label={<p>{language.toUpperCase()}</p>}
+          position="left"
         />
       }
       items={languagesSelectOption}
