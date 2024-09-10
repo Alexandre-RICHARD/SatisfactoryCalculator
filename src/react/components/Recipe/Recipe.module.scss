@@ -1,0 +1,23 @@
+.one_recipe {
+  display: flex;
+  gap: 6px;
+  padding: 6px;
+  background-color: #1b1b1b;
+
+  .resource_group {
+    display: flex;
+    background-color: #545454;
+    gap: 6px;
+
+    .resource_in_out {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      .resource_icon {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}

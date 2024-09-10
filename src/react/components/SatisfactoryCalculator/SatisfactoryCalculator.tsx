@@ -1,12 +1,23 @@
 import React, { useState } from "react";
 
-import { ImageHelper, Selector } from "../../../../nexus/src/nexusExporter";
+import { Selector } from "../../../../nexus/src/nexusExporter";
 import { recipes } from "../../../dictionnaries/recipes.dictionnary";
+import { ItemsEnum } from "../../../enums/items.enum";
+import { Recipe } from "../Recipe/Recipe";
 import styles from "./SatisfactoryCalculator.module.scss";
 
 export const SatisfactoryCalculator = (): React.JSX.Element => {
-  const [resourceSelected, setResourceSelected] = useState<string | undefined>(
-    undefined,
+  const [resourceSelected, setResourceSelected] = useState<string>();
+  const [recipeSelected, setRecipeSelected] = useState<string>();
+
+  const ItemsThatCanBeCrafted = Object.values(ItemsEnum).filter((item) => {
+    return recipes.some((recipe) =>
+      recipe.itemsOut.some((itemOut) => itemOut.itemName === item),
+    );
+  });
+
+  const recipeThatCanBeDoWithItemInOutput = recipes.filter((recipe) =>
+    recipe.itemsOut.some((itemOut) => itemOut.itemName === resourceSelected),
   );
 
   return (
@@ -14,69 +25,50 @@ export const SatisfactoryCalculator = (): React.JSX.Element => {
       <div className={`${styles.mid_screen} ${styles.graph}`}>
         <Selector
           id="satisfactory-calculator-resources-selector"
-          position="top-right"
-          label={resourceSelected ?? "Selectionnes ta ressource"}
+          position="bottom-right"
+          label="Selectionnes ta ressource"
           selectedItem={resourceSelected}
-          items={recipes.map((recipe) => ({
-            label: recipe.recipeName,
-            search: recipe.recipeName,
-            value: recipe.recipeName,
+          items={ItemsThatCanBeCrafted.map((item) => ({
+            label: item,
+            search: item,
+            value: item,
           }))}
-          onSelect={(item) => setResourceSelected(item)}
+          onSelect={setResourceSelected}
+          search={{
+            isHandlingCustomSearch: false,
+            strictMode: false,
+          }}
         />
+        <p>{resourceSelected}</p>
+        {resourceSelected ? (
+          <Selector
+            id="satisfactory-calculator-recipe-selector"
+            position="bottom-right"
+            label="Selectionnes la recette"
+            selectedItem={recipeSelected}
+            items={recipeThatCanBeDoWithItemInOutput.map((recipe) => ({
+              label: recipe.recipeName,
+              search: recipe.recipeName,
+              value: recipe.recipeName,
+            }))}
+            onSelect={setRecipeSelected}
+          />
+        ) : null}
+        {recipeSelected ? (
+          <Recipe
+            recipe={
+              recipes.find((recipe) => recipe.recipeName === recipeSelected)!
+            }
+          />
+        ) : null}
       </div>
       <div className={`${styles.mid_screen} ${styles.recipes}`}>
-        {recipes.map((recipe) => {
-          return (
-            <div
-              key={recipe.recipeName}
-              className={styles.one_recipe}
-            >
-              <div className={styles.resource_group}>
-                {recipe.itemsIn.map((resourceIn) => {
-                  return (
-                    <div
-                      key={resourceIn.itemName}
-                      className={styles.resource_in_out}
-                    >
-                      <img
-                        className={styles.resource_icon}
-                        alt={`Icon of ${resourceIn.itemName} satisfactory resource`}
-                        src={ImageHelper.dynamicImageImporter(
-                          `satisfactoryIcons/${resourceIn.itemName}.png`,
-                        )}
-                      />
-                      <p>{resourceIn.quantityPerCycle}</p>
-                    </div>
-                  );
-                })}
-              </div>
-              <div>
-                <p>{recipe.craftBuildings}</p>
-                <p>{recipe.initCycleDuration}</p>
-              </div>
-              <div className={styles.resource_group}>
-                {recipe.itemsOut.map((resourceOut) => {
-                  return (
-                    <div
-                      key={resourceOut.itemName}
-                      className={styles.resource_in_out}
-                    >
-                      <img
-                        className={styles.resource_icon}
-                        alt={`Icon of ${resourceOut.itemName} satisfactory resource`}
-                        src={ImageHelper.dynamicImageImporter(
-                          `satisfactoryIcons/${resourceOut.itemName}.png`,
-                        )}
-                      />
-                      <p>{resourceOut.quantityPerCycle}</p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          );
-        })}
+        {recipes.map((recipe) => (
+          <Recipe
+            key={recipe.recipeName}
+            recipe={recipe}
+          />
+        ))}
       </div>
     </div>
   );
