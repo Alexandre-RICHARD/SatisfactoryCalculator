@@ -32,5 +32,12 @@ export default defineConfig(({ mode }) => {
         "**/{vite,vitest}.config.*",
       ],
     },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: "modern-compiler",
+        },
+      },
+    },
   };
 });

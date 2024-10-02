@@ -7,7 +7,7 @@ import React from "react";
 import { useCombinedStore } from "../store/combined.store";
 import styles from "./App.module.scss";
 import { Header } from "./components/Header/Header";
-import { SatisfactoryCalculator } from "./components/SatisfactoryCalculator/SatisfactoryCalculator";
+import { Router } from "./Router";
 
 export const App = (): React.JSX.Element => {
   const language = useCombinedStore((state) => state.language);
@@ -25,7 +25,7 @@ export const App = (): React.JSX.Element => {
     >
       <div className={styles.app}>
         <Header />
-        <SatisfactoryCalculator />
+        <Router />
       </div>
     </TranslationProvider>
   );
