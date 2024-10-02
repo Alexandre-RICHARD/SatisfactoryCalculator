@@ -2,7 +2,7 @@ import React from "react";
 
 import { ImageHelper } from "../../../../nexus/src/nexusExporter";
 import type { RecipesType } from "../../../types/satisfactory/items";
-import styles from "./Recipe.module.scss";
+import styles from "./styles.module.scss";
 
 type PropsType = {
   recipe: RecipesType;

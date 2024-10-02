@@ -6,7 +6,7 @@ import React from "react";
 
 import { useCombinedStore } from "../store/combined.store";
 import styles from "./App.module.scss";
-import { Header } from "./components/Header/Header";
+import { Header } from "./components/Header";
 import { Router } from "./Router";
 
 export const App = (): React.JSX.Element => {

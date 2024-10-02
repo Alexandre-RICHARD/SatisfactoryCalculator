@@ -17,8 +17,8 @@ import { supportedLanguages } from "../../../dictionnaries/supportedLanguages.di
 import { TranslationsFilesEnum } from "../../../enums/translationsFiles.enum";
 import { useCombinedStore } from "../../../store/combined.store";
 import { useCustomTranslations } from "../../hooks/useCustomTranslations";
-import { LanguageSelectorFlag } from "../LanguageSelectorFlag/LanguageSelectorFlag";
-import styles from "./LanguagesSelector.module.scss";
+import { LanguageSelectorFlag } from "../LanguageSelectorFlag";
+import styles from "./styles.module.scss";
 
 export const LanguagesSelector = (): React.JSX.Element => {
   const t = useCustomTranslations();
