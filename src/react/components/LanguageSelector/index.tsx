@@ -83,7 +83,6 @@ export const LanguagesSelector = (): React.JSX.Element => {
       selectedItem={language}
       position="bottom-left"
       onSelect={(item) => setLanguage(item as LanguageCodeEnum)}
-      search={{ isHandlingCustomSearch: false }}
     />
   );
 };
