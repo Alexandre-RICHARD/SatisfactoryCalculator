@@ -19,6 +19,8 @@
 
   .one_recipe {
     display: flex;
+    align-items: center;
+    gap: 10px;
 
     .resource_group {
       display: flex;
@@ -27,7 +29,8 @@
       .resource_in_out {
         position: relative;
         padding: 4px;
-        border-radius: 3px;
+        border-radius: 6px;
+        overflow: hidden;
         background-color: #ccc;
         display: flex;
         flex-direction: column;
@@ -53,6 +56,10 @@
           font-size: 16px;
         }
       }
+    }
+
+    .arrow_container {
+      transform: rotate(90deg);
     }
 
     .recipe_info {

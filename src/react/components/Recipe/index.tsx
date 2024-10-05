@@ -46,10 +46,13 @@ export const Recipe = ({ recipe }: PropsType): React.JSX.Element => {
             );
           })}
         </div>
-        <IconContainer
-          iconToken={IconTokenEnum.TriangleArrow}
-          size="20"
-        />
+        <div className={styles.arrow_container}>
+          <IconContainer
+            iconToken={IconTokenEnum.TriangleArrow}
+            color="#ccc"
+            size={14}
+          />
+        </div>
         <div className={styles.resource_group}>
           {recipe.itemsOut.map((resourceOut) => {
             return (
