@@ -2124,6 +2124,7 @@ export const recipes: RecipesType[] = [
   {
     recipeName: "Empty_Canister-Alternate_7",
     recipeType: "alternate",
+    duplicate: true,
     craftBuildings: CraftBuildingsEnum.Packager,
     itemsIn: [
       {

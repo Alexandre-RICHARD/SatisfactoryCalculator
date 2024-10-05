@@ -12,6 +12,7 @@ type ItemsInOutType = {
 export type RecipesType = {
   recipeName: string;
   recipeType: "standard" | "alternate";
+  duplicate?: true;
   craftBuildings: CraftBuildingsEnum | PowerBuildingsEnum;
   itemsIn: ItemsInOutType[];
   itemsOut: ItemsInOutType[];

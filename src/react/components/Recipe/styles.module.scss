@@ -1,23 +1,63 @@
-.one_recipe {
-  display: flex;
+.one_recipe_container {
   gap: 6px;
   padding: 6px;
-  background-color: #1b1b1b;
+  background-color: #0d0d0d;
 
-  .resource_group {
-    display: flex;
-    background-color: #545454;
-    gap: 6px;
+  .recipe_title {
+    font-weight: 500;
+    margin-bottom: 5px;
 
-    .resource_in_out {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-
-      .resource_icon {
-        width: 40px;
-        height: 40px;
-      }
+    .duplicated_recipe {
+      border-radius: 4px;
+      padding: 2px 6px;
+      margin: 0 6px;
+      font-weight: 900;
+      font-size: 12px;
+      background-color: #e49444;
     }
   }
+
+  .one_recipe {
+    display: flex;
+
+    .resource_group {
+      display: flex;
+      gap: 6px;
+  
+      .resource_in_out {
+        position: relative;
+        padding: 4px;
+        border-radius: 3px;
+        background-color: #ccc;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+  
+        .resource_icon {
+          width: 40px;
+          height: 40px;
+        }
+
+        .resource_count {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 22px;
+          height: 22px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #fefefe;
+          background-color: #656565;
+          font-weight: 700;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .recipe_info {
+      
+    }
+  }
+
 }

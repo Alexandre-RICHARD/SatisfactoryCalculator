@@ -50,7 +50,7 @@ export const LanguagesSelector = (): React.JSX.Element => {
         label: (
           <LabelWithIcon
             key={oneLanguage}
-            icon={<LanguageSelectorFlag country={country} />}
+            image={<LanguageSelectorFlag country={country} />}
             label={
               <div className={styles.dropdown_language_label}>
                 <p>{translatedLanguage}</p>
@@ -70,7 +70,7 @@ export const LanguagesSelector = (): React.JSX.Element => {
       id="language"
       label={
         <LabelWithIcon
-          icon={
+          image={
             <LanguageSelectorFlag
               country={languageToCountry[storedLanguageName]}
             />
