@@ -1,3 +1,6 @@
 export default {
-  exemple: "My test string",
+  recipes: "Recipes",
+  calculator: "Calculator",
+  producedIn: "Produced in :",
+  cycleDuration: "Cycle duration :",
 };
