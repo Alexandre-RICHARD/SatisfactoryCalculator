@@ -3,11 +3,12 @@ import React, { useState } from "react";
 import { Selector } from "../../../../nexus/src/nexusExporter";
 import { recipes } from "../../../dictionnaries/recipes.dictionnary";
 import { ItemsEnum } from "../../../enums/items.enum";
+import type { RecipesEnum } from "../../../enums/recipes.enum";
 import { Recipe } from "../../components/Recipe";
 
 export const Graph = (): React.JSX.Element => {
   const [resourceSelected, setResourceSelected] = useState<string>();
-  const [recipeSelected, setRecipeSelected] = useState<string>();
+  const [recipeSelected, setRecipeSelected] = useState<RecipesEnum>();
 
   const ItemsThatCanBeCrafted = Object.values(ItemsEnum).filter((item) => {
     return recipes.some((recipe) =>

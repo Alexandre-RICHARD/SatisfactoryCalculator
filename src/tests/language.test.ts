@@ -1,3 +1,6 @@
+// TODO
+// ? Remettre en place les tests de changement de langue
+// ? Mettre en place des tests pour définir que chaque traduction est égale pour chaque fichier
 // import { CookieHelper, LanguageEnum } from "@nexus/src/nexusExporter";
 // import { expect, test } from "vitest";
 
@@ -12,7 +15,6 @@
 // });
 
 // test("Translation should be found", () => {
-//   // TODO
 //   // const key = "selectLanguage";
 //   // const currentLanguage = getState().language;
 //   // const translation = T.getT(currentLanguage, key);

@@ -8,7 +8,6 @@ export const useCustomTranslations = () => {
   // Todo, implémenter la logique d'une traductions ici
   const t = (files: TranslationsFilesEnum, key: string) => {
     const myTranslations = Nt(files as string, key);
-
     return myTranslations;
   };
 

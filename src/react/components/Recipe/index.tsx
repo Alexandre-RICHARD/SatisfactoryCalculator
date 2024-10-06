@@ -1,11 +1,15 @@
 import React from "react";
+import { useShallow } from "zustand/react/shallow";
 
 import {
   IconContainer,
   IconTokenEnum,
   ImageHelper,
 } from "../../../../nexus/src/nexusExporter";
-import type { RecipesType } from "../../../types/satisfactory/items";
+import { TranslationsFilesEnum } from "../../../enums/translationsFiles.enum";
+import { useCombinedStore } from "../../../store/combined.store";
+import type { RecipesType } from "../../../types/satisfactory/recipes";
+import { useCustomTranslations } from "../../hooks/useCustomTranslations";
 import styles from "./styles.module.scss";
 
 type PropsType = {
@@ -13,14 +17,32 @@ type PropsType = {
 };
 
 export const Recipe = ({ recipe }: PropsType): React.JSX.Element => {
+  const t = useCustomTranslations();
+  const [minuteCalculation] = useCombinedStore(
+    useShallow((state) => [state.minuteCalculation]),
+  );
+
+  type GetItemCountType = {
+    cycleDuration: number;
+    cycleItemCount: number;
+  };
+
+  const getItemCount = ({
+    cycleDuration,
+    cycleItemCount,
+  }: GetItemCountType) => {
+    if (!minuteCalculation) return cycleItemCount;
+    return parseFloat(((60 / cycleDuration) * cycleItemCount).toFixed(4));
+  };
+
   return (
     <div
       key={recipe.recipeName}
       className={styles.one_recipe_container}
     >
       <p className={styles.recipe_title}>
-        {recipe.recipeName}
-        {recipe.duplicate && (
+        {t(TranslationsFilesEnum.SATISFACTORY_RECIPES, recipe.recipeName)}
+        {recipe.isDuplicate && (
           <span className={styles.duplicated_recipe}>Duplicate</span>
         )}
       </p>
@@ -40,7 +62,10 @@ export const Recipe = ({ recipe }: PropsType): React.JSX.Element => {
                   )}
                 />
                 <p className={styles.resource_count}>
-                  {resourceIn.quantityPerCycle}
+                  {getItemCount({
+                    cycleDuration: recipe.initCycleDuration,
+                    cycleItemCount: resourceIn.quantityPerCycle,
+                  })}
                 </p>
               </div>
             );
@@ -68,15 +93,31 @@ export const Recipe = ({ recipe }: PropsType): React.JSX.Element => {
                   )}
                 />
                 <p className={styles.resource_count}>
-                  {resourceOut.quantityPerCycle}
+                  {getItemCount({
+                    cycleDuration: recipe.initCycleDuration,
+                    cycleItemCount: resourceOut.quantityPerCycle,
+                  })}
                 </p>
               </div>
             );
           })}
         </div>
         <div className={styles.recipe_info}>
-          <p>{recipe.craftBuildings}</p>
-          <p>{recipe.initCycleDuration}</p>
+          <p>
+            {t(TranslationsFilesEnum.COMMON, "producedIn")}{" "}
+            <span className={styles.recipes_one_info}>
+              {t(
+                TranslationsFilesEnum.SATISFACTORY_BUILDING,
+                recipe.craftBuildings,
+              )}
+            </span>
+          </p>
+          <p>
+            {t(TranslationsFilesEnum.COMMON, "cycleDuration")}{" "}
+            <span className={styles.recipes_one_info}>
+              {recipe.initCycleDuration}s
+            </span>
+          </p>
         </div>
       </div>
     </div>
