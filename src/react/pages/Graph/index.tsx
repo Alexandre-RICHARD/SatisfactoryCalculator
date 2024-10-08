@@ -1,6 +1,6 @@
+import { Selector } from "@nexus/src/nexusExporter";
 import React, { useState } from "react";
 
-import { Selector } from "../../../../nexus/src/nexusExporter";
 import { recipes } from "../../../dictionnaries/recipes.dictionnary";
 import { ItemsEnum } from "../../../enums/items.enum";
 import type { RecipesEnum } from "../../../enums/recipes.enum";

@@ -1,11 +1,11 @@
-import React from "react";
-import { useShallow } from "zustand/react/shallow";
-
 import {
   IconContainer,
   IconTokenEnum,
-  roundNumberHelper,
-} from "../../../../nexus/src/nexusExporter";
+  roundNumber,
+} from "@nexus/src/nexusExporter";
+import React from "react";
+import { useShallow } from "zustand/react/shallow";
+
 import { buildings } from "../../../dictionnaries/buildings.dictionnary";
 import { TranslationsFilesEnum } from "../../../enums/translationsFiles.enum";
 import { useCombinedStore } from "../../../store/combined.store";
@@ -83,19 +83,19 @@ export const Recipe = ({ recipe }: PropsType): React.JSX.Element => {
           <p>
             {t(TranslationsFilesEnum.COMMON, "cycleDuration")}{" "}
             <span className={styles.recipes_one_info}>
-              {roundNumberHelper(cycleDuration, 1)}s
+              {roundNumber(cycleDuration, 1)}s
             </span>
           </p>
           <p>
             {t(TranslationsFilesEnum.COMMON, "requiredPower")}{" "}
             <span className={styles.recipes_one_info}>
-              {roundNumberHelper(powerNeeded, 2)} Mw
+              {roundNumber(powerNeeded, 2)} Mw
             </span>
           </p>
           <p>
             {t(TranslationsFilesEnum.COMMON, "requiredEnergy")}{" "}
             <span className={styles.recipes_one_info}>
-              {roundNumberHelper(powerNeeded * cycleDuration, 2)} Mj
+              {roundNumber(powerNeeded * cycleDuration, 2)} Mj
             </span>
           </p>
         </div>

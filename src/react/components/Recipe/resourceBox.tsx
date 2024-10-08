@@ -1,10 +1,7 @@
+import { dynamicImageImporter, roundNumber } from "@nexus/src/nexusExporter";
 import React from "react";
 import { useShallow } from "zustand/react/shallow";
 
-import {
-  ImageHelper,
-  roundNumberHelper,
-} from "../../../../nexus/src/nexusExporter";
 import { useCombinedStore } from "../../../store/combined.store";
 import type { ItemsInOutType } from "../../../types/satisfactory/itemsInOut";
 import styles from "./styles.module.scss";
@@ -24,7 +21,7 @@ export const ResourceBox = ({
 
   const getItemCount = (cycleItemCount: number) => {
     if (!minuteCalculation) return cycleItemCount;
-    return roundNumberHelper((60 / cycleDuration) * cycleItemCount, 2);
+    return roundNumber((60 / cycleDuration) * cycleItemCount, 2);
   };
 
   return (
@@ -35,9 +32,7 @@ export const ResourceBox = ({
       <img
         className={styles.resource_icon}
         alt={`Icon of ${resource.itemName} satisfactory resource`}
-        src={ImageHelper.dynamicImageImporter(
-          `satisfactoryIcons/${resource.itemName}.png`,
-        )}
+        src={dynamicImageImporter(`satisfactoryIcons/${resource.itemName}.png`)}
       />
       <p className={styles.resource_count}>
         {getItemCount(resource.quantityPerCycle)}

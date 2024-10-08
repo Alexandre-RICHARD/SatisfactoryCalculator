@@ -1,5 +1,6 @@
 import {
-  InvertHelper,
+  getInvertObject,
+  getSortStringValue,
   LabelWithIcon,
   type LanguageCodeEnum,
   type LanguageEnum,
@@ -8,7 +9,6 @@ import {
   nativeLanguageNames,
   type SelectItemsType,
   Selector,
-  SortHelper,
 } from "@nexus/src/nexusExporter";
 import React from "react";
 import { useShallow } from "zustand/react/shallow";
@@ -27,7 +27,7 @@ export const LanguagesSelector = (): React.JSX.Element => {
     useShallow((state) => [state.language, state.setLanguage]),
   );
 
-  const storedLanguageName = InvertHelper.getInvertObject(languageToCode)[
+  const storedLanguageName = getInvertObject(languageToCode)[
     language
   ] as LanguageEnum;
 
@@ -35,7 +35,7 @@ export const LanguagesSelector = (): React.JSX.Element => {
     .sort((languageA, languageB) => {
       const stringA = t(TranslationsFilesEnum.LANGUAGES, languageA);
       const stringB = t(TranslationsFilesEnum.LANGUAGES, languageB);
-      return SortHelper.getSortStringValue(stringA, stringB);
+      return getSortStringValue(stringA, stringB);
     })
     .map((oneLanguage) => {
       const country = languageToCountry[oneLanguage];
