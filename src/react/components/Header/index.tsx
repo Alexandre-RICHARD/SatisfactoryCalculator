@@ -11,7 +11,7 @@ export const Header = (): React.JSX.Element => {
 
   return (
     <header className={styles.header}>
-      <h1>Satisfactory calculator</h1>
+      <NavLink to="/">Satisfactory calculator</NavLink>
       <NavLink to="/recipes">
         {t(TranslationsFilesEnum.COMMON, "recipes")}
       </NavLink>

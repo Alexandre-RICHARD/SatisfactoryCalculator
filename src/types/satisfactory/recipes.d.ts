@@ -1,12 +1,7 @@
 import type { CraftBuildingsEnum } from "../../enums/craftBuildings.enum";
-import type { ItemsEnum } from "../../enums/items.enum";
 import type { PowerBuildingsEnum } from "../../enums/powerBuildings.enum";
 import type { RecipesEnum } from "../../enums/recipes.enum";
-
-type ItemsInOutType = {
-  itemName: ItemsEnum;
-  quantityPerCycle: number;
-};
+import type { ItemsInOutType } from "./itemsInOut";
 
 export type RecipesType = {
   recipeName: RecipesEnum;

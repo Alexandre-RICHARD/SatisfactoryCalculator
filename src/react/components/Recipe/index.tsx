@@ -4,12 +4,14 @@ import { useShallow } from "zustand/react/shallow";
 import {
   IconContainer,
   IconTokenEnum,
-  ImageHelper,
+  roundNumberHelper,
 } from "../../../../nexus/src/nexusExporter";
+import { buildings } from "../../../dictionnaries/buildings.dictionnary";
 import { TranslationsFilesEnum } from "../../../enums/translationsFiles.enum";
 import { useCombinedStore } from "../../../store/combined.store";
 import type { RecipesType } from "../../../types/satisfactory/recipes";
 import { useCustomTranslations } from "../../hooks/useCustomTranslations";
+import { ResourceBox } from "./resourceBox";
 import styles from "./styles.module.scss";
 
 type PropsType = {
@@ -18,22 +20,14 @@ type PropsType = {
 
 export const Recipe = ({ recipe }: PropsType): React.JSX.Element => {
   const t = useCustomTranslations();
-  const [minuteCalculation] = useCombinedStore(
-    useShallow((state) => [state.minuteCalculation]),
+  const [overclocking] = useCombinedStore(
+    useShallow((state) => [state.overclocking]),
   );
 
-  type GetItemCountType = {
-    cycleDuration: number;
-    cycleItemCount: number;
-  };
-
-  const getItemCount = ({
-    cycleDuration,
-    cycleItemCount,
-  }: GetItemCountType) => {
-    if (!minuteCalculation) return cycleItemCount;
-    return parseFloat(((60 / cycleDuration) * cycleItemCount).toFixed(4));
-  };
+  const cycleDuration = recipe.initCycleDuration / (overclocking / 100);
+  const powerNeeded =
+    buildings[recipe.craftBuildings].consumption *
+    (overclocking / 100) ** 1.321928;
 
   return (
     <div
@@ -48,26 +42,13 @@ export const Recipe = ({ recipe }: PropsType): React.JSX.Element => {
       </p>
       <div className={styles.one_recipe}>
         <div className={styles.resource_group}>
-          {recipe.itemsIn.map((resourceIn) => {
+          {recipe.itemsIn.map((resource) => {
             return (
-              <div
-                key={resourceIn.itemName}
-                className={styles.resource_in_out}
-              >
-                <img
-                  className={styles.resource_icon}
-                  alt={`Icon of ${resourceIn.itemName} satisfactory resource`}
-                  src={ImageHelper.dynamicImageImporter(
-                    `satisfactoryIcons/${resourceIn.itemName}.png`,
-                  )}
-                />
-                <p className={styles.resource_count}>
-                  {getItemCount({
-                    cycleDuration: recipe.initCycleDuration,
-                    cycleItemCount: resourceIn.quantityPerCycle,
-                  })}
-                </p>
-              </div>
+              <ResourceBox
+                key={resource.itemName}
+                cycleDuration={cycleDuration}
+                resource={resource}
+              />
             );
           })}
         </div>
@@ -79,26 +60,13 @@ export const Recipe = ({ recipe }: PropsType): React.JSX.Element => {
           />
         </div>
         <div className={styles.resource_group}>
-          {recipe.itemsOut.map((resourceOut) => {
+          {recipe.itemsOut.map((resource) => {
             return (
-              <div
-                key={resourceOut.itemName}
-                className={styles.resource_in_out}
-              >
-                <img
-                  className={styles.resource_icon}
-                  alt={`Icon of ${resourceOut.itemName} satisfactory resource`}
-                  src={ImageHelper.dynamicImageImporter(
-                    `satisfactoryIcons/${resourceOut.itemName}.png`,
-                  )}
-                />
-                <p className={styles.resource_count}>
-                  {getItemCount({
-                    cycleDuration: recipe.initCycleDuration,
-                    cycleItemCount: resourceOut.quantityPerCycle,
-                  })}
-                </p>
-              </div>
+              <ResourceBox
+                key={resource.itemName}
+                cycleDuration={cycleDuration}
+                resource={resource}
+              />
             );
           })}
         </div>
@@ -115,7 +83,19 @@ export const Recipe = ({ recipe }: PropsType): React.JSX.Element => {
           <p>
             {t(TranslationsFilesEnum.COMMON, "cycleDuration")}{" "}
             <span className={styles.recipes_one_info}>
-              {recipe.initCycleDuration}s
+              {roundNumberHelper(cycleDuration, 1)}s
+            </span>
+          </p>
+          <p>
+            {t(TranslationsFilesEnum.COMMON, "requiredPower")}{" "}
+            <span className={styles.recipes_one_info}>
+              {roundNumberHelper(powerNeeded, 2)} Mw
+            </span>
+          </p>
+          <p>
+            {t(TranslationsFilesEnum.COMMON, "requiredEnergy")}{" "}
+            <span className={styles.recipes_one_info}>
+              {roundNumberHelper(powerNeeded * cycleDuration, 2)} Mj
             </span>
           </p>
         </div>

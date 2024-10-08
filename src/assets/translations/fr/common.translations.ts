@@ -3,4 +3,6 @@ export default {
   calculator: "Calculateur",
   producedIn: "Lieu de production :",
   cycleDuration: "Durée d'un cycle :",
+  requiredPower: "Puissance requise :",
+  requiredEnergy: "Énergie requise :",
 };

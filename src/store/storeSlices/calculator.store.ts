@@ -7,4 +7,8 @@ export const useCalculatorStore: StateCreator<CalculatorSliceType> = (set) => ({
   setMinuteCalculation: (newValue) => {
     set(() => ({ minuteCalculation: newValue }));
   },
+  overclocking: 100,
+  setOverclocking: (newValue) => {
+    set(() => ({ overclocking: newValue }));
+  },
 });
