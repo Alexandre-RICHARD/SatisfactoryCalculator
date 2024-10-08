@@ -12,13 +12,17 @@ import type { TranslationSliceType } from "../../types/store/storeSlices/transla
 export const useTranslationStore: StateCreator<TranslationSliceType> = (
   set,
 ) => ({
-  language: selectedLanguageInitiator(
+  language: selectedLanguageInitiator({
     supportedLanguages,
-    CookieEnum.LANG,
-    LanguageEnum.FRENCH,
-  ),
+    cookieName: CookieEnum.LANG,
+    defaultLanguage: LanguageEnum.FRENCH,
+  }),
   setLanguage: (newLanguageCode) => {
-    setCookie(CookieEnum.LANG, newLanguageCode, 24 * 365 * 100);
+    setCookie({
+      name: CookieEnum.LANG,
+      value: newLanguageCode,
+      hours: 24 * 365,
+    });
     set(() => ({ language: newLanguageCode }));
   },
 });
