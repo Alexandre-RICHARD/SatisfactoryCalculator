@@ -25,7 +25,9 @@ export const App = (): React.JSX.Element => {
     >
       <div className={styles.app}>
         <Header />
-        <Router />
+        <div className={styles.content_container}>
+          <Router />
+        </div>
       </div>
     </TranslationProvider>
   );

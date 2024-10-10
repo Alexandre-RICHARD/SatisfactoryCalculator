@@ -4,9 +4,13 @@ import React, { useState } from "react";
 import { recipes } from "../../../dictionnaries/recipes.dictionnary";
 import { ItemsEnum } from "../../../enums/items.enum";
 import type { RecipesEnum } from "../../../enums/recipes.enum";
+import { TranslationsFilesEnum } from "../../../enums/translationsFiles.enum";
 import { Recipe } from "../../components/Recipe";
+import { useCustomTranslations } from "../../hooks/useCustomTranslations";
+import styles from "./styles.module.scss";
 
 export const Graph = (): React.JSX.Element => {
+  const t = useCustomTranslations();
   const [resourceSelected, setResourceSelected] = useState<string>();
   const [recipeSelected, setRecipeSelected] = useState<RecipesEnum>();
 
@@ -21,45 +25,57 @@ export const Graph = (): React.JSX.Element => {
   );
 
   return (
-    <div>
-      <Selector
-        id="satisfactory-calculator-resources-selector"
-        position="bottom-right"
-        label="Selectionnes ta ressource"
-        selectedItem={resourceSelected}
-        items={ItemsThatCanBeCrafted.map((item) => ({
-          label: item,
-          search: item,
-          value: item,
-        }))}
-        onSelect={setResourceSelected}
-        search={{
-          isHandlingCustomSearch: false,
-          strictMode: false,
-        }}
-      />
-      <p>{resourceSelected}</p>
-      {resourceSelected ? (
+    <>
+      <div className={styles.recipe_calculator_container}>
         <Selector
-          id="satisfactory-calculator-recipe-selector"
+          id="satisfactory-calculator-resources-selector"
           position="bottom-right"
-          label="Selectionnes la recette"
-          selectedItem={recipeSelected}
-          items={recipeThatCanBeDoWithItemInOutput.map((recipe) => ({
-            label: recipe.recipeName,
-            search: recipe.recipeName,
-            value: recipe.recipeName,
+          label="Selectionnes ta ressource"
+          selectedItem={resourceSelected}
+          items={ItemsThatCanBeCrafted.map((item) => ({
+            label: t(TranslationsFilesEnum.SATISFACTORY_ITEMS, item),
+            search: t(TranslationsFilesEnum.SATISFACTORY_ITEMS, item),
+            value: item,
           }))}
-          onSelect={setRecipeSelected}
+          onSelect={setResourceSelected}
+          search={{
+            isHandlingCustomSearch: false,
+            strictMode: false,
+          }}
         />
-      ) : null}
-      {recipeSelected ? (
-        <Recipe
-          recipe={
-            recipes.find((recipe) => recipe.recipeName === recipeSelected)!
-          }
-        />
-      ) : null}
-    </div>
+        {resourceSelected ? (
+          <Selector
+            id="satisfactory-calculator-recipe-selector"
+            position="bottom-right"
+            label="Selectionnes la recette"
+            selectedItem={recipeSelected}
+            items={recipeThatCanBeDoWithItemInOutput.map((recipe) => ({
+              label: t(
+                TranslationsFilesEnum.SATISFACTORY_RECIPES,
+                recipe.recipeName,
+              ),
+              search: t(
+                TranslationsFilesEnum.SATISFACTORY_RECIPES,
+                recipe.recipeName,
+              ),
+              value: recipe.recipeName,
+            }))}
+            onSelect={setRecipeSelected}
+          />
+        ) : null}
+        {recipeSelected ? (
+          <Recipe
+            recipe={
+              recipes.find((recipe) => recipe.recipeName === recipeSelected)!
+            }
+          />
+        ) : null}
+      </div>
+      {resourceSelected && (
+        <p className={styles.recipe_title}>
+          {t(TranslationsFilesEnum.SATISFACTORY_ITEMS, resourceSelected)}
+        </p>
+      )}
+    </>
   );
 };

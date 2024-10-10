@@ -32,7 +32,7 @@ export const RecipesList = (): React.JSX.Element => {
   );
 
   return (
-    <div className={styles.all_recipes_container}>
+    <>
       <div className={styles.input_container}>
         <label htmlFor="checkbox_minutes">
           Minutes or not
@@ -74,6 +74,6 @@ export const RecipesList = (): React.JSX.Element => {
           />
         ))}
       </div>
-    </div>
+    </>
   );
 };

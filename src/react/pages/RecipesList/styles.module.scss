@@ -1,68 +1,63 @@
-.all_recipes_container {
-  padding: 8px;
+.input_container {
+  color: #fefefe;
+  margin-block: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
 
-  .input_container {
-    color: #fefefe;
-    margin-block: 10px;
+  .checkbox_minutes {
+    appearance: checkbox;
+    margin-inline: 12px;
+  }
+
+  .range_overclocking {
     display: flex;
-    flex-wrap: nowrap;
-    gap: 10px;
+    width: 100%;
+    align-items: flex-start;
 
-    .checkbox_minutes {
-      appearance: checkbox;
-      margin-inline: 12px;
-    }
-
-    .range_overclocking {
+    .range_container {
       display: flex;
+      flex-direction: column;
+      align-items: center;
       width: 100%;
-      align-items: flex-start;
+      cursor: default;
 
-      .range_container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        cursor: default;
+      .range_overclocking_input {
+        width: calc(100% - 20px);
+        height: 25px;
+        margin-left: 20px;
 
-        .range_overclocking_input {
-          width: calc(100% - 20px);
-          height: 25px;
-          margin-left: 20px;
+        &::-webkit-slider-runnable-track {
+          background-color: #e49444;
+          border-radius: 50px;
+          height: 0.5rem;
+        }
 
-          &::-webkit-slider-runnable-track {
-            background-color: #e49444;
-            border-radius: 50px;
-            height: 0.5rem;
+        &::-webkit-slider-thumb {
+          appearance: none;
+          appearance: none;
+          margin-top: -6px;
+          background-color: #fefefe;
+          border-radius: 50%;
+          height: 20px;
+          width: 20px;
+
+          &:hover {
+            cursor: pointer;
           }
-          
-          &::-webkit-slider-thumb {
-            appearance: none;
-            appearance: none;
-            margin-top: -6px;
-            background-color: #fefefe;
-            border-radius: 50%;
-            height: 20px;
-            width: 20px;
+        }
 
-            &:hover {
-              cursor: pointer;
-            }
-          }
-          
-          &:active::-webkit-slider-thumb {
-            background-color: #cecece;
-          }
+        &:active::-webkit-slider-thumb {
+          background-color: #cecece;
         }
       }
     }
   }
-
-  .recipes {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
 }
 
+.recipes {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

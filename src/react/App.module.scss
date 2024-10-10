@@ -3,4 +3,9 @@
 .app {
   background-color: #222;
   min-height: 100svh;
+  color: #fefefe;
+
+  .content_container {
+    padding: 8px;
+  }
 }
