@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 
-import { Graph } from "./pages/Graph";
+import { RecipeCalculator } from "./pages/RecipeCalculator";
 import { RecipesList } from "./pages/RecipesList";
 
 export const Router = (): React.JSX.Element => {
@@ -12,8 +12,8 @@ export const Router = (): React.JSX.Element => {
         element={<RecipesList />}
       />
       <Route
-        path="/graph"
-        element={<Graph />}
+        path="/calculator"
+        element={<RecipeCalculator />}
       />
     </Routes>
   );

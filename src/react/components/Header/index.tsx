@@ -15,7 +15,7 @@ export const Header = (): React.JSX.Element => {
       <NavLink to="/recipes">
         {t(TranslationsFilesEnum.COMMON, "recipes")}
       </NavLink>
-      <NavLink to="/graph">
+      <NavLink to="/calculator">
         {t(TranslationsFilesEnum.COMMON, "calculator")}
       </NavLink>
       <LanguagesSelector />
