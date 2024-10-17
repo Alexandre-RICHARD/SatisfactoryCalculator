@@ -4,30 +4,27 @@ import {
   roundNumber,
 } from "@nexus/src/nexusExporter";
 import React from "react";
-import { useShallow } from "zustand/react/shallow";
 
-import { buildings } from "../../../dictionnaries/buildings.dictionnary";
 import { TranslationsFilesEnum } from "../../../enums/translationsFiles.enum";
+import { powerCalculation } from "../../../helpers/powerCalculation.helper";
 import { useCombinedStore } from "../../../store/combined.store";
-import type { RecipesType } from "../../../types/satisfactory/recipes";
+import type { RecipeType } from "../../../types/satisfactory/recipe";
 import { useCustomTranslations } from "../../hooks/useCustomTranslations";
 import { ResourceBox } from "./resourceBox";
 import styles from "./styles.module.scss";
 
 type PropsType = {
-  recipe: RecipesType;
+  recipe: RecipeType;
 };
 
 export const Recipe = ({ recipe }: PropsType): React.JSX.Element => {
   const t = useCustomTranslations();
-  const [overclocking] = useCombinedStore(
-    useShallow((state) => [state.overclocking]),
-  );
+  const overclocking = useCombinedStore((state) => state.overclocking);
 
-  const cycleDuration = recipe.initCycleDuration / (overclocking / 100);
-  const powerNeeded =
-    buildings[recipe.craftBuildings].consumption *
-    (overclocking / 100) ** 1.321928;
+  const { cycleDuration, requiredEnergy, requiredPower } = powerCalculation({
+    recipe,
+    overclocking,
+  });
 
   return (
     <div
@@ -89,14 +86,16 @@ export const Recipe = ({ recipe }: PropsType): React.JSX.Element => {
           <p>
             {t(TranslationsFilesEnum.COMMON, "requiredPower")}{" "}
             <span className={styles.recipes_one_info}>
-              {roundNumber(powerNeeded, 2)} Mw
-            </span>
+              {roundNumber(requiredPower, 2)} Mw
+            </span>{" "}
+            {t(TranslationsFilesEnum.COMMON, "powerByBuilding")}
           </p>
           <p>
             {t(TranslationsFilesEnum.COMMON, "requiredEnergy")}{" "}
             <span className={styles.recipes_one_info}>
-              {roundNumber(powerNeeded * cycleDuration, 2)} Mj
-            </span>
+              {roundNumber(requiredEnergy, 2)} Mj
+            </span>{" "}
+            {t(TranslationsFilesEnum.COMMON, "energyPerItem")}
           </p>
         </div>
       </div>

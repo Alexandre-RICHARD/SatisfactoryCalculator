@@ -1,3 +1,4 @@
+// TODO S'arranger pour créer une énum des traductions
 export default {
   recipes: "Recipes",
   calculator: "Calculator",
@@ -5,4 +6,6 @@ export default {
   cycleDuration: "Cycle duration :",
   requiredPower: "Required power :",
   requiredEnergy: "Required energy :",
+  powerByBuilding: "by building",
+  energyPerItem: "per item",
 };
