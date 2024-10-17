@@ -1,12 +1,16 @@
+import { stringSearcher } from "@nexus/src/nexusExporter";
 import React from "react";
 import { useShallow } from "zustand/react/shallow";
 
 import { recipes } from "../../../dictionnaries/recipes.dictionnary";
+import { TranslationsFilesEnum } from "../../../enums/translationsFiles.enum";
 import { useCombinedStore } from "../../../store/combined.store";
 import { Recipe } from "../../components/Recipe";
+import { useCustomTranslations } from "../../hooks/useCustomTranslations";
 import styles from "./styles.module.scss";
 
 export const RecipesList = (): React.JSX.Element => {
+  const t = useCustomTranslations();
   // const doubleOutputRecipes = recipes
   //   .filter((recipe) => {
   //     return recipe.itemsOut.length >= 2;
@@ -22,12 +26,16 @@ export const RecipesList = (): React.JSX.Element => {
     setMinuteCalculation,
     overclocking,
     setOverclocking,
+    nameFilter,
+    setNameFilter,
   ] = useCombinedStore(
     useShallow((state) => [
       state.minuteCalculation,
       state.setMinuteCalculation,
       state.overclocking,
       state.setOverclocking,
+      state.nameFilter,
+      state.setNameFilter,
     ]),
   );
 
@@ -62,17 +70,37 @@ export const RecipesList = (): React.JSX.Element => {
                 setOverclocking(parseInt(event.currentTarget.value, 10))
               }
             />
-            <p>{overclocking} %</p>
+            <p className={styles.range_overclocking_value}>{overclocking} %</p>
           </div>
+        </label>
+        <label
+          htmlFor="list_name_filter"
+          className={styles.list_name_filter}
+        >
+          Filtre par nom
+          <input
+            className={styles.list_name_filter_input}
+            id="list_name_filter"
+            type="text"
+            value={nameFilter}
+            onChange={(event) => setNameFilter(event.currentTarget.value)}
+          />
         </label>
       </div>
       <div className={styles.recipes}>
-        {recipes.map((recipe) => (
-          <Recipe
-            key={recipe.recipeName}
-            recipe={recipe}
-          />
-        ))}
+        {recipes
+          .filter((recipe) =>
+            stringSearcher({
+              searchString: nameFilter,
+              value: `${recipe.recipeName} ${t(TranslationsFilesEnum.SATISFACTORY_RECIPES, recipe.recipeName)}`,
+            }),
+          )
+          .map((recipe) => (
+            <Recipe
+              key={recipe.recipeName}
+              recipe={recipe}
+            />
+          ))}
       </div>
     </>
   );

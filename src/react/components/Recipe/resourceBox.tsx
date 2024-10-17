@@ -1,7 +1,7 @@
-import { dynamicImageImporter, roundNumber } from "@nexus/src/nexusExporter";
+import { dynamicImageImporter } from "@nexus/src/nexusExporter";
 import React from "react";
-import { useShallow } from "zustand/react/shallow";
 
+import { itemPerMinute } from "../../../helpers/itemPerMinute.helper";
 import { useCombinedStore } from "../../../store/combined.store";
 import type { ItemsInOutType } from "../../../types/satisfactory/itemsInOut";
 import styles from "./styles.module.scss";
@@ -15,13 +15,13 @@ export const ResourceBox = ({
   resource,
   cycleDuration,
 }: Props): React.JSX.Element => {
-  const [minuteCalculation] = useCombinedStore(
-    useShallow((state) => [state.minuteCalculation]),
+  const minuteCalculation = useCombinedStore(
+    (state) => state.minuteCalculation,
   );
 
   const getItemCount = (cycleItemCount: number) => {
     if (!minuteCalculation) return cycleItemCount;
-    return roundNumber((60 / cycleDuration) * cycleItemCount, 2);
+    return itemPerMinute({ cycleDuration, cycleItemCount });
   };
 
   return (

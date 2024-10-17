@@ -11,4 +11,14 @@ export const useCalculatorStore: StateCreator<CalculatorSliceType> = (set) => ({
   setOverclocking: (newValue) => {
     set(() => ({ overclocking: newValue }));
   },
+  nameFilter: "",
+  setNameFilter: (newValue: string) => {
+    set(() => ({ nameFilter: newValue }));
+  },
+  selectedFactoryLineData: undefined,
+  setSelectedFactoryLineData: (newValue) => {
+    set(() => ({ selectedFactoryLineData: newValue }));
+  },
+  factoryLine: null,
+  setFactoryLine: (newValue) => set(() => ({ factoryLine: newValue })),
 });

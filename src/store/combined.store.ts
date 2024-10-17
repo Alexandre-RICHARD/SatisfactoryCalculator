@@ -1,13 +1,26 @@
 import { create } from "zustand";
+import { devtools } from "zustand/middleware";
 
 import type { CombinedStoreType } from "../types/store/combinedStore";
 import { useCalculatorStore } from "./storeSlices/calculator.store";
 import { useTranslationStore } from "./storeSlices/translation.store";
 
-export const useCombinedStore = create<CombinedStoreType>()((...a) => ({
-  ...useCalculatorStore(...a),
-  ...useTranslationStore(...a),
-}));
+export const useCombinedStore = create<CombinedStoreType>()(
+  devtools(
+    (...a) => ({
+      ...useCalculatorStore(...a),
+      ...useTranslationStore(...a),
+    }),
+    { name: "Satisfactory" },
+  ),
+);
 
-export const { getInitialState, getState, setState, subscribe } =
-  useCombinedStore;
+const useStore = {
+  getInitialState: useCombinedStore.getInitialState,
+  getState: useCombinedStore.getState,
+  setState: (newState: Partial<CombinedStoreType>) =>
+    useCombinedStore.setState(newState),
+  subscribe: useCombinedStore.subscribe,
+};
+
+export const { getInitialState, getState, setState, subscribe } = useStore;
