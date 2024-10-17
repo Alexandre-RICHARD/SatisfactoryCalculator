@@ -3,6 +3,7 @@ export enum CraftBuildingsEnum {
   Foundry = "Foundry",
   Constructor = "Constructor",
   Assembler = "Assembler",
+  // TODO
   // Manufacturer = "Manufacturer",
   // Refinery = "Refinery",
   // Packager = "Packager",

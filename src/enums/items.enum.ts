@@ -45,6 +45,7 @@ export enum ItemsEnum {
   Wood = "Wood",
   Yellow_Power_Slug = "Yellow_Power_Slug",
 
+  // TODO
   // Crystal_Oscillator = "Crystal_Oscillator",
   // Bauxite = "Bauxite",
   // Uranium = "Uranium",

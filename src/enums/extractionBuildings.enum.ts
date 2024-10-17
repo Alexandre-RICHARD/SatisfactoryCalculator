@@ -1,5 +1,6 @@
 export enum ExtractionBuildingsEnum {
   Miner_MK1 = "Miner_MK1",
+  // TODO
   // Miner_MK2 = "Miner_MK2",
   // Miner_MK3 = "Miner_MK3",
   Water_Extractor = "Water_Extractor",

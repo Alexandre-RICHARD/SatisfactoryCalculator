@@ -11,6 +11,7 @@ import styles from "./styles.module.scss";
 
 export const RecipesList = (): React.JSX.Element => {
   const t = useCustomTranslations();
+  // TODO
   // const doubleOutputRecipes = recipes
   //   .filter((recipe) => {
   //     return recipe.itemsOut.length >= 2;
