@@ -1,0 +1,14 @@
+@use "@styles/index";
+
+.recipe_calculator_container {
+  display: flex;
+  gap: 20px;
+
+  .item_minute_input {
+    width: 100px;
+    border: 2px solid #eeeeee;
+    border-radius: 5px;
+    padding: 4px 10px;
+    background-color: #444444;
+  }
+}

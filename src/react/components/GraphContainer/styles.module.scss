@@ -1,0 +1,40 @@
+@use "@styles/index";
+
+.graph_container {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 50px;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+
+  .one_column {
+    padding: 8px;
+    border-radius: 6px;
+    background-color: #515151;
+    font-size: 14px;
+
+    .recipe_name {
+      // color: $color3;
+    }
+  }
+
+  // TODO Supprimer peut-être
+  // .selected_recipe {
+  //   margin: auto;
+  //   width: fit-content;
+  //   font-weight: 500;
+  //   font-size: 22px;
+  //   padding: 10px;
+  //   border: 2px solid black;
+  // }
+
+  // .graph_item {
+  //   display: flex;
+  //   flex-direction: column;
+  //   width: 140px;
+  //   height: 140px;
+  //   background-color: #353535;
+  //   padding: 5px;
+  // }
+}

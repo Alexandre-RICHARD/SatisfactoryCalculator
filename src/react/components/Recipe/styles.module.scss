@@ -1,3 +1,5 @@
+@use "@styles/index";
+
 .one_recipe_container {
   gap: 6px;
   padding: 6px;
@@ -13,7 +15,7 @@
       margin: 0 6px;
       font-weight: 900;
       font-size: 12px;
-      background-color: #e49444;
+      // background-color: $color3;
     }
   }
 
@@ -25,7 +27,8 @@
     .resource_group {
       display: flex;
       gap: 6px;
-  
+      flex-shrink: 0;
+
       .resource_in_out {
         position: relative;
         padding: 4px;
@@ -35,7 +38,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-  
+
         .resource_icon {
           width: 40px;
           height: 40px;
@@ -69,10 +72,9 @@
       gap: 5px 30px;
 
       .recipes_one_info {
-        color: #e49444;
+        // color: $color3;
         font-weight: 500;
       }
     }
   }
-
 }

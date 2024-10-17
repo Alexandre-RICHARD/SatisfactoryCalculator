@@ -1,9 +1,11 @@
 @use "@styles/index";
 
 .app {
+  font-family: index.$variables-fontFamily;
   background-color: #222;
   min-height: 100svh;
   color: #fefefe;
+  width: 100%;
 
   .content_container {
     padding: 8px;
