@@ -1,4 +1,4 @@
-import { roundNumber } from "@nexus/src/nexusExporter";
+import { roundNumber } from "@nexus/nexusExporter";
 
 import { items } from "../dictionnaries/items.dictionnary";
 import { recipes } from "../dictionnaries/recipes.dictionnary";

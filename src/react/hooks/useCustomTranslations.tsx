@@ -1,4 +1,4 @@
-import { useTranslations } from "@nexus/src/nexusExporter";
+import { useTranslations } from "@nexus/nexusExporter";
 
 import type { TranslationsFilesEnum } from "../../enums/translationsFiles.enum";
 

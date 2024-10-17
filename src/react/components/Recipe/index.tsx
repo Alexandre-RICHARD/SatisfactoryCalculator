@@ -2,7 +2,7 @@ import {
   IconContainer,
   IconTokenEnum,
   roundNumber,
-} from "@nexus/src/nexusExporter";
+} from "@nexus/nexusExporter";
 import React from "react";
 
 import { TranslationsFilesEnum } from "../../../enums/translationsFiles.enum";

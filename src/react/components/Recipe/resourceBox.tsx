@@ -1,4 +1,4 @@
-import { dynamicImageImporter } from "@nexus/src/nexusExporter";
+import { dynamicImageImporter } from "@nexus/nexusExporter";
 import React from "react";
 
 import { itemPerMinute } from "../../../helpers/itemPerMinute.helper";

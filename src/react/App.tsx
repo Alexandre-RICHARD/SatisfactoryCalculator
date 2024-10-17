@@ -1,7 +1,4 @@
-import {
-  TranslationProvider,
-  TranslationsContext,
-} from "@nexus/src/nexusExporter";
+import { TranslationProvider, TranslationsContext } from "@nexus/nexusExporter";
 import React from "react";
 
 import { useCombinedStore } from "../store/combined.store";

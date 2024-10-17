@@ -1,6 +1,6 @@
+import { roundNumber } from "@nexus/nexusExporter";
 import type React from "react";
 
-import { roundNumber } from "../../../../nexus/src/nexusExporter";
 import { TranslationsFilesEnum } from "../../../enums/translationsFiles.enum";
 import { useCalculateFactoryLine } from "../../hooks/useCalculateFactoryLine";
 import { useCustomTranslations } from "../../hooks/useCustomTranslations";

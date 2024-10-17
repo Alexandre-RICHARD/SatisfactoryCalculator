@@ -1,4 +1,4 @@
-import { stringSearcher } from "@nexus/src/nexusExporter";
+import { stringSearcher } from "@nexus/nexusExporter";
 import React from "react";
 import { useShallow } from "zustand/react/shallow";
 

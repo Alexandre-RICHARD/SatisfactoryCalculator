@@ -9,7 +9,7 @@ import {
   nativeLanguageNames,
   type SelectItemsType,
   Selector,
-} from "@nexus/src/nexusExporter";
+} from "@nexus/nexusExporter";
 import React from "react";
 import { useShallow } from "zustand/react/shallow";
 

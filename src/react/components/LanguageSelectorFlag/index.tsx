@@ -1,7 +1,4 @@
-import {
-  type CountryEnum,
-  dynamicImageImporter,
-} from "@nexus/src/nexusExporter";
+import { type CountryEnum, dynamicImageImporter } from "@nexus/nexusExporter";
 import React from "react";
 
 type PropsType = {

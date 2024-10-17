@@ -1,4 +1,4 @@
-import { roundNumber } from "../../nexus/src/nexusExporter";
+import { roundNumber } from "@nexus/nexusExporter";
 
 type Args = {
   cycleDuration: number;

@@ -1,4 +1,4 @@
-import { Selector } from "@nexus/src/nexusExporter";
+import { Selector } from "@nexus/nexusExporter";
 import React from "react";
 import { useShallow } from "zustand/react/shallow";
 

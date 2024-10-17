@@ -2,7 +2,7 @@ import {
   LanguageEnum,
   selectedLanguageInitiator,
   setCookie,
-} from "@nexus/src/nexusExporter";
+} from "@nexus/nexusExporter";
 import type { StateCreator } from "zustand";
 
 import { supportedLanguages } from "../../dictionnaries/supportedLanguages.dictionnary";

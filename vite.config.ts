@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => {
     resolve: {
       alias: {
         "@styles": path.resolve(__dirname, "src/styles"),
-        "@nexus": path.resolve(__dirname, "nexus"),
+        "@nexus": path.resolve(__dirname, "nexus/src"),
       },
       dedupe: ["react", "react-dom"],
     },

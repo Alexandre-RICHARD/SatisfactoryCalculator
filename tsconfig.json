@@ -3,7 +3,7 @@
     "baseUrl": ".",
     "paths": {
       "@styles/*": ["src/styles/*"],
-      "@nexus/*": ["nexus/*"]
+      "@nexus/*": ["nexus/src/*"]
     },
     "target": "ESNext",
     "useDefineForClassFields": true,
