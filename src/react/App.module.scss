@@ -2,7 +2,7 @@
 
 .app {
   font-family: index.$variables-fontFamily;
-  background-color: #222;
+  background-color: var(--theme_colorBlack);
   min-height: 100svh;
   color: #fefefe;
   width: 100%;

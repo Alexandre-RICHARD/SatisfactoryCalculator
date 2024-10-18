@@ -1,7 +1,12 @@
-import { TranslationProvider, TranslationsContext } from "@nexus/nexusExporter";
+import {
+  ThemeProvider,
+  TranslationProvider,
+  TranslationsContext,
+} from "@nexus/nexusExporter";
 import React from "react";
 
 import { useCombinedStore } from "../store/combined.store";
+import { theme } from "../styles/theme";
 import styles from "./App.module.scss";
 import { Header } from "./components/Header";
 import { Router } from "./Router";
@@ -20,12 +25,14 @@ export const App = (): React.JSX.Element => {
       filesContexts={filesContexts}
       language={language}
     >
-      <div className={styles.app}>
-        <Header />
-        <div className={styles.content_container}>
-          <Router />
+      <ThemeProvider theme={theme}>
+        <div className={styles.app}>
+          <Header />
+          <div className={styles.content_container}>
+            <Router />
+          </div>
         </div>
-      </div>
+      </ThemeProvider>
     </TranslationProvider>
   );
 };
