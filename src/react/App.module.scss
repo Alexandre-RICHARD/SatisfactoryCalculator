@@ -1,7 +1,7 @@
-@use "@styles/index";
+@use "@styles/variables";
 
 .app {
-  font-family: index.$variables-fontFamily;
+  font-family: variables.$fontFamily;
   background-color: var(--theme_colorBlack);
   min-height: 100svh;
   color: #fefefe;

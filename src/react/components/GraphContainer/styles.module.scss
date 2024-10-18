@@ -1,4 +1,4 @@
-@use "@styles/index";
+@use "@styles/variables";
 
 .graph_container {
   display: flex;
@@ -14,9 +14,9 @@
     background-color: #515151;
     font-size: 14px;
 
-    .recipe_name {
-      // color: $color3;
-    }
+    // .recipe_name {
+    // color: $color3;
+    // }
   }
 
   // TODO Supprimer peut-être
