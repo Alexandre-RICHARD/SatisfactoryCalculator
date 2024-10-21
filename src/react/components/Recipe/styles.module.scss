@@ -1,64 +1,66 @@
 @use "@styles/variables";
 
 .one_recipe_container {
-  gap: 6px;
-  padding: 6px;
-  background-color: #0d0d0d;
+  gap: var(--theme-spaceS);
+  padding: var(--theme-spaceS);
+  background-color: var(--theme-colorBlack);
 
   .recipe_title {
     font-weight: 500;
-    margin-bottom: 5px;
+    margin-bottom: var(--theme-spaceXS);
+    color: var(--theme-colorPrimaryHue);
 
     .duplicated_recipe {
-      border-radius: 4px;
-      padding: 2px 6px;
-      margin: 0 6px;
-      font-weight: 900;
-      font-size: 12px;
-      // TODO
-      // background-color: $color3;
+      border-radius: var(--theme-spaceXS);
+      padding: var(--theme-spaceXXS) var(--theme-spaceS);
+      margin-inline: var(--theme-spaceS);
+      font-weight: 500;
+      font-size: var(--theme-sizeXS);
+      background-color: var(--theme-colorDestructiveHue);
+      color: var(--theme-colorDestructiveLight);
     }
   }
 
   .one_recipe {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: var(--theme-spaceM);
 
     .resource_group {
       display: flex;
-      gap: 6px;
+      gap: var(--theme-spaceS);
       flex-shrink: 0;
 
       .resource_in_out {
         position: relative;
-        padding: 4px;
-        border-radius: 6px;
+        padding: var(--theme-spaceXS);
+        border-radius: var(--theme-spaceXS);
         overflow: hidden;
-        background-color: #ccc;
+        background-color: var(--theme-colorNeutralLight);
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
 
         .resource_icon {
-          width: 40px;
-          height: 40px;
+          width: calc(2 * var(--theme-spaceXL));
+          height: calc(2 * var(--theme-spaceXL));
         }
 
         .resource_count {
           position: absolute;
           bottom: 0;
           right: 0;
-          height: 20px;
-          padding-inline: 4px;
+          height: var(--theme-spaceXL);
+          padding-inline: var(--theme-spaceXS);
           display: flex;
           align-items: center;
           justify-content: center;
-          color: #fefefe;
-          background-color: #656565;
+          color: var(--theme-colorNeutralContent);
+          background-color: var(--theme-colorNeutralHue);
           font-weight: 700;
-          font-size: 14px;
-          border-radius: 4px;
+          font-size: var(--theme-sizeS);
+          line-height: var(--theme-sizeS);
+          border-top-left-radius: var(--theme-spaceXS);
         }
       }
     }
@@ -70,11 +72,10 @@
     .recipe_info {
       display: flex;
       flex-wrap: wrap;
-      gap: 5px 30px;
+      gap: var(--theme-spaceXS) var(--theme-spaceXXL);
 
       .recipes_one_info {
-        // TODO
-        // color: $color3;
+        color: var(--theme-colorPrimaryHue);
         font-weight: 500;
       }
     }

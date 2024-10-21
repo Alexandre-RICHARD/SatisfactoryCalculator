@@ -28,30 +28,4 @@ export const GraphContainer = (): React.JSX.Element | null => {
       </div>
     </div>
   );
-  // TODO
-  // <div >
-  //   <div className={styles.graph_item}>
-  //     <p>
-  //       {t(
-  //         TranslationsFilesEnum.SATISFACTORY_ITEMS,
-  //         selectedItemOut.itemName,
-  //       )}
-  //     </p>
-  //     <p>{graphData?.selectedRecipe.itemPerMinute} / min</p>
-  //     <p>
-  //       {numberOfBuildings}{" "}
-  //       {t(
-  //         TranslationsFilesEnum.SATISFACTORY_BUILDING,
-  //         recipeSelected.craftBuildings,
-  //       )}
-  //     </p>
-  //     <p>
-  //       {selectedItemOut.quantityPerCycle *
-  //         Math.ceil(
-  //           graphData!.selectedRecipe.itemPerMinute! /
-  //             selectedItemOut.quantityPerCycle,
-  //         )}
-  //     </p>
-  //   </div>
-  // </div>
 };
