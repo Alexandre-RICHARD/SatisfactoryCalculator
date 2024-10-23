@@ -7,6 +7,7 @@
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
     "check-types": "tsc --noEmit",
+    "submodule": "git submodule update --init --recursive",
     "build": "tsc && vite build --mode prod",
     "build-preview": "vite preview --open",
     "clean": "rd /s /q build || rm -rf build",
