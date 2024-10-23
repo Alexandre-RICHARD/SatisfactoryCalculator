@@ -51,19 +51,16 @@ export const factoryLineStepCalculator = ({
     : recipe.itemsIn
         .filter((itemIn) => !items[itemIn.itemName].isRaw)
         .map((itemIn) => {
-          const itemInRecipe = recipes.find((it) => {
-            return (
+          const itemInRecipe = recipes.find(
+            (it) =>
               !it.isAlternate &&
               it.itemsOut.some(
                 (itemOut) => itemOut.itemName === itemIn.itemName,
-              )
-            );
-          });
+              ),
+          );
           return factoryLineStepCalculator({
             currentRecipe: {
-              itemPerMinute:
-                itemIn.quantityPerCycle *
-                (quantityPerMinute / initialQuantityPerMinute),
+              itemPerMinute: itemIn.quantityPerCycle * quantityPerMinute,
               selectedItemName: itemIn.itemName,
               selectedRecipeName: itemInRecipe?.recipeName,
             },

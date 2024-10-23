@@ -1,21 +1,29 @@
-import { useShallow } from "zustand/react/shallow";
+import { useCallback, useEffect } from "react";
 
 import { factoryLineStepCalculator } from "../../helpers/factoryLineStepCalculator.helper";
-import { useCombinedStore } from "../../store/combined.store";
 import type { FactoryLine } from "../../types/satisfactory/factoryLine";
+import type { SelectedFactoryLineData } from "../../types/satisfactory/selectedFactoryLineData";
 
-export const useCalculateFactoryLine = (): FactoryLine | null => {
-  const [selectedFactoryLineData, setFactoryLine] = useCombinedStore(
-    useShallow((state) => [
-      state.selectedFactoryLineData,
-      state.setFactoryLine,
-    ]),
-  );
+type PropsType = {
+  selectedFactoryLineData?: SelectedFactoryLineData;
+  setFactoryLine: (newValue: FactoryLine) => void;
+};
 
-  if (!selectedFactoryLineData) return null;
-  const factoryLine = factoryLineStepCalculator({
-    currentRecipe: selectedFactoryLineData,
-  });
-  setFactoryLine(factoryLine);
-  return factoryLine;
+export const useCalculateFactoryLine = ({
+  selectedFactoryLineData,
+  setFactoryLine,
+}: PropsType) => {
+  const getFactoryLine = useCallback(() => {
+    if (!selectedFactoryLineData) return null;
+    return factoryLineStepCalculator({
+      currentRecipe: selectedFactoryLineData,
+    });
+  }, [selectedFactoryLineData]);
+
+  useEffect(() => {
+    const factoryLine = getFactoryLine();
+    if (factoryLine) {
+      setFactoryLine(factoryLine);
+    }
+  }, [getFactoryLine, setFactoryLine]);
 };

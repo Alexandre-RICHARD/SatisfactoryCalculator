@@ -8,4 +8,5 @@ export default {
   requiredEnergy: "Required energy :",
   powerByBuilding: "by building",
   energyPerItem: "per item",
+  at: "at",
 };
