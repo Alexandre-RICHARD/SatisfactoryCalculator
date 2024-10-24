@@ -1,17 +1,42 @@
 @use "@styles/variables";
 
 .graph_container {
-  display: flex;
-  flex-direction: row-reverse;
-  gap: calc(4 * var(--theme-spaceXXL));
-  align-items: center;
+  background-color: var(--theme-colorNeutralDark);
   width: 100%;
-  color: var(--theme-colorSecondaryContent);
-
-  .one_column {
-    padding: var(--theme-spaceS);
-    border-radius: var(--theme-spaceXS);
-    background-color: var(--theme-colorSecondaryHue);
-    font-size: var(--theme-sizeS);
-  }
+  min-height: 500px;
 }
+
+// TODO
+// .graph_container {
+//   display: flex;
+//   margin: calc(2 * var(--theme-spaceXXL));
+//   // gap: calc(2 * var(--theme-spaceXXL));
+//   align-items: center;
+//   justify-content: center;
+//   color: var(--theme-colorSecondaryContent);
+
+//   .step_container {
+//     display: flex;
+//     flex-direction: row-reverse;
+//     gap: calc(2 * var(--theme-spaceXXL));
+//     justify-content: center;
+//     gap: var(--theme-spaceXL);
+
+//     .steps_group {
+//       display: flex;
+//       align-items: stretch;
+//       justify-content: center;
+
+//       .one_step {
+//         padding: var(--theme-spaceS);
+//         border-radius: var(--theme-spaceXS);
+//         background-color: var(--theme-colorSecondaryHue);
+//         font-size: var(--theme-sizeS);
+
+//         .recipe_name {
+//           color: var(--theme-colorPrimaryHue);
+//         }
+//       }
+//     }
+//   }
+// }
