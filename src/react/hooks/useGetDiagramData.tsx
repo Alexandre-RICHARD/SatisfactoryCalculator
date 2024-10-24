@@ -1,4 +1,3 @@
-import { roundNumber } from "@nexus/nexusExporter";
 import type { Edge, Node } from "vis-network";
 
 import { TranslationsFilesEnum } from "../../enums/translationsFiles.enum";
@@ -15,27 +14,32 @@ export const useGetDiagramData = ({ factoryLine }: PropsType) => {
   const nodes: Node[] = [];
   const edges: Edge[] = [];
 
-  if (factoryLine) {
-    nodes.push({
-      id: 1,
-      label: `${roundNumber(factoryLine.quantityPerMinute, 2)} X ${t(
-        TranslationsFilesEnum.SATISFACTORY_RECIPES,
-        factoryLine.recipe.recipeName,
-      )}`,
-    });
-    nodes.push({
-      id: 2,
-      label: `${roundNumber(factoryLine.quantityPerMinute, 2)} X ${t(
-        TranslationsFilesEnum.SATISFACTORY_RECIPES,
-        factoryLine.recipe.recipeName,
-      )}`,
-    });
+  const nodeLabelFormatter = (lineUp: string, lineDown: string) => {
+    return `${lineUp}\n${lineDown}`;
+  };
 
-    edges.push({
-      from: 1,
-      to: 2,
-      label: "Test",
-    });
+  if (factoryLine) {
+    const pusher = (nodeElement: FactoryLine) => {
+      nodes.push({
+        id: nodeElement.id,
+        label: nodeLabelFormatter(
+          `${t(TranslationsFilesEnum.SATISFACTORY_RECIPES, nodeElement.recipe.recipeName)}`,
+          `${nodeElement.buildingNumber}x ${t(TranslationsFilesEnum.SATISFACTORY_BUILDING, nodeElement.recipe.craftBuildings)} ${t(TranslationsFilesEnum.COMMON, "at")} ${nodeElement.overclocking}%`,
+        ),
+        title: "t",
+      });
+      if (nodeElement.parents) {
+        nodeElement.parents.forEach((parent) => {
+          edges.push({
+            from: parent.id,
+            to: nodeElement.id,
+          });
+          pusher(parent);
+        });
+      }
+    };
+
+    pusher(factoryLine);
   }
 
   return { nodes, edges };

@@ -69,6 +69,7 @@ export const factoryLineStepCalculator = ({
 
   return {
     recipe,
+    id: crypto.randomUUID(),
     quantityPerMinute,
     buildingNumber,
     overclocking,

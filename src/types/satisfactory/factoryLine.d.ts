@@ -1,6 +1,7 @@
 import type { RecipeType } from "./recipe";
 
 export type FactoryLine = {
+  id: string;
   recipe: RecipeType;
   quantityPerMinute: number;
   buildingNumber: number;
