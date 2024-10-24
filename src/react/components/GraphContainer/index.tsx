@@ -36,22 +36,11 @@ export const GraphContainer = (): React.JSX.Element | null => {
       autoResize: true,
       height: "500px",
       width: "100%",
-      // TODO FILTRER LES TRUCS UTILES LA DEDANS
       layout: {
-        randomSeed: undefined,
-        improvedLayout: true,
-        clusterThreshold: 150,
         hierarchical: {
-          enabled: false,
-          levelSeparation: 150,
-          nodeSpacing: 100,
-          treeSpacing: 200,
-          blockShifting: true,
-          edgeMinimization: true,
-          parentCentralization: true,
-          direction: "RL", // UD, DU, LR, RL
-          sortMethod: "hubsize", // hubsize, directed
-          shakeTowards: "leaves", // roots, leaves
+          direction: "LR",
+          sortMethod: "directed",
+          levelSeparation: 400,
         },
       },
       nodes: {

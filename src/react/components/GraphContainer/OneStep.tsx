@@ -17,20 +17,6 @@ export const OneStep = ({ stepData }: PropsType): React.JSX.Element | null => {
     <div className={styles.one_step}>
       <p className={styles.recipe_name}>
         {roundNumber(stepData.quantityPerMinute, 2)}
-        {" X "}
-        {t(
-          TranslationsFilesEnum.SATISFACTORY_RECIPES,
-          stepData.recipe.recipeName,
-        )}
-      </p>
-      <p>
-        {stepData.buildingNumber}
-        {" X "}
-        {t(
-          TranslationsFilesEnum.SATISFACTORY_BUILDING,
-          stepData.recipe.craftBuildings,
-        )}{" "}
-        {t(TranslationsFilesEnum.COMMON, "at")} {stepData.overclocking}%
       </p>
       <p>
         {roundNumber(stepData.powerRequired * stepData.buildingNumber, 1)}
