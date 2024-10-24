@@ -1,6 +1,6 @@
 import type { Edge, Node } from "vis-network";
 
-import { TranslationsFilesEnum } from "../../enums/translationsFiles.enum";
+import { TranslationsFilesEnum as TF } from "../../enums/translationsFiles.enum";
 import type { FactoryLine } from "../../types/satisfactory/factoryLine";
 import { useCustomTranslations } from "./useCustomTranslations";
 
@@ -23,8 +23,8 @@ export const useGetDiagramData = ({ factoryLine }: PropsType) => {
       nodes.push({
         id: nodeElement.id,
         label: nodeLabelFormatter(
-          `${t(TranslationsFilesEnum.SATISFACTORY_RECIPES, nodeElement.recipe.recipeName)}`,
-          `${nodeElement.buildingNumber}x ${t(TranslationsFilesEnum.SATISFACTORY_BUILDING, nodeElement.recipe.craftBuildings)} ${t(TranslationsFilesEnum.COMMON, "at")} ${nodeElement.overclocking}%`,
+          `${t(TF.SATISFACTORY_RECIPES, nodeElement.recipe.recipeName)}`,
+          `${nodeElement.buildingNumber}x ${t(TF.SATISFACTORY_BUILDING, nodeElement.recipe.craftBuildings)} ${t(TF.COMMON, "at")} ${nodeElement.overclocking}%`,
         ),
         title: "t",
       });

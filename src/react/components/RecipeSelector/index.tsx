@@ -4,7 +4,7 @@ import { useShallow } from "zustand/react/shallow";
 
 import { recipes } from "../../../dictionnaries/recipes.dictionnary";
 import { ItemsEnum } from "../../../enums/items.enum";
-import { TranslationsFilesEnum } from "../../../enums/translationsFiles.enum";
+import { TranslationsFilesEnum as TF } from "../../../enums/translationsFiles.enum";
 import { useCombinedStore } from "../../../store/combined.store";
 import { useCustomTranslations } from "../../hooks/useCustomTranslations";
 import styles from "./styles.module.scss";
@@ -40,15 +40,15 @@ export const RecipeSelector = (): React.JSX.Element => {
         label={
           selectedFactoryLineData?.selectedItemName
             ? t(
-                TranslationsFilesEnum.SATISFACTORY_ITEMS,
+                TF.SATISFACTORY_ITEMS,
                 selectedFactoryLineData?.selectedItemName,
               )
             : "Selectionnes ta ressource"
         }
         selectedItem={selectedFactoryLineData?.selectedItemName}
         items={ItemsThatCanBeCrafted.map((item) => ({
-          label: t(TranslationsFilesEnum.SATISFACTORY_ITEMS, item),
-          search: t(TranslationsFilesEnum.SATISFACTORY_ITEMS, item),
+          label: t(TF.SATISFACTORY_ITEMS, item),
+          search: t(TF.SATISFACTORY_ITEMS, item),
           value: item,
         }))}
         onSelect={(newValue) => {
@@ -68,7 +68,7 @@ export const RecipeSelector = (): React.JSX.Element => {
           label={
             selectedFactoryLineData?.selectedRecipeName
               ? t(
-                  TranslationsFilesEnum.SATISFACTORY_RECIPES,
+                  TF.SATISFACTORY_RECIPES,
                   selectedFactoryLineData?.selectedRecipeName,
                 )
               : "Selectionnes la recette"
@@ -77,14 +77,8 @@ export const RecipeSelector = (): React.JSX.Element => {
             selectedFactoryLineData?.selectedRecipeName ?? undefined
           }
           items={recipeThatCanBeDoWithItemInOutput.map((recipe) => ({
-            label: t(
-              TranslationsFilesEnum.SATISFACTORY_RECIPES,
-              recipe.recipeName,
-            ),
-            search: t(
-              TranslationsFilesEnum.SATISFACTORY_RECIPES,
-              recipe.recipeName,
-            ),
+            label: t(TF.SATISFACTORY_RECIPES, recipe.recipeName),
+            search: t(TF.SATISFACTORY_RECIPES, recipe.recipeName),
             value: recipe.recipeName,
           }))}
           onSelect={(newValue) =>

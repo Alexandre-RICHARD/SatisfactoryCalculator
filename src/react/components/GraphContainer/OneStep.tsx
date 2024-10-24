@@ -1,7 +1,7 @@
 import { roundNumber } from "@nexus/nexusExporter";
 import type React from "react";
 
-import { TranslationsFilesEnum } from "../../../enums/translationsFiles.enum";
+import { TranslationsFilesEnum as TF } from "../../../enums/translationsFiles.enum";
 import type { FactoryLine } from "../../../types/satisfactory/factoryLine";
 import { useCustomTranslations } from "../../hooks/useCustomTranslations";
 import styles from "./styles.module.scss";
@@ -23,7 +23,7 @@ export const OneStep = ({ stepData }: PropsType): React.JSX.Element | null => {
         {" Mw | "}
         {roundNumber(stepData.energyRequired, 1)}
         {" Mj "}
-        {t(TranslationsFilesEnum.COMMON, "energyPerItem")}
+        {t(TF.COMMON, "energyPerItem")}
       </p>
     </div>
   );

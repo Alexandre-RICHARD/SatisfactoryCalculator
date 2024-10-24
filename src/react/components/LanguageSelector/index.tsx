@@ -14,7 +14,7 @@ import React from "react";
 import { useShallow } from "zustand/react/shallow";
 
 import { supportedLanguages } from "../../../dictionnaries/supportedLanguages.dictionnary";
-import { TranslationsFilesEnum } from "../../../enums/translationsFiles.enum";
+import { TranslationsFilesEnum as TF } from "../../../enums/translationsFiles.enum";
 import { useCombinedStore } from "../../../store/combined.store";
 import { useCustomTranslations } from "../../hooks/useCustomTranslations";
 import { LanguageSelectorFlag } from "../LanguageSelectorFlag";
@@ -33,18 +33,15 @@ export const LanguagesSelector = (): React.JSX.Element => {
 
   const languagesSelectOption: SelectItemsType[] = supportedLanguages
     .sort((languageA, languageB) => {
-      const stringA = t(TranslationsFilesEnum.LANGUAGES, languageA);
-      const stringB = t(TranslationsFilesEnum.LANGUAGES, languageB);
+      const stringA = t(TF.LANGUAGES, languageA);
+      const stringB = t(TF.LANGUAGES, languageB);
       return getSortStringValue(stringA, stringB);
     })
     .map((oneLanguage) => {
       const country = languageToCountry[oneLanguage];
       const code = languageToCode[oneLanguage] as LanguageCodeEnum;
 
-      const translatedLanguage = t(
-        TranslationsFilesEnum.LANGUAGES,
-        oneLanguage,
-      );
+      const translatedLanguage = t(TF.LANGUAGES, oneLanguage);
       const nativeLanguageName = nativeLanguageNames[oneLanguage];
       return {
         label: (

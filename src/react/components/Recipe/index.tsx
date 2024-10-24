@@ -5,7 +5,7 @@ import {
 } from "@nexus/nexusExporter";
 import React from "react";
 
-import { TranslationsFilesEnum } from "../../../enums/translationsFiles.enum";
+import { TranslationsFilesEnum as TF } from "../../../enums/translationsFiles.enum";
 import { powerCalculation } from "../../../helpers/powerCalculation.helper";
 import { useCombinedStore } from "../../../store/combined.store";
 import type { RecipeType } from "../../../types/satisfactory/recipe";
@@ -32,7 +32,7 @@ export const Recipe = ({ recipe }: PropsType): React.JSX.Element => {
       className={styles.one_recipe_container}
     >
       <p className={styles.recipe_title}>
-        {t(TranslationsFilesEnum.SATISFACTORY_RECIPES, recipe.recipeName)}
+        {t(TF.SATISFACTORY_RECIPES, recipe.recipeName)}
         {recipe.isDuplicate && (
           <span className={styles.duplicated_recipe}>Duplicate</span>
         )}
@@ -69,33 +69,30 @@ export const Recipe = ({ recipe }: PropsType): React.JSX.Element => {
         </div>
         <div className={styles.recipe_info}>
           <p>
-            {t(TranslationsFilesEnum.COMMON, "producedIn")}{" "}
+            {t(TF.COMMON, "producedIn")}{" "}
             <span className={styles.recipes_one_info}>
-              {t(
-                TranslationsFilesEnum.SATISFACTORY_BUILDING,
-                recipe.craftBuildings,
-              )}
+              {t(TF.SATISFACTORY_BUILDING, recipe.craftBuildings)}
             </span>
           </p>
           <p>
-            {t(TranslationsFilesEnum.COMMON, "cycleDuration")}{" "}
+            {t(TF.COMMON, "cycleDuration")}{" "}
             <span className={styles.recipes_one_info}>
               {roundNumber(cycleDuration, 1)}s
             </span>
           </p>
           <p>
-            {t(TranslationsFilesEnum.COMMON, "requiredPower")}{" "}
+            {t(TF.COMMON, "requiredPower")}{" "}
             <span className={styles.recipes_one_info}>
               {roundNumber(requiredPower, 2)} Mw
             </span>{" "}
-            {t(TranslationsFilesEnum.COMMON, "powerByBuilding")}
+            {t(TF.COMMON, "powerByBuilding")}
           </p>
           <p>
-            {t(TranslationsFilesEnum.COMMON, "requiredEnergy")}{" "}
+            {t(TF.COMMON, "requiredEnergy")}{" "}
             <span className={styles.recipes_one_info}>
               {roundNumber(requiredEnergy, 2)} Mj
             </span>{" "}
-            {t(TranslationsFilesEnum.COMMON, "energyPerItem")}
+            {t(TF.COMMON, "energyPerItem")}
           </p>
         </div>
       </div>

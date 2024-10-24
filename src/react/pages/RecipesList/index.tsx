@@ -3,7 +3,7 @@ import React from "react";
 import { useShallow } from "zustand/react/shallow";
 
 import { recipes } from "../../../dictionnaries/recipes.dictionnary";
-import { TranslationsFilesEnum } from "../../../enums/translationsFiles.enum";
+import { TranslationsFilesEnum as TF } from "../../../enums/translationsFiles.enum";
 import { useCombinedStore } from "../../../store/combined.store";
 import { Recipe } from "../../components/Recipe";
 import { useCustomTranslations } from "../../hooks/useCustomTranslations";
@@ -93,7 +93,7 @@ export const RecipesList = (): React.JSX.Element => {
           .filter((recipe) =>
             stringSearcher({
               searchString: nameFilter,
-              value: `${recipe.recipeName} ${t(TranslationsFilesEnum.SATISFACTORY_RECIPES, recipe.recipeName)}`,
+              value: `${recipe.recipeName} ${t(TF.SATISFACTORY_RECIPES, recipe.recipeName)}`,
             }),
           )
           .map((recipe) => (
