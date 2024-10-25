@@ -40,7 +40,7 @@ export const GraphContainer = (): React.JSX.Element | null => {
         hierarchical: {
           direction: "LR",
           sortMethod: "directed",
-          levelSeparation: 400,
+          levelSeparation: 700,
         },
       },
       nodes: {
@@ -69,19 +69,19 @@ export const GraphContainer = (): React.JSX.Element | null => {
         chosen: false,
         color: theme.colorNeutralLight,
         font: {
+          align: "horizontal",
           strokeWidth: 0,
-          color: theme.colorPrimaryHue,
-          size: stringRemoveEndPxHelper(theme.spaceL),
+          color: theme.colorPrimaryContent,
+          size: stringRemoveEndPxHelper(theme.spaceXL),
         },
         shadow: false,
-        smooth: {
-          type: "continuous",
-          enabled: true,
-          roundness: 0,
-        },
+        smooth: false,
         labelHighlightBold: false,
-        physics: false,
       },
+      interaction: {
+        tooltipDelay: 0,
+      },
+      physics: false,
     }),
     [],
   );
