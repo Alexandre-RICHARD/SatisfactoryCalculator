@@ -1,4 +1,4 @@
-// TODO S'arranger pour créer une énum des traductions
+// TODO T => S'arranger pour créer une énum des traductions
 export default {
   recipes: "Recipes",
   calculator: "Calculator",

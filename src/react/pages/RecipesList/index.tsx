@@ -11,7 +11,7 @@ import styles from "./styles.module.scss";
 
 export const RecipesList = (): React.JSX.Element => {
   const t = useCustomTranslations();
-  // TODO
+  // TODO A => POur trouver les doublons, on va attendre de finir le jeu pour voir ça
   // const doubleOutputRecipes = recipes
   //   .filter((recipe) => {
   //     return recipe.itemsOut.length >= 2;

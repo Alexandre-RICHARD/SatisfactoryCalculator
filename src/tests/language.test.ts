@@ -1,4 +1,4 @@
-// TODO
+// TODO T =>
 // ? Remettre en place les tests de changement de langue
 // ? Mettre en place des tests pour définir que chaque traduction est égale pour chaque fichier
 // import { CookieHelper, LanguageEnum } from "@nexus/nexusExporter";
