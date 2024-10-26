@@ -46,10 +46,21 @@ export const useGetDiagramData = ({ factoryLine }: PropsType) => {
         });
       } else {
         nodeElement.recipe.itemsIn.forEach((itemIn) => {
+          const rawResourcePerMinute =
+            (itemIn.quantityPerCycle * nodeElement.quantityPerMinute) /
+            nodeElement.recipe.itemsOut[0].quantityPerCycle;
+          const getRawResourceLabel = (bold: boolean) => {
+            const firstPart = t(TF.SATISFACTORY_ITEMS, itemIn.itemName);
+            const secondPart = `${roundNumber(rawResourcePerMinute, 2)} / min`;
+            return bold
+              ? `<b>${firstPart}</b>\n${secondPart}`
+              : `${firstPart}\n${secondPart}`;
+          };
+
           const itemInId = crypto.randomUUID();
           nodes.push({
             id: itemInId,
-            label: `<b>${t(TF.SATISFACTORY_ITEMS, itemIn.itemName)}</b>`,
+            label: getRawResourceLabel(true),
             color: theme.colorAccentLight,
             margin: {
               bottom: stringRemoveEndPxHelper(theme.spaceM),
@@ -61,7 +72,7 @@ export const useGetDiagramData = ({ factoryLine }: PropsType) => {
           edges.push({
             from: itemInId,
             to: nodeElement.id,
-            label: "TEST",
+            label: getRawResourceLabel(false),
           });
         });
       }

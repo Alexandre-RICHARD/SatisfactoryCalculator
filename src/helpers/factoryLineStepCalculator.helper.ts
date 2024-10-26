@@ -61,7 +61,9 @@ export const factoryLineStepCalculator = ({
           );
           return factoryLineStepCalculator({
             currentRecipe: {
-              itemPerMinute: itemIn.quantityPerCycle * quantityPerMinute,
+              itemPerMinute:
+                (itemIn.quantityPerCycle * quantityPerMinute) /
+                item.quantityPerCycle,
               selectedItemName: itemIn.itemName,
               selectedRecipeName: itemInRecipe?.recipeName,
             },
