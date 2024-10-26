@@ -10,6 +10,7 @@ type PropsType = {
   graphSize: GraphSize;
   graphDirection: GraphDirection;
   graphContainer: React.RefObject<HTMLDivElement>;
+  graphHorizontalSpacing: number;
 };
 
 // TODO T => Ajouter produit brutes et finis
@@ -17,6 +18,7 @@ export const useGetDiagramOptions = ({
   graphSize,
   graphDirection,
   graphContainer,
+  graphHorizontalSpacing,
 }: PropsType): Options => {
   const [distanceToBottom, setDistanceToBottom] = useState(0);
   const height =
@@ -53,8 +55,7 @@ export const useGetDiagramOptions = ({
       hierarchical: {
         direction: graphDirection,
         sortMethod: "directed",
-        // TODO T => Ajouter la prise en charge du calcul maximal du texte
-        levelSeparation: isGraphVertical ? 180 : 700,
+        levelSeparation: isGraphVertical ? 180 : graphHorizontalSpacing * 1.55,
         nodeSpacing: isGraphVertical ? 400 : 120,
       },
     },

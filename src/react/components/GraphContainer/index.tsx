@@ -25,13 +25,19 @@ export const GraphContainer = (): React.JSX.Element | null => {
   const [graphDirection, setGraphDirection] = useState<GraphDirection>(
     GraphDirection.RIGHT_TO_LEFT,
   );
+  const [graphHorizontalSpacing, setGraphHorizontalSpacing] =
+    useState<number>(0);
 
   useCalculateFactoryLine({ selectedFactoryLineData, setFactoryLine });
 
   const visJsRef = useRef<HTMLDivElement>(null);
   const graphContainerRef = useRef<HTMLDivElement>(null);
 
-  const { nodes, edges } = useGetDiagramData({ factoryLine });
+  const { nodes, edges } = useGetDiagramData({
+    factoryLine,
+    graphHorizontalSpacing,
+    setGraphHorizontalSpacing,
+  });
   const data: Data = useMemo(
     () => ({
       nodes,
@@ -44,6 +50,7 @@ export const GraphContainer = (): React.JSX.Element | null => {
     graphSize,
     graphDirection,
     graphContainer: graphContainerRef,
+    graphHorizontalSpacing,
   });
 
   useEffect(() => {

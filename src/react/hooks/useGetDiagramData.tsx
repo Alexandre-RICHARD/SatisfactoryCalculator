@@ -1,4 +1,4 @@
-import { roundNumber } from "@nexus/nexusExporter";
+import { getTextSizeHelper, roundNumber } from "@nexus/nexusExporter";
 import type { Edge, Node } from "vis-network";
 
 import { TranslationsFilesEnum as TF } from "../../enums/translationsFiles.enum";
@@ -9,10 +9,28 @@ import { useCustomTranslations } from "./useCustomTranslations";
 
 type PropsType = {
   factoryLine: FactoryLine | null;
+  graphHorizontalSpacing: number;
+  setGraphHorizontalSpacing: (newValue: number) => void;
 };
 
-export const useGetDiagramData = ({ factoryLine }: PropsType) => {
+export const useGetDiagramData = ({
+  factoryLine,
+  graphHorizontalSpacing,
+  setGraphHorizontalSpacing,
+}: PropsType) => {
   const t = useCustomTranslations();
+
+  const horizontalGraphSpacingHandler = (label: string) => {
+    const labelSize = getTextSizeHelper(
+      label,
+      stringRemoveEndPxHelper(theme.spaceXL),
+      theme.primaryFontFamily,
+      "bold",
+    );
+    if (labelSize > graphHorizontalSpacing) {
+      setGraphHorizontalSpacing(labelSize);
+    }
+  };
 
   const nodes: Node[] = [];
   const edges: Edge[] = [];
@@ -37,10 +55,12 @@ export const useGetDiagramData = ({ factoryLine }: PropsType) => {
             ),
           );
 
+          const edgeLabel = `${t(TF.SATISFACTORY_ITEMS, commonItems[0].itemName)}\n${roundNumber(parent?.quantityPerMinute ?? 0, 2)} / min `;
+          horizontalGraphSpacingHandler(edgeLabel);
           edges.push({
             from: parent.id,
             to: nodeElement.id,
-            label: `${t(TF.SATISFACTORY_ITEMS, commonItems[0].itemName)}\n${roundNumber(parent?.quantityPerMinute ?? 0, 2)} / min `,
+            label: edgeLabel,
           });
           pusher(parent);
         });
@@ -69,6 +89,7 @@ export const useGetDiagramData = ({ factoryLine }: PropsType) => {
               top: stringRemoveEndPxHelper(theme.spaceM),
             },
           });
+          horizontalGraphSpacingHandler(getRawResourceLabel(true));
           edges.push({
             from: itemInId,
             to: nodeElement.id,
