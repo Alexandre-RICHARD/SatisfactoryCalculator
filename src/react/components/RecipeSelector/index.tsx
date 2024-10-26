@@ -1,4 +1,4 @@
-import { Selector } from "@nexus/nexusExporter";
+import { getSortStringValue, Selector } from "@nexus/nexusExporter";
 import React from "react";
 import { useShallow } from "zustand/react/shallow";
 
@@ -19,11 +19,18 @@ export const RecipeSelector = (): React.JSX.Element => {
       ]),
     );
 
-  const ItemsThatCanBeCrafted = Object.values(ItemsEnum).filter((item) => {
-    return recipes.some((recipe) =>
-      recipe.itemsOut.some((itemOut) => itemOut.itemName === item),
+  const ItemsThatCanBeCrafted = Object.values(ItemsEnum)
+    .filter((item) => {
+      return recipes.some((recipe) =>
+        recipe.itemsOut.some((itemOut) => itemOut.itemName === item),
+      );
+    })
+    .sort((a, b) =>
+      getSortStringValue(
+        t(TF.SATISFACTORY_ITEMS, a),
+        t(TF.SATISFACTORY_ITEMS, b),
+      ),
     );
-  });
 
   const recipeThatCanBeDoWithItemInOutput = recipes.filter((recipe) =>
     recipe.itemsOut.some(

@@ -4,39 +4,47 @@
   background-color: var(--theme-colorSecondaryHue);
   width: 100%;
   min-height: 500px;
+  position: relative;
+
+  &.fullscreen {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .graph_button_container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: var(--theme-spaceL);
+    margin: var(--theme-spaceS);
+    height: calc(2 * var(--theme-spaceXL));
+
+    * {
+      line-height: 0;
+    }
+
+    .arrow_button_rotator_container {
+      &[data-direction="RL"] {
+        transform: rotate(180deg);
+      }
+
+      &[data-direction="LR"] {
+        transform: rotate(0);
+      }
+
+      &[data-direction="DU"] {
+        transform: rotate(270deg);
+      }
+
+      &[data-direction="UD"] {
+        transform: rotate(90deg);
+      }
+    }
+  }
 }
-
-// TODO T =>
-// .graph_container {
-//   display: flex;
-//   margin: calc(2 * var(--theme-spaceXXL));
-//   // gap: calc(2 * var(--theme-spaceXXL));
-//   align-items: center;
-//   justify-content: center;
-//   color: var(--theme-colorSecondaryContent);
-
-//   .step_container {
-//     display: flex;
-//     flex-direction: row-reverse;
-//     gap: calc(2 * var(--theme-spaceXXL));
-//     justify-content: center;
-//     gap: var(--theme-spaceXL);
-
-//     .steps_group {
-//       display: flex;
-//       align-items: stretch;
-//       justify-content: center;
-
-//       .one_step {
-//         padding: var(--theme-spaceS);
-//         border-radius: var(--theme-spaceXS);
-//         background-color: var(--theme-colorSecondaryHue);
-//         font-size: var(--theme-sizeS);
-
-//         .recipe_name {
-//           color: var(--theme-colorPrimaryHue);
-//         }
-//       }
-//     }
-//   }
-// }

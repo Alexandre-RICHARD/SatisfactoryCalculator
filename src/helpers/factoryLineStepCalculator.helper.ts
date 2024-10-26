@@ -11,6 +11,7 @@ type Args = {
   currentRecipe: SelectedFactoryLineData;
 };
 
+// TODO T => Trouver le bug sur les plaques de fer
 export const factoryLineStepCalculator = ({
   currentRecipe,
 }: Args): FactoryLine => {
