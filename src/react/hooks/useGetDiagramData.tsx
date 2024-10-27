@@ -65,13 +65,10 @@ export const useGetDiagramData = ({
           pusher(parent);
         });
       } else {
-        nodeElement.recipe.itemsIn.forEach((itemIn) => {
-          const rawResourcePerMinute =
-            (itemIn.quantityPerCycle * nodeElement.quantityPerMinute) /
-            nodeElement.recipe.itemsOut[0].quantityPerCycle;
+        nodeElement.rawResources!.forEach((itemIn) => {
           const getRawResourceLabel = (bold: boolean) => {
             const firstPart = t(TF.SATISFACTORY_ITEMS, itemIn.itemName);
-            const secondPart = `${roundNumber(rawResourcePerMinute, 2)} / min`;
+            const secondPart = `${roundNumber(itemIn.quantityPerMinute, 2)} / min`;
             return bold
               ? `<b>${firstPart}</b>\n${secondPart}`
               : `${firstPart}\n${secondPart}`;

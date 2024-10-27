@@ -11,7 +11,6 @@ type Args = {
   currentRecipe: SelectedFactoryLineData;
 };
 
-// TODO T => Trouver le bug sur les plaques de fer
 export const factoryLineStepCalculator = ({
   currentRecipe,
 }: Args): FactoryLine => {
@@ -45,8 +44,9 @@ export const factoryLineStepCalculator = ({
     overclocking,
   });
 
-  const isStartingStep = !!items[item.itemName].isRaw;
-
+  const isStartingStep = recipe.itemsIn.every(
+    (itemIn) => items[itemIn.itemName].isRaw,
+  );
   const parents = isStartingStep
     ? []
     : recipe.itemsIn
@@ -70,6 +70,14 @@ export const factoryLineStepCalculator = ({
           });
         });
 
+  const rawResources = isStartingStep
+    ? recipe.itemsIn.map((itemIn) => ({
+        itemName: itemIn.itemName,
+        quantityPerMinute:
+          (itemIn.quantityPerCycle * quantityPerMinute) / item.quantityPerCycle,
+      }))
+    : [];
+
   return {
     recipe,
     id: crypto.randomUUID(),
@@ -80,5 +88,6 @@ export const factoryLineStepCalculator = ({
     energyRequired: requiredEnergy,
     isStartingStep,
     parents,
+    rawResources,
   };
 };

@@ -13,7 +13,7 @@ type PropsType = {
   graphHorizontalSpacing: number;
 };
 
-// TODO T => Ajouter produit brutes et finis
+// TODO T => Ajouter produit brutes et finis + Consommation totale de ressource et d'énergie
 export const useGetDiagramOptions = ({
   graphSize,
   graphDirection,
