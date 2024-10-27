@@ -9,17 +9,25 @@ import { useCalculateFactoryLine } from "../../hooks/useCalculateFactoryLine";
 import { useGetDiagramData } from "../../hooks/useGetDiagramData";
 import { useGetDiagramOptions } from "../../hooks/useGetDiagramOptions";
 import { GraphHandlerButtons } from "./GraphHandlerButtons";
+import { GraphSummary } from "./GraphSummary";
 import styles from "./styles.module.scss";
 
 export const GraphContainer = (): React.JSX.Element | null => {
-  const [factoryLine, selectedFactoryLineData, setFactoryLine] =
-    useCombinedStore(
-      useShallow((state) => [
-        state.factoryLine,
-        state.selectedFactoryLineData,
-        state.setFactoryLine,
-      ]),
-    );
+  const [
+    factoryLine,
+    factoryLineData,
+    selectedFactoryLineData,
+    setFactoryLine,
+    setFactoryLineData,
+  ] = useCombinedStore(
+    useShallow((state) => [
+      state.factoryLine,
+      state.factoryLineData,
+      state.selectedFactoryLineData,
+      state.setFactoryLine,
+      state.setFactoryLineData,
+    ]),
+  );
 
   const [graphSize, setGraphSize] = useState<GraphSize>(GraphSize.NORMAL);
   const [graphDirection, setGraphDirection] = useState<GraphDirection>(
@@ -28,7 +36,11 @@ export const GraphContainer = (): React.JSX.Element | null => {
   const [graphHorizontalSpacing, setGraphHorizontalSpacing] =
     useState<number>(0);
 
-  useCalculateFactoryLine({ selectedFactoryLineData, setFactoryLine });
+  useCalculateFactoryLine({
+    selectedFactoryLineData,
+    setFactoryLine,
+    setFactoryLineData,
+  });
 
   const visJsRef = useRef<HTMLDivElement>(null);
   const graphContainerRef = useRef<HTMLDivElement>(null);
@@ -74,6 +86,7 @@ export const GraphContainer = (): React.JSX.Element | null => {
         graphDirection={graphDirection}
         setGraphDirection={setGraphDirection}
       />
+      {factoryLineData && <GraphSummary />}
     </div>
   );
 };

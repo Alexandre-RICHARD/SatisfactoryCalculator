@@ -1,4 +1,5 @@
 import type { FactoryLine } from "../../satisfactory/factoryLine";
+import type { FactoryLineData } from "../../satisfactory/factoryLineData";
 import type { SelectedFactoryLineData } from "../../satisfactory/selectedFactoryLineData";
 
 export type CalculatorSliceType = {
@@ -12,4 +13,6 @@ export type CalculatorSliceType = {
   setSelectedFactoryLineData: (newValue?: SelectedFactoryLineData) => void;
   factoryLine: FactoryLine | null;
   setFactoryLine: (newValue?: FactoryLine) => void;
+  factoryLineData: FactoryLineData | null;
+  setFactoryLineData: (newValue?: FactoryLineData) => void;
 };

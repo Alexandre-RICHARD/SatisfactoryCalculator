@@ -47,4 +47,15 @@
       }
     }
   }
+
+  .graph_summary_container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: var(--theme-spaceL);
+    background-color: var(--theme-colorAccentDark);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
