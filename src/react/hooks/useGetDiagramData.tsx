@@ -36,7 +36,7 @@ export const useGetDiagramData = ({
   const edges: Edge[] = [];
 
   const getNodeLabel = (node: FactoryLine) => {
-    return `<b>${t(TF.SATISFACTORY_RECIPES, node.recipe.recipeName)}</b>\n${node.buildingNumber}x ${t(TF.SATISFACTORY_BUILDING, node.recipe.craftBuildings)} ${t(TF.COMMON, "at")} ${node.overclocking}%\n${roundNumber(node.powerRequired * node.buildingNumber, 1)} Mw | ${roundNumber(node.energyRequired, 1)} Mj ${t(TF.COMMON, "energyPerItem")}`;
+    return `<b>${t(TF.SATISFACTORY_RECIPES, node.recipe.recipeName)}</b>\n${node.buildingNumber}x ${t(TF.SATISFACTORY_BUILDING, node.recipe.craftBuildings)} ${t(TF.COMMON, "at")} ${node.overclocking}%\n${roundNumber(node.powerRequired, 1)} Mw | ${roundNumber(node.energyRequired, 1)} Mj ${t(TF.COMMON, "energyPerItem")}`;
   };
 
   if (factoryLine) {

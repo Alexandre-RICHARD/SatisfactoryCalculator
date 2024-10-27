@@ -84,7 +84,7 @@ export const factoryLineStepCalculator = ({
     quantityPerMinute,
     buildingNumber,
     overclocking,
-    powerRequired: requiredPower,
+    powerRequired: requiredPower * buildingNumber,
     energyRequired: requiredEnergy,
     isStartingStep,
     parents,
