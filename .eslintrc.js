@@ -5,8 +5,8 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  ignorePatterns: ["nexus"],
-  extends: ["./nexus/.eslintrc-client.cjs"],
+  ignorePatterns: ["build", "nexus", "node_modules", "report"],
+  extends: ["./nexus/.eslintrc-client.js"],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     project: ["./tsconfig.json", "./tsconfig.node.json"],
