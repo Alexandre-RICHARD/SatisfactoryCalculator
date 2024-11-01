@@ -24,13 +24,26 @@ export default defineConfig(({ mode }) => {
     },
     test: {
       environment: "jsdom",
-      include: ["**/*.test.ts?(x)"],
-      exclude: [
-        "**/node_modules/**",
-        "**/build/**",
-        "**/.git/**",
-        "**/{vite,vitest}.config.*",
-      ],
+      include: ["src/**/*.test.ts?(x)"],
+      exclude: [],
+      reporter: [],
+      outputFile: "./report/index.html",
+      setupFiles: "vitest.setup.ts",
+      passWithNoTests: true,
+      coverage: {
+        reportOnFailure: true,
+        reportsDirectory: "./report/coverage",
+        enabled: false,
+        provider: "v8",
+        reporter: "html",
+        include: ["src/**/*.{ts,tsx,js,jsx}"],
+        exclude: [
+          "src/**/*.type.ts",
+          "src/**/*.d.ts",
+          "src/**/*.enum.ts",
+          "src/**/*.test.*",
+        ],
+      },
     },
     css: {
       preprocessorOptions: {

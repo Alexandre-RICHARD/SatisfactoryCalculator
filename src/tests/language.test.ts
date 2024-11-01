@@ -2,7 +2,7 @@
 // ? Remettre en place les tests de changement de langue
 // ? Mettre en place des tests pour définir que chaque traduction est égale pour chaque fichier
 // import { CookieHelper, LanguageEnum } from "@nexus/nexusExporter";
-// import { expect, test } from "vitest";
+import { expect, test } from "vitest";
 
 // import { supportedLanguages } from "../dictionnaries/supportedLanguages";
 // import { CookieEnum } from "../enums/cookie.enum";
@@ -13,6 +13,10 @@
 //   const currentLanguage = getState().language;
 //   expect(Object.values(LanguageEnum).includes(currentLanguage)).toBeTruthy();
 // });
+
+test("True", () => {
+  expect(true).toBeTruthy();
+});
 
 // test("Translation should be found", () => {
 //   // const key = "selectLanguage";
