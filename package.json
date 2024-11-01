@@ -17,8 +17,8 @@
     "unit-test-report": "pnpm clean && vitest run --mode dev --reporter=html --coverage.enabled=true && vite preview --outDir report --open",
     "build": "tsc && vite build --mode prod",
     "build-preview": "vite preview --open",
-    "clean": "(rd /s /q build || rm -rf build) && (rd /s /q report || rm -rf report)",
-    "clean:all": "rd /s /q build node_modules || rm -rf build node_modules"
+    "clean": "rd /s /q build report || rm -rf build report",
+    "clean:all": "rd /s /q build node_modules report || rm -rf build node_modules report"
   },
   "dependencies": {
     "react": "^18.3.1",
