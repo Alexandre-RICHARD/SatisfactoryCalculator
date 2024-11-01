@@ -5,7 +5,7 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  ignorePatterns: ["build", "nexus", "node_modules", "report"],
+  ignorePatterns: ["nexus", "report"],
   extends: ["./nexus/.eslintrc-client.js"],
   parser: "@typescript-eslint/parser",
   parserOptions: {
