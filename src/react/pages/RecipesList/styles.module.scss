@@ -6,82 +6,8 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  gap: var(--theme-spaceXS);
-
-  .checkbox_minutes {
-    appearance: checkbox;
-    margin-inline: var(--theme-spaceM);
-  }
-
-  .range_overclocking {
-    display: flex;
-    width: 500px;
-    align-items: center;
-
-    .range_container {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      cursor: default;
-
-      .range_overclocking_input {
-        $rangeTrackHeight: var(--theme-spaceS);
-        $rangeSliderSize: var(--theme-spaceXL);
-
-        width: calc(100% - var(--theme-spaceXL));
-        height: var(--theme-spaceXXL);
-        margin-left: var(--theme-spaceXL);
-
-        &::-webkit-slider-runnable-track {
-          background-color: var(--theme-colorPrimaryHue);
-          border-radius: calc(0.5 * $rangeTrackHeight);
-          height: $rangeTrackHeight;
-        }
-
-        &::-webkit-slider-thumb {
-          appearance: none;
-          appearance: none;
-          background-color: var(--theme-colorNeutralContent);
-          border-radius: calc(0.5 * $rangeSliderSize);
-          height: $rangeSliderSize;
-          width: $rangeSliderSize;
-          margin-top: calc(-0.5 * $rangeSliderSize + $rangeTrackHeight / 2);
-
-          &:hover {
-            cursor: pointer;
-          }
-        }
-
-        &:active::-webkit-slider-thumb {
-          background-color: var(--theme-colorSecondaryHue);
-        }
-      }
-
-      .range_overclocking_value {
-        position: absolute;
-        bottom: var(--theme-sizeM);
-        background-color: transparent;
-      }
-    }
-  }
-
-  .list_name_filter {
-    width: 300px;
-    display: flex;
-    align-items: center;
-
-    &_input {
-      background-color: var(--theme-colorNeutralLight);
-      padding: var(--theme-spaceXS) var(--theme-spaceS);
-      margin-left: var(--theme-spaceS);
-      border-radius: var(--theme-spaceXS);
-      color: var(--theme-colorNeutralDark);
-      width: 150px;
-    }
-  }
+  justify-content: flex-start;
+  gap: var(--theme-spaceS);
 }
 
 .recipes {

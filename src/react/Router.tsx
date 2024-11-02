@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 
-import { RecipeCalculator } from "./pages/RecipeCalculator";
+import { FactoryLineCalculator } from "./pages/FactoryLineCalculator";
 import { RecipesList } from "./pages/RecipesList";
 
 export const Router = (): React.JSX.Element => {
@@ -13,7 +13,7 @@ export const Router = (): React.JSX.Element => {
       />
       <Route
         path="/calculator"
-        element={<RecipeCalculator />}
+        element={<FactoryLineCalculator />}
       />
     </Routes>
   );

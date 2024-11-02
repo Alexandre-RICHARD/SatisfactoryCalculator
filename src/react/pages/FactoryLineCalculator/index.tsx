@@ -5,7 +5,7 @@ import { GraphContainer } from "../../components/GraphContainer";
 import { RecipeSelector } from "../../components/RecipeSelector";
 import styles from "./styles.module.scss";
 
-export const RecipeCalculator = (): React.JSX.Element => {
+export const FactoryLineCalculator = (): React.JSX.Element => {
   const selectedFactoryLineData = useCombinedStore(
     (state) => state.selectedFactoryLineData,
   );

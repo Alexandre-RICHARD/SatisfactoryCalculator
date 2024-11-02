@@ -3,6 +3,18 @@ import { ItemsEnum } from "../enums/items.enum";
 import { RecipesEnum } from "../enums/recipes.enum";
 import type { RecipeType } from "../types/satisfactory/recipe";
 
+// TODO A => POur trouver les doublons, on va attendre de finir le jeu pour voir ça
+// const doubleOutputRecipes = recipes
+//   .filter((recipe) => {
+//     return recipe.itemsOut.length >= 2;
+//   })
+//   .sort((a, b) =>
+//     a.itemsOut[1].itemName.localeCompare(b.itemsOut[1].itemName),
+//   )
+//   .sort((a, b) =>
+//     a.itemsOut[0].itemName.localeCompare(b.itemsOut[0].itemName),
+//   );
+
 export const recipes: RecipeType[] = [
   //! Iron_Ingot
   {
