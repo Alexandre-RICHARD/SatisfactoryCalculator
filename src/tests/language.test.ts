@@ -9,7 +9,7 @@ import { expect, test } from "vitest";
 // // import { TranslationHelper as T } from "../helper/translation.helper";
 // import { getState, useCombinedStore } from "../store/combined.store";
 
-// test("State language should be valid language", () => {
+// ("State language should be valid language", () => {
 //   const currentLanguage = getState().language;
 //   expect(Object.values(LanguageEnum).includes(currentLanguage)).toBeTruthy();
 // });
@@ -18,7 +18,7 @@ test("True", () => {
   expect(true).toBeTruthy();
 });
 
-// test("Translation should be found", () => {
+// ("Translation should be found", () => {
 //   // const key = "selectLanguage";
 //   // const currentLanguage = getState().language;
 //   // const translation = T.getT(currentLanguage, key);
@@ -26,7 +26,7 @@ test("True", () => {
 //   expect(true).toBeTruthy();
 // });
 
-// test("Change language", () => {
+// ("Change language", () => {
 //   useCombinedStore.setState({ language: LanguageEnum.ENGLISH });
 //   const newLanguageEN = getState().language;
 //   const cookieLanguage = CookieHelper.getCookie(CookieEnum.LANG);
@@ -37,7 +37,7 @@ test("True", () => {
 //   expect(newLanguageFR).toBe(LanguageEnum.FRENCH);
 // });
 
-// test("Supported languages should be include in languagesEnum", () => {
+// ("Supported languages should be include in languagesEnum", () => {
 //   const languagesEnumKey = Object.values(LanguageEnum);
 //   const areSupportedLanguageExists = supportedLanguages.every((languageKey) =>
 //     languagesEnumKey.includes(languageKey),
