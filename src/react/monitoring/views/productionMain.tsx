@@ -1,6 +1,5 @@
 import {
   Card,
-  Chip,
   CircularProgress,
   Container,
   Divider,
@@ -9,31 +8,11 @@ import {
   Typography,
 } from "@mui/joy";
 import { useTheme } from "@mui/system";
-import { useEffect, useState } from "react";
-import {
-  BsBattery,
-  BsBatteryHalf,
-  BsCheck,
-  BsCheck2,
-  BsCloudSlash,
-  BsExclamationTriangleFill,
-} from "react-icons/bs";
-import { factory } from "typescript";
+import React, { useEffect, useState } from "react";
 
 import { FactoryTypeCol } from "../components/production/col_type";
 import { useLocalStorage } from "../hooks/localStorage";
 import { defaultSettingsData } from "./settings";
-
-type FactoryData = {
-  constructor: any[];
-  assembler: any[];
-  blender: any[];
-  foundry: any[];
-  manufactor: any[];
-  particle: any[];
-  refinery: any[];
-  smelter: any[];
-};
 
 export const Factorys: React.FC = (props) => {
   const [doLoadData, setLoadData] = useState(true);

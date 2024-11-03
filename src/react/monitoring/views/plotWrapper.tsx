@@ -1,4 +1,3 @@
-// @ts-ignore
 import * as Plot from "@observablehq/plot";
 import type { FC } from "react";
 import React, { useEffect, useRef } from "react";

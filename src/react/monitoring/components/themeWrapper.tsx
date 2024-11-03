@@ -6,11 +6,13 @@ import {
   shouldSkipGeneratingVar as joyShouldSkipGeneratingVar,
 } from "@mui/joy/styles";
 import {
-  experimental_extendTheme as extendMuiTheme,
+  extendTheme as extendMuiTheme,
   shouldSkipGeneratingVar as muiShouldSkipGeneratingVar,
 } from "@mui/material/styles";
 import { deepmerge } from "@mui/utils";
+import React from "react";
 
+console.log(colors);
 const { unstable_sxConfig: muiSxConfig, ...muiTheme } = extendMuiTheme({
   // This is required to point to `var(--joy-*)` because we are using
   // `CssVarsProvider` from Joy UI.
@@ -26,7 +28,7 @@ const { unstable_sxConfig: muiSxConfig, ...muiTheme } = extendMuiTheme({
           main: colors.red[600],
         },
         info: {
-          main: colors.purple[600],
+          main: colors.blue[600],
         },
         success: {
           main: colors.green[600],
@@ -122,15 +124,15 @@ mergedTheme.unstable_sxConfig = {
   ...joySxConfig,
 };
 
-export const ThemeWrapper: React.FC<any> = (props) => {
+export const ThemeWrapper: React.FC<any> = ({ children }) => {
   return (
     <CssVarsProvider
       theme={mergedTheme}
-      shouldSkipGeneratingVar={(keys: any) =>
+      shouldSkipGeneratingVar={(keys: string[]) =>
         muiShouldSkipGeneratingVar(keys) || joyShouldSkipGeneratingVar(keys)
       }
     >
-      {props.children}
+      {children}
     </CssVarsProvider>
   );
 };

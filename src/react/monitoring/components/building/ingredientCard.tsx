@@ -1,11 +1,14 @@
 import { Card, CardContent, Grid, Typography } from "@mui/joy";
 import React from "react";
 
-export const IngredientCard: React.FC<{ product: any; fullRefs: any }> = (
-  props,
-) => {
+type PropsType = {
+  product: any;
+  fullRefs: any;
+};
+
+export const IngredientCard = ({ product, fullRefs }: PropsType) => {
   let exists = false;
-  if (props.fullRefs[props.product.Name] != null) {
+  if (fullRefs[product.Name] != null) {
     exists = true;
   }
   return (
@@ -14,19 +17,19 @@ export const IngredientCard: React.FC<{ product: any; fullRefs: any }> = (
       sx={{
         padding: "3px",
         borderColor:
-          Math.floor(props.product.Amount) === 0
+          Math.floor(product.Amount) === 0
             ? "var(--joy-palette-error-main)"
             : "var(--joy-palette-neutral-outlinedBorder)",
-        borderWidth: Math.floor(props.product.Inventory) === 0 ? "3px" : "1px",
+        borderWidth: Math.floor(product.Inventory) === 0 ? "3px" : "1px",
       }}
     >
       <CardContent>
         <Typography
-          level="body1"
+          level="body-md"
           alignSelf="center"
           sx={{ paddingTop: "3px", paddingBottom: "2px" }}
         >
-          {props.product.Name}
+          {product.Name}
         </Typography>
         <Grid
           spacing={2}
@@ -37,12 +40,12 @@ export const IngredientCard: React.FC<{ product: any; fullRefs: any }> = (
             <img
               src={
                 exists
-                  ? `/assets/${props.fullRefs[props.product.Name].category}/${
-                      props.product.Name
+                  ? `/assets/${fullRefs[product.Name].category}/${
+                      product.Name
                     }.png`
                   : undefined
               }
-              alt={props.product.Name}
+              alt={product.Name}
               style={{ height: "30px", width: "30px" }}
             />
           </Grid>
@@ -53,18 +56,16 @@ export const IngredientCard: React.FC<{ product: any; fullRefs: any }> = (
               sx={{ paddingTop: 0 }}
             >
               <Grid xs>
-                <Typography level="body2">Current Consumed</Typography>
+                <Typography level="body-md">Current Consumed</Typography>
               </Grid>
               <Grid>
                 <Typography>
                   {`${
                     exists
-                      ? props.fullRefs[props.product.Name].type === "l"
-                        ? `${
-                            Math.round(props.product.CurrentConsumed / 10) / 100
-                          } m³`
-                        : props.product.CurrentConsumed.toFixed(2)
-                      : props.product.CurrentConsumed.toFixed(2)
+                      ? fullRefs[product.Name].type === "l"
+                        ? `${Math.round(product.CurrentConsumed / 10) / 100} m³`
+                        : product.CurrentConsumed.toFixed(2)
+                      : product.CurrentConsumed.toFixed(2)
                   }/min`}
                 </Typography>
               </Grid>
@@ -75,18 +76,16 @@ export const IngredientCard: React.FC<{ product: any; fullRefs: any }> = (
               sx={{ paddingTop: 0 }}
             >
               <Grid xs>
-                <Typography level="body2">Max Consumed</Typography>
+                <Typography level="body-md">Max Consumed</Typography>
               </Grid>
               <Grid>
                 <Typography>
                   {`${
                     exists
-                      ? props.fullRefs[props.product.Name].type === "l"
-                        ? `${
-                            Math.round(props.product.MaxConsumed / 10) / 100
-                          } m³`
-                        : props.product.MaxConsumed.toFixed(2)
-                      : props.product.MaxConsumed.toFixed(2)
+                      ? fullRefs[product.Name].type === "l"
+                        ? `${Math.round(product.MaxConsumed / 10) / 100} m³`
+                        : product.MaxConsumed.toFixed(2)
+                      : product.MaxConsumed.toFixed(2)
                   }/min`}
                 </Typography>
               </Grid>
@@ -97,12 +96,10 @@ export const IngredientCard: React.FC<{ product: any; fullRefs: any }> = (
               sx={{ paddingTop: 0 }}
             >
               <Grid xs>
-                <Typography level="body2">Efficency Consume</Typography>
+                <Typography level="body-md">Efficency Consume</Typography>
               </Grid>
               <Grid>
-                <Typography>
-                  {props.product.ConsPercent.toFixed(2)} %
-                </Typography>
+                <Typography>{product.ConsPercent.toFixed(2)} %</Typography>
               </Grid>
             </Grid>
             <Grid
@@ -110,21 +107,21 @@ export const IngredientCard: React.FC<{ product: any; fullRefs: any }> = (
               container
               sx={{
                 color:
-                  Math.floor(props.product.Amount) === 0
+                  Math.floor(product.Amount) === 0
                     ? "var(--joy-palette-error-main)"
                     : "var(--joy-palette-text-main)",
                 paddingY: 0,
               }}
             >
               <Grid xs>
-                <Typography level="body2">Input Inventory</Typography>
+                <Typography level="body-md">Input Inventory</Typography>
               </Grid>
               <Grid>
                 {exists
-                  ? props.fullRefs[props.product.Name].type === "l"
-                    ? `${Math.round(props.product.Amount / 10) / 100} m³`
-                    : props.product.Amount
-                  : props.product.Amount}
+                  ? fullRefs[product.Name].type === "l"
+                    ? `${Math.round(product.Amount / 10) / 100} m³`
+                    : product.Amount
+                  : product.Amount}
               </Grid>
             </Grid>
           </Grid>

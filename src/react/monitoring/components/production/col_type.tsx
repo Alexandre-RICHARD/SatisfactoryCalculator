@@ -1,6 +1,6 @@
 import { Card, CardContent, Chip, Grid, Typography } from "@mui/joy";
 import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
-import { BsChevronBarUp, BsChevronDown } from "react-icons/bs";
+import { BsChevronDown } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 type Props = {

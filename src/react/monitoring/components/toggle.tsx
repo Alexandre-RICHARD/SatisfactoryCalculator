@@ -1,7 +1,5 @@
-// @ts-ignore
-import { Button, useColorScheme } from "@mui/joy";
+import { useColorScheme } from "@mui/joy";
 import React, { useEffect } from "react";
-import ts from "typescript";
 
 export const ModeToggle = () => {
   const { mode, setMode } = useColorScheme();

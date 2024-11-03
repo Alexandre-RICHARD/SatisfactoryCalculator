@@ -45,7 +45,7 @@ export const Sidebar = (): React.JSX.Element => {
             alignItems="center"
           >
             <Grid xs>
-              <Typography>FRM Dashboard</Typography>
+              <Typography level="h4">FRM Dashboard</Typography>
             </Grid>
             <Grid>
               <IconButton
