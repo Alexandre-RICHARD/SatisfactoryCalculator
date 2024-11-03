@@ -5,12 +5,12 @@ import { useShallow } from "zustand/react/shallow";
 import { GraphFactoryLineDirectionEnum as GraphDirection } from "../../../enums/graphFactoryLineDirection.enum";
 import { GraphFactoryLineSizeEnum as GraphSize } from "../../../enums/graphFactoryLineSize.enum";
 import { useCombinedStore } from "../../../store/combined.store";
-import { useCalculateFactoryLine } from "../../hooks/useCalculateFactoryLine";
-import { useGetDiagramData } from "../../hooks/useGetDiagramData";
-import { useGetDiagramOptions } from "../../hooks/useGetDiagramOptions";
 import { GraphHandlerButtons } from "./GraphHandlerButtons";
 import { GraphSummary } from "./GraphSummary";
 import styles from "./styles.module.scss";
+import { useCalculateFactoryLine } from "./useCalculateFactoryLine";
+import { useGetDiagramData } from "./useGetDiagramData";
+import { useGetDiagramOptions } from "./useGetDiagramOptions";
 
 export const GraphContainer = (): React.JSX.Element | null => {
   const [

@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import type { Options } from "vis-network";
 
-import { GraphFactoryLineDirectionEnum as GraphDirection } from "../../enums/graphFactoryLineDirection.enum";
-import { GraphFactoryLineSizeEnum as GraphSize } from "../../enums/graphFactoryLineSize.enum";
-import { stringRemoveEndPxHelper } from "../../helpers/stringRemoveEndPx.helper";
-import { theme } from "../../styles/theme";
+import { GraphFactoryLineDirectionEnum as GraphDirection } from "../../../enums/graphFactoryLineDirection.enum";
+import { GraphFactoryLineSizeEnum as GraphSize } from "../../../enums/graphFactoryLineSize.enum";
+import { stringRemoveEndPxHelper } from "../../../helpers/stringRemoveEndPx.helper";
+import { theme } from "../../../styles/theme";
 
 type PropsType = {
   graphSize: GraphSize;

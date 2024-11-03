@@ -1,10 +1,10 @@
 import { useCallback, useEffect } from "react";
 
-import { factoryLineDataCalculator } from "../../helpers/factoryLineDataCalculator.helper";
-import { factoryLineStepCalculator } from "../../helpers/factoryLineStepCalculator.helper";
-import type { FactoryLine } from "../../types/satisfactory/factoryLine";
-import type { FactoryLineData } from "../../types/satisfactory/factoryLineData";
-import type { SelectedFactoryLineData } from "../../types/satisfactory/selectedFactoryLineData";
+import { factoryLineDataCalculator } from "../../../helpers/factoryLineDataCalculator.helper";
+import { factoryLineStepCalculator } from "../../../helpers/factoryLineStepCalculator.helper";
+import type { FactoryLine } from "../../../types/satisfactory/factoryLine";
+import type { FactoryLineData } from "../../../types/satisfactory/factoryLineData";
+import type { SelectedFactoryLineData } from "../../../types/satisfactory/selectedFactoryLineData";
 
 type PropsType = {
   selectedFactoryLineData?: SelectedFactoryLineData;
