@@ -17,7 +17,7 @@ export const Router = (): React.JSX.Element => {
         element={<FactoryLineCalculator />}
       />
       <Route
-        path="/monitoring"
+        path="/monitoring/*"
         element={<Monitoring />}
       />
     </Routes>
