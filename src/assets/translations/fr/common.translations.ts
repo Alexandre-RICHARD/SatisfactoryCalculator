@@ -1,6 +1,7 @@
 export default {
   recipes: "Recettes",
   calculator: "Calculateur",
+  monitoring: "Surveillance",
   producedIn: "Lieu de production :",
   cycleDuration: "Durée d'un cycle :",
   requiredPower: "Puissance requise :",

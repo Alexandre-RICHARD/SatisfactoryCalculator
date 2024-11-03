@@ -14,7 +14,7 @@ export const Header = (): React.JSX.Element => {
       <NavLink to="/">Satisfactory calculator</NavLink>
       <NavLink to="/recipes">{t(TF.COMMON, "recipes")}</NavLink>
       <NavLink to="/calculator">{t(TF.COMMON, "calculator")}</NavLink>
-      <NavLink to="/monitoring">{t(TF.COMMON, "calculator")}</NavLink>
+      <NavLink to="/monitoring">{t(TF.COMMON, "monitoring")}</NavLink>
       <LanguagesSelector />
     </header>
   );
