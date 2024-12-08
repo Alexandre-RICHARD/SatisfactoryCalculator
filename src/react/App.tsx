@@ -9,8 +9,8 @@ import React from "react";
 
 import { useCombinedStore } from "../store/combined.store";
 import { theme } from "../styles/theme";
-import styles from "./App.module.scss";
-import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+import { SideBarNavigation } from "./components/SideBarNavigation";
 import { Router } from "./Router";
 
 export const App = (): React.JSX.Element => {
@@ -28,10 +28,17 @@ export const App = (): React.JSX.Element => {
       language={language}
     >
       <ThemeProvider theme={theme}>
-        <div className={styles.app}>
-          <Header />
-          <div className={styles.content_container}>
-            <Router />
+        <div className="bg-black flex flex-row text-white min-w-full max-w-full min-h-screen max-h-screen overflow-hidden">
+          <SideBarNavigation />
+          <div className="w-full flex flex-col h-screen">
+            <main className="flex-1 overflow-y-auto">
+              <div className="container mt-4 mb-4 mx-auto w-full">
+                <Router />
+              </div>
+            </main>
+            <div className="container mx-auto w-full">
+              <Footer />
+            </div>
           </div>
         </div>
       </ThemeProvider>
