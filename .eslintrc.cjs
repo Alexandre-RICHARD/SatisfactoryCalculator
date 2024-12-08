@@ -15,7 +15,7 @@ module.exports = {
   overrides: [
     {
       files: [
-        "src/store/combined.store.ts",
+        "postcss.config.js", "tailwind.config.js", "src/store/combined.store.ts",
       ],
       rules: {
         "import/no-default-export": "off",

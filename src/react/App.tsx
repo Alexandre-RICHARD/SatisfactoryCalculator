@@ -1,3 +1,5 @@
+import "../styles/globalStyles.scss";
+
 import {
   ThemeProvider,
   TranslationProvider,
