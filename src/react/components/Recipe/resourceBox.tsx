@@ -32,7 +32,9 @@ export const ResourceBox = ({
       <img
         className={styles.resource_icon}
         alt={`Icon of ${resource.itemName} satisfactory resource`}
-        src={dynamicImageImporter(`satisfactoryIcons/${resource.itemName}.png`)}
+        src={dynamicImageImporter(
+          `satisfactoryImages/gameItems/Resource/${resource.itemName}.png`,
+        )}
       />
       <p className={styles.resource_count}>
         {getItemCount(resource.quantityPerCycle)}
