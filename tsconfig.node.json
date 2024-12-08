@@ -7,5 +7,5 @@
     "allowSyntheticDefaultImports": true,
     "strict": true
   },
-  "include": ["vite.config.ts", "vitest.setup.ts"]
+  "include": [".eslintrc.cjs", "vite.config.ts", "vitest.setup.ts"]
 }
