@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
+import { useNavigate } from "../../hooks/useNavigate";
 
 export const NotFound = (): React.JSX.Element => {
   const [timeLeft, setTimeLeft] = useState(5);
