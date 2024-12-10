@@ -13,11 +13,16 @@ export const generatorsDtoToFmMapper = (dto: GeneratorDto[]): GeneratorFm[] => {
     );
 
     return {
+      id: crypto.randomUUID(),
       name: generatorDto.Name,
       className,
       overclocking: generatorDto.CurrentPotential,
-      isAtFullSpeed: generatorDto.IsFullSpeed,
+      isAtFullSpeed: generatorDto.CanStart ?? generatorDto.IsFullSpeed,
       powerProduction: generatorDto.DynamicProdCapacity,
+      location: {
+        x: generatorDto.location.x,
+        y: generatorDto.location.y,
+      },
     };
   });
 };

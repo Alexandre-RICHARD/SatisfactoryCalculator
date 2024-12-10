@@ -35,8 +35,8 @@ type Coordinates = {
   y: number;
   z: number;
 };
-
 export type ExtractorDto = {
+  ID: string;
   Name: string;
   ClassName: string;
   location: Location;

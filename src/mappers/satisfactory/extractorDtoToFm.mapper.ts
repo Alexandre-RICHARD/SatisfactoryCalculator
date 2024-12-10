@@ -13,11 +13,16 @@ export const extractorDtoToFmMapper = (dto: ExtractorDto[]): ExtractorFm[] => {
     );
 
     return {
+      id: extractorDto.ID,
       name: extractorDto.Name,
       className,
       overclocking: extractorDto.ManuSpeed,
       efficiency: extractorDto.production?.[0].ProdPercent ?? 0,
       powerConsumption: extractorDto.PowerInfo.PowerConsumed,
+      location: {
+        x: extractorDto.location.x,
+        y: extractorDto.location.y,
+      },
     };
   });
 };
