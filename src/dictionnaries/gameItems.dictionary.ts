@@ -1,4 +1,3 @@
-import { EndpointEnum } from "../enums/endpoint.enum";
 import { GameBuildingsTypeEnum } from "../enums/gameBuildingsType.enum";
 import { GameClassNamesEnum } from "../enums/gameClassNames.enum";
 import { GameItemsEnum } from "../enums/gameItems.enum";
@@ -6,6 +5,7 @@ import { GameItemsCategoryEnum } from "../enums/gameItemsCategory.enum";
 import { GameResourcesTypeEnum } from "../enums/gameResourcesType.enum";
 import type { GameItemsDictionnary } from "../types/satisfactory/gameItemsDictionary.type";
 
+// eslint-disable-next-line import/no-unused-modules
 export const gameItemsDictionnary: GameItemsDictionnary = {
   // Raw resources items
   [GameClassNamesEnum.Desc_OreIron_C]: {
@@ -933,13 +933,13 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     name: GameItemsEnum.Smelter,
     category: GameItemsCategoryEnum.Building,
     buildingType: GameBuildingsTypeEnum.Manufacturer,
-    endpoint: EndpointEnum.SMELTER,
+    endpoint: undefined,
   },
   [GameClassNamesEnum.Build_FoundryMk1_C]: {
     name: GameItemsEnum.Foundry,
     category: GameItemsCategoryEnum.Building,
     buildingType: GameBuildingsTypeEnum.Manufacturer,
-    endpoint: EndpointEnum.FOUNDRY,
+    endpoint: undefined,
   },
 
   // Manufacturers buildings
@@ -947,55 +947,55 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     name: GameItemsEnum.Constructor,
     category: GameItemsCategoryEnum.Building,
     buildingType: GameBuildingsTypeEnum.Manufacturer,
-    endpoint: EndpointEnum.CONSTRUCTOR,
+    endpoint: undefined,
   },
   [GameClassNamesEnum.Build_AssemblerMk1_C]: {
     name: GameItemsEnum.Assembler,
     category: GameItemsCategoryEnum.Building,
     buildingType: GameBuildingsTypeEnum.Manufacturer,
-    endpoint: EndpointEnum.ASSEMBLER,
+    endpoint: undefined,
   },
   [GameClassNamesEnum.Build_ManufacturerMk1_C]: {
     name: GameItemsEnum.Manufacturer,
     category: GameItemsCategoryEnum.Building,
     buildingType: GameBuildingsTypeEnum.Manufacturer,
-    endpoint: EndpointEnum.MANUFACTURER,
+    endpoint: undefined,
   },
   [GameClassNamesEnum.Build_Packager_C]: {
     name: GameItemsEnum.Packager,
     category: GameItemsCategoryEnum.Building,
     buildingType: GameBuildingsTypeEnum.Manufacturer,
-    endpoint: EndpointEnum.PACKAGER,
+    endpoint: undefined,
   },
   [GameClassNamesEnum.Build_OilRefinery_C]: {
     name: GameItemsEnum.Refinery,
     category: GameItemsCategoryEnum.Building,
     buildingType: GameBuildingsTypeEnum.Manufacturer,
-    endpoint: EndpointEnum.REFINERY,
+    endpoint: undefined,
   },
   [GameClassNamesEnum.Build_Blender_C]: {
     name: GameItemsEnum.Blender,
     category: GameItemsCategoryEnum.Building,
     buildingType: GameBuildingsTypeEnum.Manufacturer,
-    endpoint: EndpointEnum.BLENDER,
+    endpoint: undefined,
   },
   [GameClassNamesEnum.Build_HadronCollider_C]: {
     name: GameItemsEnum.Particle_Accelerator,
     category: GameItemsCategoryEnum.Building,
     buildingType: GameBuildingsTypeEnum.Manufacturer,
-    endpoint: EndpointEnum.PARTICLE_ACCELERATOR,
+    endpoint: undefined,
   },
   [GameClassNamesEnum.Build_QuantumEncoder_C]: {
     name: GameItemsEnum.Quantum_Encoder,
     category: GameItemsCategoryEnum.Building,
     buildingType: GameBuildingsTypeEnum.Manufacturer,
-    endpoint: EndpointEnum.QUANTUM_ENCODER,
+    endpoint: undefined,
   },
   [GameClassNamesEnum.Build_Converter_C]: {
     name: GameItemsEnum.Converter,
     category: GameItemsCategoryEnum.Building,
     buildingType: GameBuildingsTypeEnum.Manufacturer,
-    endpoint: EndpointEnum.CONVERTER,
+    endpoint: undefined,
   },
 
   // Generators buildings
@@ -1003,7 +1003,7 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     name: GameItemsEnum.Biomass_Burner,
     category: GameItemsCategoryEnum.Building,
     buildingType: GameBuildingsTypeEnum.Generator,
-    endpoint: EndpointEnum.BIOMASS_GENERATOR,
+    endpoint: undefined,
   },
   [GameClassNamesEnum.Build_GeneratorIntegratedBiomass_C]: {
     name: GameItemsEnum.Hub_Integrated_Biomass_Burner,
@@ -1015,25 +1015,25 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     name: GameItemsEnum.Coal_Powered_Generator,
     category: GameItemsCategoryEnum.Building,
     buildingType: GameBuildingsTypeEnum.Generator,
-    endpoint: EndpointEnum.COAL_GENERATOR,
+    endpoint: undefined,
   },
   [GameClassNamesEnum.Build_GeneratorFuel_C]: {
     name: GameItemsEnum.Fuel_Powered_Generator,
     category: GameItemsCategoryEnum.Building,
     buildingType: GameBuildingsTypeEnum.Generator,
-    endpoint: EndpointEnum.FUEL_GENERATOR,
+    endpoint: undefined,
   },
   [GameClassNamesEnum.Build_GeneratorGeoThermal_C]: {
     name: GameItemsEnum.Geothermal_Generator,
     category: GameItemsCategoryEnum.Building,
     buildingType: GameBuildingsTypeEnum.Generator,
-    endpoint: EndpointEnum.GEOTHERMAL_GENERATOR,
+    endpoint: undefined,
   },
   [GameClassNamesEnum.Build_GeneratorNuclear_C]: {
     name: GameItemsEnum.Nuclear_Power_Plant,
     category: GameItemsCategoryEnum.Building,
     buildingType: GameBuildingsTypeEnum.Generator,
-    endpoint: EndpointEnum.NUCLEAR_GENERATOR,
+    endpoint: undefined,
   },
   [GameClassNamesEnum.Build_AlienPowerBuilding_C]: {
     name: GameItemsEnum.Alien_Power_Augmenter,

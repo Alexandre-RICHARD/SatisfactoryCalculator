@@ -7,5 +7,5 @@ export type GameItemManufacturerBuilding = {
   name: GameItemsEnum;
   category: GameItemsCategoryEnum.Building;
   buildingType: GameBuildingsTypeEnum.Manufacturer;
-  endpoint: EndpointEnum;
+  endpoint: EndpointEnum | undefined;
 };
