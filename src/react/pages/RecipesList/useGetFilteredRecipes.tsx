@@ -1,6 +1,6 @@
 import { stringSearcher } from "@nexus/nexusExporter";
 
-import { TranslationsFilesEnum as TF } from "../../../enums/translationsFiles.enum";
+import { TranslationsFilesEnum as TF } from "../../../enums/translationsFile.enum";
 import type { RecipeType } from "../../../types/satisfactory/recipe.type";
 import { useCustomTranslations } from "../../hooks/useCustomTranslations";
 

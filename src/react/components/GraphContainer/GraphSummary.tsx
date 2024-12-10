@@ -1,7 +1,7 @@
 import { roundNumber } from "@nexus/nexusExporter";
 import React from "react";
 
-import { TranslationsFilesEnum as TF } from "../../../enums/translationsFiles.enum";
+import { TranslationsFilesEnum as TF } from "../../../enums/translationsFile.enum";
 import { useCombinedStore } from "../../../store/combined.store";
 import { useCustomTranslations } from "../../hooks/useCustomTranslations";
 import styles from "./styles.module.scss";

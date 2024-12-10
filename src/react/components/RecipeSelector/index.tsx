@@ -4,7 +4,7 @@ import { useShallow } from "zustand/react/shallow";
 
 import { recipes } from "../../../dictionnaries/recipes.dictionnary";
 import { ItemsEnum } from "../../../enums/items.enum";
-import { TranslationsFilesEnum as TF } from "../../../enums/translationsFiles.enum";
+import { TranslationsFilesEnum as TF } from "../../../enums/translationsFile.enum";
 import { useCombinedStore } from "../../../store/combined.store";
 import { useCustomTranslations } from "../../hooks/useCustomTranslations";
 import styles from "./styles.module.scss";

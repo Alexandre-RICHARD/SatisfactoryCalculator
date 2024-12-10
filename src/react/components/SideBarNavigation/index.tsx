@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-import { TranslationsFilesEnum as TF } from "../../../enums/translationsFiles.enum";
+import { TranslationsFilesEnum as TF } from "../../../enums/translationsFile.enum";
 import { useCustomTranslations } from "../../hooks/useCustomTranslations";
 import { LanguagesSelector } from "../LanguageSelector";
 import styles from "./styles.module.scss";
