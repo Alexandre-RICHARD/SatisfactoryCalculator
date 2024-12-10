@@ -16,7 +16,7 @@ export const GraphSummary = (): React.JSX.Element | null => {
       <p>{roundNumber(factoryLineData.totalEnergyRequired, 2)} Mj</p>
       {factoryLineData.rawResources?.map((rawResource) => (
         <p>
-          {t(TF.SATISFACTORY_ITEMS, rawResource.itemName)}
+          {t(TF.SATISFACTORY_ITEMS, rawResource.item.name)}
           {" - "}
           {rawResource.quantityPerMinute} / min
         </p>

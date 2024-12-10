@@ -1,6 +1,5 @@
 import { roundNumber } from "@nexus/nexusExporter";
 
-import { items } from "../dictionnaries/items.dictionnary";
 import { recipes } from "../dictionnaries/recipes.dictionnary";
 import type { FactoryLine } from "../types/satisfactory/factoryLine.type";
 import type { SelectedFactoryLineData } from "../types/satisfactory/selectedFactoryLineData.type";
@@ -19,7 +18,7 @@ export const factoryLineStepCalculator = ({
   )!;
 
   const item = recipe.itemsOut.find(
-    (it) => it.itemName === currentRecipe?.selectedItemName,
+    (it) => it.item === currentRecipe?.selectedItem,
   )!;
 
   const quantityPerMinute =
@@ -45,26 +44,24 @@ export const factoryLineStepCalculator = ({
   });
 
   const isStartingStep = recipe.itemsIn.every(
-    (itemIn) => items[itemIn.itemName].isRaw,
+    (itemIn) => itemIn.item.isRawResource,
   );
   const parents = isStartingStep
     ? []
     : recipe.itemsIn
-        .filter((itemIn) => !items[itemIn.itemName].isRaw)
+        .filter((itemIn) => !itemIn.item.isRawResource)
         .map((itemIn) => {
           const itemInRecipe = recipes.find(
             (it) =>
               !it.isAlternate &&
-              it.itemsOut.some(
-                (itemOut) => itemOut.itemName === itemIn.itemName,
-              ),
+              it.itemsOut.some((itemOut) => itemOut.item === itemIn.item),
           );
           return factoryLineStepCalculator({
             currentRecipe: {
               itemPerMinute:
                 (itemIn.quantityPerCycle * quantityPerMinute) /
                 item.quantityPerCycle,
-              selectedItemName: itemIn.itemName,
+              selectedItem: itemIn.item,
               selectedRecipeName: itemInRecipe?.recipeName,
             },
           });
@@ -72,7 +69,7 @@ export const factoryLineStepCalculator = ({
 
   const rawResources = isStartingStep
     ? recipe.itemsIn.map((itemIn) => ({
-        itemName: itemIn.itemName,
+        item: itemIn.item,
         quantityPerMinute:
           (itemIn.quantityPerCycle * quantityPerMinute) / item.quantityPerCycle,
       }))

@@ -1,11 +1,11 @@
-import type { CraftBuildingsEnum } from "../../enums/craftBuildings.enum";
-import type { PowerBuildingsEnum } from "../../enums/powerBuildings.enum";
 import type { RecipesEnum } from "../../enums/recipes.enum";
+import type { GameItemGeneratorBuilding } from "./gameItems/generatorBuilding.type";
+import type { GameItemManufacturerBuilding } from "./gameItems/manufacturerBuilding.type";
 import type { ItemsInOutType } from "./itemsInOut.type";
 
 export type RecipeType = {
   recipeName: RecipesEnum;
-  craftBuildings: CraftBuildingsEnum | PowerBuildingsEnum;
+  craftBuildings: GameItemGeneratorBuilding | GameItemManufacturerBuilding;
   itemsIn: ItemsInOutType[];
   itemsOut: ItemsInOutType[];
   initCycleDuration: number;

@@ -2,10 +2,12 @@ import { getSortStringValue, Selector } from "@nexus/nexusExporter";
 import React from "react";
 import { useShallow } from "zustand/react/shallow";
 
+import { gameItemsDictionnary } from "../../../dictionnaries/gameItems.dictionary";
 import { recipes } from "../../../dictionnaries/recipes.dictionnary";
-import { ItemsEnum } from "../../../enums/items.enum";
+import { GameItemsEnum } from "../../../enums/gameItems.enum";
 import { TranslationsFilesEnum as TF } from "../../../enums/translationsFile.enum";
 import { useCombinedStore } from "../../../store/combined.store";
+import type { GameItemResource } from "../../../types/satisfactory/gameItems/resource.type";
 import { useCustomTranslations } from "../../hooks/useCustomTranslations";
 import styles from "./styles.module.scss";
 
@@ -19,10 +21,10 @@ export const RecipeSelector = (): React.JSX.Element => {
       ]),
     );
 
-  const ItemsThatCanBeCrafted = Object.values(ItemsEnum)
+  const ItemsThatCanBeCrafted = Object.values(GameItemsEnum)
     .filter((item) => {
       return recipes.some((recipe) =>
-        recipe.itemsOut.some((itemOut) => itemOut.itemName === item),
+        recipe.itemsOut.some((itemOut) => itemOut.item.name === item),
       );
     })
     .sort((a, b) =>
@@ -34,8 +36,7 @@ export const RecipeSelector = (): React.JSX.Element => {
 
   const recipeThatCanBeDoWithItemInOutput = recipes.filter((recipe) =>
     recipe.itemsOut.some(
-      (itemOut) =>
-        itemOut.itemName === selectedFactoryLineData?.selectedItemName,
+      (itemOut) => itemOut.item === selectedFactoryLineData?.selectedItem,
     ),
   );
 
@@ -45,14 +46,14 @@ export const RecipeSelector = (): React.JSX.Element => {
         id="satisfactory-calculator-resources-selector"
         position="bottom-right"
         label={
-          selectedFactoryLineData?.selectedItemName
+          selectedFactoryLineData?.selectedItem
             ? t(
                 TF.SATISFACTORY_ITEMS,
-                selectedFactoryLineData?.selectedItemName,
+                selectedFactoryLineData?.selectedItem.name,
               )
             : "Selectionnes ta ressource"
         }
-        selectedItem={selectedFactoryLineData?.selectedItemName}
+        selectedItem={selectedFactoryLineData?.selectedItem?.name}
         items={ItemsThatCanBeCrafted.map((item) => ({
           label: t(TF.SATISFACTORY_ITEMS, item),
           search: t(TF.SATISFACTORY_ITEMS, item),
@@ -60,7 +61,7 @@ export const RecipeSelector = (): React.JSX.Element => {
         }))}
         onSelect={(newValue) => {
           setSelectedFactoryLineData({
-            selectedItemName: newValue,
+            selectedItem: gameItemsDictionnary[newValue] as GameItemResource,
           });
         }}
         search={{
@@ -68,7 +69,7 @@ export const RecipeSelector = (): React.JSX.Element => {
           strictMode: false,
         }}
       />
-      {selectedFactoryLineData?.selectedItemName ? (
+      {selectedFactoryLineData?.selectedItem ? (
         <Selector
           id="satisfactory-calculator-recipe-selector"
           position="bottom-right"
@@ -90,7 +91,7 @@ export const RecipeSelector = (): React.JSX.Element => {
           }))}
           onSelect={(newValue) =>
             setSelectedFactoryLineData({
-              selectedItemName: selectedFactoryLineData.selectedItemName,
+              selectedItem: selectedFactoryLineData.selectedItem,
               selectedRecipeName: newValue,
               itemPerMinute: 10,
             })

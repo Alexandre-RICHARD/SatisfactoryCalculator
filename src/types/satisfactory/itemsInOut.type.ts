@@ -1,6 +1,6 @@
-import type { ItemsEnum } from "../../enums/items.enum";
+import type { GameItemResource } from "./gameItems/resource.type";
 
 export type ItemsInOutType = {
-  itemName: ItemsEnum;
+  item: GameItemResource;
   quantityPerCycle: number;
 };

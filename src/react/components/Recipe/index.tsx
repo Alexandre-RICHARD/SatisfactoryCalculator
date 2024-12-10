@@ -42,7 +42,7 @@ export const Recipe = ({ recipe }: PropsType): React.JSX.Element => {
           {recipe.itemsIn.map((resource) => {
             return (
               <ResourceBox
-                key={resource.itemName}
+                key={resource.item.name}
                 cycleDuration={cycleDuration}
                 resource={resource}
               />
@@ -60,7 +60,7 @@ export const Recipe = ({ recipe }: PropsType): React.JSX.Element => {
           {recipe.itemsOut.map((resource) => {
             return (
               <ResourceBox
-                key={resource.itemName}
+                key={resource.item.name}
                 cycleDuration={cycleDuration}
                 resource={resource}
               />
@@ -71,7 +71,7 @@ export const Recipe = ({ recipe }: PropsType): React.JSX.Element => {
           <p>
             {t(TF.COMMON, "producedIn")}{" "}
             <span className={styles.recipes_one_info}>
-              {t(TF.SATISFACTORY_BUILDING, recipe.craftBuildings)}
+              {t(TF.SATISFACTORY_ITEMS, recipe.craftBuildings.name)}
             </span>
           </p>
           <p>

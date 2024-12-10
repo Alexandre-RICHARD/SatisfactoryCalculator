@@ -36,7 +36,7 @@ export const useGetDiagramData = ({
   const edges: Edge[] = [];
 
   const getNodeLabel = (node: FactoryLine) => {
-    return `<b>${t(TF.SATISFACTORY_RECIPES, node.recipe.recipeName)}</b>\n${node.buildingNumber}x ${t(TF.SATISFACTORY_BUILDING, node.recipe.craftBuildings)} ${t(TF.COMMON, "at")} ${node.overclocking}%\n${roundNumber(node.powerRequired, 1)} Mw | ${roundNumber(node.energyRequired, 1)} Mj ${t(TF.COMMON, "energyPerItem")}`;
+    return `<b>${t(TF.SATISFACTORY_RECIPES, node.recipe.recipeName)}</b>\n${node.buildingNumber}x ${t(TF.SATISFACTORY_ITEMS, node.recipe.craftBuildings.name)} ${t(TF.COMMON, "at")} ${node.overclocking}%\n${roundNumber(node.powerRequired, 1)} Mw | ${roundNumber(node.energyRequired, 1)} Mj ${t(TF.COMMON, "energyPerItem")}`;
   };
 
   if (factoryLine) {
@@ -50,12 +50,10 @@ export const useGetDiagramData = ({
           const currentInItems = nodeElement.recipe.itemsIn;
           const parentOutItems = parent.recipe.itemsOut;
           const commonItems = currentInItems.filter((item) =>
-            parentOutItems.some(
-              (itemOut) => itemOut.itemName === item.itemName,
-            ),
+            parentOutItems.some((itemOut) => itemOut.item === item.item),
           );
 
-          const edgeLabel = `${t(TF.SATISFACTORY_ITEMS, commonItems[0].itemName)}\n${roundNumber(parent?.quantityPerMinute ?? 0, 2)} / min `;
+          const edgeLabel = `${t(TF.SATISFACTORY_ITEMS, commonItems[0].item.name)}\n${roundNumber(parent?.quantityPerMinute ?? 0, 2)} / min `;
           horizontalGraphSpacingHandler(edgeLabel);
           edges.push({
             from: parent.id,
@@ -67,7 +65,7 @@ export const useGetDiagramData = ({
       } else {
         nodeElement.rawResources!.forEach((itemIn) => {
           const getRawResourceLabel = (bold: boolean) => {
-            const firstPart = t(TF.SATISFACTORY_ITEMS, itemIn.itemName);
+            const firstPart = t(TF.SATISFACTORY_ITEMS, itemIn.item.name);
             const secondPart = `${roundNumber(itemIn.quantityPerMinute, 2)} / min`;
             return bold
               ? `<b>${firstPart}</b>\n${secondPart}`

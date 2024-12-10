@@ -25,15 +25,15 @@ export const ResourceBox = ({
 
   return (
     <div
-      key={resource.itemName}
+      key={resource.item.name}
       className={styles.resource_in_out}
     >
       <img
         className={styles.resource_icon}
-        alt={`Icon of ${resource.itemName} satisfactory resource`}
+        alt={`Icon of ${resource.item.name} satisfactory resource`}
         src={
           new URL(
-            `/src/assets/images/satisfactory/gameItems/Resource/${resource.itemName}.png`,
+            `/src/assets/images/satisfactory/gameItems/Resource/${resource.item.name}.png`,
             import.meta.url,
           ).href
         }

@@ -1,7 +1,7 @@
-import { CraftBuildingsEnum } from "../enums/craftBuildings.enum";
-import { ItemsEnum } from "../enums/items.enum";
+import { GameItemsEnum } from "../enums/gameItems.enum";
 import { RecipesEnum } from "../enums/recipes.enum";
 import type { RecipeType } from "../types/satisfactory/recipe.type";
+import { gameItemsDictionnary } from "./gameItems.dictionary";
 
 // TODO A => POur trouver les doublons, on va attendre de finir le jeu pour voir ça
 // const doubleOutputRecipes = recipes
@@ -19,16 +19,16 @@ export const recipes: RecipeType[] = [
   //! Iron_Ingot
   {
     recipeName: RecipesEnum.Iron_Ingot,
-    craftBuildings: CraftBuildingsEnum.Smelter,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Smelter],
     itemsIn: [
       {
-        itemName: ItemsEnum.Iron_Ore,
+        item: gameItemsDictionnary[GameItemsEnum.Iron_Ore],
         quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Iron_Ingot,
+        item: gameItemsDictionnary[GameItemsEnum.Iron_Ingot],
         quantityPerCycle: 1,
       },
     ],
@@ -37,16 +37,16 @@ export const recipes: RecipeType[] = [
   //! Iron_Plate
   {
     recipeName: RecipesEnum.Iron_Plate,
-    craftBuildings: CraftBuildingsEnum.Constructor,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        itemName: ItemsEnum.Iron_Ingot,
+        item: gameItemsDictionnary[GameItemsEnum.Iron_Ingot],
         quantityPerCycle: 3,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Iron_Plate,
+        item: gameItemsDictionnary[GameItemsEnum.Iron_Plate],
         quantityPerCycle: 2,
       },
     ],
@@ -55,16 +55,16 @@ export const recipes: RecipeType[] = [
   //! Iron_Rod
   {
     recipeName: RecipesEnum.Iron_Rod,
-    craftBuildings: CraftBuildingsEnum.Constructor,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        itemName: ItemsEnum.Iron_Ingot,
+        item: gameItemsDictionnary[GameItemsEnum.Iron_Ingot],
         quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Iron_Rod,
+        item: gameItemsDictionnary[GameItemsEnum.Iron_Rod],
         quantityPerCycle: 1,
       },
     ],
@@ -73,20 +73,20 @@ export const recipes: RecipeType[] = [
   //! Reinforced_Iron_Plate
   {
     recipeName: RecipesEnum.Reinforced_Iron_Plate,
-    craftBuildings: CraftBuildingsEnum.Assembler,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
     itemsIn: [
       {
-        itemName: ItemsEnum.Iron_Plate,
+        item: gameItemsDictionnary[GameItemsEnum.Iron_Plate],
         quantityPerCycle: 6,
       },
       {
-        itemName: ItemsEnum.Screw,
+        item: gameItemsDictionnary[GameItemsEnum.Screw],
         quantityPerCycle: 12,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Reinforced_Iron_Plate,
+        item: gameItemsDictionnary[GameItemsEnum.Reinforced_Iron_Plate],
         quantityPerCycle: 1,
       },
     ],
@@ -95,16 +95,16 @@ export const recipes: RecipeType[] = [
   //! Cable
   {
     recipeName: RecipesEnum.Cable,
-    craftBuildings: CraftBuildingsEnum.Constructor,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        itemName: ItemsEnum.Wire,
+        item: gameItemsDictionnary[GameItemsEnum.Wire],
         quantityPerCycle: 2,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Cable,
+        item: gameItemsDictionnary[GameItemsEnum.Cable],
         quantityPerCycle: 1,
       },
     ],
@@ -113,16 +113,16 @@ export const recipes: RecipeType[] = [
   //! Wire
   {
     recipeName: RecipesEnum.Wire,
-    craftBuildings: CraftBuildingsEnum.Constructor,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        itemName: ItemsEnum.Copper_Ingot,
+        item: gameItemsDictionnary[GameItemsEnum.Copper_Ingot],
         quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Wire,
+        item: gameItemsDictionnary[GameItemsEnum.Wire],
         quantityPerCycle: 2,
       },
     ],
@@ -131,16 +131,16 @@ export const recipes: RecipeType[] = [
   //! Copper_Ingot
   {
     recipeName: RecipesEnum.Copper_Ingot,
-    craftBuildings: CraftBuildingsEnum.Smelter,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Smelter],
     itemsIn: [
       {
-        itemName: ItemsEnum.Copper_Ore,
+        item: gameItemsDictionnary[GameItemsEnum.Copper_Ore],
         quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Copper_Ingot,
+        item: gameItemsDictionnary[GameItemsEnum.Copper_Ingot],
         quantityPerCycle: 1,
       },
     ],
@@ -149,16 +149,16 @@ export const recipes: RecipeType[] = [
   //! Concrete
   {
     recipeName: RecipesEnum.Concrete,
-    craftBuildings: CraftBuildingsEnum.Constructor,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        itemName: ItemsEnum.Limestone,
+        item: gameItemsDictionnary[GameItemsEnum.Limestone],
         quantityPerCycle: 3,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Concrete,
+        item: gameItemsDictionnary[GameItemsEnum.Concrete],
         quantityPerCycle: 1,
       },
     ],
@@ -167,16 +167,16 @@ export const recipes: RecipeType[] = [
   //! Screw
   {
     recipeName: RecipesEnum.Screw,
-    craftBuildings: CraftBuildingsEnum.Constructor,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        itemName: ItemsEnum.Iron_Rod,
+        item: gameItemsDictionnary[GameItemsEnum.Iron_Rod],
         quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Screw,
+        item: gameItemsDictionnary[GameItemsEnum.Screw],
         quantityPerCycle: 4,
       },
     ],
@@ -185,16 +185,16 @@ export const recipes: RecipeType[] = [
   //! Biomass_Wood
   {
     recipeName: RecipesEnum.Biomass_Wood,
-    craftBuildings: CraftBuildingsEnum.Constructor,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        itemName: ItemsEnum.Wood,
+        item: gameItemsDictionnary[GameItemsEnum.Wood],
         quantityPerCycle: 4,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Biomass,
+        item: gameItemsDictionnary[GameItemsEnum.Biomass],
         quantityPerCycle: 20,
       },
     ],
@@ -203,16 +203,16 @@ export const recipes: RecipeType[] = [
   //! Biomass_Leaves
   {
     recipeName: RecipesEnum.Biomass_Leaves,
-    craftBuildings: CraftBuildingsEnum.Constructor,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        itemName: ItemsEnum.Leaves,
+        item: gameItemsDictionnary[GameItemsEnum.Leaves],
         quantityPerCycle: 10,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Biomass,
+        item: gameItemsDictionnary[GameItemsEnum.Biomass],
         quantityPerCycle: 5,
       },
     ],
@@ -221,16 +221,16 @@ export const recipes: RecipeType[] = [
   //! Biomass_Alien_Protein
   {
     recipeName: RecipesEnum.Biomass_Alien_Protein,
-    craftBuildings: CraftBuildingsEnum.Constructor,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        itemName: ItemsEnum.Alien_Protein,
+        item: gameItemsDictionnary[GameItemsEnum.Alien_Protein],
         quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Biomass,
+        item: gameItemsDictionnary[GameItemsEnum.Biomass],
         quantityPerCycle: 100,
       },
     ],
@@ -239,20 +239,20 @@ export const recipes: RecipeType[] = [
   //! Rotor
   {
     recipeName: RecipesEnum.Rotor,
-    craftBuildings: CraftBuildingsEnum.Assembler,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
     itemsIn: [
       {
-        itemName: ItemsEnum.Iron_Rod,
+        item: gameItemsDictionnary[GameItemsEnum.Iron_Rod],
         quantityPerCycle: 5,
       },
       {
-        itemName: ItemsEnum.Screw,
+        item: gameItemsDictionnary[GameItemsEnum.Screw],
         quantityPerCycle: 25,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Rotor,
+        item: gameItemsDictionnary[GameItemsEnum.Rotor],
         quantityPerCycle: 1,
       },
     ],
@@ -261,16 +261,16 @@ export const recipes: RecipeType[] = [
   //! Copper_Sheet
   {
     recipeName: RecipesEnum.Copper_Sheet,
-    craftBuildings: CraftBuildingsEnum.Constructor,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        itemName: ItemsEnum.Copper_Ingot,
+        item: gameItemsDictionnary[GameItemsEnum.Copper_Ingot],
         quantityPerCycle: 2,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Copper_Sheet,
+        item: gameItemsDictionnary[GameItemsEnum.Copper_Sheet],
         quantityPerCycle: 1,
       },
     ],
@@ -279,20 +279,20 @@ export const recipes: RecipeType[] = [
   //! Modular_Frame
   {
     recipeName: RecipesEnum.Modular_Frame,
-    craftBuildings: CraftBuildingsEnum.Assembler,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
     itemsIn: [
       {
-        itemName: ItemsEnum.Reinforced_Iron_Plate,
+        item: gameItemsDictionnary[GameItemsEnum.Reinforced_Iron_Plate],
         quantityPerCycle: 3,
       },
       {
-        itemName: ItemsEnum.Iron_Rod,
+        item: gameItemsDictionnary[GameItemsEnum.Iron_Rod],
         quantityPerCycle: 12,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Modular_Frame,
+        item: gameItemsDictionnary[GameItemsEnum.Modular_Frame],
         quantityPerCycle: 2,
       },
     ],
@@ -301,20 +301,20 @@ export const recipes: RecipeType[] = [
   //! Smart_Plating
   {
     recipeName: RecipesEnum.Smart_Plating,
-    craftBuildings: CraftBuildingsEnum.Assembler,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
     itemsIn: [
       {
-        itemName: ItemsEnum.Reinforced_Iron_Plate,
+        item: gameItemsDictionnary[GameItemsEnum.Reinforced_Iron_Plate],
         quantityPerCycle: 1,
       },
       {
-        itemName: ItemsEnum.Rotor,
+        item: gameItemsDictionnary[GameItemsEnum.Rotor],
         quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Smart_Plating,
+        item: gameItemsDictionnary[GameItemsEnum.Smart_Plating],
         quantityPerCycle: 1,
       },
     ],
@@ -323,16 +323,16 @@ export const recipes: RecipeType[] = [
   //! Alien_Protein_Hog
   {
     recipeName: RecipesEnum.Alien_Protein_Hog,
-    craftBuildings: CraftBuildingsEnum.Constructor,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        itemName: ItemsEnum.Hog_Remains,
+        item: gameItemsDictionnary[GameItemsEnum.Hog_Remains],
         quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Alien_Protein,
+        item: gameItemsDictionnary[GameItemsEnum.Alien_Protein],
         quantityPerCycle: 1,
       },
     ],
@@ -341,16 +341,16 @@ export const recipes: RecipeType[] = [
   //! Alien_Protein_Hatcher
   {
     recipeName: RecipesEnum.Alien_Protein_Hatcher,
-    craftBuildings: CraftBuildingsEnum.Constructor,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        itemName: ItemsEnum.Hatcher_Remains,
+        item: gameItemsDictionnary[GameItemsEnum.Hatcher_Remains],
         quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Alien_Protein,
+        item: gameItemsDictionnary[GameItemsEnum.Alien_Protein],
         quantityPerCycle: 1,
       },
     ],
@@ -359,16 +359,16 @@ export const recipes: RecipeType[] = [
   //! Alien_Protein_Spitter
   {
     recipeName: RecipesEnum.Alien_Protein_Spitter,
-    craftBuildings: CraftBuildingsEnum.Constructor,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        itemName: ItemsEnum.Spitter_Remains,
+        item: gameItemsDictionnary[GameItemsEnum.Spitter_Remains],
         quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Alien_Protein,
+        item: gameItemsDictionnary[GameItemsEnum.Alien_Protein],
         quantityPerCycle: 1,
       },
     ],
@@ -377,16 +377,16 @@ export const recipes: RecipeType[] = [
   //! Alien_Protein_Stinger
   {
     recipeName: RecipesEnum.Alien_Protein_Stinger,
-    craftBuildings: CraftBuildingsEnum.Constructor,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        itemName: ItemsEnum.Stinger_Remains,
+        item: gameItemsDictionnary[GameItemsEnum.Stinger_Remains],
         quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Alien_Protein,
+        item: gameItemsDictionnary[GameItemsEnum.Alien_Protein],
         quantityPerCycle: 1,
       },
     ],
@@ -395,16 +395,16 @@ export const recipes: RecipeType[] = [
   //! Alien_DNA_Capsule
   {
     recipeName: RecipesEnum.Alien_DNA_Capsule,
-    craftBuildings: CraftBuildingsEnum.Constructor,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        itemName: ItemsEnum.Alien_Protein,
+        item: gameItemsDictionnary[GameItemsEnum.Alien_Protein],
         quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Alien_DNA_Capsule,
+        item: gameItemsDictionnary[GameItemsEnum.Alien_DNA_Capsule],
         quantityPerCycle: 1,
       },
     ],
@@ -413,16 +413,16 @@ export const recipes: RecipeType[] = [
   //! Power_Shard_Blue_Power_Slug
   {
     recipeName: RecipesEnum.Power_Shard_Blue_Power_Slug,
-    craftBuildings: CraftBuildingsEnum.Constructor,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        itemName: ItemsEnum.Blue_Power_Slug,
+        item: gameItemsDictionnary[GameItemsEnum.Blue_Power_Slug],
         quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Power_Shard,
+        item: gameItemsDictionnary[GameItemsEnum.Power_Shard],
         quantityPerCycle: 1,
       },
     ],
@@ -431,16 +431,16 @@ export const recipes: RecipeType[] = [
   //! Power_Shard_Yellow_Power_Slug
   {
     recipeName: RecipesEnum.Power_Shard_Yellow_Power_Slug,
-    craftBuildings: CraftBuildingsEnum.Constructor,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        itemName: ItemsEnum.Yellow_Power_Slug,
+        item: gameItemsDictionnary[GameItemsEnum.Yellow_Power_Slug],
         quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Power_Shard,
+        item: gameItemsDictionnary[GameItemsEnum.Power_Shard],
         quantityPerCycle: 2,
       },
     ],
@@ -449,16 +449,16 @@ export const recipes: RecipeType[] = [
   //! Power_Shard_Purple_Power_Slug
   {
     recipeName: RecipesEnum.Power_Shard_Purple_Power_Slug,
-    craftBuildings: CraftBuildingsEnum.Constructor,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        itemName: ItemsEnum.Purple_Power_Slug,
+        item: gameItemsDictionnary[GameItemsEnum.Purple_Power_Slug],
         quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Power_Shard,
+        item: gameItemsDictionnary[GameItemsEnum.Power_Shard],
         quantityPerCycle: 5,
       },
     ],
@@ -467,16 +467,16 @@ export const recipes: RecipeType[] = [
   //! Caterium_Ingot
   {
     recipeName: RecipesEnum.Caterium_Ingot,
-    craftBuildings: CraftBuildingsEnum.Smelter,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Smelter],
     itemsIn: [
       {
-        itemName: ItemsEnum.Caterium_Ore,
+        item: gameItemsDictionnary[GameItemsEnum.Caterium_Ore],
         quantityPerCycle: 3,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Caterium_Ingot,
+        item: gameItemsDictionnary[GameItemsEnum.Caterium_Ingot],
         quantityPerCycle: 1,
       },
     ],
@@ -485,16 +485,16 @@ export const recipes: RecipeType[] = [
   //! Quartz_Crystal
   {
     recipeName: RecipesEnum.Quartz_Crystal,
-    craftBuildings: CraftBuildingsEnum.Constructor,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        itemName: ItemsEnum.Raw_Quartz,
+        item: gameItemsDictionnary[GameItemsEnum.Raw_Quartz],
         quantityPerCycle: 5,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Quartz_Crystal,
+        item: gameItemsDictionnary[GameItemsEnum.Quartz_Crystal],
         quantityPerCycle: 3,
       },
     ],
@@ -503,16 +503,16 @@ export const recipes: RecipeType[] = [
   //! Solid_Biofuel
   {
     recipeName: RecipesEnum.Solid_Biofuel,
-    craftBuildings: CraftBuildingsEnum.Constructor,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        itemName: ItemsEnum.Biomass,
+        item: gameItemsDictionnary[GameItemsEnum.Biomass],
         quantityPerCycle: 8,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Solid_Biofuel,
+        item: gameItemsDictionnary[GameItemsEnum.Solid_Biofuel],
         quantityPerCycle: 4,
       },
     ],
@@ -521,16 +521,16 @@ export const recipes: RecipeType[] = [
   //! Iron_Rebar
   {
     recipeName: RecipesEnum.Iron_Rebar,
-    craftBuildings: CraftBuildingsEnum.Constructor,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        itemName: ItemsEnum.Iron_Rod,
+        item: gameItemsDictionnary[GameItemsEnum.Iron_Rod],
         quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Iron_Rebar,
+        item: gameItemsDictionnary[GameItemsEnum.Iron_Rebar],
         quantityPerCycle: 1,
       },
     ],
@@ -539,16 +539,16 @@ export const recipes: RecipeType[] = [
   //! Silica
   {
     recipeName: RecipesEnum.Silica,
-    craftBuildings: CraftBuildingsEnum.Constructor,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        itemName: ItemsEnum.Raw_Quartz,
+        item: gameItemsDictionnary[GameItemsEnum.Raw_Quartz],
         quantityPerCycle: 3,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Silica,
+        item: gameItemsDictionnary[GameItemsEnum.Silica],
         quantityPerCycle: 5,
       },
     ],
@@ -557,20 +557,20 @@ export const recipes: RecipeType[] = [
   //! Shatter_Rebar
   {
     recipeName: RecipesEnum.Shatter_Rebar,
-    craftBuildings: CraftBuildingsEnum.Assembler,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
     itemsIn: [
       {
-        itemName: ItemsEnum.Iron_Rebar,
+        item: gameItemsDictionnary[GameItemsEnum.Iron_Rebar],
         quantityPerCycle: 2,
       },
       {
-        itemName: ItemsEnum.Quartz_Crystal,
+        item: gameItemsDictionnary[GameItemsEnum.Quartz_Crystal],
         quantityPerCycle: 3,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Shatter_Rebar,
+        item: gameItemsDictionnary[GameItemsEnum.Shatter_Rebar],
         quantityPerCycle: 1,
       },
     ],
@@ -579,20 +579,20 @@ export const recipes: RecipeType[] = [
   //! Steel_Ingot
   {
     recipeName: RecipesEnum.Steel_Ingot,
-    craftBuildings: CraftBuildingsEnum.Foundry,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Foundry],
     itemsIn: [
       {
-        itemName: ItemsEnum.Iron_Ore,
+        item: gameItemsDictionnary[GameItemsEnum.Iron_Ore],
         quantityPerCycle: 3,
       },
       {
-        itemName: ItemsEnum.Coal,
+        item: gameItemsDictionnary[GameItemsEnum.Coal],
         quantityPerCycle: 3,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Steel_Ingot,
+        item: gameItemsDictionnary[GameItemsEnum.Steel_Ingot],
         quantityPerCycle: 3,
       },
     ],
@@ -601,16 +601,16 @@ export const recipes: RecipeType[] = [
   //! Steel_Beam
   {
     recipeName: RecipesEnum.Steel_Beam,
-    craftBuildings: CraftBuildingsEnum.Constructor,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        itemName: ItemsEnum.Steel_Ingot,
+        item: gameItemsDictionnary[GameItemsEnum.Steel_Ingot],
         quantityPerCycle: 4,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Steel_Beam,
+        item: gameItemsDictionnary[GameItemsEnum.Steel_Beam],
         quantityPerCycle: 1,
       },
     ],
@@ -619,16 +619,16 @@ export const recipes: RecipeType[] = [
   //! Steel_Pipe
   {
     recipeName: RecipesEnum.Steel_Pipe,
-    craftBuildings: CraftBuildingsEnum.Constructor,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        itemName: ItemsEnum.Steel_Ingot,
+        item: gameItemsDictionnary[GameItemsEnum.Steel_Ingot],
         quantityPerCycle: 3,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Steel_Pipe,
+        item: gameItemsDictionnary[GameItemsEnum.Steel_Pipe],
         quantityPerCycle: 2,
       },
     ],
@@ -637,20 +637,20 @@ export const recipes: RecipeType[] = [
   //! Versatile_Framework
   {
     recipeName: RecipesEnum.Versatile_Framework,
-    craftBuildings: CraftBuildingsEnum.Assembler,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
     itemsIn: [
       {
-        itemName: ItemsEnum.Modular_Frame,
+        item: gameItemsDictionnary[GameItemsEnum.Modular_Frame],
         quantityPerCycle: 1,
       },
       {
-        itemName: ItemsEnum.Steel_Beam,
+        item: gameItemsDictionnary[GameItemsEnum.Steel_Beam],
         quantityPerCycle: 12,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Versatile_Framework,
+        item: gameItemsDictionnary[GameItemsEnum.Versatile_Framework],
         quantityPerCycle: 2,
       },
     ],
@@ -659,16 +659,16 @@ export const recipes: RecipeType[] = [
   //! Quickwire
   {
     recipeName: RecipesEnum.Quickwire,
-    craftBuildings: CraftBuildingsEnum.Constructor,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        itemName: ItemsEnum.Caterium_Ingot,
+        item: gameItemsDictionnary[GameItemsEnum.Caterium_Ingot],
         quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Quickwire,
+        item: gameItemsDictionnary[GameItemsEnum.Quickwire],
         quantityPerCycle: 5,
       },
     ],
@@ -677,20 +677,20 @@ export const recipes: RecipeType[] = [
   //! Stun_Rebar
   {
     recipeName: RecipesEnum.Stun_Rebar,
-    craftBuildings: CraftBuildingsEnum.Assembler,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
     itemsIn: [
       {
-        itemName: ItemsEnum.Iron_Rebar,
+        item: gameItemsDictionnary[GameItemsEnum.Iron_Rebar],
         quantityPerCycle: 1,
       },
       {
-        itemName: ItemsEnum.Quickwire,
+        item: gameItemsDictionnary[GameItemsEnum.Quickwire],
         quantityPerCycle: 5,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.Stun_Rebar,
+        item: gameItemsDictionnary[GameItemsEnum.Stun_Rebar],
         quantityPerCycle: 1,
       },
     ],
@@ -699,20 +699,20 @@ export const recipes: RecipeType[] = [
   //! AI_Limiter
   {
     recipeName: RecipesEnum.AI_Limiter,
-    craftBuildings: CraftBuildingsEnum.Assembler,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
     itemsIn: [
       {
-        itemName: ItemsEnum.Copper_Sheet,
+        item: gameItemsDictionnary[GameItemsEnum.Copper_Sheet],
         quantityPerCycle: 5,
       },
       {
-        itemName: ItemsEnum.Quickwire,
+        item: gameItemsDictionnary[GameItemsEnum.Quickwire],
         quantityPerCycle: 20,
       },
     ],
     itemsOut: [
       {
-        itemName: ItemsEnum.AI_Limiter,
+        item: gameItemsDictionnary[GameItemsEnum.AI_Limiter],
         quantityPerCycle: 1,
       },
     ],

@@ -1,8 +1,8 @@
-import type { ItemsEnum } from "../../enums/items.enum";
 import type { RecipesEnum } from "../../enums/recipes.enum";
+import type { GameItemResource } from "./gameItems/resource.type";
 
 export type SelectedFactoryLineData = {
-  selectedItemName?: ItemsEnum;
+  selectedItem?: GameItemResource;
   selectedRecipeName?: RecipesEnum;
   itemPerMinute?: number;
 };

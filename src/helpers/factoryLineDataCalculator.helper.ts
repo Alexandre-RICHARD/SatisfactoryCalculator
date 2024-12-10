@@ -1,4 +1,4 @@
-import type { ItemsEnum } from "../enums/items.enum";
+import type { GameItemsEnum } from "../enums/gameItems.enum";
 import type { FactoryLine } from "../types/satisfactory/factoryLine.type";
 import type { FactoryLineData } from "../types/satisfactory/factoryLineData.type";
 import type { InitialRawResource } from "../types/satisfactory/initialRawResource.type";
@@ -8,7 +8,7 @@ export const factoryLineDataCalculator = (
 ): FactoryLineData => {
   let totalEnergyRequired = 0;
   let totalPowerRequired = 0;
-  const rawResources: Partial<Record<ItemsEnum, InitialRawResource>> = {};
+  const rawResources: Partial<Record<GameItemsEnum, InitialRawResource>> = {};
 
   const endItemQuantityWanted = factoryLine.quantityPerMinute;
 
@@ -18,17 +18,17 @@ export const factoryLineDataCalculator = (
     totalPowerRequired += step.powerRequired;
     if (step.rawResources) {
       step.rawResources.forEach((rawResource) => {
-        const currentRawResource = rawResources[rawResource.itemName];
+        const currentRawResource = rawResources[rawResource.item.name];
         if (currentRawResource) {
-          rawResources[rawResource.itemName] = {
+          rawResources[rawResource.item.name] = {
             ...currentRawResource,
             quantityPerMinute:
               currentRawResource.quantityPerMinute +
               rawResource.quantityPerMinute,
           };
         } else {
-          rawResources[rawResource.itemName] = {
-            itemName: rawResource.itemName,
+          rawResources[rawResource.item.name] = {
+            item: rawResource.item,
             quantityPerMinute: rawResource.quantityPerMinute,
           };
         }
