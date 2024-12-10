@@ -9,5 +9,6 @@ export type GameItemManufacturerBuilding = {
   name: GameItemsEnum;
   category: GameItemsCategoryEnum.Building;
   buildingType: GameBuildingsTypeEnum.Manufacturer;
+  defaultPowerConsumption: number;
   endpoint: EndpointEnum | undefined;
 };

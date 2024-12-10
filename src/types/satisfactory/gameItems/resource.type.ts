@@ -6,6 +6,7 @@ import type { GameResourcesTypeEnum } from "../../../enums/gameResourcesType.enu
 export type GameItemResource = {
   className: GameClassNamesEnum;
   name: GameItemsEnum;
-  category: GameItemsCategoryEnum.Resource;
+  category: GameItemsCategoryEnum.Resource | GameItemsCategoryEnum.Equipment;
   resourceType: GameResourcesTypeEnum;
+  isRawResource: boolean;
 };

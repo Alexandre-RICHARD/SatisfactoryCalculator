@@ -10,6 +10,8 @@ export type GameItemOtherBuilding = {
   // Exclude references other buildings type file handled
   buildingType: Exclude<
     GameBuildingsTypeEnum,
-    GameBuildingsTypeEnum.Generator | GameBuildingsTypeEnum.Manufacturer
+    | GameBuildingsTypeEnum.Extractor
+    | GameBuildingsTypeEnum.Generator
+    | GameBuildingsTypeEnum.Manufacturer
   >;
 };
