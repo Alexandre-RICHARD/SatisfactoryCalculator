@@ -1,5 +1,5 @@
 import { roundNumber } from "@nexus/nexusExporter";
-import React from "react";
+import React, { useMemo, useState } from "react";
 
 import { EndpointEnum } from "../../../enums/endpoint.enum";
 import type { ExtractorDto } from "../../../types/satisfactory/apis/dataTransferObject/extractorDto.type";
@@ -11,6 +11,8 @@ import type { GeneratorFm } from "../../../types/satisfactory/apis/frontModel/ge
 import { useAutoRefetch } from "../../hooks/useAutoRefetch";
 
 export const FRMAllMachines = (): React.JSX.Element => {
+  const [onlyNonFullEfficent, setOnlyNonFullEfficent] = useState(false);
+
   const { data: extractors } = useAutoRefetch<ExtractorDto[], ExtractorFm[]>(
     EndpointEnum.EXTRACTOR,
   );
@@ -21,16 +23,43 @@ export const FRMAllMachines = (): React.JSX.Element => {
     EndpointEnum.GENERATOR,
   );
 
-  const allData = [
-    ...(extractors ?? []),
-    ...(factories ?? []),
-    ...(generators ?? []),
-  ];
+  const allData = useMemo(
+    () => [...(extractors ?? []), ...(factories ?? []), ...(generators ?? [])],
+    [extractors, factories, generators],
+  );
+
+  const filteredData = useMemo(() => {
+    return allData.filter((oneMachine) => {
+      const efficientFilter = (): boolean => {
+        if (!onlyNonFullEfficent) return true;
+        if ("powerConsumption" in oneMachine)
+          return oneMachine.efficiency !== 100;
+        if ("powerProduction" in oneMachine) return !oneMachine.isAtFullSpeed;
+        return false;
+      };
+      return !!efficientFilter();
+    });
+  }, [allData, onlyNonFullEfficent]);
 
   return (
-    <div className="full-h overflow-hidden">
-      <table className="w-full">
-        <thead className="sticky top-0">
+    <div>
+      <div className="flex p-4">
+        <label
+          className="flex gap-4"
+          htmlFor="onlyNonFullEfficentCheckbox"
+        >
+          Uniquement les non efficient
+          <input
+            checked={onlyNonFullEfficent}
+            id="onlyNonFullEfficentCheckbox"
+            className="text-gray-50"
+            type="checkbox"
+            onClick={() => setOnlyNonFullEfficent((prev) => !prev)}
+          />
+        </label>
+      </div>
+      <table className="w-full border border-cyan-50">
+        <thead className="sticky top-0 bg-black border border-cyan-50">
           <tr>
             <th>Name</th>
             <th>Overclocking</th>
@@ -41,7 +70,7 @@ export const FRMAllMachines = (): React.JSX.Element => {
           </tr>
         </thead>
         <tbody className="overflow-y-auto">
-          {allData.map((oneMachine) => {
+          {filteredData.map((oneMachine) => {
             if ("powerConsumption" in oneMachine) {
               return (
                 <tr key={oneMachine.id}>
