@@ -16,7 +16,7 @@ import { gameItemsDictionnary } from "./gameItems.dictionary";
 //   );
 
 export const recipes: RecipeType[] = [
-  //! Iron_Ingot
+  // Iron_Ingot
   {
     recipeName: RecipesEnum.Iron_Ingot,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Smelter],
@@ -34,7 +34,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 2,
   },
-  //! Iron_Plate
+  // Iron_Plate
   {
     recipeName: RecipesEnum.Iron_Plate,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
@@ -52,7 +52,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 6,
   },
-  //! Iron_Rod
+  // Iron_Rod
   {
     recipeName: RecipesEnum.Iron_Rod,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
@@ -70,7 +70,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 4,
   },
-  //! Reinforced_Iron_Plate
+  // Reinforced_Iron_Plate
   {
     recipeName: RecipesEnum.Reinforced_Iron_Plate,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
@@ -92,7 +92,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 12,
   },
-  //! Cable
+  // Cable
   {
     recipeName: RecipesEnum.Cable,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
@@ -110,7 +110,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 2,
   },
-  //! Wire
+  // Wire
   {
     recipeName: RecipesEnum.Wire,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
@@ -128,7 +128,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 4,
   },
-  //! Copper_Ingot
+  // Copper_Ingot
   {
     recipeName: RecipesEnum.Copper_Ingot,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Smelter],
@@ -146,7 +146,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 2,
   },
-  //! Concrete
+  // Concrete
   {
     recipeName: RecipesEnum.Concrete,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
@@ -164,7 +164,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 4,
   },
-  //! Screw
+  // Screw
   {
     recipeName: RecipesEnum.Screw,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
@@ -182,7 +182,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 6,
   },
-  //! Biomass_Wood
+  // Biomass_Wood
   {
     recipeName: RecipesEnum.Biomass_Wood,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
@@ -200,7 +200,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 4,
   },
-  //! Biomass_Leaves
+  // Biomass_Leaves
   {
     recipeName: RecipesEnum.Biomass_Leaves,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
@@ -218,7 +218,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 5,
   },
-  //! Biomass_Alien_Protein
+  // Biomass_Alien_Protein
   {
     recipeName: RecipesEnum.Biomass_Alien_Protein,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
@@ -236,7 +236,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 4,
   },
-  //! Rotor
+  // Rotor
   {
     recipeName: RecipesEnum.Rotor,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
@@ -258,7 +258,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 15,
   },
-  //! Copper_Sheet
+  // Copper_Sheet
   {
     recipeName: RecipesEnum.Copper_Sheet,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
@@ -276,7 +276,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 6,
   },
-  //! Modular_Frame
+  // Modular_Frame
   {
     recipeName: RecipesEnum.Modular_Frame,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
@@ -298,7 +298,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 60,
   },
-  //! Smart_Plating
+  // Smart_Plating
   {
     recipeName: RecipesEnum.Smart_Plating,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
@@ -320,7 +320,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 30,
   },
-  //! Alien_Protein_Hog
+  // Alien_Protein_Hog
   {
     recipeName: RecipesEnum.Alien_Protein_Hog,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
@@ -338,7 +338,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 3,
   },
-  //! Alien_Protein_Hatcher
+  // Alien_Protein_Hatcher
   {
     recipeName: RecipesEnum.Alien_Protein_Hatcher,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
@@ -356,7 +356,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 3,
   },
-  //! Alien_Protein_Spitter
+  // Alien_Protein_Spitter
   {
     recipeName: RecipesEnum.Alien_Protein_Spitter,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
@@ -374,7 +374,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 3,
   },
-  //! Alien_Protein_Stinger
+  // Alien_Protein_Stinger
   {
     recipeName: RecipesEnum.Alien_Protein_Stinger,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
@@ -392,7 +392,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 3,
   },
-  //! Alien_DNA_Capsule
+  // Alien_DNA_Capsule
   {
     recipeName: RecipesEnum.Alien_DNA_Capsule,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
@@ -410,7 +410,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 6,
   },
-  //! Power_Shard_Blue_Power_Slug
+  // Power_Shard_Blue_Power_Slug
   {
     recipeName: RecipesEnum.Power_Shard_Blue_Power_Slug,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
@@ -428,7 +428,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 8,
   },
-  //! Power_Shard_Yellow_Power_Slug
+  // Power_Shard_Yellow_Power_Slug
   {
     recipeName: RecipesEnum.Power_Shard_Yellow_Power_Slug,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
@@ -446,7 +446,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 12,
   },
-  //! Power_Shard_Purple_Power_Slug
+  // Power_Shard_Purple_Power_Slug
   {
     recipeName: RecipesEnum.Power_Shard_Purple_Power_Slug,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
@@ -464,7 +464,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 24,
   },
-  //! Caterium_Ingot
+  // Caterium_Ingot
   {
     recipeName: RecipesEnum.Caterium_Ingot,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Smelter],
@@ -482,7 +482,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 4,
   },
-  //! Quartz_Crystal
+  // Quartz_Crystal
   {
     recipeName: RecipesEnum.Quartz_Crystal,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
@@ -500,7 +500,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 8,
   },
-  //! Solid_Biofuel
+  // Solid_Biofuel
   {
     recipeName: RecipesEnum.Solid_Biofuel,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
@@ -518,7 +518,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 4,
   },
-  //! Iron_Rebar
+  // Iron_Rebar
   {
     recipeName: RecipesEnum.Iron_Rebar,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
@@ -536,7 +536,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 4,
   },
-  //! Silica
+  // Silica
   {
     recipeName: RecipesEnum.Silica,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
@@ -554,7 +554,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 8,
   },
-  //! Shatter_Rebar
+  // Shatter_Rebar
   {
     recipeName: RecipesEnum.Shatter_Rebar,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
@@ -576,7 +576,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 12,
   },
-  //! Steel_Ingot
+  // Steel_Ingot
   {
     recipeName: RecipesEnum.Steel_Ingot,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Foundry],
@@ -598,7 +598,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 4,
   },
-  //! Steel_Beam
+  // Steel_Beam
   {
     recipeName: RecipesEnum.Steel_Beam,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
@@ -616,7 +616,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 4,
   },
-  //! Steel_Pipe
+  // Steel_Pipe
   {
     recipeName: RecipesEnum.Steel_Pipe,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
@@ -634,7 +634,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 6,
   },
-  //! Versatile_Framework
+  // Versatile_Framework
   {
     recipeName: RecipesEnum.Versatile_Framework,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
@@ -656,7 +656,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 24,
   },
-  //! Quickwire
+  // Quickwire
   {
     recipeName: RecipesEnum.Quickwire,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
@@ -674,7 +674,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 5,
   },
-  //! Stun_Rebar
+  // Stun_Rebar
   {
     recipeName: RecipesEnum.Stun_Rebar,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
@@ -696,7 +696,7 @@ export const recipes: RecipeType[] = [
     ],
     initCycleDuration: 6,
   },
-  //! AI_Limiter
+  // AI_Limiter
   {
     recipeName: RecipesEnum.AI_Limiter,
     craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
@@ -717,5 +717,23 @@ export const recipes: RecipeType[] = [
       },
     ],
     initCycleDuration: 12,
+  },
+  // Reanimated_SAM
+  {
+    recipeName: RecipesEnum.Reanimated_SAM,
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
+    itemsIn: [
+      {
+        item: gameItemsDictionnary[GameItemsEnum.SAM],
+        quantityPerCycle: 4,
+      },
+    ],
+    itemsOut: [
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Reanimated_SAM],
+        quantityPerCycle: 1,
+      },
+    ],
+    initCycleDuration: 2,
   },
 ];

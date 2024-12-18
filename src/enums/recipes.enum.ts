@@ -36,4 +36,5 @@ export enum RecipesEnum {
   Quickwire = "Quickwire",
   Stun_Rebar = "Stun_Rebar",
   AI_Limiter = "AI_Limiter",
+  Reanimated_SAM = "Reanimated_SAM",
 }

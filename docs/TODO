@@ -31,3 +31,9 @@
 - awesomeSink   / AwesomeSink           - /awesomeSink  => Done, no refacto
 - testingSocket / SocketTestSite        - /test         =>
 - settings      / Settings              - /settings     => Done, no refacto
+
+
+NEW TODOS
+- Permettre fuiltre de batiment sur les machines
+- Régler problème affichage recettes
+- Calculer la besoin en ressource primaires pour plusieurs recettes  à la fois
