@@ -1,40 +1,438 @@
 export enum RecipesEnum {
+  // Iron_Ingot
   Iron_Ingot = "Iron_Ingot",
+  Alternate_Basic_Iron_Ingot = "Alternate_Basic_Iron_Ingot",
+  Alternate_Pure_Iron_Ingot = "Alternate_Pure_Iron_Ingot",
+  Alternate_Iron_Alloy_Ingot = "Alternate_Iron_Alloy_Ingot",
+  Alternate_Leached_Iron_Ingot = "Alternate_Leached_Iron_Ingot",
+  // Iron_Ore
+  Iron_Ore_Limestone = "Iron_Ore_Limestone",
+  // Iron_Plate
   Iron_Plate = "Iron_Plate",
+  Alternate_Coated_Iron_Plate = "Alternate_Coated_Iron_Plate",
+  Alternate_Steel_Cast_Plate = "Alternate_Steel_Cast_Plate",
+  // Iron_Rod
   Iron_Rod = "Iron_Rod",
+  Alternate_Steel_Rod = "Alternate_Steel_Rod",
+  Alternate_Aluminium_Rod = "Alternate_Aluminium_Rod",
+  // Reinforced_Iron_Plate
   Reinforced_Iron_Plate = "Reinforced_Iron_Plate",
+  Alternate_Stitched_Iron_Plate = "Alternate_Stitched_Iron_Plate",
+  Alternate_Bolted_Iron_Plate = "Alternate_Bolted_Iron_Plate",
+  Alternate_Adhered_Iron_Plate = "Alternate_Adhered_Iron_Plate",
+  // Cable
   Cable = "Cable",
+  Alternate_Coated_Cable = "Alternate_Coated_Cable",
+  Alternate_Insulated_Cable = "Alternate_Insulated_Cable",
+  Alternate_Quickwire_Cable = "Alternate_Quickwire_Cable",
+  // Wire
   Wire = "Wire",
+  Alternate_Iron_Wire = "Alternate_Iron_Wire",
+  Alternate_Caterium_Wire = "Alternate_Caterium_Wire",
+  Alternate_Fused_Wire = "Alternate_Fused_Wire",
+  // Copper_Ingot
   Copper_Ingot = "Copper_Ingot",
+  Alternate_Tempered_Copper_Ingot = "Alternate_Tempered_Copper_Ingot",
+  Alternate_Pure_Copper_Ingot = "Alternate_Pure_Copper_Ingot",
+  Alternate_Copper_Alloy_Ingot = "Alternate_Copper_Alloy_Ingot",
+  Alternate_Leached_Copper_Ingot = "Alternate_Leached_Copper_Ingot",
+  // Copper_Ore
+  Copper_Ore_Quartz = "Copper_Ore_Quartz",
+  Copper_Ore_Sulfur = "Copper_Ore_Sulfur",
+  // Concrete
   Concrete = "Concrete",
+  Alternate_Wet_Concrete = "Alternate_Wet_Concrete",
+  Alternate_Rubber_Concrete = "Alternate_Rubber_Concrete",
+  Alternate_Fine_Concrete = "Alternate_Fine_Concrete",
+  // Limestone
+  Limestone_Sulfur = "Limestone_Sulfur",
+  // Screw
   Screw = "Screw",
+  Alternate_Cast_Screw = "Alternate_Cast_Screw",
+  Alternate_Steel_Screw = "Alternate_Steel_Screw",
+  // Biomass
   Biomass_Wood = "Biomass_Wood",
   Biomass_Leaves = "Biomass_Leaves",
   Biomass_Alien_Protein = "Biomass_Alien_Protein",
-  Rotor = "Rotor",
-  Copper_Sheet = "Copper_Sheet",
-  Modular_Frame = "Modular_Frame",
-  Smart_Plating = "Smart_Plating",
-  Alien_Protein_Hatcher = "Alien_Protein_Hatcher",
-  Alien_Protein_Hog = "Alien_Protein_Hog",
+  Biomass_Mycelia = "Biomass_Mycelia",
+  // Solid_Biofuel
+  Solid_Biofuel = "Solid_Biofuel",
+  // Alien_Protein
   Alien_Protein_Spitter = "Alien_Protein_Spitter",
+  Alien_Protein_Hog = "Alien_Protein_Hog",
   Alien_Protein_Stinger = "Alien_Protein_Stinger",
+  Alien_Protein_Hatcher = "Alien_Protein_Hatcher",
+  // Alien_DNA_Capsule
   Alien_DNA_Capsule = "Alien_DNA_Capsule",
+  // Silica
+  Silica = "Silica",
+  Alternate_Cheap_Silica = "Alternate_Cheap_Silica",
+  Alternate_Distilled_Silica = "Alternate_Distilled_Silica",
+  // Raw_Quartz
+  Raw_Quartz_Bauxite = "Raw_Quartz_Bauxite",
+  Raw_Quartz_Coal = "Raw_Quartz_Coal",
+  // Rotor
+  Rotor = "Rotor",
+  Alternate_Copper_Rotor = "Alternate_Copper_Rotor",
+  Alternate_Steel_Rotor = "Alternate_Steel_Rotor",
+  // Copper_Sheet
+  Copper_Sheet = "Copper_Sheet",
+  Alternate_Steamed_Copper_Sheet = "Alternate_Steamed_Copper_Sheet",
+  // Modular_Frame
+  Modular_Frame = "Modular_Frame",
+  Alternate_Steeled_Frame = "Alternate_Steeled_Frame",
+  Alternate_Bolted_Frame = "Alternate_Bolted_Frame",
+  // Smart_Plating
+  Smart_Plating = "Smart_Plating",
+  Alternate_Plastic_Smart_Plating = "Alternate_Plastic_Smart_Plating",
+  // Power_Shard
   Power_Shard_Blue_Power_Slug = "Power_Shard_Blue_Power_Slug",
   Power_Shard_Yellow_Power_Slug = "Power_Shard_Yellow_Power_Slug",
   Power_Shard_Purple_Power_Slug = "Power_Shard_Purple_Power_Slug",
-  Caterium_Ingot = "Caterium_Ingot",
+  Synthetic_Power_Shard = "Synthetic_Power_Shard",
+  // Quartz_Crystal
   Quartz_Crystal = "Quartz_Crystal",
-  Solid_Biofuel = "Solid_Biofuel",
+  Alternate_Pure_Quartz_Crystal = "Alternate_Pure_Quartz_Crystal",
+  Alternate_Fused_Quartz_Crystal = "Alternate_Fused_Quartz_Crystal",
+  // Iron_Rebar
   Iron_Rebar = "Iron_Rebar",
-  Silica = "Silica",
+  // Shatter_Rebar
   Shatter_Rebar = "Shatter_Rebar",
-  Steel_Ingot = "Steel_Ingot",
-  Steel_Beam = "Steel_Beam",
+  // Crystal_Oscillator
+  Crystal_Oscillator = "Crystal_Oscillator",
+  Alternate_Insulated_Crystal_Oscillator = "Alternate_Insulated_Crystal_Oscillator",
+  // Motor
+  Motor = "Motor",
+  Alternate_Rigor_Motor = "Alternate_Rigor_Motor",
+  Alternate_Electric_Motor = "Alternate_Electric_Motor",
+  // Steel_Pipe
   Steel_Pipe = "Steel_Pipe",
+  Alternate_Iron_Pipe = "Alternate_Iron_Pipe",
+  Alternate_Molded_Steel_Pipe = "Alternate_Molded_Steel_Pipe",
+  // Encased_Industrial_Beam
+  Encased_Industrial_Beam = "Encased_Industrial_Beam",
+  Alternate_Encased_Industrial_Pipe = "Alternate_Encased_Industrial_Pipe",
+  // Steel_Beam
+  Steel_Beam = "Steel_Beam",
+  Alternate_Molded_Beam = "Alternate_Molded_Beam",
+  Alternate_Aluminium_Beam = "Alternate_Aluminium_Beam",
+  // Stator
+  Stator = "Stator",
+  Alternate_Quickwire_Stator = "Alternate_Quickwire_Stator",
+  // Automated_Wiring
+  Automated_Wiring = "Automated_Wiring",
+  Alternate_Automated_Speed_Wiring = "Alternate_Automated_Speed_Wiring",
+  // Steel_Ingot
+  Steel_Ingot = "Steel_Ingot",
+  Alternate_Solid_Steel_Ingot = "Alternate_Solid_Steel_Ingot",
+  Alternate_Coke_Steel_Ingot = "Alternate_Coke_Steel_Ingot",
+  Alternate_Compacted_Steel_Ingot = "Alternate_Compacted_Steel_Ingot",
+  // Coal
+  Alternate_Charcoal = "Alternate_Charcoal",
+  Alternate_Biocoal = "Alternate_Biocoal",
+  Coal_Iron = "Coal_Iron",
+  Coal_Limestone = "Coal_Limestone",
+  // Versatile_Framework
   Versatile_Framework = "Versatile_Framework",
+  Alternate_Flexible_Framework = "Alternate_Flexible_Framework",
+  // Fabric
+  Fabric = "Fabric",
+  Alternate_Polyester_Fabric = "Alternate_Polyester_Fabric",
+  // Black_Powder
+  Black_Powder = "Black_Powder",
+  Alternate_Fine_Black_Powder = "Alternate_Fine_Black_Powder",
+  // Sulfur
+  Sulfur_Coal = "Sulfur_Coal",
+  Sulfur_Iron = "Sulfur_Iron",
+  // Nobelisk
+  Nobelisk = "Nobelisk",
+  // Caterium_Ingot
+  Caterium_Ingot = "Caterium_Ingot",
+  Alternate_Pure_Caterium_Ingot = "Alternate_Pure_Caterium_Ingot",
+  Alternate_Tempered_Caterium_Ingot = "Alternate_Tempered_Caterium_Ingot",
+  Alternate_Leached_Caterium_Ingot = "Alternate_Leached_Caterium_Ingot",
+  // Caterium_Ore
+  Caterium_Ore_Copper = "Caterium_Ore_Copper",
+  Caterium_Ore_Quartz = "Caterium_Ore_Quartz",
+  // Quickwire
   Quickwire = "Quickwire",
-  Stun_Rebar = "Stun_Rebar",
+  Alternate_Fused_Quickwire = "Alternate_Fused_Quickwire",
+  // AI_Limiter
   AI_Limiter = "AI_Limiter",
+  Alternate_Plastic_AI_Limiter = "Alternate_Plastic_AI_Limiter",
+  // Petroleum_Coke
+  Petroleum_Coke = "Petroleum_Coke",
+  // Heavy_Oil_Residue
+  Alternate_Heavy_Oil_Residue = "Alternate_Heavy_Oil_Residue",
+  Unpackage_Heavy_Oil_Residue = "Unpackage_Heavy_Oil_Residue",
+  // Circuit_Board
+  Circuit_Board = "Circuit_Board",
+  Alternate_Electrode_Circuit_Board = "Alternate_Electrode_Circuit_Board",
+  Alternate_Caterium_Circuit_Board = "Alternate_Caterium_Circuit_Board",
+  Alternate_Silicon_Circuit_Board = "Alternate_Silicon_Circuit_Board",
+  // Plastic
+  Residual_Plastic = "Residual_Plastic",
+  Plastic = "Plastic",
+  Alternate_Recycled_Plastic = "Alternate_Recycled_Plastic",
+  // Polymer_Resin
+  Alternate_Polymer_Resin = "Alternate_Polymer_Resin",
+  // Water
+  Unpackage_Water = "Unpackage_Water",
+  // Rubber
+  Residual_Rubber = "Residual_Rubber",
+  Rubber = "Rubber",
+  Alternate_Recycled_Rubber = "Alternate_Recycled_Rubber",
+  // Fuel
+  Residual_Fuel = "Residual_Fuel",
+  Fuel = "Fuel",
+  Unpackage_Fuel = "Unpackage_Fuel",
+  Alternate_Diluted_Fuel = "Alternate_Diluted_Fuel",
+  // Crude_Oil
+  Unpackage_Oil = "Unpackage_Oil",
+  // Computer
+  Computer = "Computer",
+  Alternate_Crystal_Computer = "Alternate_Crystal_Computer",
+  Alternate_Caterium_Computer = "Alternate_Caterium_Computer",
+  // Heavy_Modular_Frame
+  Heavy_Modular_Frame = "Heavy_Modular_Frame",
+  Alternate_Heavy_Encased_Frame = "Alternate_Heavy_Encased_Frame",
+  Alternate_Heavy_Flexible_Frame = "Alternate_Heavy_Flexible_Frame",
+  // Modular_Engine
+  Modular_Engine = "Modular_Engine",
+  // Adaptative_Control_Unit
+  Adaptative_Control_Unit = "Adaptative_Control_Unit",
+  // Empty_Canister
+  Empty_Canister = "Empty_Canister",
+  Alternate_Steel_Canister = "Alternate_Steel_Canister",
+  Alternate_Coated_Iron_Canister = "Alternate_Coated_Iron_Canister",
+  // Packaged_Water
+  Packaged_Water = "Packaged_Water",
+  // Packaged_Oil
+  Packaged_Oil = "Packaged_Oil",
+  // Packaged_Fuel
+  Packaged_Fuel = "Packaged_Fuel",
+  Alternate_Diluted_Packaged_Fuel = "Alternate_Diluted_Packaged_Fuel",
+  // Packaged_Heavy_Oil_Residue
+  Packaged_Heavy_Oil_Residue = "Packaged_Heavy_Oil_Residue",
+  // Packaged_Liquid_Biofuel
+  Packaged_Liquid_Biofuel = "Packaged_Liquid_Biofuel",
+  // Liquid_Biofuel
+  Liquid_Biofuel = "Liquid_Biofuel",
+  Unpackage_Liquid_Biofuel = "Unpackage_Liquid_Biofuel",
+  // Reanimated_SAM
   Reanimated_SAM = "Reanimated_SAM",
+  // SAM_Fluctuator
+  SAM_Fluctuator = "SAM_Fluctuator",
+  // High_Speed_Connector
+  High_Speed_Connector = "High_Speed_Connector",
+  Alternate_Silicon_High_Speed_Connector = "Alternate_Silicon_High_Speed_Connector",
+  // Alumina_Solution
+  Alumina_Solution = "Alumina_Solution",
+  Unpackage_Alumina_Solution = "Unpackage_Alumina_Solution",
+  Alternate_Sloppy_Alumina = "Alternate_Sloppy_Alumina",
+  // Bauxite
+  Bauxite_Caterium = "Bauxite_Caterium",
+  Bauxite_Copper = "Bauxite_Copper",
+  // Packaged_Alumina_Solution
+  Packaged_Alumina_Solution = "Packaged_Alumina_Solution",
+  // Aluminum_Scrap
+  Aluminum_Scrap = "Aluminum_Scrap",
+  Alternate_Instant_Scrap = "Alternate_Instant_Scrap",
+  Alternate_Electrode_Aluminium_Scrap = "Alternate_Electrode_Aluminium_Scrap",
+  // Aluminum_Ingot
+  Aluminum_Ingot = "Aluminum_Ingot",
+  Alternate_Pure_Aluminum_Ingot = "Alternate_Pure_Aluminum_Ingot",
+  // Alclad_Aluminum_Sheet
+  Alclad_Aluminum_Sheet = "Alclad_Aluminum_Sheet",
+  // Aluminum_Casing
+  Aluminum_Casing = "Aluminum_Casing",
+  Alternate_Alclad_Casing = "Alternate_Alclad_Casing",
+  // Compacted_Coal
+  Alternate_Compacted_Coal = "Alternate_Compacted_Coal",
+  // Turbofuel
+  Turbofuel = "Turbofuel",
+  Unpackage_Turbofuel = "Unpackage_Turbofuel",
+  Alternate_Turbo_Heavy_Fuel = "Alternate_Turbo_Heavy_Fuel",
+  Alternate_Turbo_Blend_Fuel = "Alternate_Turbo_Blend_Fuel",
+  // Packaged_Turbofuel
+  Packaged_Turbofuel = "Packaged_Turbofuel",
+  // Sulfuric_Acid
+  Sulfuric_Acid = "Sulfuric_Acid",
+  Unpackage_Sulfuric_Acid = "Unpackage_Sulfuric_Acid",
+  // Packaged_Sulfuric_Acid
+  Packaged_Sulfuric_Acid = "Packaged_Sulfuric_Acid",
+  // Battery
+  Battery = "Battery",
+  Alternate_Classic_Battery = "Alternate_Classic_Battery",
+  // Radio_Control_Unit
+  Radio_Control_Unit = "Radio_Control_Unit",
+  Alternate_Radio_Connection_Unit = "Alternate_Radio_Connection_Unit",
+  Alternate_Radio_Control_System = "Alternate_Radio_Control_System",
+  // Supercomputer
+  Supercomputer = "Supercomputer",
+  Alternate_OC_Supercomputer = "Alternate_OC_Supercomputer",
+  Alternate_Super_State_Computer = "Alternate_Super_State_Computer",
+  // Assembly_Director_System
+  Assembly_Director_System = "Assembly_Director_System",
+  // Smokeless_Powder
+  Smokeless_Powder = "Smokeless_Powder",
+  // Explosive_Rebar
+  Explosive_Rebar = "Explosive_Rebar",
+  // Heat_Sink
+  Alternate_Heat_Exchanger = "Alternate_Heat_Exchanger",
+  Heat_Sink = "Heat_Sink",
+  // Cooling_System
+  Cooling_System = "Cooling_System",
+  Alternate_Cooling_Device = "Alternate_Cooling_Device",
+  // Electromagnetic_Control_Rod
+  Electromagnetic_Control_Rod = "Electromagnetic_Control_Rod",
+  Alternate_Electromagnetic_Connection_Rod = "Alternate_Electromagnetic_Connection_Rod",
+  // Empty_Fluid_Tank
+  Empty_Fluid_Tank = "Empty_Fluid_Tank",
+  // Packaged_Nitrogen_Gas
+  Packaged_Nitrogen_Gas = "Packaged_Nitrogen_Gas",
+  // Nitrogen_Gas
+  Unpackage_Nitrogen_Gas = "Unpackage_Nitrogen_Gas",
+  Nitrogen_Gas_Bauxite = "Nitrogen_Gas_Bauxite",
+  Nitrogen_Gas_Caterium = "Nitrogen_Gas_Caterium",
+  // Fused_Modular_Frame
+  Fused_Modular_Frame = "Fused_Modular_Frame",
+  Alternate_Heat_Fused_Frame = "Alternate_Heat_Fused_Frame",
+  // Dissolved_Silica
+  Alternate_Quartz_Purification = "Alternate_Quartz_Purification",
+  // Nitric_Acid
+  Nitric_Acid = "Nitric_Acid",
+  Unpackage_Nitric_Acid = "Unpackage_Nitric_Acid",
+  // Cluster_Nobelisk
+  Cluster_Nobelisk = "Cluster_Nobelisk",
+  // Turbo_Motor
+  Turbo_Motor = "Turbo_Motor",
+  Alternate_Turbo_Pressure_Motor = "Alternate_Turbo_Pressure_Motor",
+  Alternate_Turbo_Electric_Motor = "Alternate_Turbo_Electric_Motor",
+  // Thermal_Propulsion_Rocket
+  Thermal_Propulsion_Rocket = "Thermal_Propulsion_Rocket",
+  // Gas_Filter
+  Gas_Filter = "Gas_Filter",
+  // Iodine_Infused_Filter
+  Iodine_Infused_Filter = "Iodine_Infused_Filter",
+  // Encased_Uranium_Cell
+  Encased_Uranium_Cell = "Encased_Uranium_Cell",
+  Alternate_Infused_Uranium_Cell = "Alternate_Infused_Uranium_Cell",
+  // Uranium_Ore
+  Uranium_Ore_Bauxite = "Uranium_Ore_Bauxite",
+  // Uranium_Fuel_Rod
+  Uranium_Fuel_Rod = "Uranium_Fuel_Rod",
+  Alternate_Uranium_Fuel_Unit = "Alternate_Uranium_Fuel_Unit",
+  // Magnetic_Field_Generator
+  Magnetic_Field_Generator = "Magnetic_Field_Generator",
+  // Packaged_Nitric_Acid
+  Packaged_Nitric_Acid = "Packaged_Nitric_Acid",
+  // Non_Fissile_Uranium
+  Non_Fissile_Uranium = "Non_Fissile_Uranium",
+  Alternate_Fertile_Uranium = "Alternate_Fertile_Uranium",
+  // Plutonium_Pellet
+  Plutonium_Pellet = "Plutonium_Pellet",
+  // Encased_Plutonium_Cell
+  Encased_Plutonium_Cell = "Encased_Plutonium_Cell",
+  Alternate_Instant_Plutonium_Cell = "Alternate_Instant_Plutonium_Cell",
+  // Plutonium_Fuel_Rod
+  Plutonium_Fuel_Rod = "Plutonium_Fuel_Rod",
+  Alternate_Plutonium_Fuel_Unit = "Alternate_Plutonium_Fuel_Unit",
+  // Copper_Powder
+  Copper_Powder = "Copper_Powder",
+  // Pressure_Conversion_Cube
+  Pressure_Conversion_Cube = "Pressure_Conversion_Cube",
+  // Nuclear_Pasta
+  Nuclear_Pasta = "Nuclear_Pasta",
+  // Ficsite_Ingot
+  Ficsite_Ingot_Iron = "Ficsite_Ingot_Iron",
+  Ficsite_Ingot_Aluminium = "Ficsite_Ingot_Aluminium",
+  Ficsite_Ingot_Caterium = "Ficsite_Ingot_Caterium",
+  // Ficsite_Trigon
+  Ficsite_Trigon = "Ficsite_Trigon",
+  // Diamonds
+  Diamonds = "Diamonds",
+  Alternate_Petroleum_Diamonds = "Alternate_Petroleum_Diamonds",
+  Alternate_Oil_Based_Diamonds = "Alternate_Oil_Based_Diamonds",
+  Alternate_Pink_Diamonds = "Alternate_Pink_Diamonds",
+  Alternate_Cloudy_Diamonds = "Alternate_Cloudy_Diamonds",
+  Alternate_Turbo_Diamonds = "Alternate_Turbo_Diamonds",
+  // Time_Crystal
+  Time_Crystal = "Time_Crystal",
+  // Biochemical_Sculptor
+  Biochemical_Sculptor = "Biochemical_Sculptor",
+  // Excited_Photonic_Matter
+  Excited_Photonic_Matter = "Excited_Photonic_Matter",
+  // Dark_Matter_Residue
+  Dark_Matter_Residue = "Dark_Matter_Residue",
+  // Dark_Matter_Crystal
+  Dark_Matter_Crystal = "Dark_Matter_Crystal",
+  Alternate_Dark_Matter_Crystallization = "Alternate_Dark_Matter_Crystallization",
+  Alternate_Dark_Matter_Trap = "Alternate_Dark_Matter_Trap",
+  // Superposition_Oscillator
+  Superposition_Oscillator = "Superposition_Oscillator",
+  // Neural_Quantum_Processor
+  Neural_Quantum_Processor = "Neural_Quantum_Processor",
+  // AI_Expansion_Server
+  AI_Expansion_Server = "AI_Expansion_Server",
+  // Singularity_Cell
+  Singularity_Cell = "Singularity_Cell",
+  // Ballistic_Warp_Drive
+  Ballistic_Warp_Drive = "Ballistic_Warp_Drive",
+  // Ficsonium
+  Ficsonium = "Ficsonium",
+  // Ficsonium_Fuel_Rod
+  Ficsonium_Fuel_Rod = "Ficsonium_Fuel_Rod",
+  // Alien_Power_Matrix
+  Alien_Power_Matrix = "Alien_Power_Matrix",
+  // Stun_Rebar
+  Stun_Rebar = "Stun_Rebar",
+  // Homing_Rifle_Ammo
+  Homing_Rifle_Ammo = "Homing_Rifle_Ammo",
+  // Rifle_Ammo
+  Rifle_Ammo = "Rifle_Ammo",
+  // Gas_Nobelisk
+  Gas_Nobelisk = "Gas_Nobelisk",
+  // Pulse_Nobelisk
+  Pulse_Nobelisk = "Pulse_Nobelisk",
+  // Nuke_Nobelisk
+  Nuke_Nobelisk = "Nuke_Nobelisk",
+  // Turbo_Rifle_Ammo
+  Turbo_Rifle_Ammo = "Turbo_Rifle_Ammo",
+  // Ionized_Fuel
+  Ionized_Fuel = "Ionized_Fuel",
+  Unpackage_Ionized_Fuel = "Unpackage_Ionized_Fuel",
+  Alternate_Dark_Ion_Fuel = "Alternate_Dark_Ion_Fuel",
+  // Rocket_Fuel
+  Rocket_Fuel = "Rocket_Fuel",
+  Unpackage_Rocket_Fuel = "Unpackage_Rocket_Fuel",
+  Alternate_Nitro_Rocket_Fuel = "Alternate_Nitro_Rocket_Fuel",
+  // Packaged_Ionized_Fuel
+  Packaged_Ionized_Fuel = "Packaged_Ionized_Fuel",
+  // Packaged_Rocket_Fuel
+  Packaged_Rocket_Fuel = "Packaged_Rocket_Fuel",
+  // FICSMAS_Tree_Branch
+  FICSMAS_Tree_Branch = "FICSMAS_Tree_Branch", //! Pas dans les autres fichiers
+  // Red_FICSMAS_Ornament
+  Red_FICSMAS_Ornament = "Red_FICSMAS_Ornament", //! Pas dans les autres fichiers
+  // Blue_FICSMAS_Ornament
+  Blue_FICSMAS_Ornament = "Blue_FICSMAS_Ornament", //! Pas dans les autres fichiers
+  // Copper_FICSMAS_Ornament
+  Copper_FICSMAS_Ornament = "Copper_FICSMAS_Ornament", //! Pas dans les autres fichiers
+  // Iron_FICSMAS_Ornament
+  Iron_FICSMAS_Ornament = "Iron_FICSMAS_Ornament", //! Pas dans les autres fichiers
+  // FICSMAS_Wreath
+  FICSMAS_Wreath = "FICSMAS_Wreath", //! Pas dans les autres fichiers
+  // FICSMAS_Ornament_Bundle
+  FICSMAS_Ornament_Bundle = "FICSMAS_Ornament_Bundle", //! Pas dans les autres fichiers
+  // Candy_Cane
+  Candy_Cane = "Candy_Cane", //! Pas dans les autres fichiers
+  // FICSMAS_Bow
+  FICSMAS_Bow = "FICSMAS_Bow", //! Pas dans les autres fichiers
+  // FICSMAS_Actual_Snow
+  FICSMAS_Actual_Snow = "FICSMAS_Actual_Snow", //! Pas dans les autres fichiers
+  // FICSMAS_Wonder_Star
+  FICSMAS_Wonder_Star = "FICSMAS_Wonder_Star", //! Pas dans les autres fichiers
+  // Snowball
+  Snowball = "Snowball", //! Pas dans les autres fichiers
 }
