@@ -1,5 +1,5 @@
 export enum GameClassNamesEnum {
-  // Raw resources items
+  // ====== Raw resources items =======
   Desc_OreIron_C = "Desc_OreIron_C",
   Desc_OreCopper_C = "Desc_OreCopper_C",
   Desc_Stone_C = "Desc_Stone_C",
@@ -17,7 +17,7 @@ export enum GameClassNamesEnum {
   Desc_PackagedNitrogenGas_C = "Desc_PackagedNitrogenGas_C",
   Desc_SAM_C = "Desc_SAM_C",
 
-  // Flora and fauna items
+  // ===== Flora and fauna items ======
   Desc_Leaves_C = "Desc_Leaves_C",
   Desc_Wood_C = "Desc_Wood_C",
   Desc_Mycelia_C = "Desc_Mycelia_C",
@@ -32,13 +32,13 @@ export enum GameClassNamesEnum {
   Desc_Berry_C = "Desc_Berry_C",
   Desc_Shroom_C = "Desc_Shroom_C",
 
-  // Special items
+  // ========= Special items ==========
   Desc_ResourceSinkCoupon_C = "Desc_ResourceSinkCoupon_C",
   Desc_HardDrive_C = "Desc_HardDrive_C",
   Desc_WAT2_C = "Desc_WAT2_C",
   Desc_WAT1_C = "Desc_WAT1_C",
 
-  // Tier 1 items
+  // ========== Tier 1 items ==========
   Desc_IronIngot_C = "Desc_IronIngot_C",
   Desc_IronPlate_C = "Desc_IronPlate_C",
   Desc_IronRod_C = "Desc_IronRod_C",
@@ -50,26 +50,26 @@ export enum GameClassNamesEnum {
   Desc_IronPlateReinforced_C = "Desc_IronPlateReinforced_C",
   Desc_GenericBiomass_C = "Desc_GenericBiomass_C",
 
-  // Tier 2 items
+  // ========== Tier 2 items ==========
   Desc_CopperSheet_C = "Desc_CopperSheet_C",
   Desc_Rotor_C = "Desc_Rotor_C",
   Desc_ModularFrame_C = "Desc_ModularFrame_C",
   Desc_SpaceElevatorPart_1_C = "Desc_SpaceElevatorPart_1_C",
   Desc_Biofuel_C = "Desc_Biofuel_C",
 
-  // Tier 3 items
+  // ========== Tier 3 items ==========
   Desc_SteelIngot_C = "Desc_SteelIngot_C",
   Desc_SteelPlate_C = "Desc_SteelPlate_C",
   Desc_SteelPipe_C = "Desc_SteelPipe_C",
   Desc_SpaceElevatorPart_2_C = "Desc_SpaceElevatorPart_2_C",
 
-  // Tier 4 items
+  // ========== Tier 4 items ==========
   Desc_SteelPlateReinforced_C = "Desc_SteelPlateReinforced_C",
   Desc_Stator_C = "Desc_Stator_C",
   Desc_Motor_C = "Desc_Motor_C",
   Desc_SpaceElevatorPart_3_C = "Desc_SpaceElevatorPart_3_C",
 
-  // Tier 5 items
+  // ========== Tier 5 items ==========
   Desc_Plastic_C = "Desc_Plastic_C",
   Desc_Rubber_C = "Desc_Rubber_C",
   Desc_PolymerResin_C = "Desc_PolymerResin_C",
@@ -83,13 +83,13 @@ export enum GameClassNamesEnum {
   Desc_PackagedBiofuel_C = "Desc_PackagedBiofuel_C",
   Desc_FluidCanister_C = "Desc_FluidCanister_C",
 
-  // Tier 6 items
+  // ========== Tier 6 items ==========
   Desc_Computer_C = "Desc_Computer_C",
   Desc_ModularFrameHeavy_C = "Desc_ModularFrameHeavy_C",
   Desc_SpaceElevatorPart_4_C = "Desc_SpaceElevatorPart_4_C",
   Desc_SpaceElevatorPart_5_C = "Desc_SpaceElevatorPart_5_C",
 
-  // Tier 7 items
+  // ========== Tier 7 items ==========
   Desc_AluminaSolution_C = "Desc_AluminaSolution_C",
   Desc_PackagedAlumina_C = "Desc_PackagedAlumina_C",
   Desc_AluminumScrap_C = "Desc_AluminumScrap_C",
@@ -103,7 +103,7 @@ export enum GameClassNamesEnum {
   Desc_ComputerSuper_C = "Desc_ComputerSuper_C",
   Desc_SpaceElevatorPart_7_C = "Desc_SpaceElevatorPart_7_C",
 
-  // Tier 8 items
+  // ========== Tier 8 items ==========
   Desc_UraniumCell_C = "Desc_UraniumCell_C",
   Desc_ElectromagneticControlRod_C = "Desc_ElectromagneticControlRod_C",
   Desc_NuclearFuelRod_C = "Desc_NuclearFuelRod_C",
@@ -126,7 +126,7 @@ export enum GameClassNamesEnum {
   Desc_PressureConversionCube_C = "Desc_PressureConversionCube_C",
   Desc_SpaceElevatorPart_9_C = "Desc_SpaceElevatorPart_9_C",
 
-  // Tier 9 items
+  // ========== Tier 9 items ==========
   Desc_Diamond_C = "Desc_Diamond_C",
   Desc_TimeCrystal_C = "Desc_TimeCrystal_C",
   Desc_FicsiteIngot_C = "Desc_FicsiteIngot_C",
@@ -143,7 +143,7 @@ export enum GameClassNamesEnum {
   Desc_Ficsonium_C = "Desc_Ficsonium_C",
   Desc_FicsoniumFuelRod_C = "Desc_FicsoniumFuelRod_C",
 
-  // MAM items
+  // =========== MAM items ============
   Desc_CrystalShard_C = "Desc_CrystalShard_C",
   Desc_AlienProtein_C = "Desc_AlienProtein_C",
   Desc_AlienDNACapsule_C = "Desc_AlienDNACapsule_C",
@@ -169,46 +169,65 @@ export enum GameClassNamesEnum {
   Desc_SAMFluctuator_C = "Desc_SAMFluctuator_C",
   Desc_AlienPowerFuel_C = "Desc_AlienPowerFuel_C",
 
-  // Classic equipements
-  BP_EquipmentDescriptorShockShank_C = "BP_EquipmentDescriptorShockShank_C",
+  // = Classic Automatable equipments =
   BP_ItemDescriptorPortableMiner_C = "BP_ItemDescriptorPortableMiner_C",
+  Desc_Filter_C = "Desc_Filter_C",
+  Desc_HazmatFilter_C = "Desc_HazmatFilter_C",
+
+  // === MAM Automatable equipments ===
+  Desc_SpikedRebar_C = "Desc_SpikedRebar_C",
+  Desc_Rebar_Stunshot_C = "Desc_Rebar_Stunshot_C",
+  Desc_Rebar_Spreadshot_C = "Desc_Rebar_Spreadshot_C",
+  Desc_Rebar_Explosive_C = "Desc_Rebar_Explosive_C",
+  Desc_NobeliskExplosive_C = "Desc_NobeliskExplosive_C",
+  Desc_NobeliskGas_C = "Desc_NobeliskGas_C",
+  Desc_NobeliskShockwave_C = "Desc_NobeliskShockwave_C",
+  Desc_NobeliskCluster_C = "Desc_NobeliskCluster_C",
+  Desc_NobeliskNuke_C = "Desc_NobeliskNuke_C",
+  Desc_CartridgeStandard_C = "Desc_CartridgeStandard_C",
+  Desc_CartridgeSmartProjectile_C = "Desc_CartridgeSmartProjectile_C",
+  Desc_CartridgeChaos_C = "Desc_CartridgeChaos_C",
+
+  // ========= FICSMAS items ==========
+  Desc_Gift_C = "Desc_Gift_C",
+  Desc_XmasBranch_C = "Desc_XmasBranch_C",
+  Desc_XmasBall1_C = "Desc_XmasBall1_C",
+  Desc_XmasBall2_C = "Desc_XmasBall2_C",
+  Desc_XmasBall3_C = "Desc_XmasBall3_C",
+  Desc_XmasBall4_C = "Desc_XmasBall4_C",
+  Desc_XmasWreath_C = "Desc_XmasWreath_C",
+  Desc_XmasBallCluster_C = "Desc_XmasBallCluster_C",
+  Desc_CandyCane_C = "Desc_CandyCane_C",
+  Desc_XmasBow_C = "Desc_XmasBow_C",
+  Desc_Snow_C = "Desc_Snow_C",
+  Desc_XmasStar_C = "Desc_XmasStar_C",
+  Desc_SnowballProjectile_C = "Desc_SnowballProjectile_C",
+
+  // ======= Classic equipments =======
+  BP_EquipmentDescriptorShockShank_C = "BP_EquipmentDescriptorShockShank_C",
   BP_EquipmentDescriptorObjectScanner_C = "BP_EquipmentDescriptorObjectScanner_C",
   Desc_Chainsaw_C = "Desc_Chainsaw_C",
   BP_EquipmentDescriptorStunSpear_C = "BP_EquipmentDescriptorStunSpear_C",
   BP_EquipmentDescriptorJetPack_C = "BP_EquipmentDescriptorJetPack_C",
   BP_EquipmentDescriptorHoverPack_C = "BP_EquipmentDescriptorHoverPack_C",
   BP_EquipmentDescriptorGasmask_C = "BP_EquipmentDescriptorGasmask_C",
-  Desc_Filter_C = "Desc_Filter_C",
   BP_EquipmentDescriptorHazmatSuit_C = "BP_EquipmentDescriptorHazmatSuit_C",
-  Desc_HazmatFilter_C = "Desc_HazmatFilter_C",
 
-  // MAM equipements
+  // ========= MAM equipments =========
   BP_EquipmentDescriptorJumpingStilts_C = "BP_EquipmentDescriptorJumpingStilts_C",
   Desc_Parachute_C = "Desc_Parachute_C",
   Desc_Medkit_C = "Desc_Medkit_C",
   Desc_RebarGunProjectile_C = "Desc_RebarGunProjectile_C",
-  Desc_SpikedRebar_C = "Desc_SpikedRebar_C",
-  Desc_Rebar_Stunshot_C = "Desc_Rebar_Stunshot_C",
-  Desc_Rebar_Spreadshot_C = "Desc_Rebar_Spreadshot_C",
-  Desc_Rebar_Explosive_C = "Desc_Rebar_Explosive_C",
   BP_EqDescZipLine_C = "BP_EqDescZipLine_C",
   BP_EquipmentDescriptorNobeliskDetonator_C = "BP_EquipmentDescriptorNobeliskDetonator_C",
-  Desc_NobeliskExplosive_C = "Desc_NobeliskExplosive_C",
-  Desc_NobeliskGas_C = "Desc_NobeliskGas_C",
-  Desc_NobeliskShockwave_C = "Desc_NobeliskShockwave_C",
-  Desc_NobeliskCluster_C = "Desc_NobeliskCluster_C",
-  Desc_NobeliskNuke_C = "Desc_NobeliskNuke_C",
   BP_EquipmentDescriptorRifle_C = "BP_EquipmentDescriptorRifle_C",
-  Desc_CartridgeStandard_C = "Desc_CartridgeStandard_C",
-  Desc_CartridgeSmartProjectile_C = "Desc_CartridgeSmartProjectile_C",
-  Desc_CartridgeChaos_C = "Desc_CartridgeChaos_C",
 
-  // Awesome shop equipements
+  // ==== Awesome shop equipments =====
   BP_EquipmentDescriptorCup_C = "BP_EquipmentDescriptorCup_C",
   BP_EquipmentDescriptorCupGold_C = "BP_EquipmentDescriptorCupGold_C",
   Desc_BoomBox_C = "Desc_BoomBox_C",
 
-  // Extractors buildings
+  // ====== Extractors buildings ======
   Build_MinerMk1_C = "Build_MinerMk1_C",
   Build_MinerMk2_C = "Build_MinerMk2_C",
   Build_MinerMk3_C = "Build_MinerMk3_C",
@@ -217,11 +236,11 @@ export enum GameClassNamesEnum {
   Build_FrackingSmasher_C = "Build_FrackingSmasher_C",
   Build_FrackingExtractor_C = "Build_FrackingExtractor_C",
 
-  // Smelters buildings
+  // ======= Smelters buildings =======
   Build_SmelterMk1_C = "Build_SmelterMk1_C",
   Build_FoundryMk1_C = "Build_FoundryMk1_C",
 
-  // Manufacturers buildings
+  // ==== Manufacturers buildings =====
   Build_ConstructorMk1_C = "Build_ConstructorMk1_C",
   Build_AssemblerMk1_C = "Build_AssemblerMk1_C",
   Build_ManufacturerMk1_C = "Build_ManufacturerMk1_C",
@@ -232,7 +251,7 @@ export enum GameClassNamesEnum {
   Build_QuantumEncoder_C = "Build_QuantumEncoder_C",
   Build_Converter_C = "Build_Converter_C",
 
-  // Generators buildings
+  // ====== Generators buildings ======
   Build_GeneratorBiomass_Automated_C = "Build_GeneratorBiomass_Automated_C",
   Build_GeneratorIntegratedBiomass_C = "Build_GeneratorIntegratedBiomass_C",
   Build_GeneratorCoal_C = "Build_GeneratorCoal_C",
@@ -241,7 +260,7 @@ export enum GameClassNamesEnum {
   Build_GeneratorNuclear_C = "Build_GeneratorNuclear_C",
   Build_AlienPowerBuilding_C = "Build_AlienPowerBuilding_C",
 
-  // Specials buildings
+  // ======= Specials buildings =======
   Build_TradingPost_C = "Build_TradingPost_C",
   Build_Mam_C = "Build_Mam_C",
   Build_SpaceElevator_C = "Build_SpaceElevator_C",
@@ -253,14 +272,14 @@ export enum GameClassNamesEnum {
   Build_WorkBench_C = "Build_WorkBench_C",
   Build_Workshop_C = "Build_Workshop_C",
 
-  // Power buildings
+  // ======== Power buildings =========
   Build_PowerStorageMk1_C = "Build_PowerStorageMk1_C",
 
-  // Logistic buildings
+  // ======= Logistic buildings =======
   Build_PipelinePump_C = "Build_PipelinePump_C",
   Build_PipelinePumpMk2_C = "Build_PipelinePumpMk2_C",
 
-  // Transportation buildings
+  // ==== Transportation buildings ====
   Build_TruckStation_C = "Build_TruckStation_C",
   Build_DroneStation_C = "Build_DroneStation_C",
   Build_TrainStation_C = "Build_TrainStation_C",
@@ -272,7 +291,7 @@ export enum GameClassNamesEnum {
   Build_Portal_C = "Build_Portal_C",
   Build_PortalSatellite_C = "Build_PortalSatellite_C",
 
-  // Vehicles
+  // ============ Vehicles ============
   BP_Tractor_C = "BP_Tractor_C",
   BP_Truck_C = "BP_Truck_C",
   Testa_BP_WB_C = "Testa_BP_WB_C",
@@ -283,7 +302,7 @@ export enum GameClassNamesEnum {
   Desc_Locomotive_C = "Desc_Locomotive_C",
   Desc_FreightWagon_C = "Desc_FreightWagon_C",
 
-  // All others
+  // =========== All others ===========
   Desc_GeneratorBiomass_C = "Desc_GeneratorBiomass_C",
   Desc_UraniumPellet_C = "Desc_UraniumPellet_C",
   Desc_Crystal_C = "Desc_Crystal_C",
@@ -309,7 +328,6 @@ export enum GameClassNamesEnum {
   Desc_Blueprint_C = "Desc_Blueprint_C",
   Desc_Camera_C = "Desc_Camera_C",
   Desc_CandyCaneDecor_C = "Desc_CandyCaneDecor_C",
-  Desc_CandyCane_C = "Desc_CandyCane_C",
   Desc_CartridgePlasma_C = "Desc_CartridgePlasma_C",
   Desc_CartridgeSmart_C = "Desc_CartridgeSmart_C",
   Desc_CatwalkCross_C = "Desc_CatwalkCross_C",
@@ -388,7 +406,6 @@ export enum GameClassNamesEnum {
   Desc_Foundation_Metal_8x4_C = "Desc_Foundation_Metal_8x4_C",
   Desc_Gate_Automated_8x4_C = "Desc_Gate_Automated_8x4_C",
   Desc_Geyser_C = "Desc_Geyser_C",
-  Desc_Gift_C = "Desc_Gift_C",
   Desc_GoldenNut_Statue_C = "Desc_GoldenNut_Statue_C",
   Desc_HatcherBasic_C = "Desc_HatcherBasic_C",
   Desc_HogAlpha_C = "Desc_HogAlpha_C",
@@ -682,10 +699,8 @@ export enum GameClassNamesEnum {
   Desc_SignPole_Portrait_C = "Desc_SignPole_Portrait_C",
   Desc_SignPole_Small_C = "Desc_SignPole_Small_C",
   Desc_SingleRapidFireProjectile_SmallAquatic_C = "Desc_SingleRapidFireProjectile_SmallAquatic_C",
-  Desc_SnowballProjectile_C = "Desc_SnowballProjectile_C",
   Desc_SnowDispenser_C = "Desc_SnowDispenser_C",
   Desc_Snowman_C = "Desc_Snowman_C",
-  Desc_Snow_C = "Desc_Snow_C",
   Desc_SpaceElevatorBlocker_C = "Desc_SpaceElevatorBlocker_C",
   Desc_SpaceGiraffeStatue_C = "Desc_SpaceGiraffeStatue_C",
   Desc_SpaceGiraffe_C = "Desc_SpaceGiraffe_C",
@@ -827,18 +842,9 @@ export enum GameClassNamesEnum {
   Desc_Wildcard_C = "Desc_Wildcard_C",
   Desc_WorkBenchIntegrated_C = "Desc_WorkBenchIntegrated_C",
   Desc_WreathDecor_C = "Desc_WreathDecor_C",
-  Desc_XmasBall1_C = "Desc_XmasBall1_C",
-  Desc_XmasBall2_C = "Desc_XmasBall2_C",
-  Desc_XmasBall3_C = "Desc_XmasBall3_C",
-  Desc_XmasBall4_C = "Desc_XmasBall4_C",
-  Desc_XmasBallCluster_C = "Desc_XmasBallCluster_C",
-  Desc_XmasBow_C = "Desc_XmasBow_C",
-  Desc_XmasBranch_C = "Desc_XmasBranch_C",
   Desc_XmasLights_C = "Desc_XmasLights_C",
   Desc_xmassLights_C = "Desc_xmassLights_C",
-  Desc_XmasStar_C = "Desc_XmasStar_C",
   Desc_XMassTree_C = "Desc_XMassTree_C",
-  Desc_XmasWreath_C = "Desc_XmasWreath_C",
   Desc_Zipline_C = "Desc_Zipline_C",
   FGAmmoType = "FGAmmoType",
   FGAmmoTypeHoming = "FGAmmoTypeHoming",

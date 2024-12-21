@@ -5,9 +5,8 @@ import { GameItemsCategoryEnum } from "../enums/gameItemsCategory.enum";
 import { GameResourcesTypeEnum } from "../enums/gameResourcesType.enum";
 import type { GameItemsDictionnary } from "../types/satisfactory/gameItemsDictionary.type";
 
-// eslint-disable-next-line import/no-unused-modules
 export const gameItemsDictionnary: GameItemsDictionnary = {
-  // Raw resources items
+  // ====== Raw resources items =======
   [GameItemsEnum.Iron_Ore]: {
     className: GameClassNamesEnum.Desc_OreIron_C,
     name: GameItemsEnum.Iron_Ore,
@@ -121,7 +120,7 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     isRawResource: true,
   },
 
-  // Flora and fauna items
+  // ===== Flora and fauna items ======
   [GameItemsEnum.Leaves]: {
     className: GameClassNamesEnum.Desc_Leaves_C,
     name: GameItemsEnum.Leaves,
@@ -214,7 +213,7 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     isRawResource: false,
   },
 
-  // Special
+  // ========= Special items ==========
   [GameItemsEnum.Ficsit_Coupon]: {
     className: GameClassNamesEnum.Desc_ResourceSinkCoupon_C,
     name: GameItemsEnum.Ficsit_Coupon,
@@ -244,7 +243,7 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     isRawResource: false,
   },
 
-  // Tier 1 items
+  // ========== Tier 1 items ==========
   [GameItemsEnum.Iron_Ingot]: {
     className: GameClassNamesEnum.Desc_IronIngot_C,
     name: GameItemsEnum.Iron_Ingot,
@@ -316,7 +315,7 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     isRawResource: false,
   },
 
-  // Tier 2 items
+  // ========== Tier 2 items ==========
   [GameItemsEnum.Copper_Sheet]: {
     className: GameClassNamesEnum.Desc_CopperSheet_C,
     name: GameItemsEnum.Copper_Sheet,
@@ -353,7 +352,7 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     isRawResource: false,
   },
 
-  // Tier 3 items
+  // ========== Tier 3 items ==========
   [GameItemsEnum.Steel_Ingot]: {
     className: GameClassNamesEnum.Desc_SteelIngot_C,
     name: GameItemsEnum.Steel_Ingot,
@@ -383,7 +382,7 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     isRawResource: false,
   },
 
-  // Tier 4 items
+  // ========== Tier 4 items ==========
   [GameItemsEnum.Encased_Industrial_Beam]: {
     className: GameClassNamesEnum.Desc_SteelPlateReinforced_C,
     name: GameItemsEnum.Encased_Industrial_Beam,
@@ -413,7 +412,7 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     isRawResource: false,
   },
 
-  // Tier 5 items
+  // ========== Tier 5 items ==========
   [GameItemsEnum.Plastic]: {
     className: GameClassNamesEnum.Desc_Plastic_C,
     name: GameItemsEnum.Plastic,
@@ -499,7 +498,7 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     isRawResource: false,
   },
 
-  // Tier 6 items
+  // ========== Tier 6 items ==========
   [GameItemsEnum.Computer]: {
     className: GameClassNamesEnum.Desc_Computer_C,
     name: GameItemsEnum.Computer,
@@ -529,7 +528,7 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     isRawResource: false,
   },
 
-  // Tier 7 items
+  // ========== Tier 7 items ==========
   [GameItemsEnum.Alumina_Solution]: {
     className: GameClassNamesEnum.Desc_AluminaSolution_C,
     name: GameItemsEnum.Alumina_Solution,
@@ -615,7 +614,7 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     isRawResource: false,
   },
 
-  // Tier 8 items
+  // ========== Tier 8 items ==========
   [GameItemsEnum.Encased_Uranium_Cell]: {
     className: GameClassNamesEnum.Desc_UraniumCell_C,
     name: GameItemsEnum.Encased_Uranium_Cell,
@@ -764,7 +763,7 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     isRawResource: false,
   },
 
-  // Tier 9 items
+  // ========== Tier 9 items ==========
   [GameItemsEnum.Diamonds]: {
     className: GameClassNamesEnum.Desc_Diamond_C,
     name: GameItemsEnum.Diamonds,
@@ -871,7 +870,7 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     isRawResource: false,
   },
 
-  // MAM items
+  // =========== MAM items ============
   [GameItemsEnum.Power_Shard]: {
     className: GameClassNamesEnum.Desc_CrystalShard_C,
     name: GameItemsEnum.Power_Shard,
@@ -1041,15 +1040,206 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     isRawResource: false,
   },
 
-  // Classic equipements
-  [GameItemsEnum.Xeno_Zapper]: {
-    className: GameClassNamesEnum.BP_EquipmentDescriptorShockShank_C,
-    name: GameItemsEnum.Xeno_Zapper,
-    category: GameItemsCategoryEnum.Equipment,
-  },
+  // = Classic Automatable equipments =
   [GameItemsEnum.Portable_Miner]: {
     className: GameClassNamesEnum.BP_ItemDescriptorPortableMiner_C,
     name: GameItemsEnum.Portable_Miner,
+    category: GameItemsCategoryEnum.Equipment,
+  },
+  [GameItemsEnum.Gas_Filter]: {
+    className: GameClassNamesEnum.Desc_Filter_C,
+    name: GameItemsEnum.Gas_Filter,
+    category: GameItemsCategoryEnum.Equipment,
+  },
+  [GameItemsEnum.Iodine_Infused_Filter]: {
+    className: GameClassNamesEnum.Desc_HazmatFilter_C,
+    name: GameItemsEnum.Iodine_Infused_Filter,
+    category: GameItemsCategoryEnum.Equipment,
+  },
+
+  // === MAM Automatable equipments ===
+  [GameItemsEnum.Iron_Rebar]: {
+    className: GameClassNamesEnum.Desc_SpikedRebar_C,
+    name: GameItemsEnum.Iron_Rebar,
+    category: GameItemsCategoryEnum.Equipment,
+    resourceType: GameResourcesTypeEnum.Solid,
+    isRawResource: false,
+  },
+  [GameItemsEnum.Stun_Rebar]: {
+    className: GameClassNamesEnum.Desc_Rebar_Stunshot_C,
+    name: GameItemsEnum.Stun_Rebar,
+    category: GameItemsCategoryEnum.Equipment,
+    resourceType: GameResourcesTypeEnum.Solid,
+    isRawResource: false,
+  },
+  [GameItemsEnum.Shatter_Rebar]: {
+    className: GameClassNamesEnum.Desc_Rebar_Spreadshot_C,
+    name: GameItemsEnum.Shatter_Rebar,
+    category: GameItemsCategoryEnum.Equipment,
+    resourceType: GameResourcesTypeEnum.Solid,
+    isRawResource: false,
+  },
+  [GameItemsEnum.Explosive_Rebar]: {
+    className: GameClassNamesEnum.Desc_Rebar_Explosive_C,
+    name: GameItemsEnum.Explosive_Rebar,
+    category: GameItemsCategoryEnum.Equipment,
+    resourceType: GameResourcesTypeEnum.Solid,
+    isRawResource: false,
+  },
+  [GameItemsEnum.Nobelisk]: {
+    className: GameClassNamesEnum.Desc_NobeliskExplosive_C,
+    name: GameItemsEnum.Nobelisk,
+    category: GameItemsCategoryEnum.Equipment,
+    resourceType: GameResourcesTypeEnum.Solid,
+    isRawResource: false,
+  },
+  [GameItemsEnum.Gas_Nobelisk]: {
+    className: GameClassNamesEnum.Desc_NobeliskGas_C,
+    name: GameItemsEnum.Gas_Nobelisk,
+    category: GameItemsCategoryEnum.Equipment,
+    resourceType: GameResourcesTypeEnum.Solid,
+    isRawResource: false,
+  },
+  [GameItemsEnum.Pulse_Nobelisk]: {
+    className: GameClassNamesEnum.Desc_NobeliskShockwave_C,
+    name: GameItemsEnum.Pulse_Nobelisk,
+    category: GameItemsCategoryEnum.Equipment,
+    resourceType: GameResourcesTypeEnum.Solid,
+    isRawResource: false,
+  },
+  [GameItemsEnum.Cluster_Nobelisk]: {
+    className: GameClassNamesEnum.Desc_NobeliskCluster_C,
+    name: GameItemsEnum.Cluster_Nobelisk,
+    category: GameItemsCategoryEnum.Equipment,
+    resourceType: GameResourcesTypeEnum.Solid,
+    isRawResource: false,
+  },
+  [GameItemsEnum.Nuke_Nobelisk]: {
+    className: GameClassNamesEnum.Desc_NobeliskNuke_C,
+    name: GameItemsEnum.Nuke_Nobelisk,
+    category: GameItemsCategoryEnum.Equipment,
+    resourceType: GameResourcesTypeEnum.Solid,
+    isRawResource: false,
+  },
+  [GameItemsEnum.Rifle_Ammo]: {
+    className: GameClassNamesEnum.Desc_CartridgeStandard_C,
+    name: GameItemsEnum.Rifle_Ammo,
+    category: GameItemsCategoryEnum.Equipment,
+    resourceType: GameResourcesTypeEnum.Solid,
+    isRawResource: false,
+  },
+  [GameItemsEnum.Homing_Rifle_Ammo]: {
+    className: GameClassNamesEnum.Desc_CartridgeSmartProjectile_C,
+    name: GameItemsEnum.Homing_Rifle_Ammo,
+    category: GameItemsCategoryEnum.Equipment,
+    resourceType: GameResourcesTypeEnum.Solid,
+    isRawResource: false,
+  },
+  [GameItemsEnum.Turbo_Rifle_Ammo]: {
+    className: GameClassNamesEnum.Desc_CartridgeChaos_C,
+    name: GameItemsEnum.Turbo_Rifle_Ammo,
+    category: GameItemsCategoryEnum.Equipment,
+    resourceType: GameResourcesTypeEnum.Solid,
+    isRawResource: false,
+  },
+
+  // ========= FICSMAS items ==========
+  [GameItemsEnum.FICSMAS_Gift]: {
+    className: GameClassNamesEnum.Desc_Gift_C,
+    name: GameItemsEnum.FICSMAS_Gift,
+    category: GameItemsCategoryEnum.Resource,
+    resourceType: GameResourcesTypeEnum.Solid,
+    isRawResource: true,
+  },
+  [GameItemsEnum.FICSMAS_Tree_Branch]: {
+    className: GameClassNamesEnum.Desc_XmasBranch_C,
+    name: GameItemsEnum.FICSMAS_Tree_Branch,
+    category: GameItemsCategoryEnum.Resource,
+    resourceType: GameResourcesTypeEnum.Solid,
+    isRawResource: false,
+  },
+  [GameItemsEnum.Red_FICSMAS_Ornament]: {
+    className: GameClassNamesEnum.Desc_XmasBall1_C,
+    name: GameItemsEnum.Red_FICSMAS_Ornament,
+    category: GameItemsCategoryEnum.Resource,
+    resourceType: GameResourcesTypeEnum.Solid,
+    isRawResource: false,
+  },
+  [GameItemsEnum.Blue_FICSMAS_Ornament]: {
+    className: GameClassNamesEnum.Desc_XmasBall2_C,
+    name: GameItemsEnum.Blue_FICSMAS_Ornament,
+    category: GameItemsCategoryEnum.Resource,
+    resourceType: GameResourcesTypeEnum.Solid,
+    isRawResource: false,
+  },
+  [GameItemsEnum.Copper_FICSMAS_Ornament]: {
+    className: GameClassNamesEnum.Desc_XmasBall3_C,
+    name: GameItemsEnum.Copper_FICSMAS_Ornament,
+    category: GameItemsCategoryEnum.Resource,
+    resourceType: GameResourcesTypeEnum.Solid,
+    isRawResource: false,
+  },
+  [GameItemsEnum.Iron_FICSMAS_Ornament]: {
+    className: GameClassNamesEnum.Desc_XmasBall4_C,
+    name: GameItemsEnum.Iron_FICSMAS_Ornament,
+    category: GameItemsCategoryEnum.Resource,
+    resourceType: GameResourcesTypeEnum.Solid,
+    isRawResource: false,
+  },
+  [GameItemsEnum.FICSMAS_Wreath]: {
+    className: GameClassNamesEnum.Desc_XmasWreath_C,
+    name: GameItemsEnum.FICSMAS_Wreath,
+    category: GameItemsCategoryEnum.Resource,
+    resourceType: GameResourcesTypeEnum.Solid,
+    isRawResource: false,
+  },
+  [GameItemsEnum.FICSMAS_Ornament_Bundle]: {
+    className: GameClassNamesEnum.Desc_XmasBallCluster_C,
+    name: GameItemsEnum.FICSMAS_Ornament_Bundle,
+    category: GameItemsCategoryEnum.Resource,
+    resourceType: GameResourcesTypeEnum.Solid,
+    isRawResource: false,
+  },
+  [GameItemsEnum.Candy_Cane]: {
+    className: GameClassNamesEnum.Desc_CandyCane_C,
+    name: GameItemsEnum.Candy_Cane,
+    category: GameItemsCategoryEnum.Resource,
+    resourceType: GameResourcesTypeEnum.Solid,
+    isRawResource: false,
+  },
+  [GameItemsEnum.FICSMAS_Bow]: {
+    className: GameClassNamesEnum.Desc_XmasBow_C,
+    name: GameItemsEnum.FICSMAS_Bow,
+    category: GameItemsCategoryEnum.Resource,
+    resourceType: GameResourcesTypeEnum.Solid,
+    isRawResource: false,
+  },
+  [GameItemsEnum.FICSMAS_Actual_Snow]: {
+    className: GameClassNamesEnum.Desc_Snow_C,
+    name: GameItemsEnum.FICSMAS_Actual_Snow,
+    category: GameItemsCategoryEnum.Resource,
+    resourceType: GameResourcesTypeEnum.Solid,
+    isRawResource: false,
+  },
+  [GameItemsEnum.FICSMAS_Wonder_Star]: {
+    className: GameClassNamesEnum.Desc_XmasStar_C,
+    name: GameItemsEnum.FICSMAS_Wonder_Star,
+    category: GameItemsCategoryEnum.Resource,
+    resourceType: GameResourcesTypeEnum.Solid,
+    isRawResource: false,
+  },
+  [GameItemsEnum.Snowball]: {
+    className: GameClassNamesEnum.Desc_SnowballProjectile_C,
+    name: GameItemsEnum.Snowball,
+    category: GameItemsCategoryEnum.Resource,
+    resourceType: GameResourcesTypeEnum.Solid,
+    isRawResource: false,
+  },
+
+  // ======= Classic equipments =======
+  [GameItemsEnum.Xeno_Zapper]: {
+    className: GameClassNamesEnum.BP_EquipmentDescriptorShockShank_C,
+    name: GameItemsEnum.Xeno_Zapper,
     category: GameItemsCategoryEnum.Equipment,
   },
   [GameItemsEnum.Object_Scanner]: {
@@ -1082,23 +1272,13 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     name: GameItemsEnum.Gas_Mask,
     category: GameItemsCategoryEnum.Equipment,
   },
-  [GameItemsEnum.Gas_Filter]: {
-    className: GameClassNamesEnum.Desc_Filter_C,
-    name: GameItemsEnum.Gas_Filter,
-    category: GameItemsCategoryEnum.Equipment,
-  },
   [GameItemsEnum.Hazmat_Suit]: {
     className: GameClassNamesEnum.BP_EquipmentDescriptorHazmatSuit_C,
     name: GameItemsEnum.Hazmat_Suit,
     category: GameItemsCategoryEnum.Equipment,
   },
-  [GameItemsEnum.Iodine_Infused_Filter]: {
-    className: GameClassNamesEnum.Desc_HazmatFilter_C,
-    name: GameItemsEnum.Iodine_Infused_Filter,
-    category: GameItemsCategoryEnum.Equipment,
-  },
 
-  // MAM  equipements
+  // ========= MAM equipments =========
   [GameItemsEnum.Blade_Runners]: {
     className: GameClassNamesEnum.BP_EquipmentDescriptorJumpingStilts_C,
     name: GameItemsEnum.Blade_Runners,
@@ -1119,32 +1299,6 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     name: GameItemsEnum.Rebar_Gun,
     category: GameItemsCategoryEnum.Equipment,
   },
-  [GameItemsEnum.Iron_Rebar]: {
-    className: GameClassNamesEnum.Desc_SpikedRebar_C,
-    name: GameItemsEnum.Iron_Rebar,
-    category: GameItemsCategoryEnum.Equipment,
-    resourceType: GameResourcesTypeEnum.Solid,
-    isRawResource: false,
-  },
-  [GameItemsEnum.Stun_Rebar]: {
-    className: GameClassNamesEnum.Desc_Rebar_Stunshot_C,
-    name: GameItemsEnum.Stun_Rebar,
-    category: GameItemsCategoryEnum.Equipment,
-    resourceType: GameResourcesTypeEnum.Solid,
-    isRawResource: false,
-  },
-  [GameItemsEnum.Shatter_Rebar]: {
-    className: GameClassNamesEnum.Desc_Rebar_Spreadshot_C,
-    name: GameItemsEnum.Shatter_Rebar,
-    category: GameItemsCategoryEnum.Equipment,
-    resourceType: GameResourcesTypeEnum.Solid,
-    isRawResource: false,
-  },
-  [GameItemsEnum.Explosive_Rebar]: {
-    className: GameClassNamesEnum.Desc_Rebar_Explosive_C,
-    name: GameItemsEnum.Explosive_Rebar,
-    category: GameItemsCategoryEnum.Equipment,
-  },
   [GameItemsEnum.Zipline]: {
     className: GameClassNamesEnum.BP_EqDescZipLine_C,
     name: GameItemsEnum.Zipline,
@@ -1155,53 +1309,13 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     name: GameItemsEnum.Nobelisk_Detonator,
     category: GameItemsCategoryEnum.Equipment,
   },
-  [GameItemsEnum.Nobelisk]: {
-    className: GameClassNamesEnum.Desc_NobeliskExplosive_C,
-    name: GameItemsEnum.Nobelisk,
-    category: GameItemsCategoryEnum.Equipment,
-  },
-  [GameItemsEnum.Gas_Nobelisk]: {
-    className: GameClassNamesEnum.Desc_NobeliskGas_C,
-    name: GameItemsEnum.Gas_Nobelisk,
-    category: GameItemsCategoryEnum.Equipment,
-  },
-  [GameItemsEnum.Pulse_Nobelisk]: {
-    className: GameClassNamesEnum.Desc_NobeliskShockwave_C,
-    name: GameItemsEnum.Pulse_Nobelisk,
-    category: GameItemsCategoryEnum.Equipment,
-  },
-  [GameItemsEnum.Cluster_Nobelisk]: {
-    className: GameClassNamesEnum.Desc_NobeliskCluster_C,
-    name: GameItemsEnum.Cluster_Nobelisk,
-    category: GameItemsCategoryEnum.Equipment,
-  },
-  [GameItemsEnum.Nuke_Nobelisk]: {
-    className: GameClassNamesEnum.Desc_NobeliskNuke_C,
-    name: GameItemsEnum.Nuke_Nobelisk,
-    category: GameItemsCategoryEnum.Equipment,
-  },
   [GameItemsEnum.Rifle]: {
     className: GameClassNamesEnum.BP_EquipmentDescriptorRifle_C,
     name: GameItemsEnum.Rifle,
     category: GameItemsCategoryEnum.Equipment,
   },
-  [GameItemsEnum.Rifle_Ammo]: {
-    className: GameClassNamesEnum.Desc_CartridgeStandard_C,
-    name: GameItemsEnum.Rifle_Ammo,
-    category: GameItemsCategoryEnum.Equipment,
-  },
-  [GameItemsEnum.Homing_Rifle_Ammo]: {
-    className: GameClassNamesEnum.Desc_CartridgeSmartProjectile_C,
-    name: GameItemsEnum.Homing_Rifle_Ammo,
-    category: GameItemsCategoryEnum.Equipment,
-  },
-  [GameItemsEnum.Turbo_Rifle_Ammo]: {
-    className: GameClassNamesEnum.Desc_CartridgeChaos_C,
-    name: GameItemsEnum.Turbo_Rifle_Ammo,
-    category: GameItemsCategoryEnum.Equipment,
-  },
 
-  // Awesome shop equipements
+  // ==== Awesome shop equipments =====
   [GameItemsEnum.Cup]: {
     className: GameClassNamesEnum.BP_EquipmentDescriptorCup_C,
     name: GameItemsEnum.Cup,
@@ -1218,7 +1332,7 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     category: GameItemsCategoryEnum.Equipment,
   },
 
-  // Extractors buildings
+  // ====== Extractors buildings ======
   [GameItemsEnum.Miner_Mk_1]: {
     className: GameClassNamesEnum.Build_MinerMk1_C,
     name: GameItemsEnum.Miner_Mk_1,
@@ -1269,7 +1383,7 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     defaultPowerConsumption: 0,
   },
 
-  // Smelters buildings
+  // ======= Smelters buildings =======
   [GameItemsEnum.Smelter]: {
     className: GameClassNamesEnum.Build_SmelterMk1_C,
     name: GameItemsEnum.Smelter,
@@ -1287,7 +1401,7 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     endpoint: undefined,
   },
 
-  // Manufacturers buildings
+  // ==== Manufacturers buildings =====
   [GameItemsEnum.Constructor]: {
     className: GameClassNamesEnum.Build_ConstructorMk1_C,
     name: GameItemsEnum.Constructor,
@@ -1361,7 +1475,7 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     endpoint: undefined,
   },
 
-  // Generators buildings
+  // ====== Generators buildings ======
   [GameItemsEnum.Biomass_Burner]: {
     className: GameClassNamesEnum.Build_GeneratorBiomass_Automated_C,
     name: GameItemsEnum.Biomass_Burner,
@@ -1419,7 +1533,7 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     endpoint: undefined,
   },
 
-  // Specials buildings
+  // ======= Specials buildings =======
   [GameItemsEnum.HUB]: {
     className: GameClassNamesEnum.Build_TradingPost_C,
     name: GameItemsEnum.HUB,
@@ -1481,7 +1595,7 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     buildingType: GameBuildingsTypeEnum.Special,
   },
 
-  // Power buildings
+  // ======== Power buildings =========
   [GameItemsEnum.Power_Storage]: {
     className: GameClassNamesEnum.Build_PowerStorageMk1_C,
     name: GameItemsEnum.Power_Storage,
@@ -1489,7 +1603,7 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     buildingType: GameBuildingsTypeEnum.Power,
   },
 
-  // Logistic buildings
+  // ======= Logistic buildings =======
   [GameItemsEnum.Pipeline_Pump_Mk_1]: {
     className: GameClassNamesEnum.Build_PipelinePump_C,
     name: GameItemsEnum.Pipeline_Pump_Mk_1,
@@ -1503,7 +1617,7 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     buildingType: GameBuildingsTypeEnum.Logistic,
   },
 
-  // Transportation buildings
+  // ==== Transportation buildings ====
   [GameItemsEnum.Truck_Station]: {
     className: GameClassNamesEnum.Build_TruckStation_C,
     name: GameItemsEnum.Truck_Station,
@@ -1565,7 +1679,7 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     buildingType: GameBuildingsTypeEnum.Transportation,
   },
 
-  // Vehicles
+  // ============ Vehicles ============
   [GameItemsEnum.Tractor]: {
     className: GameClassNamesEnum.BP_Tractor_C,
     name: GameItemsEnum.Tractor,
@@ -1612,7 +1726,7 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     category: GameItemsCategoryEnum.Vehicle,
   },
 
-  // All others
+  // =========== All others ===========
   [GameItemsEnum.Desc_GeneratorBiomass_C]: {
     className: GameClassNamesEnum.Desc_GeneratorBiomass_C,
     name: GameItemsEnum.Desc_GeneratorBiomass_C,
@@ -1736,11 +1850,6 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
   [GameItemsEnum.Desc_CandyCaneDecor_C]: {
     className: GameClassNamesEnum.Desc_CandyCaneDecor_C,
     name: GameItemsEnum.Desc_CandyCaneDecor_C,
-    category: GameItemsCategoryEnum.Default,
-  },
-  [GameItemsEnum.Desc_CandyCane_C]: {
-    className: GameClassNamesEnum.Desc_CandyCane_C,
-    name: GameItemsEnum.Desc_CandyCane_C,
     category: GameItemsCategoryEnum.Default,
   },
   [GameItemsEnum.Desc_CartridgePlasma_C]: {
@@ -2133,11 +2242,6 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
   [GameItemsEnum.Desc_Geyser_C]: {
     className: GameClassNamesEnum.Desc_Geyser_C,
     name: GameItemsEnum.Desc_Geyser_C,
-    category: GameItemsCategoryEnum.Default,
-  },
-  [GameItemsEnum.Desc_Gift_C]: {
-    className: GameClassNamesEnum.Desc_Gift_C,
-    name: GameItemsEnum.Desc_Gift_C,
     category: GameItemsCategoryEnum.Default,
   },
   [GameItemsEnum.Desc_GoldenNut_Statue_C]: {
@@ -3616,11 +3720,6 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     name: GameItemsEnum.Desc_SingleRapidFireProjectile_SmallAquatic_C,
     category: GameItemsCategoryEnum.Default,
   },
-  [GameItemsEnum.Desc_SnowballProjectile_C]: {
-    className: GameClassNamesEnum.Desc_SnowballProjectile_C,
-    name: GameItemsEnum.Desc_SnowballProjectile_C,
-    category: GameItemsCategoryEnum.Default,
-  },
   [GameItemsEnum.Desc_SnowDispenser_C]: {
     className: GameClassNamesEnum.Desc_SnowDispenser_C,
     name: GameItemsEnum.Desc_SnowDispenser_C,
@@ -3629,11 +3728,6 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
   [GameItemsEnum.Desc_Snowman_C]: {
     className: GameClassNamesEnum.Desc_Snowman_C,
     name: GameItemsEnum.Desc_Snowman_C,
-    category: GameItemsCategoryEnum.Default,
-  },
-  [GameItemsEnum.Desc_Snow_C]: {
-    className: GameClassNamesEnum.Desc_Snow_C,
-    name: GameItemsEnum.Desc_Snow_C,
     category: GameItemsCategoryEnum.Default,
   },
   [GameItemsEnum.Desc_SpaceElevatorBlocker_C]: {
@@ -4341,41 +4435,6 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     name: GameItemsEnum.Desc_WreathDecor_C,
     category: GameItemsCategoryEnum.Default,
   },
-  [GameItemsEnum.Desc_XmasBall1_C]: {
-    className: GameClassNamesEnum.Desc_XmasBall1_C,
-    name: GameItemsEnum.Desc_XmasBall1_C,
-    category: GameItemsCategoryEnum.Default,
-  },
-  [GameItemsEnum.Desc_XmasBall2_C]: {
-    className: GameClassNamesEnum.Desc_XmasBall2_C,
-    name: GameItemsEnum.Desc_XmasBall2_C,
-    category: GameItemsCategoryEnum.Default,
-  },
-  [GameItemsEnum.Desc_XmasBall3_C]: {
-    className: GameClassNamesEnum.Desc_XmasBall3_C,
-    name: GameItemsEnum.Desc_XmasBall3_C,
-    category: GameItemsCategoryEnum.Default,
-  },
-  [GameItemsEnum.Desc_XmasBall4_C]: {
-    className: GameClassNamesEnum.Desc_XmasBall4_C,
-    name: GameItemsEnum.Desc_XmasBall4_C,
-    category: GameItemsCategoryEnum.Default,
-  },
-  [GameItemsEnum.Desc_XmasBallCluster_C]: {
-    className: GameClassNamesEnum.Desc_XmasBallCluster_C,
-    name: GameItemsEnum.Desc_XmasBallCluster_C,
-    category: GameItemsCategoryEnum.Default,
-  },
-  [GameItemsEnum.Desc_XmasBow_C]: {
-    className: GameClassNamesEnum.Desc_XmasBow_C,
-    name: GameItemsEnum.Desc_XmasBow_C,
-    category: GameItemsCategoryEnum.Default,
-  },
-  [GameItemsEnum.Desc_XmasBranch_C]: {
-    className: GameClassNamesEnum.Desc_XmasBranch_C,
-    name: GameItemsEnum.Desc_XmasBranch_C,
-    category: GameItemsCategoryEnum.Default,
-  },
   [GameItemsEnum.Desc_XmasLights_C]: {
     className: GameClassNamesEnum.Desc_XmasLights_C,
     name: GameItemsEnum.Desc_XmasLights_C,
@@ -4386,19 +4445,9 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     name: GameItemsEnum.Desc_xmassLights_C,
     category: GameItemsCategoryEnum.Default,
   },
-  [GameItemsEnum.Desc_XmasStar_C]: {
-    className: GameClassNamesEnum.Desc_XmasStar_C,
-    name: GameItemsEnum.Desc_XmasStar_C,
-    category: GameItemsCategoryEnum.Default,
-  },
   [GameItemsEnum.Desc_XMassTree_C]: {
     className: GameClassNamesEnum.Desc_XMassTree_C,
     name: GameItemsEnum.Desc_XMassTree_C,
-    category: GameItemsCategoryEnum.Default,
-  },
-  [GameItemsEnum.Desc_XmasWreath_C]: {
-    className: GameClassNamesEnum.Desc_XmasWreath_C,
-    name: GameItemsEnum.Desc_XmasWreath_C,
     category: GameItemsCategoryEnum.Default,
   },
   [GameItemsEnum.Desc_Zipline_C]: {

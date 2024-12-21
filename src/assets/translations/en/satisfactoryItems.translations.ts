@@ -1,7 +1,7 @@
 import { GameItemsEnum } from "../../../enums/gameItems.enum";
 
 export default {
-  // Raw resources items
+  // ====== Raw resources items =======
   [GameItemsEnum.Iron_Ore]: "Iron_Ore",
   [GameItemsEnum.Copper_Ore]: "Copper_Ore",
   [GameItemsEnum.Limestone]: "Limestone",
@@ -19,7 +19,7 @@ export default {
   [GameItemsEnum.Packaged_Nitrogen_Gas]: "Packaged_Nitrogen_Gas",
   [GameItemsEnum.SAM]: "SAM",
 
-  // Flora and fauna items
+  // ===== Flora and fauna items ======
   [GameItemsEnum.Leaves]: "Leaves",
   [GameItemsEnum.Wood]: "Wood",
   [GameItemsEnum.Mycelia]: "Mycelia",
@@ -34,13 +34,13 @@ export default {
   [GameItemsEnum.Paleberry]: "Paleberry",
   [GameItemsEnum.Bacon_Agaric]: "Bacon_Agaric",
 
-  // Special items
+  // ========= Special items ==========
   [GameItemsEnum.Ficsit_Coupon]: "Ficsit_Coupon",
   [GameItemsEnum.Hard_Drive]: "Hard_Drive",
   [GameItemsEnum.Mercer_Sphere]: "Mercer_Sphere",
   [GameItemsEnum.Somersloop]: "Somersloop",
 
-  // Tier 1 items
+  // ========== Tier 1 items ==========
   [GameItemsEnum.Iron_Ingot]: "Iron_Ingot",
   [GameItemsEnum.Iron_Plate]: "Iron_Plate",
   [GameItemsEnum.Iron_Rod]: "Iron_Rod",
@@ -52,26 +52,26 @@ export default {
   [GameItemsEnum.Reinforced_Iron_Plate]: "Reinforced_Iron_Plate",
   [GameItemsEnum.Biomass]: "Biomass",
 
-  // Tier 2 items
+  // ========== Tier 2 items ==========
   [GameItemsEnum.Copper_Sheet]: "Copper_Sheet",
   [GameItemsEnum.Rotor]: "Rotor",
   [GameItemsEnum.Modular_Frame]: "Modular_Frame",
   [GameItemsEnum.Smart_Plating]: "Smart_Plating",
   [GameItemsEnum.Solid_Biofuel]: "Solid_Biofuel",
 
-  // Tier 3 items
+  // ========== Tier 3 items ==========
   [GameItemsEnum.Steel_Ingot]: "Steel_Ingot",
   [GameItemsEnum.Steel_Beam]: "Steel_Beam",
   [GameItemsEnum.Steel_Pipe]: "Steel_Pipe",
   [GameItemsEnum.Versatile_Framework]: "Versatile_Framework",
 
-  // Tier 4 items
+  // ========== Tier 4 items ==========
   [GameItemsEnum.Encased_Industrial_Beam]: "Encased_Industrial_Beam",
   [GameItemsEnum.Stator]: "Stator",
   [GameItemsEnum.Motor]: "Motor",
   [GameItemsEnum.Automated_Wiring]: "Automated_Wiring",
 
-  // Tier 5 items
+  // ========== Tier 5 items ==========
   [GameItemsEnum.Plastic]: "Plastic",
   [GameItemsEnum.Rubber]: "Rubber",
   [GameItemsEnum.Polymer_Resin]: "Polymer_Resin",
@@ -85,13 +85,13 @@ export default {
   [GameItemsEnum.Packaged_Liquid_Biofuel]: "Packaged_Liquid_Biofuel",
   [GameItemsEnum.Empty_Canister]: "Empty_Canister",
 
-  // Tier 6 items
+  // ========== Tier 6 items ==========
   [GameItemsEnum.Computer]: "Computer",
   [GameItemsEnum.Heavy_Modular_Frame]: "Heavy_Modular_Frame",
   [GameItemsEnum.Modular_Engine]: "Modular_Engine",
   [GameItemsEnum.Adaptive_Control_Unit]: "Adaptive_Control_Unit",
 
-  // Tier 7 items
+  // ========== Tier 7 items ==========
   [GameItemsEnum.Alumina_Solution]: "Alumina_Solution",
   [GameItemsEnum.Packaged_Alumina_Solution]: "Packaged_Alumina_Solution",
   [GameItemsEnum.Aluminum_Scrap]: "Aluminum_Scrap",
@@ -105,7 +105,7 @@ export default {
   [GameItemsEnum.Supercomputer]: "Supercomputer",
   [GameItemsEnum.Assembly_Director_System]: "Assembly_Director_System",
 
-  // Tier 8 items
+  // ========== Tier 8 items ==========
   [GameItemsEnum.Encased_Uranium_Cell]: "Encased_Uranium_Cell",
   [GameItemsEnum.Electromagnetic_Control_Rod]: "Electromagnetic_Control_Rod",
   [GameItemsEnum.Uranium_Fuel_Rod]: "Uranium_Fuel_Rod",
@@ -128,7 +128,7 @@ export default {
   [GameItemsEnum.Pressure_Conversion_Cube]: "Pressure_Conversion_Cube",
   [GameItemsEnum.Nuclear_Pasta]: "Nuclear_Pasta",
 
-  // Tier 9 items
+  // ========== Tier 9 items ==========
   [GameItemsEnum.Diamonds]: "Diamonds",
   [GameItemsEnum.Time_Crystal]: "Time_Crystal",
   [GameItemsEnum.Ficsite_Ingot]: "Ficsite_Ingot",
@@ -145,7 +145,7 @@ export default {
   [GameItemsEnum.Ficsonium]: "Ficsonium",
   [GameItemsEnum.Ficsonium_Fuel_Rod]: "Ficsonium_Fuel_Rod",
 
-  // MAM items
+  // =========== MAM items ============
   [GameItemsEnum.Power_Shard]: "Power_Shard",
   [GameItemsEnum.Alien_Protein]: "Alien_Protein",
   [GameItemsEnum.Alien_DNA_Capsule]: "Alien_DNA_Capsule",
@@ -171,46 +171,65 @@ export default {
   [GameItemsEnum.SAM_Fluctuator]: "SAM_Fluctuator",
   [GameItemsEnum.Alien_Power_Matrix]: "Alien_Power_Matrix",
 
-  // Classic equipements
-  [GameItemsEnum.Xeno_Zapper]: "Xeno_Zapper",
+  // = Classic Automatable equipments =
   [GameItemsEnum.Portable_Miner]: "Portable_Miner",
+  [GameItemsEnum.Gas_Filter]: "Gas_Filter",
+  [GameItemsEnum.Iodine_Infused_Filter]: "Iodine_Infused_Filter",
+
+  // === MAM Automatable equipments ===
+  [GameItemsEnum.Iron_Rebar]: "Iron_Rebar",
+  [GameItemsEnum.Stun_Rebar]: "Stun_Rebar",
+  [GameItemsEnum.Shatter_Rebar]: "Shatter_Rebar",
+  [GameItemsEnum.Explosive_Rebar]: "Explosive_Rebar",
+  [GameItemsEnum.Nobelisk]: "Nobelisk",
+  [GameItemsEnum.Gas_Nobelisk]: "Gas_Nobelisk",
+  [GameItemsEnum.Pulse_Nobelisk]: "Pulse_Nobelisk",
+  [GameItemsEnum.Cluster_Nobelisk]: "Cluster_Nobelisk",
+  [GameItemsEnum.Nuke_Nobelisk]: "Nuke_Nobelisk",
+  [GameItemsEnum.Rifle_Ammo]: "Rifle_Ammo",
+  [GameItemsEnum.Homing_Rifle_Ammo]: "Homing_Rifle_Ammo",
+  [GameItemsEnum.Turbo_Rifle_Ammo]: "Turbo_Rifle_Ammo",
+
+  // ========= FICSMAS items ==========
+  [GameItemsEnum.FICSMAS_Gift]: "FICSMAS_Gift",
+  [GameItemsEnum.FICSMAS_Tree_Branch]: "FICSMAS_Tree_Branch",
+  [GameItemsEnum.Red_FICSMAS_Ornament]: "Red_FICSMAS_Ornament",
+  [GameItemsEnum.Blue_FICSMAS_Ornament]: "Blue_FICSMAS_Ornament",
+  [GameItemsEnum.Copper_FICSMAS_Ornament]: "Copper_FICSMAS_Ornament",
+  [GameItemsEnum.Iron_FICSMAS_Ornament]: "Iron_FICSMAS_Ornament",
+  [GameItemsEnum.FICSMAS_Wreath]: "FICSMAS_Wreath",
+  [GameItemsEnum.FICSMAS_Ornament_Bundle]: "FICSMAS_Ornament_Bundle",
+  [GameItemsEnum.Candy_Cane]: "Candy_Cane",
+  [GameItemsEnum.FICSMAS_Bow]: "FICSMAS_Bow",
+  [GameItemsEnum.FICSMAS_Actual_Snow]: "FICSMAS_Actual_Snow",
+  [GameItemsEnum.FICSMAS_Wonder_Star]: "FICSMAS_Wonder_Star",
+  [GameItemsEnum.Snowball]: "Snowball",
+
+  // ======= Classic equipments =======
+  [GameItemsEnum.Xeno_Zapper]: "Xeno_Zapper",
   [GameItemsEnum.Object_Scanner]: "Object_Scanner",
   [GameItemsEnum.Chainsaw]: "Chainsaw",
   [GameItemsEnum.Xeno_Basher]: "Xeno_Basher",
   [GameItemsEnum.Jetpack]: "Jetpack",
   [GameItemsEnum.Hoverpack]: "Hoverpack",
   [GameItemsEnum.Gas_Mask]: "Gas_Mask",
-  [GameItemsEnum.Gas_Filter]: "Gas_Filter",
   [GameItemsEnum.Hazmat_Suit]: "Hazmat_Suit",
-  [GameItemsEnum.Iodine_Infused_Filter]: "Iodine_Infused_Filter",
 
-  // MAM equipements
+  // ========= MAM equipments =========
   [GameItemsEnum.Blade_Runners]: "Blade_Runners",
   [GameItemsEnum.Parachute]: "Parachute",
   [GameItemsEnum.Medicinal_Inhaler]: "Medicinal_Inhaler",
   [GameItemsEnum.Rebar_Gun]: "Rebar_Gun",
-  [GameItemsEnum.Iron_Rebar]: "Iron_Rebar",
-  [GameItemsEnum.Stun_Rebar]: "Stun_Rebar",
-  [GameItemsEnum.Shatter_Rebar]: "Shatter_Rebar",
-  [GameItemsEnum.Explosive_Rebar]: "Explosive_Rebar",
   [GameItemsEnum.Zipline]: "Zipline",
   [GameItemsEnum.Nobelisk_Detonator]: "Nobelisk_Detonator",
-  [GameItemsEnum.Nobelisk]: "Nobelisk",
-  [GameItemsEnum.Gas_Nobelisk]: "Gas_Nobelisk",
-  [GameItemsEnum.Pulse_Nobelisk]: "Pulse_Nobelisk",
-  [GameItemsEnum.Cluster_Nobelisk]: "Cluster_Nobelisk",
-  [GameItemsEnum.Nuke_Nobelisk]: "Nuke_Nobelisk",
   [GameItemsEnum.Rifle]: "Rifle",
-  [GameItemsEnum.Rifle_Ammo]: "Rifle_Ammo",
-  [GameItemsEnum.Homing_Rifle_Ammo]: "Homing_Rifle_Ammo",
-  [GameItemsEnum.Turbo_Rifle_Ammo]: "Turbo_Rifle_Ammo",
 
-  // Awesome shop equipements
+  // ==== Awesome shop equipments =====
   [GameItemsEnum.Cup]: "Cup",
   [GameItemsEnum.Employee_of_the_Planet_Cup]: "Employee_of_the_Planet_Cup",
   [GameItemsEnum.Boom_Box]: "Boom_Box",
 
-  // Extractors buildings
+  // ====== Extractors buildings ======
   [GameItemsEnum.Miner_Mk_1]: "Miner_Mk_1",
   [GameItemsEnum.Miner_Mk_2]: "Miner_Mk_2",
   [GameItemsEnum.Miner_Mk_3]: "Miner_Mk_3",
@@ -219,11 +238,11 @@ export default {
   [GameItemsEnum.Resource_Well_Pressurizer]: "Resource_Well_Pressurizer",
   [GameItemsEnum.Resource_Well_Extractor]: "Resource_Well_Extractor",
 
-  // Smelters buildings
+  // ======= Smelters buildings =======
   [GameItemsEnum.Smelter]: "Smelter",
   [GameItemsEnum.Foundry]: "Foundry",
 
-  // Manufacturers buildings
+  // ==== Manufacturers buildings =====
   [GameItemsEnum.Constructor]: "Constructor",
   [GameItemsEnum.Assembler]: "Assembler",
   [GameItemsEnum.Manufacturer]: "Manufacturer",
@@ -234,7 +253,7 @@ export default {
   [GameItemsEnum.Quantum_Encoder]: "Quantum_Encoder",
   [GameItemsEnum.Converter]: "Converter",
 
-  // Generators buildings
+  // ====== Generators buildings ======
   [GameItemsEnum.Biomass_Burner]: "Biomass_Burner",
   [GameItemsEnum.Hub_Integrated_Biomass_Burner]:
     "Hub_Integrated_Biomass_Burner",
@@ -244,7 +263,7 @@ export default {
   [GameItemsEnum.Nuclear_Power_Plant]: "Nuclear_Power_Plant",
   [GameItemsEnum.Alien_Power_Augmenter]: "Alien_Power_Augmenter",
 
-  // Specials buildings
+  // ======= Specials buildings =======
   [GameItemsEnum.HUB]: "HUB",
   [GameItemsEnum.MAM]: "MAM",
   [GameItemsEnum.Space_Elevator]: "Space_Elevator",
@@ -256,14 +275,14 @@ export default {
   [GameItemsEnum.Crafting_Bench]: "Crafting_Bench",
   [GameItemsEnum.Equipment_Workshop]: "Equipment_Workshop",
 
-  // Power buildings
+  // ======== Power buildings =========
   [GameItemsEnum.Power_Storage]: "Power_Storage",
 
-  // Logistic buildings
+  // ======= Logistic buildings =======
   [GameItemsEnum.Pipeline_Pump_Mk_1]: "Pipeline_Pump_Mk_1",
   [GameItemsEnum.Pipeline_Pump_Mk_2]: "Pipeline_Pump_Mk_2",
 
-  // Transportation buildings
+  // ==== Transportation buildings ====
   [GameItemsEnum.Truck_Station]: "Truck_Station",
   [GameItemsEnum.Drone_Port]: "Drone_Port",
   [GameItemsEnum.Train_Station]: "Train_Station",
@@ -275,7 +294,7 @@ export default {
   [GameItemsEnum.Main_Portal]: "Main_Portal",
   [GameItemsEnum.Satellite_Portal]: "Satellite_Portal",
 
-  // Vehicles
+  // ============ Vehicles ============
   [GameItemsEnum.Tractor]: "Tractor",
   [GameItemsEnum.Truck]: "Truck",
   [GameItemsEnum.Cyber_Wagon]: "Cyber_Wagon",
@@ -286,7 +305,7 @@ export default {
   [GameItemsEnum.Electric_Locomotive]: "Electric_Locomotive",
   [GameItemsEnum.Freight_Car]: "Freight_Car",
 
-  // All others
+  // =========== All others ===========
   [GameItemsEnum.Desc_GeneratorBiomass_C]: "Desc_GeneratorBiomass_C",
   [GameItemsEnum.Desc_UraniumPellet_C]: "Desc_UraniumPellet_C",
   [GameItemsEnum.Desc_Crystal_C]: "Desc_Crystal_C",
@@ -321,7 +340,6 @@ export default {
   [GameItemsEnum.Desc_Blueprint_C]: "Desc_Blueprint_C",
   [GameItemsEnum.Desc_Camera_C]: "Desc_Camera_C",
   [GameItemsEnum.Desc_CandyCaneDecor_C]: "Desc_CandyCaneDecor_C",
-  [GameItemsEnum.Desc_CandyCane_C]: "Desc_CandyCane_C",
   [GameItemsEnum.Desc_CartridgePlasma_C]: "Desc_CartridgePlasma_C",
   [GameItemsEnum.Desc_CartridgeSmart_C]: "Desc_CartridgeSmart_C",
   [GameItemsEnum.Desc_CatwalkCross_C]: "Desc_CatwalkCross_C",
@@ -430,7 +448,6 @@ export default {
   [GameItemsEnum.Desc_Foundation_Metal_8x4_C]: "Desc_Foundation_Metal_8x4_C",
   [GameItemsEnum.Desc_Gate_Automated_8x4_C]: "Desc_Gate_Automated_8x4_C",
   [GameItemsEnum.Desc_Geyser_C]: "Desc_Geyser_C",
-  [GameItemsEnum.Desc_Gift_C]: "Desc_Gift_C",
   [GameItemsEnum.Desc_GoldenNut_Statue_C]: "Desc_GoldenNut_Statue_C",
   [GameItemsEnum.Desc_HatcherBasic_C]: "Desc_HatcherBasic_C",
   [GameItemsEnum.Desc_HogAlpha_C]: "Desc_HogAlpha_C",
@@ -882,10 +899,8 @@ export default {
   [GameItemsEnum.Desc_SignPole_Small_C]: "Desc_SignPole_Small_C",
   [GameItemsEnum.Desc_SingleRapidFireProjectile_SmallAquatic_C]:
     "Desc_SingleRapidFireProjectile_SmallAquatic_C",
-  [GameItemsEnum.Desc_SnowballProjectile_C]: "Desc_SnowballProjectile_C",
   [GameItemsEnum.Desc_SnowDispenser_C]: "Desc_SnowDispenser_C",
   [GameItemsEnum.Desc_Snowman_C]: "Desc_Snowman_C",
-  [GameItemsEnum.Desc_Snow_C]: "Desc_Snow_C",
   [GameItemsEnum.Desc_SpaceElevatorBlocker_C]: "Desc_SpaceElevatorBlocker_C",
   [GameItemsEnum.Desc_SpaceGiraffeStatue_C]: "Desc_SpaceGiraffeStatue_C",
   [GameItemsEnum.Desc_SpaceGiraffe_C]: "Desc_SpaceGiraffe_C",
@@ -1098,18 +1113,9 @@ export default {
   [GameItemsEnum.Desc_Wildcard_C]: "Desc_Wildcard_C",
   [GameItemsEnum.Desc_WorkBenchIntegrated_C]: "Desc_WorkBenchIntegrated_C",
   [GameItemsEnum.Desc_WreathDecor_C]: "Desc_WreathDecor_C",
-  [GameItemsEnum.Desc_XmasBall1_C]: "Desc_XmasBall1_C",
-  [GameItemsEnum.Desc_XmasBall2_C]: "Desc_XmasBall2_C",
-  [GameItemsEnum.Desc_XmasBall3_C]: "Desc_XmasBall3_C",
-  [GameItemsEnum.Desc_XmasBall4_C]: "Desc_XmasBall4_C",
-  [GameItemsEnum.Desc_XmasBallCluster_C]: "Desc_XmasBallCluster_C",
-  [GameItemsEnum.Desc_XmasBow_C]: "Desc_XmasBow_C",
-  [GameItemsEnum.Desc_XmasBranch_C]: "Desc_XmasBranch_C",
   [GameItemsEnum.Desc_XmasLights_C]: "Desc_XmasLights_C",
   [GameItemsEnum.Desc_xmassLights_C]: "Desc_xmassLights_C",
-  [GameItemsEnum.Desc_XmasStar_C]: "Desc_XmasStar_C",
   [GameItemsEnum.Desc_XMassTree_C]: "Desc_XMassTree_C",
-  [GameItemsEnum.Desc_XmasWreath_C]: "Desc_XmasWreath_C",
   [GameItemsEnum.Desc_Zipline_C]: "Desc_Zipline_C",
   [GameItemsEnum.FGAmmoType]: "FGAmmoType",
   [GameItemsEnum.FGAmmoTypeHoming]: "FGAmmoTypeHoming",

@@ -1,5 +1,5 @@
 export enum GameItemsEnum {
-  // Raw resources items
+  // ====== Raw resources items =======
   Iron_Ore = "Iron_Ore",
   Copper_Ore = "Copper_Ore",
   Limestone = "Limestone",
@@ -17,7 +17,7 @@ export enum GameItemsEnum {
   Packaged_Nitrogen_Gas = "Packaged_Nitrogen_Gas",
   SAM = "SAM",
 
-  // Flora and fauna items
+  // ===== Flora and fauna items ======
   Leaves = "Leaves",
   Wood = "Wood",
   Mycelia = "Mycelia",
@@ -32,13 +32,13 @@ export enum GameItemsEnum {
   Paleberry = "Paleberry",
   Bacon_Agaric = "Bacon_Agaric",
 
-  // Special items
+  // ========= Special items ==========
   Ficsit_Coupon = "Ficsit_Coupon",
   Hard_Drive = "Hard_Drive",
   Mercer_Sphere = "Mercer_Sphere",
   Somersloop = "Somersloop",
 
-  // Tier 1 items
+  // ========== Tier 1 items ==========
   Iron_Ingot = "Iron_Ingot",
   Iron_Plate = "Iron_Plate",
   Iron_Rod = "Iron_Rod",
@@ -50,26 +50,26 @@ export enum GameItemsEnum {
   Reinforced_Iron_Plate = "Reinforced_Iron_Plate",
   Biomass = "Biomass",
 
-  // Tier 2 items
+  // ========== Tier 2 items ==========
   Copper_Sheet = "Copper_Sheet",
   Rotor = "Rotor",
   Modular_Frame = "Modular_Frame",
   Smart_Plating = "Smart_Plating",
   Solid_Biofuel = "Solid_Biofuel",
 
-  // Tier 3 items
+  // ========== Tier 3 items ==========
   Steel_Ingot = "Steel_Ingot",
   Steel_Beam = "Steel_Beam",
   Steel_Pipe = "Steel_Pipe",
   Versatile_Framework = "Versatile_Framework",
 
-  // Tier 4 items
+  // ========== Tier 4 items ==========
   Encased_Industrial_Beam = "Encased_Industrial_Beam",
   Stator = "Stator",
   Motor = "Motor",
   Automated_Wiring = "Automated_Wiring",
 
-  // Tier 5 items
+  // ========== Tier 5 items ==========
   Plastic = "Plastic",
   Rubber = "Rubber",
   Polymer_Resin = "Polymer_Resin",
@@ -83,13 +83,13 @@ export enum GameItemsEnum {
   Packaged_Liquid_Biofuel = "Packaged_Liquid_Biofuel",
   Empty_Canister = "Empty_Canister",
 
-  // Tier 6 items
+  // ========== Tier 6 items ==========
   Computer = "Computer",
   Heavy_Modular_Frame = "Heavy_Modular_Frame",
   Modular_Engine = "Modular_Engine",
   Adaptive_Control_Unit = "Adaptive_Control_Unit",
 
-  // Tier 7 items
+  // ========== Tier 7 items ==========
   Alumina_Solution = "Alumina_Solution",
   Packaged_Alumina_Solution = "Packaged_Alumina_Solution",
   Aluminum_Scrap = "Aluminum_Scrap",
@@ -103,7 +103,7 @@ export enum GameItemsEnum {
   Supercomputer = "Supercomputer",
   Assembly_Director_System = "Assembly_Director_System",
 
-  // Tier 8 items
+  // ========== Tier 8 items ==========
   Encased_Uranium_Cell = "Encased_Uranium_Cell",
   Electromagnetic_Control_Rod = "Electromagnetic_Control_Rod",
   Uranium_Fuel_Rod = "Uranium_Fuel_Rod",
@@ -126,7 +126,7 @@ export enum GameItemsEnum {
   Pressure_Conversion_Cube = "Pressure_Conversion_Cube",
   Nuclear_Pasta = "Nuclear_Pasta",
 
-  // Tier 9 items
+  // ========== Tier 9 items ==========
   Diamonds = "Diamonds",
   Time_Crystal = "Time_Crystal",
   Ficsite_Ingot = "Ficsite_Ingot",
@@ -143,7 +143,7 @@ export enum GameItemsEnum {
   Ficsonium = "Ficsonium",
   Ficsonium_Fuel_Rod = "Ficsonium_Fuel_Rod",
 
-  // MAM items
+  // =========== MAM items ============
   Power_Shard = "Power_Shard",
   Alien_Protein = "Alien_Protein",
   Alien_DNA_Capsule = "Alien_DNA_Capsule",
@@ -169,46 +169,65 @@ export enum GameItemsEnum {
   SAM_Fluctuator = "SAM_Fluctuator",
   Alien_Power_Matrix = "Alien_Power_Matrix",
 
-  // Classic equipements
-  Xeno_Zapper = "Xeno_Zapper",
+  // = Classic Automatable equipments =
   Portable_Miner = "Portable_Miner",
+  Gas_Filter = "Gas_Filter",
+  Iodine_Infused_Filter = "Iodine_Infused_Filter",
+
+  // === MAM Automatable equipments ===
+  Iron_Rebar = "Iron_Rebar",
+  Stun_Rebar = "Stun_Rebar",
+  Shatter_Rebar = "Shatter_Rebar",
+  Explosive_Rebar = "Explosive_Rebar",
+  Nobelisk = "Nobelisk",
+  Gas_Nobelisk = "Gas_Nobelisk",
+  Pulse_Nobelisk = "Pulse_Nobelisk",
+  Cluster_Nobelisk = "Cluster_Nobelisk",
+  Nuke_Nobelisk = "Nuke_Nobelisk",
+  Rifle_Ammo = "Rifle_Ammo",
+  Homing_Rifle_Ammo = "Homing_Rifle_Ammo",
+  Turbo_Rifle_Ammo = "Turbo_Rifle_Ammo",
+
+  // ========= FICSMAS items ==========
+  FICSMAS_Gift = "FICSMAS_Gift",
+  FICSMAS_Tree_Branch = "FICSMAS_Tree_Branch",
+  Red_FICSMAS_Ornament = "Red_FICSMAS_Ornament",
+  Blue_FICSMAS_Ornament = "Blue_FICSMAS_Ornament",
+  Copper_FICSMAS_Ornament = "Copper_FICSMAS_Ornament",
+  Iron_FICSMAS_Ornament = "Iron_FICSMAS_Ornament",
+  FICSMAS_Wreath = "FICSMAS_Wreath",
+  FICSMAS_Ornament_Bundle = "FICSMAS_Ornament_Bundle",
+  Candy_Cane = "Candy_Cane",
+  FICSMAS_Bow = "FICSMAS_Bow",
+  FICSMAS_Actual_Snow = "FICSMAS_Actual_Snow",
+  FICSMAS_Wonder_Star = "FICSMAS_Wonder_Star",
+  Snowball = "Snowball",
+
+  // ======= Classic equipments =======
+  Xeno_Zapper = "Xeno_Zapper",
   Object_Scanner = "Object_Scanner",
   Chainsaw = "Chainsaw",
   Xeno_Basher = "Xeno_Basher",
   Jetpack = "Jetpack",
   Hoverpack = "Hoverpack",
   Gas_Mask = "Gas_Mask",
-  Gas_Filter = "Gas_Filter",
   Hazmat_Suit = "Hazmat_Suit",
-  Iodine_Infused_Filter = "Iodine_Infused_Filter",
 
-  // MAM equipements
+  // ========= MAM equipments =========
   Blade_Runners = "Blade_Runners",
   Parachute = "Parachute",
   Medicinal_Inhaler = "Medicinal_Inhaler",
   Rebar_Gun = "Rebar_Gun",
-  Iron_Rebar = "Iron_Rebar",
-  Stun_Rebar = "Stun_Rebar",
-  Shatter_Rebar = "Shatter_Rebar",
-  Explosive_Rebar = "Explosive_Rebar",
   Zipline = "Zipline",
   Nobelisk_Detonator = "Nobelisk_Detonator",
-  Nobelisk = "Nobelisk",
-  Gas_Nobelisk = "Gas_Nobelisk",
-  Pulse_Nobelisk = "Pulse_Nobelisk",
-  Cluster_Nobelisk = "Cluster_Nobelisk",
-  Nuke_Nobelisk = "Nuke_Nobelisk",
   Rifle = "Rifle",
-  Rifle_Ammo = "Rifle_Ammo",
-  Homing_Rifle_Ammo = "Homing_Rifle_Ammo",
-  Turbo_Rifle_Ammo = "Turbo_Rifle_Ammo",
 
-  // Awesome shop equipements
+  // ==== Awesome shop equipments =====
   Cup = "Cup",
   Employee_of_the_Planet_Cup = "Employee_of_the_Planet_Cup",
   Boom_Box = "Boom_Box",
 
-  // Extractors buildings
+  // ====== Extractors buildings ======
   Miner_Mk_1 = "Miner_Mk_1",
   Miner_Mk_2 = "Miner_Mk_2",
   Miner_Mk_3 = "Miner_Mk_3",
@@ -217,11 +236,11 @@ export enum GameItemsEnum {
   Resource_Well_Pressurizer = "Resource_Well_Pressurizer",
   Resource_Well_Extractor = "Resource_Well_Extractor",
 
-  // Smelters buildings
+  // ======= Smelters buildings =======
   Smelter = "Smelter",
   Foundry = "Foundry",
 
-  // Manufacturers buildings
+  // ==== Manufacturers buildings =====
   Constructor = "Constructor",
   Assembler = "Assembler",
   Manufacturer = "Manufacturer",
@@ -232,7 +251,7 @@ export enum GameItemsEnum {
   Quantum_Encoder = "Quantum_Encoder",
   Converter = "Converter",
 
-  // Generators buildings
+  // ====== Generators buildings ======
   Biomass_Burner = "Biomass_Burner",
   Hub_Integrated_Biomass_Burner = "Hub_Integrated_Biomass_Burner",
   Coal_Powered_Generator = "Coal_Powered_Generator",
@@ -241,7 +260,7 @@ export enum GameItemsEnum {
   Nuclear_Power_Plant = "Nuclear_Power_Plant",
   Alien_Power_Augmenter = "Alien_Power_Augmenter",
 
-  // Specials buildings
+  // ======= Specials buildings =======
   HUB = "HUB",
   MAM = "MAM",
   Space_Elevator = "Space_Elevator",
@@ -253,14 +272,14 @@ export enum GameItemsEnum {
   Crafting_Bench = "Crafting_Bench",
   Equipment_Workshop = "Equipment_Workshop",
 
-  // Power buildings
+  // ======== Power buildings =========
   Power_Storage = "Power_Storage",
 
-  // Logistic buildings
+  // ======= Logistic buildings =======
   Pipeline_Pump_Mk_1 = "Pipeline_Pump_Mk_1",
   Pipeline_Pump_Mk_2 = "Pipeline_Pump_Mk_2",
 
-  // Transportation buildings
+  // ==== Transportation buildings ====
   Truck_Station = "Truck_Station",
   Drone_Port = "Drone_Port",
   Train_Station = "Train_Station",
@@ -272,7 +291,7 @@ export enum GameItemsEnum {
   Main_Portal = "Main_Portal",
   Satellite_Portal = "Satellite_Portal",
 
-  // Vehicles
+  // ============ Vehicles ============
   Tractor = "Tractor",
   Truck = "Truck",
   Cyber_Wagon = "Cyber_Wagon",
@@ -283,7 +302,7 @@ export enum GameItemsEnum {
   Electric_Locomotive = "Electric_Locomotive",
   Freight_Car = "Freight_Car",
 
-  // All others
+  // =========== All others ===========
   Desc_GeneratorBiomass_C = "Desc_GeneratorBiomass_C",
   Desc_UraniumPellet_C = "Desc_UraniumPellet_C",
   Desc_Crystal_C = "Desc_Crystal_C",
@@ -309,7 +328,6 @@ export enum GameItemsEnum {
   Desc_Blueprint_C = "Desc_Blueprint_C",
   Desc_Camera_C = "Desc_Camera_C",
   Desc_CandyCaneDecor_C = "Desc_CandyCaneDecor_C",
-  Desc_CandyCane_C = "Desc_CandyCane_C",
   Desc_CartridgePlasma_C = "Desc_CartridgePlasma_C",
   Desc_CartridgeSmart_C = "Desc_CartridgeSmart_C",
   Desc_CatwalkCross_C = "Desc_CatwalkCross_C",
@@ -388,7 +406,6 @@ export enum GameItemsEnum {
   Desc_Foundation_Metal_8x4_C = "Desc_Foundation_Metal_8x4_C",
   Desc_Gate_Automated_8x4_C = "Desc_Gate_Automated_8x4_C",
   Desc_Geyser_C = "Desc_Geyser_C",
-  Desc_Gift_C = "Desc_Gift_C",
   Desc_GoldenNut_Statue_C = "Desc_GoldenNut_Statue_C",
   Desc_HatcherBasic_C = "Desc_HatcherBasic_C",
   Desc_HogAlpha_C = "Desc_HogAlpha_C",
@@ -682,10 +699,8 @@ export enum GameItemsEnum {
   Desc_SignPole_Portrait_C = "Desc_SignPole_Portrait_C",
   Desc_SignPole_Small_C = "Desc_SignPole_Small_C",
   Desc_SingleRapidFireProjectile_SmallAquatic_C = "Desc_SingleRapidFireProjectile_SmallAquatic_C",
-  Desc_SnowballProjectile_C = "Desc_SnowballProjectile_C",
   Desc_SnowDispenser_C = "Desc_SnowDispenser_C",
   Desc_Snowman_C = "Desc_Snowman_C",
-  Desc_Snow_C = "Desc_Snow_C",
   Desc_SpaceElevatorBlocker_C = "Desc_SpaceElevatorBlocker_C",
   Desc_SpaceGiraffeStatue_C = "Desc_SpaceGiraffeStatue_C",
   Desc_SpaceGiraffe_C = "Desc_SpaceGiraffe_C",
@@ -827,18 +842,9 @@ export enum GameItemsEnum {
   Desc_Wildcard_C = "Desc_Wildcard_C",
   Desc_WorkBenchIntegrated_C = "Desc_WorkBenchIntegrated_C",
   Desc_WreathDecor_C = "Desc_WreathDecor_C",
-  Desc_XmasBall1_C = "Desc_XmasBall1_C",
-  Desc_XmasBall2_C = "Desc_XmasBall2_C",
-  Desc_XmasBall3_C = "Desc_XmasBall3_C",
-  Desc_XmasBall4_C = "Desc_XmasBall4_C",
-  Desc_XmasBallCluster_C = "Desc_XmasBallCluster_C",
-  Desc_XmasBow_C = "Desc_XmasBow_C",
-  Desc_XmasBranch_C = "Desc_XmasBranch_C",
   Desc_XmasLights_C = "Desc_XmasLights_C",
   Desc_xmassLights_C = "Desc_xmassLights_C",
-  Desc_XmasStar_C = "Desc_XmasStar_C",
   Desc_XMassTree_C = "Desc_XMassTree_C",
-  Desc_XmasWreath_C = "Desc_XmasWreath_C",
   Desc_Zipline_C = "Desc_Zipline_C",
   FGAmmoType = "FGAmmoType",
   FGAmmoTypeHoming = "FGAmmoTypeHoming",
