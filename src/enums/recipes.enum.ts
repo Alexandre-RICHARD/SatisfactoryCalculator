@@ -55,7 +55,7 @@ export enum RecipesEnum {
   // Iron_Rod
   Iron_Rod = "Iron_Rod",
   Alternate_Steel_Rod = "Alternate_Steel_Rod",
-  Alternate_Aluminium_Rod = "Alternate_Aluminium_Rod",
+  Alternate_Aluminum_Rod = "Alternate_Aluminum_Rod",
   // Copper_Ingot
   Copper_Ingot = "Copper_Ingot",
   Alternate_Tempered_Copper_Ingot = "Alternate_Tempered_Copper_Ingot",
@@ -119,7 +119,7 @@ export enum RecipesEnum {
   // Steel_Beam
   Steel_Beam = "Steel_Beam",
   Alternate_Molded_Beam = "Alternate_Molded_Beam",
-  Alternate_Aluminium_Beam = "Alternate_Aluminium_Beam",
+  Alternate_Aluminum_Beam = "Alternate_Aluminum_Beam",
   // Steel_Pipe
   Steel_Pipe = "Steel_Pipe",
   Alternate_Iron_Pipe = "Alternate_Iron_Pipe",
@@ -208,7 +208,7 @@ export enum RecipesEnum {
   // Aluminum_Scrap
   Aluminum_Scrap = "Aluminum_Scrap",
   Alternate_Instant_Scrap = "Alternate_Instant_Scrap",
-  Alternate_Electrode_Aluminium_Scrap = "Alternate_Electrode_Aluminium_Scrap",
+  Alternate_Electrode_Aluminum_Scrap = "Alternate_Electrode_Aluminum_Scrap",
   // Aluminum_Ingot
   Aluminum_Ingot = "Aluminum_Ingot",
   Alternate_Pure_Aluminum_Ingot = "Alternate_Pure_Aluminum_Ingot",
@@ -300,7 +300,7 @@ export enum RecipesEnum {
   Time_Crystal = "Time_Crystal",
   // Ficsite_Ingot
   Ficsite_Ingot_Iron = "Ficsite_Ingot_Iron",
-  Ficsite_Ingot_Aluminium = "Ficsite_Ingot_Aluminium",
+  Ficsite_Ingot_Aluminum = "Ficsite_Ingot_Aluminum",
   Ficsite_Ingot_Caterium = "Ficsite_Ingot_Caterium",
   // Ficsite_Trigon
   Ficsite_Trigon = "Ficsite_Trigon",
@@ -438,6 +438,7 @@ export enum RecipesEnum {
   Homing_Rifle_Ammo = "Homing_Rifle_Ammo",
   // Turbo_Rifle_Ammo
   Turbo_Rifle_Ammo = "Turbo_Rifle_Ammo",
+  Packaged_Turbo_Rifle_Ammo = "Packaged_Turbo_Rifle_Ammo",
 
   // ========= FICSMAS items ==========
   // FICSMAS_Tree_Branch
