@@ -30,7 +30,7 @@ export const RecipesList = (): React.JSX.Element => {
   );
 
   const filteredRecipes = useGetFilteredRecipes({
-    recipes,
+    recipes: Object.values(recipes),
     searchString: nameFilter,
   });
 

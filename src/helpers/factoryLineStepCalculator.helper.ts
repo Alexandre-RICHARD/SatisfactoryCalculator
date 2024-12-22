@@ -13,7 +13,8 @@ type Args = {
 export const factoryLineStepCalculator = ({
   currentRecipe,
 }: Args): FactoryLine => {
-  const recipe = recipes.find(
+  const recipesInArray = Object.values(recipes);
+  const recipe = recipesInArray.find(
     (it) => it.recipeName === currentRecipe?.selectedRecipeName,
   )!;
 
@@ -51,7 +52,7 @@ export const factoryLineStepCalculator = ({
     : recipe.itemsIn
         .filter((itemIn) => !itemIn.item.isRawResource)
         .map((itemIn) => {
-          const itemInRecipe = recipes.find(
+          const itemInRecipe = recipesInArray.find(
             (it) =>
               !it.isAlternate &&
               it.itemsOut.some((itemOut) => itemOut.item === itemIn.item),

@@ -13,6 +13,7 @@ import styles from "./styles.module.scss";
 
 export const RecipeSelector = (): React.JSX.Element => {
   const t = useCustomTranslations();
+  const recipesInArray = Object.values(recipes);
   const [selectedFactoryLineData, setSelectedFactoryLineData] =
     useCombinedStore(
       useShallow((state) => [
@@ -23,7 +24,7 @@ export const RecipeSelector = (): React.JSX.Element => {
 
   const ItemsThatCanBeCrafted = Object.values(GameItemsEnum)
     .filter((item) => {
-      return recipes.some((recipe) =>
+      return recipesInArray.some((recipe) =>
         recipe.itemsOut.some((itemOut) => itemOut.item.name === item),
       );
     })
@@ -34,7 +35,7 @@ export const RecipeSelector = (): React.JSX.Element => {
       ),
     );
 
-  const recipeThatCanBeDoWithItemInOutput = recipes.filter((recipe) =>
+  const recipeThatCanBeDoWithItemInOutput = recipesInArray.filter((recipe) =>
     recipe.itemsOut.some(
       (itemOut) => itemOut.item === selectedFactoryLineData?.selectedItem,
     ),
