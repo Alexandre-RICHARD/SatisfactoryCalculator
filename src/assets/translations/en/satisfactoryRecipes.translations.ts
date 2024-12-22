@@ -470,6 +470,39 @@ export default {
   [RecipesEnum.Turbo_Rifle_Ammo]: "Turbo Rifle Ammo",
   [RecipesEnum.Packaged_Turbo_Rifle_Ammo]: "Turbo Rifle Ammo",
 
+  // ======= Generators recipes =======
+  // Biomass_Burner
+  [RecipesEnum.Biomass_Burner_Leaves]: "Biomass Burner (Leaves)",
+  [RecipesEnum.Biomass_Burner_Mycelia]: "Biomass Burner (Mycelia)",
+  [RecipesEnum.Biomass_Burner_Wood]: "Biomass Burner (Wood)",
+  [RecipesEnum.Biomass_Burner_Biomass]: "Biomass Burner (Biomass)",
+  [RecipesEnum.Biomass_Burner_Solid_Biofuel]: "Biomass Burner (Solid Biofuel)",
+  [RecipesEnum.Biomass_Burner_Packaged_Liquid_Biofuel]:
+    "Biomass Burner (Packaged Liquid Biofuel)",
+  // Coal_Powered_Generator
+  [RecipesEnum.Coal_Powered_Generator_Coal]: "Coal-Powered Generator (Coal)",
+  [RecipesEnum.Coal_Powered_Generator_Compacted_Coal]:
+    "Coal-Powered Generator (Compacted Coal)",
+  [RecipesEnum.Coal_Powered_Generator_Petroleum_Coke]:
+    "Coal-Powered Generator (Petroleum Coke)",
+  // Fuel_Powered_Generator
+  [RecipesEnum.Fuel_Powered_Generator_Fuel]: "Fuel-Powered Generator (Fuel)",
+  [RecipesEnum.Fuel_Powered_Generator_Liquid_Biofuel]:
+    "Fuel-Powered Generator (Liquid Biofuel)",
+  [RecipesEnum.Fuel_Powered_Generator_Turbofuel]:
+    "Fuel-Powered Generator (Turbofuel)",
+  [RecipesEnum.Fuel_Powered_Generator_Rocket_Fuel]:
+    "Fuel-Powered Generator (Rocket Fuel)",
+  [RecipesEnum.Fuel_Powered_Generator_Ionized_Fuel]:
+    "Fuel-Powered Generator (Ionized Fuel)",
+  // Nuclear_Power_Plant
+  [RecipesEnum.Nuclear_Power_Plant_Uranium_Fuel_Rod]:
+    "Nuclear Power Plant (Uranium Fuel Rod)",
+  [RecipesEnum.Nuclear_Power_Plant_Plutonium_Fuel_Rod]:
+    "Nuclear Power Plant (Plutonium Fuel Rod)",
+  [RecipesEnum.Nuclear_Power_Plant_Ficsonium_Fuel_Rod]:
+    "Nuclear Power Plant (Ficsonium Fuel Rod)",
+
   // ========= FICSMAS items ==========
   // FICSMAS_Tree_Branch
   [RecipesEnum.FICSMAS_Tree_Branch]: "FICSMAS Tree Branch",

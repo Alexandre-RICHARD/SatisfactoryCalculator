@@ -440,6 +440,29 @@ export enum RecipesEnum {
   Turbo_Rifle_Ammo = "Turbo_Rifle_Ammo",
   Packaged_Turbo_Rifle_Ammo = "Packaged_Turbo_Rifle_Ammo",
 
+  // ======= Generators recipes =======
+  // Biomass_Burner 30 Mw
+  Biomass_Burner_Leaves = "Biomass_Burner_Leaves", // 0.5 sec => 120 / mn => 15 Mj
+  Biomass_Burner_Mycelia = "Biomass_Burner_Mycelia", // 2/3 sec => 90 / mn => 20 Mj
+  Biomass_Burner_Wood = "Biomass_Burner_Wood", // 10/3 sec => 18 / mn => 100 Mj
+  Biomass_Burner_Biomass = "Biomass_Burner_Biomass", // 6 sec => 10 / mn => 180 Mj
+  Biomass_Burner_Solid_Biofuel = "Biomass_Burner_Solid_Biofuel", // 15 sec => 4 / mn => 450 Mj
+  Biomass_Burner_Packaged_Liquid_Biofuel = "Biomass_Burner_Packaged_Liquid_Biofuel", // 25 sec => 2.4 / mn => 750 Mj
+  // Coal_Powered_Generator 75 Mw
+  Coal_Powered_Generator_Coal = "Coal_Powered_Generator_Coal", // 4 sec => 15 / min => 300 Mj
+  Coal_Powered_Generator_Compacted_Coal = "Coal_Powered_Generator_Compacted_Coal", // 8.4 sec => 7.14 / min => 630 Mj
+  Coal_Powered_Generator_Petroleum_Coke = "Coal_Powered_Generator_Petroleum_Coke", // 2.4 sec => 25 / min => 180 Mj
+  // Fuel_Powered_Generator 250 Mw
+  Fuel_Powered_Generator_Fuel = "Fuel_Powered_Generator_Fuel", // 3 sec => 20 / min => 750Mj
+  Fuel_Powered_Generator_Liquid_Biofuel = "Fuel_Powered_Generator_Liquid_Biofuel", // 3 sec => 20 / min => 750 Mj
+  Fuel_Powered_Generator_Turbofuel = "Fuel_Powered_Generator_Turbofuel", // 8 sec => 7.5 / min => 2 000 Mj
+  Fuel_Powered_Generator_Rocket_Fuel = "Fuel_Powered_Generator_Rocket_Fuel", // 14.4 sec => 4.16 / min => 3 600 Mj
+  Fuel_Powered_Generator_Ionized_Fuel = "Fuel_Powered_Generator_Ionized_Fuel", // 20 sec => 3 / min => 5 000 Mj
+  // Nuclear_Power_Plant 2 500 Mw
+  Nuclear_Power_Plant_Uranium_Fuel_Rod = "Nuclear_Power_Plant_Uranium_Fuel_Rod", // 300 sec => 0.2 / min => 750 000 Mj
+  Nuclear_Power_Plant_Plutonium_Fuel_Rod = "Nuclear_Power_Plant_Plutonium_Fuel_Rod", // 600 sec => 0.1 / min => 1 500 000 Mj
+  Nuclear_Power_Plant_Ficsonium_Fuel_Rod = "Nuclear_Power_Plant_Ficsonium_Fuel_Rod", // 60 sec => 1 / min => 150 000 Mj
+
   // ========= FICSMAS items ==========
   // FICSMAS_Tree_Branch
   FICSMAS_Tree_Branch = "FICSMAS_Tree_Branch",

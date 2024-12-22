@@ -505,6 +505,41 @@ export default {
   [RecipesEnum.Turbo_Rifle_Ammo]: "Munitions de fusil turbo",
   [RecipesEnum.Packaged_Turbo_Rifle_Ammo]: "Munitions de fusil turbo",
 
+  // ======= Generators recipes =======
+  // Biomass_Burner
+  [RecipesEnum.Biomass_Burner_Leaves]: "Brûleur de biomasse (Feuilles)",
+  [RecipesEnum.Biomass_Burner_Mycelia]: "Brûleur de biomasse (Mycélium)",
+  [RecipesEnum.Biomass_Burner_Wood]: "Brûleur de biomasse (Bois)",
+  [RecipesEnum.Biomass_Burner_Biomass]: "Brûleur de biomasse (Biomasse)",
+  [RecipesEnum.Biomass_Burner_Solid_Biofuel]:
+    "Brûleur de biomasse (Biocarburant solide)",
+  [RecipesEnum.Biomass_Burner_Packaged_Liquid_Biofuel]:
+    "Brûleur de biomasse (Biocarburant liquide conditionné)",
+  // Coal_Powered_Generator
+  [RecipesEnum.Coal_Powered_Generator_Coal]: "Générateur à charbon (Charbon)",
+  [RecipesEnum.Coal_Powered_Generator_Compacted_Coal]:
+    "Générateur à charbon (Charbon compacté)",
+  [RecipesEnum.Coal_Powered_Generator_Petroleum_Coke]:
+    "Générateur à charbon (Coke de pétrole)",
+  // Fuel_Powered_Generator
+  [RecipesEnum.Fuel_Powered_Generator_Fuel]:
+    "Générateur à carburant (Carburant)",
+  [RecipesEnum.Fuel_Powered_Generator_Liquid_Biofuel]:
+    "Générateur à carburant (Biocarburant liquide)",
+  [RecipesEnum.Fuel_Powered_Generator_Turbofuel]:
+    "Générateur à carburant (Turbocarburant)",
+  [RecipesEnum.Fuel_Powered_Generator_Rocket_Fuel]:
+    "Générateur à carburant (Carburant de fusée)",
+  [RecipesEnum.Fuel_Powered_Generator_Ionized_Fuel]:
+    "Générateur à carburant (Carburant ionisé)",
+  // Nuclear_Power_Plant
+  [RecipesEnum.Nuclear_Power_Plant_Uranium_Fuel_Rod]:
+    "Centrale nucléaire (Barre d'uranium)",
+  [RecipesEnum.Nuclear_Power_Plant_Plutonium_Fuel_Rod]:
+    "Centrale nucléaire (Barre de plutonium)",
+  [RecipesEnum.Nuclear_Power_Plant_Ficsonium_Fuel_Rod]:
+    "Centrale nucléaire (Barre de ficsonium)",
+
   // ========= FICSMAS items ==========
   // FICSMAS_Tree_Branch
   [RecipesEnum.FICSMAS_Tree_Branch]: "Branche d'arbre FICSMAS",
