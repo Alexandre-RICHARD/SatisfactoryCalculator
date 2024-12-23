@@ -180,9 +180,9 @@ export type GameItemsDictionnary = {
   [GameItemsEnum.Alien_Power_Matrix]: GameItemResource;
 
   // = Classic Automatable equipments =
-  [GameItemsEnum.Portable_Miner]: GameItemEquipment;
-  [GameItemsEnum.Gas_Filter]: GameItemEquipment;
-  [GameItemsEnum.Iodine_Infused_Filter]: GameItemEquipment;
+  [GameItemsEnum.Portable_Miner]: GameItemResource;
+  [GameItemsEnum.Gas_Filter]: GameItemResource;
+  [GameItemsEnum.Iodine_Infused_Filter]: GameItemResource;
 
   // === MAM Automatable equipments ===
   [GameItemsEnum.Iron_Rebar]: GameItemResource;

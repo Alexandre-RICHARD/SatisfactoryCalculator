@@ -1984,2010 +1984,2705 @@ export const recipes: RecipeDictionnaryType = {
   // Plastic
   [RecipesEnum.Residual_Plastic]: {
     recipeName: RecipesEnum.Residual_Plastic,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Refinery],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Polymer_Resin],
+        quantityPerCycle: 6,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Water],
+        quantityPerCycle: 2,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Plastic],
+        quantityPerCycle: 2,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 6,
   },
   [RecipesEnum.Plastic]: {
     recipeName: RecipesEnum.Plastic,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Refinery],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Crude_Oil],
+        quantityPerCycle: 3,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Plastic],
+        quantityPerCycle: 2,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Heavy_Oil_Residue],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 6,
   },
   [RecipesEnum.Alternate_Recycled_Plastic]: {
     recipeName: RecipesEnum.Alternate_Recycled_Plastic,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Refinery],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Rubber],
+        quantityPerCycle: 6,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Fuel],
+        quantityPerCycle: 6,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Plastic],
+        quantityPerCycle: 12,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 12,
   },
   // Rubber
   [RecipesEnum.Residual_Rubber]: {
     recipeName: RecipesEnum.Residual_Rubber,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Refinery],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Polymer_Resin],
+        quantityPerCycle: 4,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Water],
+        quantityPerCycle: 4,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Rubber],
+        quantityPerCycle: 2,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 6,
   },
   [RecipesEnum.Rubber]: {
     recipeName: RecipesEnum.Rubber,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Refinery],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Crude_Oil],
+        quantityPerCycle: 3,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Rubber],
+        quantityPerCycle: 2,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Heavy_Oil_Residue],
+        quantityPerCycle: 2,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 6,
   },
   [RecipesEnum.Alternate_Recycled_Rubber]: {
     recipeName: RecipesEnum.Alternate_Recycled_Rubber,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Refinery],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Plastic],
+        quantityPerCycle: 6,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Fuel],
+        quantityPerCycle: 6,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Rubber],
+        quantityPerCycle: 12,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 12,
   },
   // Polymer_Resin
   [RecipesEnum.Alternate_Polymer_Resin]: {
     recipeName: RecipesEnum.Alternate_Polymer_Resin,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Refinery],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Crude_Oil],
+        quantityPerCycle: 6,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Polymer_Resin],
+        quantityPerCycle: 13,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Heavy_Oil_Residue],
+        quantityPerCycle: 2,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 6,
   },
   // Petroleum_Coke
   [RecipesEnum.Petroleum_Coke]: {
     recipeName: RecipesEnum.Petroleum_Coke,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Refinery],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Heavy_Oil_Residue],
+        quantityPerCycle: 4,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Petroleum_Coke],
+        quantityPerCycle: 12,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 6,
   },
   // Circuit_Board
   [RecipesEnum.Circuit_Board]: {
     recipeName: RecipesEnum.Circuit_Board,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Copper_Sheet],
+        quantityPerCycle: 2,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Plastic],
+        quantityPerCycle: 4,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Circuit_Board],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 8,
   },
   [RecipesEnum.Alternate_Electrode_Circuit_Board]: {
     recipeName: RecipesEnum.Alternate_Electrode_Circuit_Board,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Rubber],
+        quantityPerCycle: 4,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Petroleum_Coke],
+        quantityPerCycle: 8,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Circuit_Board],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 12,
   },
   [RecipesEnum.Alternate_Caterium_Circuit_Board]: {
     recipeName: RecipesEnum.Alternate_Caterium_Circuit_Board,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Plastic],
+        quantityPerCycle: 10,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Quickwire],
+        quantityPerCycle: 30,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Circuit_Board],
+        quantityPerCycle: 7,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 48,
   },
   [RecipesEnum.Alternate_Silicon_Circuit_Board]: {
     recipeName: RecipesEnum.Alternate_Silicon_Circuit_Board,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Copper_Sheet],
+        quantityPerCycle: 11,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Silica],
+        quantityPerCycle: 11,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Circuit_Board],
+        quantityPerCycle: 5,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 24,
   },
   // Fuel
   [RecipesEnum.Residual_Fuel]: {
     recipeName: RecipesEnum.Residual_Fuel,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Refinery],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Heavy_Oil_Residue],
+        quantityPerCycle: 6,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Fuel],
+        quantityPerCycle: 4,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 6,
   },
   [RecipesEnum.Fuel]: {
     recipeName: RecipesEnum.Fuel,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Refinery],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Crude_Oil],
+        quantityPerCycle: 6,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Fuel],
+        quantityPerCycle: 4,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Polymer_Resin],
+        quantityPerCycle: 3,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 6,
   },
   [RecipesEnum.Unpackage_Fuel]: {
     recipeName: RecipesEnum.Unpackage_Fuel,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Packager],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Packaged_Fuel],
+        quantityPerCycle: 2,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Fuel],
+        quantityPerCycle: 2,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Empty_Canister],
+        quantityPerCycle: 2,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 2,
   },
   [RecipesEnum.Alternate_Diluted_Fuel]: {
     recipeName: RecipesEnum.Alternate_Diluted_Fuel,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Blender],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Heavy_Oil_Residue],
+        quantityPerCycle: 5,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Water],
+        quantityPerCycle: 10,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Fuel],
+        quantityPerCycle: 10,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 6,
   },
   // Packaged_Fuel
   [RecipesEnum.Packaged_Fuel]: {
     recipeName: RecipesEnum.Packaged_Fuel,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Packager],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Fuel],
+        quantityPerCycle: 2,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Empty_Canister],
+        quantityPerCycle: 2,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Packaged_Fuel],
+        quantityPerCycle: 2,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 3,
   },
   [RecipesEnum.Alternate_Diluted_Packaged_Fuel]: {
     recipeName: RecipesEnum.Alternate_Diluted_Packaged_Fuel,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Refinery],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Heavy_Oil_Residue],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Packaged_Water],
+        quantityPerCycle: 2,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Packaged_Fuel],
+        quantityPerCycle: 2,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 2,
   },
   // Heavy_Oil_Residue
   [RecipesEnum.Alternate_Heavy_Oil_Residue]: {
     recipeName: RecipesEnum.Alternate_Heavy_Oil_Residue,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Refinery],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Crude_Oil],
+        quantityPerCycle: 3,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Heavy_Oil_Residue],
+        quantityPerCycle: 4,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Polymer_Resin],
+        quantityPerCycle: 2,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 6,
   },
   [RecipesEnum.Unpackage_Heavy_Oil_Residue]: {
     recipeName: RecipesEnum.Unpackage_Heavy_Oil_Residue,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Packager],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Packaged_Heavy_Oil_Residue],
+        quantityPerCycle: 2,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Heavy_Oil_Residue],
+        quantityPerCycle: 2,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Empty_Canister],
+        quantityPerCycle: 2,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 6,
   },
   // Packaged_Heavy_Oil_Residue
   [RecipesEnum.Packaged_Heavy_Oil_Residue]: {
     recipeName: RecipesEnum.Packaged_Heavy_Oil_Residue,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Packager],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Heavy_Oil_Residue],
+        quantityPerCycle: 2,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Empty_Canister],
+        quantityPerCycle: 2,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Packaged_Heavy_Oil_Residue],
+        quantityPerCycle: 2,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 4,
   },
   // Liquid_Biofuel
   [RecipesEnum.Liquid_Biofuel]: {
     recipeName: RecipesEnum.Liquid_Biofuel,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Refinery],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Solid_Biofuel],
+        quantityPerCycle: 6,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Water],
+        quantityPerCycle: 3,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Liquid_Biofuel],
+        quantityPerCycle: 4,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 4,
   },
   [RecipesEnum.Unpackage_Liquid_Biofuel]: {
     recipeName: RecipesEnum.Unpackage_Liquid_Biofuel,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Packager],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Packaged_Liquid_Biofuel],
+        quantityPerCycle: 2,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Liquid_Biofuel],
+        quantityPerCycle: 2,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Empty_Canister],
+        quantityPerCycle: 2,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 2,
   },
   // Packaged_Liquid_Biofuel
   [RecipesEnum.Packaged_Liquid_Biofuel]: {
     recipeName: RecipesEnum.Packaged_Liquid_Biofuel,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Packager],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Liquid_Biofuel],
+        quantityPerCycle: 2,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Empty_Canister],
+        quantityPerCycle: 2,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Packaged_Liquid_Biofuel],
+        quantityPerCycle: 2,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 3,
   },
   // Empty_Canister
   [RecipesEnum.Empty_Canister]: {
     recipeName: RecipesEnum.Empty_Canister,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Plastic],
+        quantityPerCycle: 2,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Empty_Canister],
+        quantityPerCycle: 4,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 4,
   },
   [RecipesEnum.Alternate_Steel_Canister]: {
     recipeName: RecipesEnum.Alternate_Steel_Canister,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Steel_Ingot],
+        quantityPerCycle: 4,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Empty_Canister],
+        quantityPerCycle: 4,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 6,
   },
   [RecipesEnum.Alternate_Coated_Iron_Canister]: {
     recipeName: RecipesEnum.Alternate_Coated_Iron_Canister,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Iron_Plate],
+        quantityPerCycle: 2,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Copper_Sheet],
+        quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Empty_Canister],
+        quantityPerCycle: 4,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 4,
   },
 
   // ========== Tier 6 items ==========
   // Computer
   [RecipesEnum.Computer]: {
     recipeName: RecipesEnum.Computer,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Manufacturer],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Circuit_Board],
+        quantityPerCycle: 4,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Cable],
+        quantityPerCycle: 8,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Plastic],
+        quantityPerCycle: 16,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Computer],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 24,
   },
   [RecipesEnum.Alternate_Crystal_Computer]: {
     recipeName: RecipesEnum.Alternate_Crystal_Computer,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Circuit_Board],
+        quantityPerCycle: 3,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Crystal_Oscillator],
+        quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Computer],
+        quantityPerCycle: 2,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 36,
   },
   [RecipesEnum.Alternate_Caterium_Computer]: {
     recipeName: RecipesEnum.Alternate_Caterium_Computer,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Manufacturer],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Circuit_Board],
+        quantityPerCycle: 4,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Quickwire],
+        quantityPerCycle: 14,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Rubber],
+        quantityPerCycle: 6,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Computer],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 16,
   },
   // Heavy_Modular_Frame
   [RecipesEnum.Heavy_Modular_Frame]: {
     recipeName: RecipesEnum.Heavy_Modular_Frame,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Manufacturer],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Modular_Frame],
+        quantityPerCycle: 5,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Steel_Pipe],
+        quantityPerCycle: 20,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Encased_Industrial_Beam],
+        quantityPerCycle: 5,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Screw],
+        quantityPerCycle: 120,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Heavy_Modular_Frame],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 30,
   },
   [RecipesEnum.Alternate_Heavy_Encased_Frame]: {
     recipeName: RecipesEnum.Alternate_Heavy_Encased_Frame,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Manufacturer],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Modular_Frame],
+        quantityPerCycle: 8,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Encased_Industrial_Beam],
+        quantityPerCycle: 10,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Steel_Pipe],
+        quantityPerCycle: 36,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Concrete],
+        quantityPerCycle: 22,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Heavy_Modular_Frame],
+        quantityPerCycle: 3,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 64,
   },
   [RecipesEnum.Alternate_Heavy_Flexible_Frame]: {
     recipeName: RecipesEnum.Alternate_Heavy_Flexible_Frame,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Manufacturer],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Modular_Frame],
+        quantityPerCycle: 5,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Encased_Industrial_Beam],
+        quantityPerCycle: 3,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Rubber],
+        quantityPerCycle: 20,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Screw],
+        quantityPerCycle: 104,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Heavy_Modular_Frame],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 16,
   },
   // Modular_Engine
   [RecipesEnum.Modular_Engine]: {
     recipeName: RecipesEnum.Modular_Engine,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Manufacturer],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Motor],
+        quantityPerCycle: 2,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Rubber],
+        quantityPerCycle: 15,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Smart_Plating],
+        quantityPerCycle: 2,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Modular_Engine],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 60,
   },
   // Adaptive_Control_Unit
   [RecipesEnum.Adaptive_Control_Unit]: {
     recipeName: RecipesEnum.Adaptive_Control_Unit,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Manufacturer],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Automated_Wiring],
+        quantityPerCycle: 5,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Circuit_Board],
+        quantityPerCycle: 5,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Heavy_Modular_Frame],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Computer],
+        quantityPerCycle: 2,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Adaptive_Control_Unit],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 60,
   },
 
   // ========== Tier 7 items ==========
   // Alumina_Solution
   [RecipesEnum.Alumina_Solution]: {
     recipeName: RecipesEnum.Alumina_Solution,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Refinery],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Bauxite],
+        quantityPerCycle: 12,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Water],
+        quantityPerCycle: 18,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Alumina_Solution],
+        quantityPerCycle: 12,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Silica],
+        quantityPerCycle: 5,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 6,
   },
   [RecipesEnum.Unpackage_Alumina_Solution]: {
     recipeName: RecipesEnum.Unpackage_Alumina_Solution,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Packager],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Packaged_Alumina_Solution],
+        quantityPerCycle: 2,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Alumina_Solution],
+        quantityPerCycle: 2,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Empty_Canister],
+        quantityPerCycle: 2,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 1,
   },
   [RecipesEnum.Alternate_Sloppy_Alumina]: {
     recipeName: RecipesEnum.Alternate_Sloppy_Alumina,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Refinery],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Bauxite],
+        quantityPerCycle: 10,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Water],
+        quantityPerCycle: 10,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Alumina_Solution],
+        quantityPerCycle: 12,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 3,
   },
   // Packaged_Alumina_Solution
   [RecipesEnum.Packaged_Alumina_Solution]: {
     recipeName: RecipesEnum.Packaged_Alumina_Solution,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Packager],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Alumina_Solution],
+        quantityPerCycle: 2,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Empty_Canister],
+        quantityPerCycle: 2,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Packaged_Alumina_Solution],
+        quantityPerCycle: 2,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 1,
   },
   // Aluminum_Scrap
   [RecipesEnum.Aluminum_Scrap]: {
     recipeName: RecipesEnum.Aluminum_Scrap,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Refinery],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Alumina_Solution],
+        quantityPerCycle: 4,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Coal],
+        quantityPerCycle: 2,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Aluminum_Scrap],
+        quantityPerCycle: 6,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Water],
+        quantityPerCycle: 2,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 1,
   },
   [RecipesEnum.Alternate_Instant_Scrap]: {
     recipeName: RecipesEnum.Alternate_Instant_Scrap,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Blender],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Bauxite],
+        quantityPerCycle: 15,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Coal],
+        quantityPerCycle: 10,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Sulfuric_Acid],
+        quantityPerCycle: 5,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Water],
+        quantityPerCycle: 6,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Aluminum_Scrap],
+        quantityPerCycle: 30,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Water],
+        quantityPerCycle: 5,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 6,
   },
   [RecipesEnum.Alternate_Electrode_Aluminum_Scrap]: {
     recipeName: RecipesEnum.Alternate_Electrode_Aluminum_Scrap,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Refinery],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Alumina_Solution],
+        quantityPerCycle: 12,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Petroleum_Coke],
+        quantityPerCycle: 4,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Aluminum_Scrap],
+        quantityPerCycle: 20,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Water],
+        quantityPerCycle: 7,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 4,
   },
   // Aluminum_Ingot
   [RecipesEnum.Aluminum_Ingot]: {
     recipeName: RecipesEnum.Aluminum_Ingot,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Foundry],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Aluminum_Scrap],
+        quantityPerCycle: 6,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Silica],
+        quantityPerCycle: 5,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Aluminum_Ingot],
+        quantityPerCycle: 4,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 4,
   },
   [RecipesEnum.Alternate_Pure_Aluminum_Ingot]: {
     recipeName: RecipesEnum.Alternate_Pure_Aluminum_Ingot,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Smelter],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Aluminum_Scrap],
+        quantityPerCycle: 2,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Aluminum_Ingot],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 2,
   },
   // Alclad_Aluminum_Sheet
   [RecipesEnum.Alclad_Aluminum_Sheet]: {
     recipeName: RecipesEnum.Alclad_Aluminum_Sheet,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Aluminum_Ingot],
+        quantityPerCycle: 3,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Copper_Ingot],
+        quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Alclad_Aluminum_Sheet],
+        quantityPerCycle: 3,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 6,
   },
   // Aluminum_Casing
   [RecipesEnum.Aluminum_Casing]: {
     recipeName: RecipesEnum.Aluminum_Casing,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Aluminum_Ingot],
+        quantityPerCycle: 3,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Aluminum_Casing],
+        quantityPerCycle: 2,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 2,
   },
   [RecipesEnum.Alternate_Alclad_Casing]: {
     recipeName: RecipesEnum.Alternate_Alclad_Casing,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Aluminum_Ingot],
+        quantityPerCycle: 20,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Copper_Ingot],
+        quantityPerCycle: 10,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Aluminum_Casing],
+        quantityPerCycle: 15,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 8,
   },
   // Radio_Control_Unit
   [RecipesEnum.Radio_Control_Unit]: {
     recipeName: RecipesEnum.Radio_Control_Unit,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Manufacturer],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Aluminum_Casing],
+        quantityPerCycle: 32,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Crystal_Oscillator],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Computer],
+        quantityPerCycle: 2,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Radio_Control_Unit],
+        quantityPerCycle: 2,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 48,
   },
   [RecipesEnum.Alternate_Radio_Connection_Unit]: {
     recipeName: RecipesEnum.Alternate_Radio_Connection_Unit,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Manufacturer],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Heat_Sink],
+        quantityPerCycle: 4,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.High_Speed_Connector],
+        quantityPerCycle: 2,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Quartz_Crystal],
+        quantityPerCycle: 12,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Radio_Control_Unit],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 16,
   },
   [RecipesEnum.Alternate_Radio_Control_System]: {
     recipeName: RecipesEnum.Alternate_Radio_Control_System,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Manufacturer],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Crystal_Oscillator],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Circuit_Board],
+        quantityPerCycle: 10,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Aluminum_Casing],
+        quantityPerCycle: 60,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Rubber],
+        quantityPerCycle: 30,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Radio_Control_Unit],
+        quantityPerCycle: 3,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 40,
   },
   // Sulfuric_Acid
   [RecipesEnum.Sulfuric_Acid]: {
     recipeName: RecipesEnum.Sulfuric_Acid,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Refinery],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Sulfur],
+        quantityPerCycle: 5,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Water],
+        quantityPerCycle: 5,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Sulfuric_Acid],
+        quantityPerCycle: 5,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 6,
   },
   [RecipesEnum.Unpackage_Sulfuric_Acid]: {
     recipeName: RecipesEnum.Unpackage_Sulfuric_Acid,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Packager],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Packaged_Sulfuric_Acid],
+        quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Sulfuric_Acid],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Empty_Canister],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 1,
   },
   // Packaged_Sulfuric_Acid
   [RecipesEnum.Packaged_Sulfuric_Acid]: {
     recipeName: RecipesEnum.Packaged_Sulfuric_Acid,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Packager],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Sulfuric_Acid],
+        quantityPerCycle: 2,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Empty_Canister],
+        quantityPerCycle: 2,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Packaged_Sulfuric_Acid],
+        quantityPerCycle: 2,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 3,
   },
   // Battery
   [RecipesEnum.Battery]: {
     recipeName: RecipesEnum.Battery,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Blender],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Sulfuric_Acid],
+        quantityPerCycle: 2.5,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Alumina_Solution],
+        quantityPerCycle: 2,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Aluminum_Casing],
+        quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Battery],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Water],
+        quantityPerCycle: 1.5,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 3,
   },
   [RecipesEnum.Alternate_Classic_Battery]: {
     recipeName: RecipesEnum.Alternate_Classic_Battery,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Manufacturer],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Sulfur],
+        quantityPerCycle: 6,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Alclad_Aluminum_Sheet],
+        quantityPerCycle: 7,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Plastic],
+        quantityPerCycle: 8,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Wire],
+        quantityPerCycle: 12,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Battery],
+        quantityPerCycle: 4,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 8,
   },
   // Supercomputer
   [RecipesEnum.Supercomputer]: {
     recipeName: RecipesEnum.Supercomputer,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Manufacturer],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Computer],
+        quantityPerCycle: 4,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.AI_Limiter],
+        quantityPerCycle: 2,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.High_Speed_Connector],
+        quantityPerCycle: 3,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Plastic],
+        quantityPerCycle: 28,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Supercomputer],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 32,
   },
   [RecipesEnum.Alternate_OC_Supercomputer]: {
     recipeName: RecipesEnum.Alternate_OC_Supercomputer,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Radio_Control_Unit],
+        quantityPerCycle: 2,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Cooling_System],
+        quantityPerCycle: 2,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Supercomputer],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 20,
   },
   [RecipesEnum.Alternate_Super_State_Computer]: {
     recipeName: RecipesEnum.Alternate_Super_State_Computer,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Manufacturer],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Computer],
+        quantityPerCycle: 3,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Electromagnetic_Control_Rod],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Battery],
+        quantityPerCycle: 10,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Wire],
+        quantityPerCycle: 25,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Supercomputer],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 25,
   },
   // Assembly_Director_System
   [RecipesEnum.Assembly_Director_System]: {
     recipeName: RecipesEnum.Assembly_Director_System,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Adaptive_Control_Unit],
+        quantityPerCycle: 2,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Supercomputer],
+        quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Assembly_Director_System],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 80,
   },
 
   // ========== Tier 8 items ==========
   // Encased_Uranium_Cell
   [RecipesEnum.Encased_Uranium_Cell]: {
     recipeName: RecipesEnum.Encased_Uranium_Cell,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Blender],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Uranium],
+        quantityPerCycle: 10,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Concrete],
+        quantityPerCycle: 3,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Sulfuric_Acid],
+        quantityPerCycle: 8,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Encased_Uranium_Cell],
+        quantityPerCycle: 5,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Sulfuric_Acid],
+        quantityPerCycle: 2,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 12,
   },
   [RecipesEnum.Alternate_Infused_Uranium_Cell]: {
     recipeName: RecipesEnum.Alternate_Infused_Uranium_Cell,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Manufacturer],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Uranium],
+        quantityPerCycle: 5,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Silica],
+        quantityPerCycle: 3,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Sulfur],
+        quantityPerCycle: 5,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Quickwire],
+        quantityPerCycle: 15,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Encased_Uranium_Cell],
+        quantityPerCycle: 4,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 12,
   },
   // Electromagnetic_Control_Rod
   [RecipesEnum.Electromagnetic_Control_Rod]: {
     recipeName: RecipesEnum.Electromagnetic_Control_Rod,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Stator],
+        quantityPerCycle: 3,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.AI_Limiter],
+        quantityPerCycle: 2,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Electromagnetic_Control_Rod],
+        quantityPerCycle: 2,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 30,
   },
   [RecipesEnum.Alternate_Electromagnetic_Connection_Rod]: {
     recipeName: RecipesEnum.Alternate_Electromagnetic_Connection_Rod,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Stator],
+        quantityPerCycle: 2,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.High_Speed_Connector],
+        quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Electromagnetic_Control_Rod],
+        quantityPerCycle: 2,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 15,
   },
   // Uranium_Fuel_Rod
   [RecipesEnum.Uranium_Fuel_Rod]: {
     recipeName: RecipesEnum.Uranium_Fuel_Rod,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Manufacturer],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Encased_Uranium_Cell],
+        quantityPerCycle: 50,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Encased_Industrial_Beam],
+        quantityPerCycle: 3,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Electromagnetic_Control_Rod],
+        quantityPerCycle: 5,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Uranium_Fuel_Rod],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 150,
   },
   [RecipesEnum.Alternate_Uranium_Fuel_Unit]: {
     recipeName: RecipesEnum.Alternate_Uranium_Fuel_Unit,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Manufacturer],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Encased_Uranium_Cell],
+        quantityPerCycle: 100,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Electromagnetic_Control_Rod],
+        quantityPerCycle: 10,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Crystal_Oscillator],
+        quantityPerCycle: 3,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Rotor],
+        quantityPerCycle: 10,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Uranium_Fuel_Rod],
+        quantityPerCycle: 3,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 300,
   },
   // Magnetic_Field_Generator
   [RecipesEnum.Magnetic_Field_Generator]: {
     recipeName: RecipesEnum.Magnetic_Field_Generator,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Versatile_Framework],
+        quantityPerCycle: 5,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Electromagnetic_Control_Rod],
+        quantityPerCycle: 2,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Magnetic_Field_Generator],
+        quantityPerCycle: 2,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 120,
   },
   // Empty_Fluid_Tank
   [RecipesEnum.Empty_Fluid_Tank]: {
     recipeName: RecipesEnum.Empty_Fluid_Tank,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Aluminum_Ingot],
+        quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Empty_Fluid_Tank],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 1,
   },
   // Heat_Sink
   [RecipesEnum.Alternate_Heat_Exchanger]: {
     recipeName: RecipesEnum.Alternate_Heat_Exchanger,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Aluminum_Casing],
+        quantityPerCycle: 3,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Rubber],
+        quantityPerCycle: 3,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Heat_Sink],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 6,
   },
   [RecipesEnum.Heat_Sink]: {
     recipeName: RecipesEnum.Heat_Sink,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Alclad_Aluminum_Sheet],
+        quantityPerCycle: 5,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Copper_Sheet],
+        quantityPerCycle: 3,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Heat_Sink],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 8,
   },
   // Cooling_System
   [RecipesEnum.Cooling_System]: {
     recipeName: RecipesEnum.Cooling_System,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Blender],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Heat_Sink],
+        quantityPerCycle: 2,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Rubber],
+        quantityPerCycle: 2,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Water],
+        quantityPerCycle: 5,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Nitrogen_Gas],
+        quantityPerCycle: 25,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Cooling_System],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 10,
   },
   [RecipesEnum.Alternate_Cooling_Device]: {
     recipeName: RecipesEnum.Alternate_Cooling_Device,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Blender],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Heat_Sink],
+        quantityPerCycle: 4,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Motor],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Nitrogen_Gas],
+        quantityPerCycle: 24,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Cooling_System],
+        quantityPerCycle: 2,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 24,
   },
   // Fused_Modular_Frame
   [RecipesEnum.Fused_Modular_Frame]: {
     recipeName: RecipesEnum.Fused_Modular_Frame,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Blender],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Heavy_Modular_Frame],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Aluminum_Casing],
+        quantityPerCycle: 50,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Nitrogen_Gas],
+        quantityPerCycle: 25,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Fused_Modular_Frame],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 40,
   },
   [RecipesEnum.Alternate_Heat_Fused_Frame]: {
     recipeName: RecipesEnum.Alternate_Heat_Fused_Frame,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Blender],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Heavy_Modular_Frame],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Aluminum_Ingot],
+        quantityPerCycle: 50,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Nitric_Acid],
+        quantityPerCycle: 8,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Fuel],
+        quantityPerCycle: 10,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Fused_Modular_Frame],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 20,
   },
   // Turbo_Motor
   [RecipesEnum.Turbo_Motor]: {
     recipeName: RecipesEnum.Turbo_Motor,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Manufacturer],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Cooling_System],
+        quantityPerCycle: 4,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Radio_Control_Unit],
+        quantityPerCycle: 2,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Motor],
+        quantityPerCycle: 4,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Rubber],
+        quantityPerCycle: 24,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Turbo_Motor],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 32,
   },
   [RecipesEnum.Alternate_Turbo_Pressure_Motor]: {
     recipeName: RecipesEnum.Alternate_Turbo_Pressure_Motor,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Manufacturer],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Motor],
+        quantityPerCycle: 4,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Pressure_Conversion_Cube],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Packaged_Nitrogen_Gas],
+        quantityPerCycle: 24,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Stator],
+        quantityPerCycle: 8,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Turbo_Motor],
+        quantityPerCycle: 2,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 32,
   },
   [RecipesEnum.Alternate_Turbo_Electric_Motor]: {
     recipeName: RecipesEnum.Alternate_Turbo_Electric_Motor,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Manufacturer],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Motor],
+        quantityPerCycle: 7,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Radio_Control_Unit],
+        quantityPerCycle: 9,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Electromagnetic_Control_Rod],
+        quantityPerCycle: 5,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Rotor],
+        quantityPerCycle: 7,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Turbo_Motor],
+        quantityPerCycle: 3,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 64,
   },
   // Thermal_Propulsion_Rocket
   [RecipesEnum.Thermal_Propulsion_Rocket]: {
     recipeName: RecipesEnum.Thermal_Propulsion_Rocket,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Manufacturer],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Modular_Engine],
+        quantityPerCycle: 5,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Turbo_Motor],
+        quantityPerCycle: 2,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Cooling_System],
+        quantityPerCycle: 6,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Fused_Modular_Frame],
+        quantityPerCycle: 2,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Thermal_Propulsion_Rocket],
+        quantityPerCycle: 2,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 120,
   },
   // Nitric_Acid
   [RecipesEnum.Nitric_Acid]: {
     recipeName: RecipesEnum.Nitric_Acid,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Blender],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Nitrogen_Gas],
+        quantityPerCycle: 12,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Water],
+        quantityPerCycle: 3,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Iron_Plate],
+        quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Nitric_Acid],
+        quantityPerCycle: 3,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 6,
   },
   [RecipesEnum.Unpackage_Nitric_Acid]: {
     recipeName: RecipesEnum.Unpackage_Nitric_Acid,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Packager],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Nitric_Acid],
+        quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Nitric_Acid],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Empty_Fluid_Tank],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 3,
   },
   // Packaged_Nitric_Acid
   [RecipesEnum.Packaged_Nitric_Acid]: {
     recipeName: RecipesEnum.Packaged_Nitric_Acid,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Packager],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Nitric_Acid],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Empty_Fluid_Tank],
+        quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Packaged_Nitric_Acid],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 2,
   },
   // Non_Fissile_Uranium
   [RecipesEnum.Non_Fissile_Uranium]: {
     recipeName: RecipesEnum.Non_Fissile_Uranium,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Blender],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Uranium_Waste],
+        quantityPerCycle: 15,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Silica],
+        quantityPerCycle: 10,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Nitric_Acid],
+        quantityPerCycle: 6,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Sulfuric_Acid],
+        quantityPerCycle: 6,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Non_Fissile_Uranium],
+        quantityPerCycle: 20,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Water],
+        quantityPerCycle: 6,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 24,
   },
   [RecipesEnum.Alternate_Fertile_Uranium]: {
     recipeName: RecipesEnum.Alternate_Fertile_Uranium,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Blender],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Uranium],
+        quantityPerCycle: 5,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Uranium_Waste],
+        quantityPerCycle: 5,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Nitric_Acid],
+        quantityPerCycle: 3,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Sulfuric_Acid],
+        quantityPerCycle: 5,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Non_Fissile_Uranium],
+        quantityPerCycle: 20,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Water],
+        quantityPerCycle: 8,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 12,
   },
   // Plutonium_Pellet
   [RecipesEnum.Plutonium_Pellet]: {
     recipeName: RecipesEnum.Plutonium_Pellet,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Particle_Accelerator],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Non_Fissile_Uranium],
+        quantityPerCycle: 100,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Uranium_Waste],
+        quantityPerCycle: 25,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Plutonium_Pellet],
+        quantityPerCycle: 30,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 60,
   },
   // Encased_Plutonium_Cell
   [RecipesEnum.Encased_Plutonium_Cell]: {
     recipeName: RecipesEnum.Encased_Plutonium_Cell,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Plutonium_Pellet],
+        quantityPerCycle: 2,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Concrete],
+        quantityPerCycle: 4,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Encased_Plutonium_Cell],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 12,
   },
   [RecipesEnum.Alternate_Instant_Plutonium_Cell]: {
     recipeName: RecipesEnum.Alternate_Instant_Plutonium_Cell,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Particle_Accelerator],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Non_Fissile_Uranium],
+        quantityPerCycle: 150,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Aluminum_Casing],
+        quantityPerCycle: 20,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Encased_Plutonium_Cell],
+        quantityPerCycle: 20,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 120,
   },
   // Plutonium_Fuel_Rod
   [RecipesEnum.Plutonium_Fuel_Rod]: {
     recipeName: RecipesEnum.Plutonium_Fuel_Rod,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Manufacturer],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Encased_Plutonium_Cell],
+        quantityPerCycle: 30,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Steel_Beam],
+        quantityPerCycle: 18,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Electromagnetic_Control_Rod],
+        quantityPerCycle: 6,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Heat_Sink],
+        quantityPerCycle: 10,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Plutonium_Fuel_Rod],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 240,
   },
   [RecipesEnum.Alternate_Plutonium_Fuel_Unit]: {
     recipeName: RecipesEnum.Alternate_Plutonium_Fuel_Unit,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Encased_Plutonium_Cell],
+        quantityPerCycle: 20,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Pressure_Conversion_Cube],
+        quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Plutonium_Fuel_Rod],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 120,
   },
   // Copper_Powder
   [RecipesEnum.Copper_Powder]: {
     recipeName: RecipesEnum.Copper_Powder,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Copper_Ingot],
+        quantityPerCycle: 30,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Copper_Powder],
+        quantityPerCycle: 5,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 6,
   },
   // Pressure_Conversion_Cube
   [RecipesEnum.Pressure_Conversion_Cube]: {
     recipeName: RecipesEnum.Pressure_Conversion_Cube,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Fused_Modular_Frame],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Radio_Control_Unit],
+        quantityPerCycle: 2,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Pressure_Conversion_Cube],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 60,
   },
   // Nuclear_Pasta
   [RecipesEnum.Nuclear_Pasta]: {
     recipeName: RecipesEnum.Nuclear_Pasta,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Particle_Accelerator],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Copper_Powder],
+        quantityPerCycle: 200,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Pressure_Conversion_Cube],
+        quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Nuclear_Pasta],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 120,
   },
 
   // ========== Tier 9 items ==========
   // Diamonds
   [RecipesEnum.Diamonds]: {
     recipeName: RecipesEnum.Diamonds,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Particle_Accelerator],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Coal],
+        quantityPerCycle: 20,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Diamonds],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 2,
   },
   [RecipesEnum.Alternate_Petroleum_Diamonds]: {
     recipeName: RecipesEnum.Alternate_Petroleum_Diamonds,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Particle_Accelerator],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Petroleum_Coke],
+        quantityPerCycle: 24,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Diamonds],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 2,
   },
   [RecipesEnum.Alternate_Oil_Based_Diamonds]: {
     recipeName: RecipesEnum.Alternate_Oil_Based_Diamonds,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Particle_Accelerator],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Crude_Oil],
+        quantityPerCycle: 10,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Diamonds],
+        quantityPerCycle: 2,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 3,
   },
   [RecipesEnum.Alternate_Pink_Diamonds]: {
     recipeName: RecipesEnum.Alternate_Pink_Diamonds,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Converter],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Coal],
+        quantityPerCycle: 8,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Quartz_Crystal],
+        quantityPerCycle: 3,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Diamonds],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 4,
   },
   [RecipesEnum.Alternate_Cloudy_Diamonds]: {
     recipeName: RecipesEnum.Alternate_Cloudy_Diamonds,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Particle_Accelerator],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Coal],
+        quantityPerCycle: 12,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Limestone],
+        quantityPerCycle: 24,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Diamonds],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 3,
   },
   [RecipesEnum.Alternate_Turbo_Diamonds]: {
     recipeName: RecipesEnum.Alternate_Turbo_Diamonds,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Particle_Accelerator],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Coal],
+        quantityPerCycle: 30,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Packaged_Turbofuel],
+        quantityPerCycle: 2,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Diamonds],
+        quantityPerCycle: 3,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 3,
   },
   // Time_Crystal
   [RecipesEnum.Time_Crystal]: {
     recipeName: RecipesEnum.Time_Crystal,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Converter],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Diamonds],
+        quantityPerCycle: 2,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Time_Crystal],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 10,
   },
   // Ficsite_Ingot
   [RecipesEnum.Ficsite_Ingot_Iron]: {
     recipeName: RecipesEnum.Ficsite_Ingot_Iron,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Converter],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Reanimated_SAM],
+        quantityPerCycle: 4,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Iron_Ingot],
+        quantityPerCycle: 24,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Ficsite_Ingot],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 6,
   },
   [RecipesEnum.Ficsite_Ingot_Aluminum]: {
     recipeName: RecipesEnum.Ficsite_Ingot_Aluminum,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Converter],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Reanimated_SAM],
+        quantityPerCycle: 2,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Aluminum_Ingot],
+        quantityPerCycle: 4,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Ficsite_Ingot],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 2,
   },
   [RecipesEnum.Ficsite_Ingot_Caterium]: {
     recipeName: RecipesEnum.Ficsite_Ingot_Caterium,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Converter],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Reanimated_SAM],
+        quantityPerCycle: 3,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Caterium_Ingot],
+        quantityPerCycle: 4,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Ficsite_Ingot],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 4,
   },
   // Ficsite_Trigon
   [RecipesEnum.Ficsite_Trigon]: {
     recipeName: RecipesEnum.Ficsite_Trigon,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Constructor],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Reanimated_SAM],
+        quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Ficsite_Trigon],
+        quantityPerCycle: 3,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 6,
   },
   // Biochemical_Sculptor
   [RecipesEnum.Biochemical_Sculptor]: {
     recipeName: RecipesEnum.Biochemical_Sculptor,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Blender],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Assembly_Director_System],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Ficsite_Trigon],
+        quantityPerCycle: 80,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Water],
+        quantityPerCycle: 20,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Biochemical_Sculptor],
+        quantityPerCycle: 4,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 120,
   },
   // Excited_Photonic_Matter
   [RecipesEnum.Excited_Photonic_Matter]: {
     recipeName: RecipesEnum.Excited_Photonic_Matter,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
-    itemsIn: [
-      {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
-      },
-    ],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Converter],
+    itemsIn: [],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Excited_Photonic_Matter],
+        quantityPerCycle: 10,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 3,
   },
   // Dark_Matter_Residue
   [RecipesEnum.Dark_Matter_Residue]: {
     recipeName: RecipesEnum.Dark_Matter_Residue,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Converter],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Reanimated_SAM],
+        quantityPerCycle: 5,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Dark_Matter_Residue],
+        quantityPerCycle: 10,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 6,
   },
   // Dark_Matter_Crystal
   [RecipesEnum.Dark_Matter_Crystal]: {
     recipeName: RecipesEnum.Dark_Matter_Crystal,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Particle_Accelerator],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Diamonds],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Dark_Matter_Residue],
+        quantityPerCycle: 5,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Dark_Matter_Crystal],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 2,
   },
   [RecipesEnum.Alternate_Dark_Matter_Crystallization]: {
     recipeName: RecipesEnum.Alternate_Dark_Matter_Crystallization,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Particle_Accelerator],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Dark_Matter_Residue],
+        quantityPerCycle: 10,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Dark_Matter_Crystal],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 3,
   },
   [RecipesEnum.Alternate_Dark_Matter_Trap]: {
     recipeName: RecipesEnum.Alternate_Dark_Matter_Trap,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Particle_Accelerator],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Time_Crystal],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Dark_Matter_Residue],
+        quantityPerCycle: 5,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Dark_Matter_Crystal],
+        quantityPerCycle: 2,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 2,
   },
   // Superposition_Oscillator
   [RecipesEnum.Superposition_Oscillator]: {
     recipeName: RecipesEnum.Superposition_Oscillator,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Quantum_Encoder],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Dark_Matter_Crystal],
+        quantityPerCycle: 6,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Crystal_Oscillator],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Alclad_Aluminum_Sheet],
+        quantityPerCycle: 9,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Excited_Photonic_Matter],
+        quantityPerCycle: 25,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Superposition_Oscillator],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Dark_Matter_Residue],
+        quantityPerCycle: 25,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 12,
   },
   // Neural_Quantum_Processor
   [RecipesEnum.Neural_Quantum_Processor]: {
     recipeName: RecipesEnum.Neural_Quantum_Processor,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Quantum_Encoder],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Time_Crystal],
+        quantityPerCycle: 5,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Supercomputer],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Ficsite_Trigon],
+        quantityPerCycle: 15,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Excited_Photonic_Matter],
+        quantityPerCycle: 25,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Neural_Quantum_Processor],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Dark_Matter_Residue],
+        quantityPerCycle: 25,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 20,
   },
   // AI_Expansion_Server
   [RecipesEnum.AI_Expansion_Server]: {
     recipeName: RecipesEnum.AI_Expansion_Server,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Quantum_Encoder],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Magnetic_Field_Generator],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Neural_Quantum_Processor],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Superposition_Oscillator],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Excited_Photonic_Matter],
+        quantityPerCycle: 25,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.AI_Expansion_Server],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Dark_Matter_Residue],
+        quantityPerCycle: 25,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 15,
   },
   // Singularity_Cell
   [RecipesEnum.Singularity_Cell]: {
     recipeName: RecipesEnum.Singularity_Cell,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Manufacturer],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Nuclear_Pasta],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Dark_Matter_Crystal],
+        quantityPerCycle: 20,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Iron_Plate],
+        quantityPerCycle: 100,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Concrete],
+        quantityPerCycle: 200,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Singularity_Cell],
+        quantityPerCycle: 10,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 60,
   },
   // Ballistic_Warp_Drive
   [RecipesEnum.Ballistic_Warp_Drive]: {
     recipeName: RecipesEnum.Ballistic_Warp_Drive,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Manufacturer],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Thermal_Propulsion_Rocket],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Singularity_Cell],
+        quantityPerCycle: 5,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Superposition_Oscillator],
+        quantityPerCycle: 2,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Dark_Matter_Crystal],
+        quantityPerCycle: 40,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Ballistic_Warp_Drive],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 60,
   },
   // Ficsonium
   [RecipesEnum.Ficsonium]: {
     recipeName: RecipesEnum.Ficsonium,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Particle_Accelerator],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Plutonium_Waste],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Singularity_Cell],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Dark_Matter_Residue],
+        quantityPerCycle: 20,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Ficsonium],
+        quantityPerCycle: 1,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 6,
   },
   // Ficsonium_Fuel_Rod
   [RecipesEnum.Ficsonium_Fuel_Rod]: {
     recipeName: RecipesEnum.Ficsonium_Fuel_Rod,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Quantum_Encoder],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Ficsonium],
+        quantityPerCycle: 2,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Electromagnetic_Control_Rod],
+        quantityPerCycle: 2,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Ficsite_Trigon],
+        quantityPerCycle: 40,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Excited_Photonic_Matter],
+        quantityPerCycle: 20,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Ficsonium_Fuel_Rod],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Dark_Matter_Residue],
+        quantityPerCycle: 20,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 24,
   },
 
   // =========== MAM items ============

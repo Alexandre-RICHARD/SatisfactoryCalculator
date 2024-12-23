@@ -1045,16 +1045,22 @@ export const gameItemsDictionnary: GameItemsDictionnary = {
     className: GameClassNamesEnum.BP_ItemDescriptorPortableMiner_C,
     name: GameItemsEnum.Portable_Miner,
     category: GameItemsCategoryEnum.Equipment,
+    resourceType: GameResourcesTypeEnum.Solid,
+    isRawResource: false,
   },
   [GameItemsEnum.Gas_Filter]: {
     className: GameClassNamesEnum.Desc_Filter_C,
     name: GameItemsEnum.Gas_Filter,
     category: GameItemsCategoryEnum.Equipment,
+    resourceType: GameResourcesTypeEnum.Solid,
+    isRawResource: false,
   },
   [GameItemsEnum.Iodine_Infused_Filter]: {
     className: GameClassNamesEnum.Desc_HazmatFilter_C,
     name: GameItemsEnum.Iodine_Infused_Filter,
     category: GameItemsCategoryEnum.Equipment,
+    resourceType: GameResourcesTypeEnum.Solid,
+    isRawResource: false,
   },
 
   // === MAM Automatable equipments ===
