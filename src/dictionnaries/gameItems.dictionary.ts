@@ -6,6 +6,15 @@ import { GameResourcesTypeEnum } from "../enums/gameResourcesType.enum";
 import type { GameItemsDictionnary } from "../types/satisfactory/gameItemsDictionary.type";
 
 export const gameItemsDictionnary: GameItemsDictionnary = {
+  // ============= Power ==============
+  [GameItemsEnum.Power]: {
+    className: GameClassNamesEnum.Power,
+    name: GameItemsEnum.Power,
+    category: GameItemsCategoryEnum.Resource,
+    resourceType: GameResourcesTypeEnum.Solid,
+    isRawResource: false,
+  },
+
   // ====== Raw resources items =======
   [GameItemsEnum.Iron_Ore]: {
     className: GameClassNamesEnum.Desc_OreIron_C,

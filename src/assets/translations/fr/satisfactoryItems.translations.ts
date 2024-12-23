@@ -1,6 +1,9 @@
 import { GameItemsEnum } from "../../../enums/gameItems.enum";
 
 export default {
+  // ============= Power ==============
+  [GameItemsEnum.Power]: "Électricité",
+
   // ====== Raw resources items =======
   [GameItemsEnum.Iron_Ore]: "Minerai de fer",
   [GameItemsEnum.Copper_Ore]: "Minerai de cuivre",

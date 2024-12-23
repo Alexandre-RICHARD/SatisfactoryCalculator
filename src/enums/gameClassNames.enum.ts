@@ -1,4 +1,7 @@
 export enum GameClassNamesEnum {
+  // ============= Power ==============
+  Power = "Power",
+
   // ====== Raw resources items =======
   Desc_OreIron_C = "Desc_OreIron_C",
   Desc_OreCopper_C = "Desc_OreCopper_C",

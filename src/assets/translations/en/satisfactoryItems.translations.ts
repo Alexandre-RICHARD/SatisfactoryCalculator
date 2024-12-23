@@ -1,6 +1,9 @@
 import { GameItemsEnum } from "../../../enums/gameItems.enum";
 
 export default {
+  // ============= Power ==============
+  [GameItemsEnum.Power]: "Power",
+
   // ====== Raw resources items =======
   [GameItemsEnum.Iron_Ore]: "Iron Ore",
   [GameItemsEnum.Copper_Ore]: "Copper Ore",

@@ -1,4 +1,7 @@
 export enum GameItemsEnum {
+  // ============= Power ==============
+  Power = "Power",
+
   // ====== Raw resources items =======
   Iron_Ore = "Iron_Ore",
   Copper_Ore = "Copper_Ore",

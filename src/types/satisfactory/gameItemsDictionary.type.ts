@@ -9,6 +9,9 @@ import type { GameItemResource } from "./gameItems/resource.type";
 import type { GameItemVehicle } from "./gameItems/vehicle.type";
 
 export type GameItemsDictionnary = {
+  // ============= Power ==============
+  [GameItemsEnum.Power]: GameItemResource;
+
   // ====== Raw resources items =======
   [GameItemsEnum.Iron_Ore]: GameItemResource;
   [GameItemsEnum.Copper_Ore]: GameItemResource;

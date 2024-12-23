@@ -6148,7 +6148,7 @@ export const recipes: RecipeDictionnaryType = {
         quantityPerCycle: 50,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 12,
   },
   [RecipesEnum.Packaged_Turbo_Rifle_Ammo]: {
     recipeName: RecipesEnum.Packaged_Turbo_Rifle_Ammo,
@@ -6180,295 +6180,327 @@ export const recipes: RecipeDictionnaryType = {
   // Biomass_Burner 30 Mw
   [RecipesEnum.Biomass_Burner_Leaves]: {
     recipeName: RecipesEnum.Biomass_Burner_Leaves,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Biomass_Burner],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Leaves],
+        quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Power],
+        quantityPerCycle: 30,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 0.5,
   },
   [RecipesEnum.Biomass_Burner_Mycelia]: {
     recipeName: RecipesEnum.Biomass_Burner_Mycelia,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Biomass_Burner],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Mycelia],
+        quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Power],
+        quantityPerCycle: 30,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 2 / 3,
   },
   [RecipesEnum.Biomass_Burner_Wood]: {
     recipeName: RecipesEnum.Biomass_Burner_Wood,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Biomass_Burner],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Wood],
+        quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Power],
+        quantityPerCycle: 30,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 10 / 3,
   },
   [RecipesEnum.Biomass_Burner_Biomass]: {
     recipeName: RecipesEnum.Biomass_Burner_Biomass,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Biomass_Burner],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Biomass],
+        quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Power],
+        quantityPerCycle: 30,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 6,
   },
   [RecipesEnum.Biomass_Burner_Solid_Biofuel]: {
     recipeName: RecipesEnum.Biomass_Burner_Solid_Biofuel,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Biomass_Burner],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Solid_Biofuel],
+        quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Power],
+        quantityPerCycle: 30,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 15,
   },
   [RecipesEnum.Biomass_Burner_Packaged_Liquid_Biofuel]: {
     recipeName: RecipesEnum.Biomass_Burner_Packaged_Liquid_Biofuel,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Biomass_Burner],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Packaged_Liquid_Biofuel],
+        quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Power],
+        quantityPerCycle: 30,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 25,
   },
   // Coal_Powered_Generator 75 Mw
   [RecipesEnum.Coal_Powered_Generator_Coal]: {
     recipeName: RecipesEnum.Coal_Powered_Generator_Coal,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Coal_Powered_Generator],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Coal],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Water],
+        quantityPerCycle: 3,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Power],
+        quantityPerCycle: 75,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 4,
   },
   [RecipesEnum.Coal_Powered_Generator_Compacted_Coal]: {
     recipeName: RecipesEnum.Coal_Powered_Generator_Compacted_Coal,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Coal_Powered_Generator],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Compacted_Coal],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Water],
+        quantityPerCycle: 6.3,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Power],
+        quantityPerCycle: 75,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 8.4,
   },
   [RecipesEnum.Coal_Powered_Generator_Petroleum_Coke]: {
     recipeName: RecipesEnum.Coal_Powered_Generator_Petroleum_Coke,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Coal_Powered_Generator],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Petroleum_Coke],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Water],
+        quantityPerCycle: 1.8,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Power],
+        quantityPerCycle: 75,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 2.4,
   },
   // Fuel_Powered_Generator 250 Mw
   [RecipesEnum.Fuel_Powered_Generator_Fuel]: {
     recipeName: RecipesEnum.Fuel_Powered_Generator_Fuel,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Fuel_Powered_Generator],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Fuel],
+        quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Power],
+        quantityPerCycle: 250,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 3,
   },
   [RecipesEnum.Fuel_Powered_Generator_Liquid_Biofuel]: {
     recipeName: RecipesEnum.Fuel_Powered_Generator_Liquid_Biofuel,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Fuel_Powered_Generator],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Liquid_Biofuel],
+        quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Power],
+        quantityPerCycle: 250,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 3,
   },
   [RecipesEnum.Fuel_Powered_Generator_Turbofuel]: {
     recipeName: RecipesEnum.Fuel_Powered_Generator_Turbofuel,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Fuel_Powered_Generator],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Turbofuel],
+        quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Power],
+        quantityPerCycle: 250,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 8,
   },
   [RecipesEnum.Fuel_Powered_Generator_Rocket_Fuel]: {
     recipeName: RecipesEnum.Fuel_Powered_Generator_Rocket_Fuel,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Fuel_Powered_Generator],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Rocket_Fuel],
+        quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Power],
+        quantityPerCycle: 250,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 14.4,
   },
   [RecipesEnum.Fuel_Powered_Generator_Ionized_Fuel]: {
     recipeName: RecipesEnum.Fuel_Powered_Generator_Ionized_Fuel,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Fuel_Powered_Generator],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Ionized_Fuel],
+        quantityPerCycle: 1,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Power],
+        quantityPerCycle: 250,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 20,
   },
   // Nuclear_Power_Plant 2 500 Mw
   [RecipesEnum.Nuclear_Power_Plant_Uranium_Fuel_Rod]: {
     recipeName: RecipesEnum.Nuclear_Power_Plant_Uranium_Fuel_Rod,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Nuclear_Power_Plant],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Uranium_Fuel_Rod],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Water],
+        quantityPerCycle: 1200,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Power],
+        quantityPerCycle: 2500,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Uranium_Waste],
+        quantityPerCycle: 50,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 300,
   },
   [RecipesEnum.Nuclear_Power_Plant_Plutonium_Fuel_Rod]: {
     recipeName: RecipesEnum.Nuclear_Power_Plant_Plutonium_Fuel_Rod,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Nuclear_Power_Plant],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Plutonium_Fuel_Rod],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Water],
+        quantityPerCycle: 2400,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Power],
+        quantityPerCycle: 2500,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Plutonium_Waste],
+        quantityPerCycle: 10,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 600,
   },
   [RecipesEnum.Nuclear_Power_Plant_Ficsonium_Fuel_Rod]: {
     recipeName: RecipesEnum.Nuclear_Power_Plant_Ficsonium_Fuel_Rod,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Nuclear_Power_Plant],
     itemsIn: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Ficsonium_Fuel_Rod],
+        quantityPerCycle: 1,
+      },
+      {
+        item: gameItemsDictionnary[GameItemsEnum.Water],
+        quantityPerCycle: 240,
       },
     ],
     itemsOut: [
       {
-        item: gameItemsDictionnary[GameItemsEnum.],
-        quantityPerCycle: ,
+        item: gameItemsDictionnary[GameItemsEnum.Power],
+        quantityPerCycle: 2500,
       },
     ],
-    initCycleDuration: ,
+    initCycleDuration: 60,
   },
 
   // ========= FICSMAS items ==========
@@ -6595,7 +6627,7 @@ export const recipes: RecipeDictionnaryType = {
   // FICSMAS_Ornament_Bundle
   [RecipesEnum.FICSMAS_Ornament_Bundle]: {
     recipeName: RecipesEnum.FICSMAS_Ornament_Bundle,
-    craftBuildings: gameItemsDictionnary[GameItemsEnum.],
+    craftBuildings: gameItemsDictionnary[GameItemsEnum.Assembler],
     itemsIn: [
       {
         item: gameItemsDictionnary[GameItemsEnum.Copper_FICSMAS_Ornament],
